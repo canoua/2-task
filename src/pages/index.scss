@@ -1,9 +1,5 @@
 // @import url('./styles/footer.scss');
 // @import url('./styles/header.scss');
-@import url('./../assets/fonts/Montserrat/Montserrat-Regular.ttf');
-@import url('./../assets/fonts/Montserrat/Montserrat-Bold.ttf');
 
-body{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
+@import url('./default.scss');
+@import url('./../blocks/header/header.scss');

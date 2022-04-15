@@ -1,2 +1,12 @@
+include ./../buttons.pug
+include menu/menu-list.pug
+
 mixin header  
-  header.header header
+  header.header 
+    .container 
+      .header-inner 
+        a.logo-link(href="#") 
+          img.logo(src="./../assets/images/logo.png", alt="logo")
+        
+        +button-white('Войти')
+        +menu
