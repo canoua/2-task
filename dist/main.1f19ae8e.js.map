@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["console","log"],"mappings":"AAAA;AACAA,OAAO,CAACC,GAAR,CAAY,QAAZ","file":"main.1f19ae8e.js","sourceRoot":"..\\src\\pages","sourcesContent":["// import './main.scss';\r\nconsole.log('helllo');"]}
