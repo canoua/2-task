@@ -1,3 +1,12 @@
 .header{
   padding: 15px 0;
 }
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-inner  .header__box-left{
+  display: flex;
+  align-items: center;
+}

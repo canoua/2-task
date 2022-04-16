@@ -1,2 +1,54 @@
 mixin footer 
-  footer.footer footer
+  footer.footer
+    .footer__box 
+      .container 
+        .footer-inner
+          .footer__info
+            .footer__logo 
+              a(href="#") 
+                img.logo(src="./../assets/images/logo.png", alt="logo")
+            span.footer__info_block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
+          .footer__box_item 
+            h3.footer__title навигация
+            nav.footer__navigation
+              ul.footer__list 
+                li.footer__list_item
+                  a.footer__list_link(href="#") О нас 
+                li.footer__list_item
+                  a.footer__list_link(href="#") Новости
+                li.footer__list_item
+                  a.footer__list_link(href="#") Служба поддержки
+                li.footer__list_item
+                  a.footer__list_link(href="#") Услуги
+          .footer__box_item 
+            h3.footer__title о нас
+            nav.footer__navigation
+              ul.footer__list 
+                li.footer__list_item
+                  a.footer__list_link(href="#") О сервисе 
+                li.footer__list_item
+                  a.footer__list_link(href="#") Наша команда
+                li.footer__list_item
+                  a.footer__list_link(href="#") Вакансии
+                li.footer__list_item
+                  a.footer__list_link(href="#") Инвесторы
+          .footer__box_item 
+            h3.footer__title Служба поддержки
+            nav.footer__navigation
+              ul.footer__list 
+                li.footer__list_item
+                  a.footer__list_link(href="#") Соглашения
+                li.footer__list_item
+                  a.footer__list_link(href="#") Сообщества
+                li.footer__list_item
+                  a.footer__list_link(href="#") Связь с нами
+          .footer__box_item 
+            h3.footer__title Подписка
+            .footer__box__item-info Получайте специальные предложения и новости сервиса
+            input(type="text")
+
+    .footer__copy
+      .container 
+        .footer__copy_item 
+          span.footer__copy-text Copyright © 2018 Toxin отель. Все права защищены.
+        .footer__copy_item 

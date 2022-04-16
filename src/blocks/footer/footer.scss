@@ -1,0 +1,67 @@
+.footer{
+  border: 1px solid #000;
+}
+.footer__box{
+  border-bottom: 1px solid #e5e5e5;
+  padding: 100px 0;
+}
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info,
+.footer__box_item{
+  max-width: 260px;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__title{
+  margin-bottom: 21px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.footer__list_item{
+  margin-bottom: 20px;
+}
+.footer__list_link{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.footer__info_block {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.footer__box__item-info{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 20px;
+}
+.footer__copy{
+  padding: 23px 0;
+}
+.footer__copy-text{
+  font-family: 'Montserrat'; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
+}

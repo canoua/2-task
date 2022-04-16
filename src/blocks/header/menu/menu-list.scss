@@ -1,0 +1,14 @@
+.menu-list{
+  display: flex;
+}
+.menu-list__item{
+  margin-right: 20px;
+}
+.menu-list__link{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
