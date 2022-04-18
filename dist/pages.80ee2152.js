@@ -194,6 +194,11 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../blocks/header-2/header-2.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../blocks/footer/footer.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
@@ -204,7 +209,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.eot":[["Montserrat-Regular.62173e12.eot","../assets/fonts/Montserrat/Montserrat-Regular.eot"],"../assets/fonts/Montserrat/Montserrat-Regular.eot"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.woff2":[["Montserrat-Regular.5945304a.woff2","../assets/fonts/Montserrat/Montserrat-Regular.woff2"],"../assets/fonts/Montserrat/Montserrat-Regular.woff2"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.woff":[["Montserrat-Regular.b64e5ee2.woff","../assets/fonts/Montserrat/Montserrat-Regular.woff"],"../assets/fonts/Montserrat/Montserrat-Regular.woff"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.ttf":[["Montserrat-Regular.66b90489.ttf","../assets/fonts/Montserrat/Montserrat-Regular.ttf"],"../assets/fonts/Montserrat/Montserrat-Regular.ttf"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.svg":[["Montserrat-Regular.ef7252d7.svg","../assets/fonts/Montserrat/Montserrat-Regular.svg"],"../assets/fonts/Montserrat/Montserrat-Regular.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.eot":[["Montserrat-Regular.62173e12.eot","../assets/fonts/Montserrat/Montserrat-Regular.eot"],"../assets/fonts/Montserrat/Montserrat-Regular.eot"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.woff2":[["Montserrat-Regular.5945304a.woff2","../assets/fonts/Montserrat/Montserrat-Regular.woff2"],"../assets/fonts/Montserrat/Montserrat-Regular.woff2"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.woff":[["Montserrat-Regular.b64e5ee2.woff","../assets/fonts/Montserrat/Montserrat-Regular.woff"],"../assets/fonts/Montserrat/Montserrat-Regular.woff"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.ttf":[["Montserrat-Regular.66b90489.ttf","../assets/fonts/Montserrat/Montserrat-Regular.ttf"],"../assets/fonts/Montserrat/Montserrat-Regular.ttf"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.svg":[["Montserrat-Regular.ef7252d7.svg","../assets/fonts/Montserrat/Montserrat-Regular.svg"],"../assets/fonts/Montserrat/Montserrat-Regular.svg"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.eot":[["Montserrat-Bold.da834653.eot","../assets/fonts/Montserrat/Montserrat-Bold.eot"],"../assets/fonts/Montserrat/Montserrat-Bold.eot"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.woff2":[["Montserrat-Bold.a1024f59.woff2","../assets/fonts/Montserrat/Montserrat-Bold.woff2"],"../assets/fonts/Montserrat/Montserrat-Bold.woff2"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.woff":[["Montserrat-Bold.17a43896.woff","../assets/fonts/Montserrat/Montserrat-Bold.woff"],"../assets/fonts/Montserrat/Montserrat-Bold.woff"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.ttf":[["Montserrat-Bold.abfb62af.ttf","../assets/fonts/Montserrat/Montserrat-Bold.ttf"],"../assets/fonts/Montserrat/Montserrat-Bold.ttf"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.svg":[["Montserrat-Bold.6aaf01e6.svg","../assets/fonts/Montserrat/Montserrat-Bold.svg"],"../assets/fonts/Montserrat/Montserrat-Bold.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -232,7 +237,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52340" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59803" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

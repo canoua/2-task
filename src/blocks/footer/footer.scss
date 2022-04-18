@@ -33,17 +33,38 @@
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
+.footer__list_link:hover{
+  color: rgba(31, 32, 65, 0.75);
+}
 .footer__info_block {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
-.footer__box__item-info{
+.footer__box_item-info{
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 20px;
 }
+.footer__box_item-input{
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 15px;
+  width: 100%;
+}
+.footer__box_item-input::placeholder{
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/*
+  footer__copy
+*/
+
 .footer__copy{
   padding: 23px 0;
 }

@@ -1,7 +1,6 @@
-include ./../buttons.pug
-include menu/menu-list.pug
+include ./../header/menu/menu-list.pug
 
-mixin header  
+mixin header-2  
   header.header 
     .container 
       .header-inner 
@@ -10,6 +9,7 @@ mixin header
             img.logo(src="./../assets/images/logo.png", alt="logo")
         .header__box.header__box-right
           +menu
-          +button-white('Войти')
-          +button-gradient('Зарегистрироваться')
+          a(href="#").user 
+            span.user__name Юлий Цезарь
         
+          

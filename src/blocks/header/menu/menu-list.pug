@@ -1,13 +1,21 @@
-mixin menu 
-  nav.menu__navigation
+mixin menu()
+  nav.menu__navigation&attributes(attributes)
     ul.menu-list 
       li.menu-list__item 
         a.menu-list__link(href="#") О нас
       li.menu-list__item 
-        a.menu-list__link(href="#") Услуги
+        a.menu-list__link.drop-link(href="#") 
+          span.drop-link  Услуги
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="arrow" d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+          </svg>
       li.menu-list__item 
         a.menu-list__link(href="#") Вакансии
       li.menu-list__item 
         a.menu-list__link(href="#") Новости
       li.menu-list__item 
-        a.menu-list__link(href="#") Соглашения
+        a.menu-list__link.drop-link(href="#")
+          span.drop-link Соглашения
+          <svg  width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="arrow" d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+          </svg>

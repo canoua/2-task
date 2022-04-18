@@ -10,6 +10,19 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./../../../assets/fonts/Montserrat/Montserrat-Bold.eot');
+    src: url('./../../../assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../../../assets/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('./../../../assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+        url('./../../../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+        url('./../../../assets/fonts/Montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 .menu-list{
   display: flex;
 }
@@ -25,8 +38,11 @@
   color: rgba(31, 32, 65, 0.5);
 }
 .menu-list__link:hover{
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.75);
+  text-shadow: 0 0 1px #333, 0 0 .65px #333;
+}
+.drop-link{
+  margin-right: 7px;
+}
+.drop-link:hover #arrow{
+  fill-opacity: 0.8;
 }

@@ -74,9 +74,23 @@ body {
   align-items: center;
 }
 
-.header-inner .header__box-left {
+.header-inner .header__box-right {
   display: flex;
   align-items: center;
+}
+
+.class {
+  display: none;
+}
+.user {
+  border-left: 1px solid rgba(31, 32, 65, 0.1);
+  padding-left: 20px;
+}
+
+.user__name {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
 }
 .footer {
   border: 1px solid #000;
@@ -121,19 +135,41 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
+.footer__list_link:hover {
+  color: rgba(31, 32, 65, 0.75);
+}
+
 .footer__info_block {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
 
-.footer__box__item-info {
+.footer__box_item-info {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 20px;
 }
 
+.footer__box_item-input {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 15px;
+  width: 100%;
+}
+
+.footer__box_item-input::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/*
+  footer__copy
+*/
 .footer__copy {
   padding: 23px 0;
 }
@@ -169,6 +205,14 @@ body {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Montserrat-Bold.da834653.eot");
+  src: url("/Montserrat-Bold.da834653.eot?#iefix") format("embedded-opentype"), url("/Montserrat-Bold.a1024f59.woff2") format("woff2"), url("/Montserrat-Bold.17a43896.woff") format("woff"), url("/Montserrat-Bold.abfb62af.ttf") format("truetype"), url("/Montserrat-Bold.6aaf01e6.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 .menu-list {
   display: flex;
 }
@@ -187,10 +231,15 @@ body {
 }
 
 .menu-list__link:hover {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.75);
+  text-shadow: 0 0 1px #333, 0 0 0.65px #333;
+}
+
+.drop-link {
+  margin-right: 7px;
+}
+
+.drop-link:hover #arrow {
+  fill-opacity: 0.8;
 }
 
 /*# sourceMappingURL=/pages.80ee2152.css.map */
