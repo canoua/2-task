@@ -1,30 +1,29 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-body{
-  font-family: 'Montserrat';
+body {
+  font-family: "Montserrat";
   font-weight: normal;
   font-style: normal;
 }
 
-.container{
+.container {
   max-width: 1160px;
   margin: 0 auto;
 }
 
-.btn-white{
-  font-family: 'Montserrat';
+.btn-white {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -37,12 +36,13 @@ body{
   padding: 9px 20px;
   cursor: pointer;
   margin-right: 20px;
-  transition: .07s;
+  transition: 0.07s;
 }
-.btn-gradient{
+
+.btn-gradient {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -52,15 +52,17 @@ body{
   border: none;
   padding: 9px 20px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn-white:hover,
-.btn-gradient:hover{
+.btn-gradient:hover {
   opacity: 0.5;
 }
 
 .btn-white:active,
-.btn-gradient:active{
-  color: rgba(31, 32, 65, 0.5)
+.btn-gradient:active {
+  color: rgba(31, 32, 65, 0.5);
 }
+
+/*# sourceMappingURL=/default.b66b3b95.css.map */

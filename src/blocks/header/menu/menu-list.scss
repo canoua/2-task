@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./../../../assets/fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('./../../../assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./../../../assets/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('./../../../assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+        url('./../../../assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+        url('./../../../assets/fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 .menu-list{
   display: flex;
 }
@@ -7,8 +19,14 @@
 .menu-list__link{
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
+}
+.menu-list__link:hover{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
 }

@@ -12,8 +12,9 @@ a {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
 }
 
 .container {
@@ -35,6 +36,7 @@ body {
   padding: 9px 20px;
   cursor: pointer;
   margin-right: 20px;
+  transition: 0.07s;
 }
 
 .btn-gradient {
@@ -50,6 +52,17 @@ body {
   border: none;
   padding: 9px 20px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-white:hover,
+.btn-gradient:hover {
+  opacity: 0.5;
+}
+
+.btn-white:active,
+.btn-gradient:active {
+  color: rgba(31, 32, 65, 0.5);
 }
 .header {
   padding: 15px 0;
@@ -90,7 +103,6 @@ body {
 
 .footer__title {
   margin-bottom: 21px;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -104,27 +116,18 @@ body {
 }
 
 .footer__list_link {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 
 .footer__info_block {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
 
 .footer__box__item-info {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
@@ -135,13 +138,36 @@ body {
   padding: 23px 0;
 }
 
+.footer__copy-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__copy-text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.social-wrapper {
+  display: flex;
+}
+
+.footer__copy_link-social {
+  display: block;
+  margin-right: 20px;
+}
+
+.footer__copy_link-social:last-child {
+  margin-right: 0;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Montserrat-Regular.62173e12.eot");
+  src: url("/Montserrat-Regular.62173e12.eot?#iefix") format("embedded-opentype"), url("/Montserrat-Regular.5945304a.woff2") format("woff2"), url("/Montserrat-Regular.b64e5ee2.woff") format("woff"), url("/Montserrat-Regular.66b90489.ttf") format("truetype"), url("/Montserrat-Regular.ef7252d7.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 .menu-list {
   display: flex;
@@ -154,10 +180,17 @@ body {
 .menu-list__link {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
+}
+
+.menu-list__link:hover {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 /*# sourceMappingURL=/pages.80ee2152.css.map */

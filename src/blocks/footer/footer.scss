@@ -18,7 +18,6 @@
 }
 .footer__title{
   margin-bottom: 21px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -30,25 +29,16 @@
   margin-bottom: 20px;
 }
 .footer__list_link{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 .footer__info_block {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
 .footer__box__item-info{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
@@ -57,11 +47,22 @@
 .footer__copy{
   padding: 23px 0;
 }
+.footer__copy-inner{
+  display: flex;
+  justify-content: space-between;
+}
 .footer__copy-text{
-  font-family: 'Montserrat'; 
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.75);
+}
+.social-wrapper{
+  display: flex;
+}
+.footer__copy_link-social{
+  display: block;
+  margin-right: 20px;
+}
+.footer__copy_link-social:last-child{
+  margin-right: 0;
 }
