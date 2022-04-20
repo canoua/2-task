@@ -45,7 +45,11 @@ mixin footer
           .footer__box_item 
             h3.footer__title Подписка
             .footer__box_item-info Получайте специальные предложения и новости сервиса
-            input.footer__box_item-input(type="text" placeholder="Email")
+            .footer__input-wrapper 
+              input.footer__box_item-input(type="text" placeholder="Email")
+               
+              button.footer__button-input 
+                img(src="./../assets/images/arrow_forward.svg", alt="arrow")
 
     .footer__copy
       .container

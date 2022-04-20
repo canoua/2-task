@@ -17,6 +17,10 @@ body{
   font-weight: normal;
   font-style: normal;
 }
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 
 .container{
   max-width: 1160px;
