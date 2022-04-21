@@ -11,4 +11,21 @@ mixin card-sign-in
         .card__note 
           span.card__note_info Нет аккаунта на Toxin?
           +button-white('card-btn-white', 'Создать')
+
+mixin card-sign-up 
+  .container 
+    .card
+      .card-inner 
+        h1.card__title Регистрация аккаунта
+        input.card__input(type="text" placeholder="Имя")
+        input.card__input(type="text" placeholder="Фамилия")
+        h3.card__title-2 дата рождения
+        input.card__input(type="text" placeholder="ДД.ММ.ГГГГ")
+        h3.card__title-2 данные для входа в сервис
+        input.card__input(type="text" placeholder="Email")
+        input.card__input(type="text" placeholder="Пароль")
+        +btn-gradient-arrow('btn-gradient-arrow', 'Перейти к оплате')
+        .card__note 
+          span.card__note_info Уже есть аккаунт на Toxin?
+          +button-white('card-btn-white', 'войти')
           
