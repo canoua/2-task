@@ -59,6 +59,26 @@ body {
   padding: 9px 20px;
   cursor: pointer;
   transition: 0.3s;
+  height: 44px;
+}
+
+.btn-gradient-arrow {
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.btn-gradient-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translate(0, -50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("/arrow_forward-white.48a449a4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .btn-white:hover,

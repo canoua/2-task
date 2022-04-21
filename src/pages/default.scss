@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -58,12 +57,26 @@ body{
   padding: 9px 20px;
   cursor: pointer;
   transition: .3s;
+  height: 44px;
 }
 
-// .btn-gradient-arrow{
-// background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-// border-radius: 22px;
-// }
+.btn-gradient-arrow{
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.btn-gradient-arrow::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translate(0, -50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('./../assets/images/arrow_forward-white.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .btn-white:hover,
 .btn-gradient:hover,

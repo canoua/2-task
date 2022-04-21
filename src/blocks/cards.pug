@@ -5,10 +5,10 @@ mixin card-sign-in
     .card
       .card-inner
         h1.card__title Войти
-        input.card__input(type="text")
-        input.card__input(type="text")
-        +button-gradient-arrow('Войти')
+        input.card__input(type="text" placeholder="Email")
+        input.card__input(type="text" placeholder="Пароль")
+        +btn-gradient-arrow('btn-gradient-arrow', 'Войти')
         .card__note 
           span.card__note_info Нет аккаунта на Toxin?
-          +button-white('Создать')
+          +button-white('card-btn-white', 'Создать')
           
