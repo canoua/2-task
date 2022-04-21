@@ -44,7 +44,8 @@ body {
   transition: 0.07s;
 }
 
-.btn-gradient {
+.btn-gradient,
+.btn-gradient-arrow {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
   font-family: "Montserrat";
@@ -61,12 +62,14 @@ body {
 }
 
 .btn-white:hover,
-.btn-gradient:hover {
+.btn-gradient:hover,
+.btn-gradient-arrow:hover {
   opacity: 0.5;
 }
 
 .btn-white:active,
-.btn-gradient:active {
+.btn-gradient:active,
+.btn-gradient-arrow:active {
   color: rgba(31, 32, 65, 0.5);
 }
 
