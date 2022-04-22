@@ -2,30 +2,46 @@ include buttons.pug
 
 mixin card-sign-in
   .container 
-    .card
-      .card-inner
-        h1.card__title Войти
-        input.card__input(type="text" placeholder="Email")
-        input.card__input(type="text" placeholder="Пароль")
-        +btn-gradient-arrow('btn-gradient-arrow', 'Войти')
-        .card__note 
-          span.card__note_info Нет аккаунта на Toxin?
-          +button-white('card-btn-white', 'Создать')
+    form(action="") 
+      .card
+        .card-inner
+          h1.card__title Войти
+          input.card__input(type="text" placeholder="Email")
+          input.card__input(type="text" placeholder="Пароль")
+          +btn-gradient-arrow('btn-gradient-arrow', 'Войти')
+          .card__note 
+            span.card__note_info Нет аккаунта на Toxin?
+            +button-white('card-btn-white', 'Создать')
 
 mixin card-sign-up 
   .container 
-    .card
-      .card-inner 
-        h1.card__title Регистрация аккаунта
-        input.card__input(type="text" placeholder="Имя")
-        input.card__input(type="text" placeholder="Фамилия")
-        h3.card__title-2 дата рождения
-        input.card__input(type="text" placeholder="ДД.ММ.ГГГГ")
-        h3.card__title-2 данные для входа в сервис
-        input.card__input(type="text" placeholder="Email")
-        input.card__input(type="text" placeholder="Пароль")
-        +btn-gradient-arrow('btn-gradient-arrow', 'Перейти к оплате')
-        .card__note 
-          span.card__note_info Уже есть аккаунт на Toxin?
-          +button-white('card-btn-white', 'войти')
+    form(action="") 
+      .card
+        .card-inner 
+          h1.card__title Регистрация аккаунта
+          input.card__input(type="text" placeholder="Имя")
+          input.card__input(type="text" placeholder="Фамилия")
+          .radiobutton-wrapper 
+            .radiobutton__item 
+              input.radiobutton__item_input.custom-radio(type="radio" id="man" name = "pol" checked)
+              label.radiobutton__item_label(for="man") Мужчина
+            .radiobutton__item  
+              input.radiobutton__item_input.custom-radio(type="radio" id="woman" name = "pol")
+              label.radiobutton__item_label(for="woman") Женщина
+          .date-of-birth
+            h3.card__title-2 дата рождения
+            input.card__input(type="text" placeholder="ДД.ММ.ГГГГ")
+          .login-details
+            h3.card__title-2 данные для входа в сервис
+            input.card__input(type="text" placeholder="Email")
+            input.card__input.card__input-last(type="text" placeholder="Пароль")
+          .toggle-wrapper 
+            label.switch
+              input(type="checkbox")
+              span.slider.round  
+            span.toggle__info Получать спецпредложения
+          +btn-gradient-arrow('btn-gradient-arrow', 'Перейти к оплате')
+          .card__note 
+            span.card__note_info Уже есть аккаунт на Toxin?
+            +button-white('card-btn-white', 'войти')
           
