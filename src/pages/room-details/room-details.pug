@@ -1,0 +1,43 @@
+include ./../../blocks/header/header.pug
+include ./../../blocks/footer/footer.pug
+include ./../../blocks/cards.pug
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Room-details
+    link(rel="stylesheet", href="./../default.scss")
+    link(rel="stylesheet", href="room-details.scss")
+  body 
+
+    +header 
+
+    main.main.main-room-details 
+      .content 
+        .content__box.content__box-1 
+          img.img-1(src="img/bg-1.jpg", alt="photo")
+        .content__box.content__box-2 
+          img.img-2(src="img/bg-3.png", alt="photo")
+          img.img-3(src="img/bg-3.png", alt="photo")
+      
+      .info 
+        .container 
+          article 
+            h2.title Сведения о номере
+          article 
+            h2.title Впечатления от номера
+          article 
+            h2.title Отзывы посетителей номера
+          article 
+            h2.title Правила
+          article 
+            h2.title Отмена
+      
+      //- +card-sign-in
+
+    +footer    
+
+  script(src='room-details.js')

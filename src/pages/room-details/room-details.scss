@@ -1,0 +1,33 @@
+@import url('./../default.scss');
+@import url('./../../blocks/header/header.scss');
+@import url('./../../blocks/footer/footer.scss');
+@import url('./../../blocks/header/menu/menu-list.scss');
+@import url('./../../blocks/cards.scss');
+
+.content{
+  display: flex;
+  height: 485px;
+  width: 100%;
+}
+.content__box{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content__box-1{
+  width: 65%;
+}
+.content__box-2{
+  width: 35%;
+}
+.img-1{
+  height: 100%;
+}
+.img-2,
+.img-3{
+  height: 50%;
+}
+.info{
+  padding: 70px 0;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25);;
+}

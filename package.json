@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/pages/sign-up/sign-up.pug --open",
     "signin": "parcel src/pages/sign-in/sign-in.pug --open",
+    "room-details": "parcel src/pages/room-details/room-details.pug --open",
     "build": "parcel build src/pages/sign-in/sign-in.pug src/pages/sign-up/sign-up.pug src/pages/sign-in/sign-in.scss src/pages/sign-up/sign-up.scss -d docs --public-url ./"
   },
   "author": "Andrew Karyaka",
