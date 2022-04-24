@@ -556,5 +556,13 @@ input:checked + .slider:before {
   color: #1F2041;
   margin-bottom: 5px;
 }
+.main {
+  padding: 19px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url("/registration-bg.ebb69883.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 /*# sourceMappingURL=/pages.80ee2152.css.map */

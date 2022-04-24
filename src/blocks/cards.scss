@@ -54,20 +54,18 @@
   cursor: pointer;
 }
 
-/* для элемента input c type="radio" */
+/*custom radio*/
 .custom-radio {
   position: absolute;
   z-index: -1;
   opacity: 0;
   transition: .3s;
 }
-/* для элемента label связанного с .custom-radio */
 .custom-radio+label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
-/* создание в label псевдоэлемента  before со следующими стилями */
 .custom-radio+label::before {
   content: '';
   display: inline-block;
@@ -83,24 +81,20 @@
   background-size: 70% 70%;
   transition: .3s;
 }
-/* стили при наведении курсора на радио */
 .custom-radio:not(:disabled):not(:checked)+label:hover::before {
   border-color: #BC9CFF;
 }
-/* стили для активной радиокнопки (при нажатии на неё) */
 .custom-radio:not(:disabled):active+label::before {
   background-color: #BC9CFF;
   border-color: #b3d7ff;
 }
-/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
 .custom-radio:focus:not(:checked)+label::before {
   border-color: #80bdff;
 }
-/* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio:checked+label::before {
   border-color: #BC9CFF;
   background-color: #fff;
-  background-image: url('./../assets/images/radio-rectangle.png');
+  background-image: url('img/radio-rectangle.png');
   background-repeat: no-repeat;
 }
   
@@ -123,6 +117,8 @@
   width: 100%;
 }
 
+
+/*toggle*/
 .toggle-wrapper{
   display: flex;
   align-items: center;
@@ -133,12 +129,9 @@
   width: 60px;
   height: 34px;
 }
-
-/* Hide default HTML checkbox */
 .switch input {
   display:none;
 }
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -155,7 +148,6 @@
   border-radius: 10px;
   width: 40px;
   height: 20px;
-  // transition: all ease .3s;
 }
 .slider:before {
   position: absolute;
@@ -178,12 +170,9 @@ input:checked + .slider:before {
   transform: translateX(18px);
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
-
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
-
 .slider.round:before {
   border-radius: 50%;
 }

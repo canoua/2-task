@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/pages/index.pug --open",
+    "start": "parcel src/pages/index/index.pug --open",
+    "signin": "parcel src/pages/sign-in/sign-in.pug --open",
     "build": "parcel build src/pages/index.pug src/pages/index.scss -d docs --public-url ./"
   },
   "author": "Andrew Karyaka",
