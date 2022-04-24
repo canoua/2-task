@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./sign-in\\img\\arrow_forward-white.svg":[["arrow_forward-white.dc8ad042.svg","img/arrow_forward-white.svg"],"img/arrow_forward-white.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../blocks/header/header.scss":[function(require,module,exports) {
+},{"./images\\arrow_forward-white.svg":[["arrow_forward-white.1e30dbbf.svg","../images/arrow_forward-white.svg"],"../images/arrow_forward-white.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../blocks/header/header.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -242,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51150" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60961" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
