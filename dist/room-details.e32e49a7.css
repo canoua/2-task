@@ -528,17 +528,14 @@ input:checked + .slider:before {
   height: 485px;
   width: 100%;
 }
-
 .content__box {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .content__box-1 {
   width: 65%;
 }
-
 .content__box-2 {
   width: 35%;
 }
@@ -555,6 +552,77 @@ input:checked + .slider:before {
 .info {
   padding: 70px 0;
   border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.information {
+  width: 291px;
+}
+.information__icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+.information__item {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+.information__item:last-child {
+  border: none;
+}
+.information__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.information__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.regulations__title {
+  margin-bottom: 20px;
+}
+.regulations__list_item {
+  position: relative;
+  margin-bottom: 10px;
+}
+.regulations__list_item:last-child {
+  margin-bottom: 0;
+}
+.regulations__list_item::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: rgba(31, 32, 65, 0.25);
+}
+
+.cancellation {
+  width: 341px;
+}
+.cancellation__title {
+  margin-bottom: 20px;
+}
+.cancellation__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 /*# sourceMappingURL=/room-details.e32e49a7.css.map */

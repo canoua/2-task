@@ -24,17 +24,44 @@ html(lang="en")
           img.img-3(src="img/bg-3.png", alt="photo")
       
       .info 
-        .container 
-          article 
-            h2.title Сведения о номере
-          article 
-            h2.title Впечатления от номера
-          article 
-            h2.title Отзывы посетителей номера
-          article 
-            h2.title Правила
-          article 
-            h2.title Отмена
+        .container
+          .info-inner 
+            .info__box 
+              article.information
+                h2.title.info-title Сведения о номере
+                .information__item 
+                  img.information__icon(src="img/icons/insert_emoticon.png", alt="icon")
+                  .information__item-inner 
+                    .information__title Комфорт
+                    .information__text Шумопоглощающие стены
+                .information__item 
+                  img.information__icon(src="img/icons/location_city.png", alt="icon")
+                  .information__item-inner
+                    .information__title Удобство
+                    .information__text Окно в каждой из спален
+                .information__item 
+                  img.information__icon(src="img/icons/whatshot.png", alt="icon")
+                  .information__item-inner
+                    .information__title Уют
+                    .information__text Номер оснащён камином
+              article.impression
+                h2.title.info-title Впечатления от номера
+              article.reviews
+                h2.title.info-title Отзывы посетителей номера
+              
+              article.regulations
+                h2.title.info-title.regulations__title Правила
+                ul.regulations__list 
+                  li.regulations__list_item Нельзя с питомцами
+                  li.regulations__list_item Без вечеринок и мероприятий
+                  li.regulations__list_item Время прибытия — после 13:00, а выезд до 12:00
+
+              article.cancellation 
+                h2.title.info-title.cancellation__title Отмена
+                .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+            
+            .info__box  
+            
       
       //- +card-sign-in
 
