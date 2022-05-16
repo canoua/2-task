@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ui-kit": "parcel src/pages/ui-kit/ui-kit.pug --open",
+    "ui-headers-footers": "parcel src/pages/ui-kit/headers-and-footers/headers-footers.pug --open",
     "start": "parcel src/pages/sign-up/sign-up.pug --open",
     "signin": "parcel src/pages/sign-in/sign-in.pug --open",
     "room-details": "parcel src/pages/room-details/room-details.pug --open",

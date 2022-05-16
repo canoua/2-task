@@ -1,0 +1,31 @@
+@import url('./../../default.scss');
+@import url('./../../../blocks/header/header.scss');
+@import url('./../../../blocks/header-2/header-2.scss');
+@import url('./../../../blocks/footer/footer.scss');
+@import url('./../../../blocks/footer-mobile/footer-mobile.scss');
+@import url('./../../../blocks/header/menu/menu-list.scss');
+@import url('./../../../blocks/cards.scss');
+@import url('./../../../blocks/likes/likes.scss');
+
+.headers{
+
+  &-footers{
+    background: #F4F4F6;
+    padding: 140px 0;
+
+    &__logo{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    &__box{
+      margin-bottom: 40px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+}

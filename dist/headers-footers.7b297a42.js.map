@@ -1,0 +1,1 @@
+{"version":3,"sources":["headers-footers.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,QAAZ","file":"headers-footers.7b297a42.js","sourceRoot":"..\\src\\pages\\ui-kit\\headers-and-footers","sourcesContent":["console.log('ui-kit');"]}
