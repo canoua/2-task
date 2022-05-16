@@ -1,3 +1,6 @@
+@import url('./custom-radio.scss');
+@import url('./toggle.scss');
+
 .card{
   width: 380px;
   background: #FFFFFF;
@@ -7,39 +10,45 @@
   border-radius: 4px;
   padding: 40px 30px;
   margin-bottom: 40px;
+
+  &-inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1F2041;
+    margin-bottom: 20px;
+  }
+
+  &__input{
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+
+    &::placeholder{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.25);
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 }
-.card-inner{
-  display: flex;
-  flex-direction: column;
-}
-.card__title{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-  margin-bottom: 20px;
-}
-.card__input{
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 12px 15px;
-  margin-bottom: 10px;
-}
-.card__input::placeholder{
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25);
-}
-.card__input:last-child{
-  margin-bottom: 0;
-}
+
 .radiobutton-wrapper{
   display: flex;
   align-items: center;
@@ -54,50 +63,6 @@
   cursor: pointer;
 }
 
-/*custom radio*/
-.custom-radio {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  transition: .3s;
-}
-.custom-radio+label {
-  display: inline-flex;
-  align-items: center;
-  user-select: none;
-}
-.custom-radio+label::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 1px solid #adb5bd;
-  border-radius: 50%;
-  margin-right: 4px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 70% 70%;
-  transition: .3s;
-}
-.custom-radio:not(:disabled):not(:checked)+label:hover::before {
-  border-color: #BC9CFF;
-}
-.custom-radio:not(:disabled):active+label::before {
-  background-color: #BC9CFF;
-  border-color: #b3d7ff;
-}
-.custom-radio:focus:not(:checked)+label::before {
-  border-color: #80bdff;
-}
-.custom-radio:checked+label::before {
-  border-color: #BC9CFF;
-  background-color: #fff;
-  background-image: url('img/radio-rectangle.png');
-  background-repeat: no-repeat;
-}
-  
 
 .radiobutton__item_label{
   font-family: 'Montserrat';
@@ -115,66 +80,6 @@
 }
 .card__input{
   width: 100%;
-}
-
-
-/*toggle*/
-.toggle-wrapper{
-  display: flex;
-  align-items: center;
-}
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-.switch input {
-  display:none;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 50%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform: translate(0, -50%);
-  -webkit-transition: .4s;
-  transition: .4s;
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 10px;
-  width: 40px;
-  height: 20px;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 4px;
-  bottom: 3px;
-  background: rgba(31, 32, 65, 0.25);
-  border-radius: 10px;
-  -webkit-transition: .4s;
-  transition: .3s;
-}
-input:checked + .slider {
-  border: 1px solid  #BC9CFF;
-}
-input:checked + .slider:before {
-  -webkit-transform: translateX(18px);
-  -ms-transform: translateX(18px);
-  transform: translateX(18px);
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-}
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
 }
 
 .toggle__info{
