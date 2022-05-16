@@ -1,0 +1,1 @@
+{"version":3,"sources":["ui-kit.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,QAAZ","file":"ui-kit.e3d4abc0.js","sourceRoot":"..\\src\\pages\\ui-kit","sourcesContent":["console.log('ui-kit');"]}

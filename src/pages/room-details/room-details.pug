@@ -12,6 +12,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Room-details
     link(rel="stylesheet", href="./../default.scss")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(rel="stylesheet", href="room-details.scss")
   body 
 
@@ -60,8 +61,6 @@ html(lang="en")
                       li.impression__list_item.impression__list_item-3 Удовлетворительно
                       li.impression__list_item.impression__list_item-4 Разочарован
 
-
-              
               article.reviews
                 h2.title.info-title.reviews__title 
                   span Отзывы посетителей номера
@@ -72,7 +71,6 @@ html(lang="en")
                   .review__avatar 
                     img.review__avatar_image(src="img/avatar-1.png", alt="avatar")
                   .review__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шум
-
               
               article.regulations
                 h2.title.info-title.regulations__title Правила
@@ -88,6 +86,8 @@ html(lang="en")
             .info__box.info__box-2  
               +card-sign-in
             
+            //- span.material-icons expand_more
+            //- <span class="material-icons-outlined">expand_more</span>
             //- +like-active 
       
     +footer    

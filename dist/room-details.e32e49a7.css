@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://example.com/MaterialIcons-Regular.eot");
+  /* For IE6-8 */
+  src: url("https://example.com/MaterialIcons-Regular.woff2") format("woff2"), url("https://example.com/MaterialIcons-Regular.woff") format("woff"), url("https://example.com/MaterialIcons-Regular.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -679,7 +687,7 @@ input:checked + .slider:before {
 .semicircle {
   width: 59px;
   height: 120px;
-  border: 4px solid linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+  border: 4px solid #000;
   border-radius: 100% 0 0 100%/50% 0 0 50%;
 }
 
