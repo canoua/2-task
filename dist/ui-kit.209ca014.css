@@ -292,66 +292,6 @@ body {
 .drop-link:hover #arrow {
   fill-opacity: 0.8;
 }
-.card {
-  width: 380px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 40px 30px;
-  margin-bottom: 40px;
-}
-.card-inner {
-  display: flex;
-  flex-direction: column;
-}
-.card__title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #1F2041;
-  margin-bottom: 20px;
-}
-.card__input {
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 12px 15px;
-  margin-bottom: 10px;
-}
-.card__input::placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25);
-}
-.card__input:last-child {
-  margin-bottom: 0;
-}
-
-.radiobutton-wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.radiobutton__item {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.radiobutton__item_input {
-  cursor: pointer;
-}
-
-/*custom radio*/
 .custom-radio {
   position: absolute;
   z-index: -1;
@@ -400,26 +340,6 @@ body {
   background-image: url("/radio-rectangle.a2bcae1a.png");
   background-repeat: no-repeat;
 }
-
-.radiobutton__item_label {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.5);
-  cursor: pointer;
-}
-
-.date-of-birth {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.card__input {
-  width: 100%;
-}
-
 /*toggle*/
 .toggle-wrapper {
   display: flex;
@@ -485,6 +405,83 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+.card {
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px;
+  margin-bottom: 40px;
+}
+.card-inner {
+  display: flex;
+  flex-direction: column;
+}
+.card__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+  margin-bottom: 20px;
+}
+.card__input {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+}
+.card__input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.card__input:last-child {
+  margin-bottom: 0;
+}
+
+.radiobutton-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.radiobutton__item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.radiobutton__item_input {
+  cursor: pointer;
+}
+
+.radiobutton__item_label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.date-of-birth {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card__input {
+  width: 100%;
 }
 
 .toggle__info {
@@ -578,6 +575,11 @@ input:checked + .slider:before {
 .ui-kit {
   background: #F4F4F6;
   padding: 140px 0;
+}
+.ui-kit__logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 .ui-kit__box {
   margin-bottom: 40px;
