@@ -189,57 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images\\arrow_forward-white.svg":[["arrow_forward-white.de3f991e.svg","../../images/arrow_forward-white.svg"],"../../images/arrow_forward-white.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/header/header.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/header-2/header-2.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/footer/footer.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/footer-mobile/footer-mobile.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/header/menu/menu-list.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.eot":[["Montserrat-Regular.9d907c20.eot","../../../assets/fonts/Montserrat/Montserrat-Regular.eot"],"../../../assets/fonts/Montserrat/Montserrat-Regular.eot"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.woff2":[["Montserrat-Regular.ebe5e4e8.woff2","../../../assets/fonts/Montserrat/Montserrat-Regular.woff2"],"../../../assets/fonts/Montserrat/Montserrat-Regular.woff2"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.woff":[["Montserrat-Regular.5c89aa5a.woff","../../../assets/fonts/Montserrat/Montserrat-Regular.woff"],"../../../assets/fonts/Montserrat/Montserrat-Regular.woff"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.ttf":[["Montserrat-Regular.0a4ca25e.ttf","../../../assets/fonts/Montserrat/Montserrat-Regular.ttf"],"../../../assets/fonts/Montserrat/Montserrat-Regular.ttf"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Regular.svg":[["Montserrat-Regular.017c691e.svg","../../../assets/fonts/Montserrat/Montserrat-Regular.svg"],"../../../assets/fonts/Montserrat/Montserrat-Regular.svg"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.eot":[["Montserrat-Bold.1f1857b7.eot","../../../assets/fonts/Montserrat/Montserrat-Bold.eot"],"../../../assets/fonts/Montserrat/Montserrat-Bold.eot"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.woff2":[["Montserrat-Bold.57b4e5b0.woff2","../../../assets/fonts/Montserrat/Montserrat-Bold.woff2"],"../../../assets/fonts/Montserrat/Montserrat-Bold.woff2"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.woff":[["Montserrat-Bold.ee55cb1e.woff","../../../assets/fonts/Montserrat/Montserrat-Bold.woff"],"../../../assets/fonts/Montserrat/Montserrat-Bold.woff"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.ttf":[["Montserrat-Bold.8af4b350.ttf","../../../assets/fonts/Montserrat/Montserrat-Bold.ttf"],"../../../assets/fonts/Montserrat/Montserrat-Bold.ttf"],"./..\\..\\..\\assets\\fonts\\Montserrat\\Montserrat-Bold.svg":[["Montserrat-Bold.89688af6.svg","../../../assets/fonts/Montserrat/Montserrat-Bold.svg"],"../../../assets/fonts/Montserrat/Montserrat-Bold.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/custom-radio.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./img\\radio-rectangle.png":[["radio-rectangle.1d2d0d3c.png","../../../blocks/img/radio-rectangle.png"],"../../../blocks/img/radio-rectangle.png"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/toggle.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/cards.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./custom-radio.scss":"../../../blocks/custom-radio.scss","./toggle.scss":"../../../blocks/toggle.scss","_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../blocks/likes/likes.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"headers-footers.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../../default.scss":"../../default.scss","./../../../blocks/header/header.scss":"../../../blocks/header/header.scss","./../../../blocks/header-2/header-2.scss":"../../../blocks/header-2/header-2.scss","./../../../blocks/footer/footer.scss":"../../../blocks/footer/footer.scss","./../../../blocks/footer-mobile/footer-mobile.scss":"../../../blocks/footer-mobile/footer-mobile.scss","./../../../blocks/header/menu/menu-list.scss":"../../../blocks/header/menu/menu-list.scss","./../../../blocks/cards.scss":"../../../blocks/cards.scss","./../../../blocks/likes/likes.scss":"../../../blocks/likes/likes.scss","_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./images\\arrow_forward-white.svg":[["arrow_forward-white.de3f991e.svg","../../images/arrow_forward-white.svg"],"../../images/arrow_forward-white.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -267,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51027" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56915" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -444,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/headers-footers.d48d4ea7.js.map
+//# sourceMappingURL=/default.499eca97.js.map
