@@ -270,11 +270,9 @@ body {
 .menu-list {
   display: flex;
 }
-
 .menu-list__item {
   margin-right: 20px;
 }
-
 .menu-list__link {
   font-family: "Montserrat";
   font-style: normal;
@@ -283,7 +281,6 @@ body {
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
-
 .menu-list__link:hover {
   text-shadow: 0 0 1px #333, 0 0 0.65px #333;
 }
