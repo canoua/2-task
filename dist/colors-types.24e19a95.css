@@ -85,6 +85,7 @@
 
 .title-styles {
   display: flex;
+  margin-bottom: 51px;
 }
 .title-number {
   font-family: "Montserrat";
@@ -95,6 +96,23 @@
   text-align: right;
   color: rgba(31, 32, 65, 0.25);
   margin-right: 30px;
+  width: 37px;
+}
+.title-number-2 {
+  font-size: 19px;
+  line-height: 23px;
+}
+.title-number-3 {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.title-number-4 {
+  font-size: 14px;
+  line-height: 24px;
+}
+.title-number-text {
+  width: calc(100% - 37px);
 }
 
 /*# sourceMappingURL=/colors-types.24e19a95.css.map */

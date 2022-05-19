@@ -131,6 +131,7 @@ $green:#6FCF97;
 
   &-styles{
     display: flex;
+    margin-bottom: 51px;
   }
 
   &-number{
@@ -142,6 +143,28 @@ $green:#6FCF97;
     text-align: right;
     color: $darkshade25;
     margin-right: 30px;
+    width: 37px;
+    // display: inline-block;
+  
+    &-2{
+      font-size: 19px;
+      line-height: 23px;
+    }
+
+    &-3{
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+    }
+
+    &-4{
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &-text{
+      width: calc(100% - 37px);    
+    }
   }
 }
   
