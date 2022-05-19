@@ -1,0 +1,1 @@
+{"version":3,"sources":["colors-types.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,cAAZ","file":"colors-types.583100e1.js","sourceRoot":"..\\src\\pages\\ui-kit\\colors-types","sourcesContent":["console.log('colors-types');"]}

@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Montserrat-Regular.9d907c20.eot");
+  src: url("/Montserrat-Regular.9d907c20.eot?#iefix") format("embedded-opentype"), url("/Montserrat-Regular.ebe5e4e8.woff2") format("woff2"), url("/Montserrat-Regular.5c89aa5a.woff") format("woff"), url("/Montserrat-Regular.0a4ca25e.ttf") format("truetype"), url("/Montserrat-Regular.017c691e.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Montserrat-Bold.1f1857b7.eot");
+  src: url("/Montserrat-Bold.1f1857b7.eot?#iefix") format("embedded-opentype"), url("/Montserrat-Bold.57b4e5b0.woff2") format("woff2"), url("/Montserrat-Bold.ee55cb1e.woff") format("woff"), url("/Montserrat-Bold.8af4b350.ttf") format("truetype"), url("/Montserrat-Bold.89688af6.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.ui-color-types {
+  padding: 145px 0;
+  position: relative;
+}
+.ui-color-types__logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.ui-color-types-inner {
+  max-width: 1132px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.ui-color-types__box-1 {
+  width: 281px;
+}
+.ui-color-types__box-2 {
+  width: 436px;
+}
+
+.color-type {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.color-type:last-child {
+  margin-bottom: 0;
+}
+.color-type__square {
+  width: 70px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+.color-type__square-1 {
+  background-color: #1F2041;
+}
+.color-type__square-2 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+.color-type__square-3 {
+  background-color: rgba(31, 32, 65, 0.5);
+}
+.color-type__square-4 {
+  background-color: rgba(31, 32, 65, 0.25);
+}
+.color-type__square-5 {
+  background-color: rgba(31, 32, 65, 0.05);
+}
+.color-type__square-6 {
+  background-color: #BC9CFF;
+}
+.color-type__square-7 {
+  background-color: #6FCF97;
+}
+.color-type__text_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #1F2041;
+}
+
+.title-styles {
+  display: flex;
+}
+.title-number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+  margin-right: 30px;
+}
+
+/*# sourceMappingURL=/colors-types.24e19a95.css.map */
