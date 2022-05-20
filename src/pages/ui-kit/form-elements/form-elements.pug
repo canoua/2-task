@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title form-elements
+    link(rel="stylesheet", href="./../../default.scss")
+    link(rel="stylesheet", href="form-elements.scss")
+  body 
+    
+    .form-elements 
+      img.form-elements__logo(src="images/ui-logo.svg", alt="ui-kit-logo")
+      .container.form-elements-inner
+        .column 
+          .form-elements__item 
+            .form-elements__item_header
+              h3.h3 Text Field
+              span.form-elements__item_state Default
+            input.card__input(type="text" placeholder="Email")
+          .form-elements__item 
+            .form-elements__item_header
+              h3.h3 Text Field
+              span.form-elements__item_state Hover / Focus
+            input.card__input.card__input-hover(type="text" placeholder="This is pretty awesome")  
+          .form-elements__item 
+            .form-elements__item_header
+              h3.h3 subscription text field
+              //- span.form-elements__item_state Hover / Focus
+            .footer__input-wrapper 
+              input.footer__box_item-input(type="text" placeholder="Email")
+              button.footer__button-input 
+                img(src="img/arrow_forward.svg", alt="arrow")
+          .form-elements__item
+            .information__item 
+              img.information__icon(src="img/icons/insert_emoticon.png", alt="icon")
+              .information__item-inner 
+                .information__title Комфорт
+                .information__text Шумопоглощающие стены
+            .information__item 
+              img.information__icon(src="img/icons/location_city.png", alt="icon")
+              .information__item-inner
+                .information__title Удобство
+                .information__text Окно в каждой из спален
+          
+        .column 1
+        .column 1
+
+    script(src='form-elements.js')
