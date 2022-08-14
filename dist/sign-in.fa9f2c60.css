@@ -30,6 +30,34 @@ body {
   outline-offset: 0;
 }
 
+.h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+.h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+.h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -266,7 +294,6 @@ body {
 .drop-link:hover #arrow {
   fill-opacity: 0.8;
 }
-/*custom radio*/
 .custom-radio {
   position: absolute;
   z-index: -1;
@@ -517,6 +544,7 @@ input:checked + .slider:before {
   background-image: url("/registration-bg.de9f1b2d.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=/sign-in.fa9f2c60.css.map */

@@ -112,7 +112,7 @@ body {
   transform: translate(0, -50%);
   width: 16px;
   height: 16px;
-  background-image: url("/d62dd63aafdfab4aa6f78f73de3f991e.svg");
+  background-image: url("/arrow_forward-white.1e30dbbf.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -339,7 +339,7 @@ body {
 .custom-radio:checked + label::before {
   border-color: #BC9CFF;
   background-color: #fff;
-  background-image: url("/9190860b53d7cae8404a964a1d2d0d3c.png");
+  background-image: url("/radio-rectangle.a2bcae1a.png");
   background-repeat: no-repeat;
 }
 /*toggle*/
