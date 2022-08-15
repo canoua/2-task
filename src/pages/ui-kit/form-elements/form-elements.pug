@@ -14,46 +14,46 @@ html(lang="en")
       img.elements__logo(src="images/ui-logo.svg", alt="ui-kit-logo")
       .container.elements-inner-1
         .column 
-          .elements__item 
+          .text-field-default.elements__item 
             .elements__item_header
               h3.h3 Text Field
               span.elements__item_state Default
             input.card__input(type="text" placeholder="Email")
-          .elements__item 
+          .text-field-hover.elements__item 
             .elements__item_header
               h3.h3 Text Field
               span.elements__item_state Hover / Focus
             input.card__input.card__input-hover(type="text" placeholder="This is pretty awesome")
-          .elements__item 
+          .dropdown.elements__item 
             .elements__item_header
               h3.h3 Dropdown
             .card__input-wrapper 
               .card__input-dropdown.card__input-dropdown-pre-default Сколько гостей 
               span.material-icons.material-icons-expand expand_more
-          .elements__item 
+          .masked-text-field.elements__item 
             .elements__item_header
               h3.h3 masked text field
             input.card__input.card__input-masked(type="text" placeholder="ДД.ММ.ГГГГ")
           .date-dropdown-wrapper 
-            .elements__item.elements__item-box
+            .date-dropwown.elements__item.elements__item-box
               .elements__item_header
                 h3.h3 date Dropdown
               .card__input-wrapper
                 .card__input-date-dropdown ДД.ММ.ГГГГ
                 span.material-icons.material-icons-expand expand_more
-            .elements__item.form-elements__item-box 
+            .date-dropdown.elements__item.elements__item-box 
               .elements__item_header
                 h3.h3 date Dropdown
               .card__input-wrapper
                 .card__input-date-dropdown 19.08.2019
                 span.material-icons.material-icons-expand expand_more
-          .elements__item 
+          .filter-date-dropdown.elements__item 
             .elements__item_header
               h3.h3 filter date dropdown
             .card__input-wrapper
-              input.card__input-dropdown.card__input-filter-date(type="text" placeholder="19 авг - 23 авг")
+              .card__input-dropdown.card__input-filter-date 19 авг - 23 авг
               span.material-icons.material-icons-expand expand_more
-          .elements__item 
+          .subscription-text-field.elements__item 
             .elements__item_header
               h3.h3 subscription text field
             .footer__input-wrapper 
@@ -105,7 +105,7 @@ html(lang="en")
       
       .container.elements-inner-2
         .column 
-          .elements__item 
+          .dropdown-default.elements__item 
             .elements__item_header
               h3.h3 dropdown
               span.elements__item_state Default
@@ -113,7 +113,7 @@ html(lang="en")
               .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
               span.material-icons.material-icons-expand expand_more
 
-          .elements__item 
+          .dropdown-expanded.elements__item 
             .elements__item_header.elements__item_header-expanded
               h3.h3 dropdown
               span.elements__item_state expanded
@@ -122,6 +122,44 @@ html(lang="en")
                 .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
                 span.material-icons.material-icons-expand expand_more
               .elements__item_content
+                ul.dropdown-list 
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name спальни
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus -
+                      .dropdown-list__count_number 2
+                      .dropdown-list__count_plus +
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name кровати
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus -
+                      .dropdown-list__count_number 2
+                      .dropdown-list__count_plus +
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name ванные комнаты
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus.unactive-element -
+                      .dropdown-list__count_number 0
+                      .dropdown-list__count_plus +
+          
+          .checkbox-list.elements__item
+            .checkbox-list__header.elements__item_header
+              h3.h3 expandable checkbox list
+              span.material-icons.material-icons-expand expand_more
+
+          .expandable-checkbox-list.checkbox-list.elements__item
+            .checkbox-list__header.elements__item_header
+              h3.h3 expandable checkbox list
+              span.material-icons.material-icons-expand.material-icons-expand-reverse expand_more
+            ul.checkbox-list__content 
+              li 
+              li 
+              li 
+              li 
+              li 
+              li 
+          
+
         .column
           .elements__item
             .information__item 
