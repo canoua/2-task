@@ -809,6 +809,10 @@ body {
   font-style: normal;
   font-display: swap;
 }
+.rate-button__header {
+  margin-bottom: 16px;
+}
+
 .stars-ratings-wrapper {
   display: flex;
 }
@@ -1156,7 +1160,20 @@ body {
   margin-bottom: 16.56px;
 }
 
+.radiobuttons {
+  margin-bottom: 36px;
+}
+.radiobuttons__header {
+  margin-bottom: 16px;
+}
+
 /*toggle*/
+.toggle {
+  margin-bottom: 40px;
+}
+.toggle__header {
+  margin-bottom: 16px;
+}
 .toggle__item {
   display: flex;
   align-items: center;
@@ -1218,6 +1235,12 @@ input:checked + .slider:before {
 
 .like-icon {
   margin-right: 7px;
+}
+.like-button {
+  margin-bottom: 40px;
+}
+.like-button__header {
+  margin-bottom: 16px;
 }
 .like-button-inner {
   display: flex;

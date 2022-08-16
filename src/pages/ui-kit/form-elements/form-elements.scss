@@ -36,6 +36,13 @@ $green:#6FCF97;
     font-display: swap;
 }
 
+.rate-button{
+
+  &__header{
+    margin-bottom: 16px;
+  }
+}
+
 .stars-ratings-wrapper{
   display: flex;
 }
@@ -458,10 +465,22 @@ $green:#6FCF97;
   }
 }
 
+.radiobuttons{
+  margin-bottom: 36px;
+
+  &__header{
+    margin-bottom: 16px;
+  }
+}
 
 /*toggle*/
 
 .toggle{
+  margin-bottom: 40px;
+
+  &__header{
+    margin-bottom: 16px;
+  }
 
   &__item{
     display: flex;
@@ -531,6 +550,11 @@ input:checked + .slider:before {
   }
 
   &-button{
+    margin-bottom: 40px;
+
+    &__header{
+      margin-bottom: 16px;
+    }
 
     &-inner{
       display: flex;
@@ -546,7 +570,6 @@ input:checked + .slider:before {
       height: 20px;
       padding-left: 4px;
       margin-right: 10px;
-      // padding: 2px 11px 3px 4px;
 
       &:last-child{
         margin-right: 0;

@@ -76,7 +76,7 @@ html(lang="en")
                 input(type="checkbox").checkbox__list_input#guests
                 label(for="guests").checkbox__list_label Можно пригласить гостей (до 10 человек)
           .radiobuttons.elements__item 
-            .elements__item_header
+            .elements__item_header.radiobuttons__header
               h3.h3 Radio Buttons
             .radiobutton-wrapper 
               .radiobutton__item 
@@ -86,7 +86,7 @@ html(lang="en")
                 input.radiobutton__item_input.custom-radio(type="radio" id="woman" name = "pol")
                 label.radiobutton__item_label(for="woman") Женщина
           .toggle.elements__item 
-            .elements__item_header
+            .elements__item_header.toggle__header
               h3.h3 Toggle
             .toggle__item 
               label.switch   
@@ -99,7 +99,7 @@ html(lang="en")
                 span.slider.round
               span Получать спецпредложения  
           .like-button.elements__item 
-            .elements__item_header
+            .elements__item_header.like-button__header
               h3.h3 like button
             .like-button-inner 
               .like-button__item 
@@ -108,8 +108,8 @@ html(lang="en")
               .like-button__item.like-button__item-favorite 
                 span.material-icons.material-icons-favorite.like-icon favorite
                 span.like-button__item_text 12
-          .elements__item 
-            .elements__item_header
+          .rate-button.elements__item 
+            .elements__item_header.rate-button__header
               h3.h3 rate button
             .stars-ratings-wrapper 
               .stars-ratings 
