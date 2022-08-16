@@ -1069,14 +1069,61 @@ body {
   margin-right: 12px;
 }
 
-.checkbox-list {
+.checkbox {
   width: 266px;
   cursor: pointer;
 }
-.checkbox-list__header {
+.checkbox__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.checkbox__list_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10.56px;
+}
+.checkbox__list_input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox__list_input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.checkbox__list_input + label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.checkbox__list_input:checked + label::before {
+  content: "";
+  border: 1px solid #BC9CFF;
+  border-radius: 4px;
+  background-image: url("/check-mark.87be86da.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 8px;
+}
+.checkbox__list_label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.expandable-checkbox-list {
+  margin-bottom: 100px;
 }
 
 .material-icons-expand-reverse {
@@ -1086,6 +1133,13 @@ body {
 .unactive-element {
   cursor: auto;
   opacity: 0.38;
+}
+
+.checkbox-buttons {
+  margin-bottom: 40.88px;
+}
+.checkbox-buttons__header {
+  margin-bottom: 16.56px;
 }
 
 /*# sourceMappingURL=/form-elements.e5db8398.css.map */

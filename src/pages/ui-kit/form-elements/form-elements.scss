@@ -127,7 +127,6 @@ $green:#6FCF97;
       width: 100%;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
-      // height: 199px;
       border: 1px solid rgba(31, 32, 65, 0.5);
       border-top: none;
     }
@@ -197,11 +196,6 @@ $green:#6FCF97;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
         border: 1px solid $darkshade50;
-
-        
-        // &-shadow{
-        //   filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.05));
-        // }
       }
     }
 
@@ -359,7 +353,7 @@ $green:#6FCF97;
   }
 }
 
-.checkbox-list{
+.checkbox{
   width: 266px;
   cursor: pointer;
 
@@ -368,6 +362,62 @@ $green:#6FCF97;
     justify-content: space-between;
     align-items: center;
   }
+
+  &__list{
+
+    &_item{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10.56px;
+    }
+
+    &_input{
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &_input+label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    &_input+label::before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 4px;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+
+    &_input:checked+label::before {
+      content: '';
+      border: 1px solid #BC9CFF;
+      border-radius: 4px;
+      background-image: url('./../../../assets/images/check-mark.svg');
+      background-repeat: no-repeat;
+      background-size: 10px 8px;
+    }
+
+    &_label{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: $darkshade50;
+      cursor: pointer;
+    }
+  }
+}
+
+.expandable-checkbox-list{
+  margin-bottom: 100px;
 }
 
 .material-icons-expand-reverse{
@@ -378,3 +428,16 @@ $green:#6FCF97;
   cursor: auto;
   opacity: 0.38;
 }
+
+
+.checkbox{
+
+  &-buttons{
+    margin-bottom: 40.88px;
+
+    &__header{
+      margin-bottom: 16.56px;
+    }
+  }
+}
+
