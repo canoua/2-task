@@ -1,0 +1,56 @@
+$darkshade100:#1F2041;
+$darkshade75:rgba(31, 32, 65, 0.75);
+$darkshade50:rgba(31, 32, 65, 0.5);
+$darkshade25:rgba(31, 32, 65, 0.25);
+$darkshade5:rgba(31, 32, 65, 0.05);
+$purple:#BC9CFF;
+$green:#6FCF97;
+
+.like{
+
+  &-icon{
+    margin-right: 7px;
+  }
+
+  &-button{
+    margin-bottom: 40px;
+
+    &__header{
+      margin-bottom: 16px;
+    }
+
+    &-inner{
+      display: flex;
+    }
+
+    &__item{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 10px;
+      width: 40px;
+      height: 20px;
+      padding-left: 4px;
+      margin-right: 10px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &-favorite{
+        border: 1px solid #BC9CFF;
+      }
+
+      &_text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: $darkshade25;
+      }
+    }
+  }
+}

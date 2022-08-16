@@ -1,6 +1,10 @@
 @import url('./../../../blocks/cards.scss');
 @import url('./../../../blocks/footer/footer.scss');
 @import url('./../../../pages/room-details/room-details.scss');
+@import url('./styles/material-icons.scss');
+@import url('./styles/checkbox.scss');
+@import url('./styles/like-button.scss');
+@import url('./styles/toggle.scss');
 
 $darkshade100:#1F2041;
 $darkshade75:rgba(31, 32, 65, 0.75);
@@ -55,48 +59,6 @@ $green:#6FCF97;
     margin-right: 0;
   }
 }
-
-.material-icons{
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-
-  &-star{
-    line-height: 20px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    cursor: pointer;
-  }
-
-  &-expand{
-    line-height: 24px;
-    background: $darkshade50;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    cursor: pointer;
-  }
-
-  &-favorite{
-    font-size: 10px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
-    &-border{
-      font-size: 10px;
-      background: $darkshade25;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-  }
-}
-
 
 .elements{
   position: relative;
@@ -377,69 +339,6 @@ $green:#6FCF97;
   }
 }
 
-.checkbox{
-  width: 266px;
-  cursor: pointer;
-
-  &__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__list{
-
-    &_item{
-      display: flex;
-      align-items: center;
-      margin-bottom: 10.56px;
-    }
-
-    &_input{
-      position: absolute;
-      z-index: -1;
-      opacity: 0;
-    }
-
-    &_input+label {
-      display: inline-flex;
-      align-items: center;
-      user-select: none;
-    }
-
-    &_input+label::before{
-      content: '';
-      width: 20px;
-      height: 20px;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      border-radius: 4px;
-      margin-right: 10px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 50% 50%;
-    }
-
-    &_input:checked+label::before {
-      content: '';
-      border: 1px solid #BC9CFF;
-      border-radius: 4px;
-      background-image: url('./../../../assets/images/check-mark.svg');
-      background-repeat: no-repeat;
-      background-size: 10px 8px;
-    }
-
-    &_label{
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
-      color: $darkshade50;
-      cursor: pointer;
-    }
-  }
-}
-
 .expandable-checkbox-list{
   margin-bottom: 100px;
 }
@@ -473,122 +372,72 @@ $green:#6FCF97;
   }
 }
 
-/*toggle*/
+// /*toggle*/
 
-.toggle{
-  margin-bottom: 40px;
+// .toggle{
+//   margin-bottom: 40px;
 
-  &__header{
-    margin-bottom: 16px;
-  }
+//   &__header{
+//     margin-bottom: 16px;
+//   }
 
-  &__item{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+//   &__item{
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 10px;
 
-    &:last-child{
-      margin-bottom: 0;
-    }
-  }
-}
+//     &:last-child{
+//       margin-bottom: 0;
+//     }
+//   }
+// }
 
-.switch {
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  margin-right: 10px;
-}
+// .switch {
+//   display: inline-block;
+//   width: 40px;
+//   height: 20px;
+//   margin-right: 10px;
+// }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+// .switch input {
+//   opacity: 0;
+//   width: 0;
+//   height: 0;
+// }
 
-.slider {
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid $darkshade25;
-  border-radius: 10px;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
+// .slider {
+//   cursor: pointer;
+//   background: #FFFFFF;
+//   border: 1px solid $darkshade25;
+//   border-radius: 10px;
+//   -webkit-transition: .4s;
+//   transition: .4s;
+// }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  top: 3px;
-  left: 4px;
-  bottom: 4px;
-  background: rgba(31, 32, 65, 0.25);
-  -webkit-transition: .1s; 
-  transition: .1s ;
-}
+// .slider:before {
+//   position: absolute;
+//   content: "";
+//   height: 12px;
+//   width: 12px;
+//   top: 3px;
+//   left: 4px;
+//   bottom: 4px;
+//   background: rgba(31, 32, 65, 0.25);
+//   -webkit-transition: .1s; 
+//   transition: .1s ;
+// }
 
-input:checked + .slider{
-  border: 1px solid #BC9CFF;
-}
+// input:checked + .slider{
+//   border: 1px solid #BC9CFF;
+// }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(18px);
-  -ms-transform: translateX(18px);
-  transform: translateX(18px);
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-}
+// input:checked + .slider:before {
+//   -webkit-transform: translateX(18px);
+//   -ms-transform: translateX(18px);
+//   transform: translateX(18px);
+//   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+// }
 
-.slider.round:before {
-  border-radius: 10px;
-}
-
-.like{
-
-  &-icon{
-    margin-right: 7px;
-  }
-
-  &-button{
-    margin-bottom: 40px;
-
-    &__header{
-      margin-bottom: 16px;
-    }
-
-    &-inner{
-      display: flex;
-    }
-
-    &__item{
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      border-radius: 10px;
-      width: 40px;
-      height: 20px;
-      padding-left: 4px;
-      margin-right: 10px;
-
-      &:last-child{
-        margin-right: 0;
-      }
-
-      &-favorite{
-        border: 1px solid #BC9CFF;
-      }
-
-      &_text{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 12px;
-        text-align: center;
-        color: $darkshade25;
-      }
-    }
-  }
-}
-
+// .slider.round:before {
+//   border-radius: 10px;
+// }

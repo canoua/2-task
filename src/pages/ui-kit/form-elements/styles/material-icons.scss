@@ -1,0 +1,50 @@
+$darkshade100:#1F2041;
+$darkshade75:rgba(31, 32, 65, 0.75);
+$darkshade50:rgba(31, 32, 65, 0.5);
+$darkshade25:rgba(31, 32, 65, 0.25);
+$darkshade5:rgba(31, 32, 65, 0.05);
+$purple:#BC9CFF;
+$green:#6FCF97;
+
+// @import url('./variables');
+
+.material-icons{
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+
+  &-star{
+    line-height: 20px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+  }
+
+  &-expand{
+    line-height: 24px;
+    background: $darkshade50;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+  }
+
+  &-favorite{
+    font-size: 10px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    &-border{
+      font-size: 10px;
+      background: $darkshade25;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}
