@@ -75,7 +75,7 @@ html(lang="en")
               li.checkbox__list_item  
                 input(type="checkbox").checkbox__list_input#guests
                 label(for="guests").checkbox__list_label Можно пригласить гостей (до 10 человек)
-          .elements__item 
+          .radiobuttons.elements__item 
             .elements__item_header
               h3.h3 Radio Buttons
             .radiobutton-wrapper 
@@ -85,10 +85,19 @@ html(lang="en")
               .radiobutton__item  
                 input.radiobutton__item_input.custom-radio(type="radio" id="woman" name = "pol")
                 label.radiobutton__item_label(for="woman") Женщина
-          .elements__item 
+          .toggle.elements__item 
             .elements__item_header
               h3.h3 Toggle
-            input.card__input(type="text" placeholder="Email")
+            .toggle__item 
+              label.switch   
+                input(type="checkbox")
+                span.slider.round
+              span Получать спецпредложения
+            .toggle__item 
+              label.switch   
+                input(type="checkbox")
+                span.slider.round
+              span Получать спецпредложения  
           .elements__item 
             .elements__item_header
               h3.h3 like button
