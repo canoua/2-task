@@ -843,6 +843,20 @@ body {
   background-clip: text;
   cursor: pointer;
 }
+.material-icons-favorite {
+  font-size: 10px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.material-icons-favorite-border {
+  font-size: 10px;
+  background: rgba(31, 32, 65, 0.25);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .elements {
   position: relative;
@@ -1200,6 +1214,39 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 10px;
+}
+
+.like-icon {
+  margin-right: 7px;
+}
+.like-button-inner {
+  display: flex;
+}
+.like-button__item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  width: 40px;
+  height: 20px;
+  padding-left: 4px;
+  margin-right: 10px;
+}
+.like-button__item:last-child {
+  margin-right: 0;
+}
+.like-button__item-favorite {
+  border: 1px solid #BC9CFF;
+}
+.like-button__item_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.25);
 }
 
 /*# sourceMappingURL=/form-elements.e5db8398.css.map */

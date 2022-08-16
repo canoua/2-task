@@ -98,10 +98,16 @@ html(lang="en")
                 input(type="checkbox")
                 span.slider.round
               span Получать спецпредложения  
-          .elements__item 
+          .like-button.elements__item 
             .elements__item_header
               h3.h3 like button
-            input.card__input(type="text" placeholder="Email")
+            .like-button-inner 
+              .like-button__item 
+                span.material-icons.material-icons-favorite-border.like-icon favorite_border
+                span.like-button__item_text 2
+              .like-button__item.like-button__item-favorite 
+                span.material-icons.material-icons-favorite.like-icon favorite
+                span.like-button__item_text 12
           .elements__item 
             .elements__item_header
               h3.h3 rate button
