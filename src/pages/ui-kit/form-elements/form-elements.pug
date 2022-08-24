@@ -172,36 +172,101 @@ html(lang="en")
                       .dropdown-list__count_number 0
                       .dropdown-list__count_plus +
           
-          .checkbox.elements__item
-            .checkbox__header.elements__item_header
-              h3.h3 expandable checkbox list
-              span.material-icons.material-icons-expand expand_more
+        .colummn 
+          .dropdown-expanded-guests.elements__item 
+            .elements__item_header.elements__item_header-expanded
+              h3.h3 dropdown
+            .card__input-wrapper_expanded-shadow 
+              .card__input-wrapper.card__input-wrapper-expanded
+                .card__input-dropdown.card__input-filter-date Сколько гостей
+                span.material-icons.material-icons-expand expand_more
+              .elements__item_content
+                form(action="").dropdown-expanded-guests__form 
+                  ul.dropdown-list.dropdown-expanded-guests__list 
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name взрослые
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name дети
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name младенцы
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus + 
+                  .dropdown-btns 
+                    button.dropdown__submit(type="submit") Применить 
+        .column
+          .dropdown-expanded-guests.elements__item 
+            .elements__item_header.elements__item_header-expanded
+              h3.h3 dropdown
+            .card__input-wrapper_expanded-shadow 
+              .card__input-wrapper.card__input-wrapper-expanded
+                .card__input-dropdown.card__input-filter-date 3 гостя
+                span.material-icons.material-icons-expand expand_more
+              .elements__item_content
+                form(action="").dropdown-expanded-guests__form 
+                  ul.dropdown-list.dropdown-expanded-guests__list 
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name взрослые
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus -
+                        .dropdown-list__count_number 2
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name дети
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus -
+                        .dropdown-list__count_number 1
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name младенцы
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus + 
+                  .dropdown-btns.dropdown-btns-2  
+                    button.dropdown__submit(type="submit") Очистить 
+                    button.dropdown__reset(type="reset") Применить 
 
-          .expandable-checkbox-list.checkbox.elements__item
-            .checkbox__header.elements__item_header
-              h3.h3 expandable checkbox list
-              span.material-icons.material-icons-expand.material-icons-expand-reverse expand_more
-            ul.checkbox__list 
-              li.checkbox__list_item 
-                input(type="checkbox").checkbox__list_input#breakfast
-                label(for="breakfast").checkbox__list_label Завтрак
-              li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#desk
-                label(for="desk").checkbox__list_label Письменный стол
-              li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#chair-for-feeding
-                label(for="chair-for-feeding").checkbox__list_label Стул для кормления
-              li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#crib
-                label(for="crib").checkbox__list_label Кроватка
-              li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#television
-                label(for="television").checkbox__list_label Телевизор
-              li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#shampoo
-                label(for="shampoo").checkbox__list_label Шампунь
-               
-          .elements__item
+      .container
+        .checkbox.elements__item
+          .checkbox__header.elements__item_header
+            h3.h3 expandable checkbox list
+            span.material-icons.material-icons-expand expand_more
+
+        .expandable-checkbox-list.checkbox.elements__item
+          .checkbox__header.elements__item_header
+            h3.h3 expandable checkbox list
+            span.material-icons.material-icons-expand.material-icons-expand-reverse expand_more
+          ul.checkbox__list 
+            li.checkbox__list_item 
+              input(type="checkbox").checkbox__list_input#breakfast
+              label(for="breakfast").checkbox__list_label Завтрак
+            li.checkbox__list_item  
+              input(type="checkbox").checkbox__list_input#desk
+              label(for="desk").checkbox__list_label Письменный стол
+            li.checkbox__list_item  
+              input(type="checkbox").checkbox__list_input#chair-for-feeding
+              label(for="chair-for-feeding").checkbox__list_label Стул для кормления
+            li.checkbox__list_item  
+              input(type="checkbox").checkbox__list_input#crib
+              label(for="crib").checkbox__list_label Кроватка
+            li.checkbox__list_item  
+              input(type="checkbox").checkbox__list_input#television
+              label(for="television").checkbox__list_label Телевизор
+            li.checkbox__list_item  
+              input(type="checkbox").checkbox__list_input#shampoo
+              label(for="shampoo").checkbox__list_label Шампунь
+              
+        .elements__item
             .information__item 
               img.information__icon(src="img/icons/insert_emoticon.png", alt="icon")
               .information__item-inner 

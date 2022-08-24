@@ -1,0 +1,37 @@
+.dropdown{
+
+  &-expanded{
+    
+    &-guests{
+      
+      &__list{
+      margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-btns{
+    display: flex;
+    justify-content: flex-end;
+
+    &-2{
+      justify-content: space-between;
+    }
+  }
+
+  &__submit,
+  &__reset{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 13px;
+  }
+}
