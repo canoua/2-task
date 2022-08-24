@@ -1,12 +1,5 @@
-$darkshade100:#1F2041;
-$darkshade75:rgba(31, 32, 65, 0.75);
-$darkshade50:rgba(31, 32, 65, 0.5);
-$darkshade25:rgba(31, 32, 65, 0.25);
-$darkshade5:rgba(31, 32, 65, 0.05);
-$purple:#BC9CFF;
-$green:#6FCF97;
+@import './variables.scss';
 
-// @import url('./variables');
 
 .material-icons{
   font-family: 'Material Icons';

@@ -79,14 +79,20 @@ html(lang="en")
             .elements__item_header.radiobuttons__header
               h3.h3 Radio Buttons
             .radiobutton-wrapper 
-              .radiobutton__item 
-                input.radiobutton__item_input.custom-radio(type="radio" id="man" name = "pol" checked)
-                label.radiobutton__item_label(for="man") Мужчина
-              .radiobutton__item  
-                input.radiobutton__item_input.custom-radio(type="radio" id="woman" name = "pol")
-                label.radiobutton__item_label(for="woman") Женщина
+              p.radiobutton__item
+                input.input#test1(type='radio' name='radio-group' checked='')
+                label.radiobutton__item_label(for='test1') Мужчина
+              p.radiobutton__item
+                input.input#test2(type='radio' name='radio-group')
+                label.radiobutton__item_label(for='test2') Женщина
+              //- .radiobutton__item 
+              //-   input.radiobutton__item_input.custom-radio(type="radio" id="man" name = "pol" checked)
+              //-   label.radiobutton__item_label(for="man") Мужчина
+              //- .radiobutton__item  
+              //-   input.radiobutton__item_input.custom-radio(type="radio" id="woman" name = "pol")
+              //-   label.radiobutton__item_label(for="woman") Мужчина
           .toggle.elements__item 
-            .elements__item_header.toggle__header
+            .toggle__header.elements__item_header
               h3.h3 Toggle
             .toggle__item 
               label.switch   
