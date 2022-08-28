@@ -1092,6 +1092,7 @@ input:checked + .slider:before {
   cursor: pointer;
   width: 100%;
   position: relative;
+  margin-bottom: 40px;
 }
 .button-border {
   color: #BC9CFF;
@@ -1137,6 +1138,52 @@ input:checked + .slider:before {
   top: 50%;
   right: 14px;
   transform: translate(0, -50%);
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pagination__list {
+  display: flex;
+}
+.pagination__link {
+  display: inline-flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__link-active {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  color: #fff;
+}
+.pagination__link-arrow {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+}
+.pagination__info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.material-icons-pagination-link {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
   background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

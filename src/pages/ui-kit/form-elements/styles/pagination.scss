@@ -1,0 +1,52 @@
+.pagination{
+
+  &__list{
+    display: flex;
+  }
+
+  &__link{
+    display: inline-flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $darkshade50;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items:center;
+
+    &-active{
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+      color: #fff;
+    }
+
+    &-arrow{
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+      border-radius: 22px;
+    }
+  }
+
+  &__info{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkshade75;
+  }
+}
+
+.material-icons-pagination-link{
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
