@@ -1,0 +1,104 @@
+.button{
+  padding: 15px 21px;
+  border-radius: 22px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  &-default{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: #FFFFFF;
+    border: transparent;
+
+    &-hover{
+      opacity: 0.5;
+    }
+
+    &-wrapper{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      width: 233px;
+    }
+
+    &-big{
+      padding: 15px 20px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  &-border{
+    color: #BC9CFF;
+    border: 2px solid #BC9CFF;
+    background-color: #fff;
+    
+    &-hover{
+      border-color: rgba(188, 156, 255, .5);
+
+      &-wrapper{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.form-element-btn{
+  margin-right: 19px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.icon{
+
+  &-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    display: inline-block;
+    margin-right: 20px;
+
+    &-hover{
+      color: rgba(31, 32, 65, 0.5);
+    }
+
+    &-wrapper{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.material-icons-arrow_forward{
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translate(0, -50%);
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
