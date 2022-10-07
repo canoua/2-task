@@ -851,6 +851,7 @@ input:checked + .slider:before {
 .checkbox__list_input + label {
   display: inline-flex;
   align-items: center;
+  flex-direction: inherit;
   user-select: none;
 }
 .checkbox__list_input + label::before {
@@ -1508,6 +1509,17 @@ input:checked + .slider:before {
   margin-bottom: 16.56px;
 }
 
+.checkbox__list_label-rich-info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 31px;
+}
+
 .radiobuttons {
   margin-bottom: 36px;
 }
@@ -1517,11 +1529,18 @@ input:checked + .slider:before {
 
 .rich-checkbox__list_item {
   display: flex;
+  margin-bottom: 5px;
 }
 
 .checkbox__list_label-rich-title {
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .bullet__list_item {

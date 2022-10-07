@@ -325,6 +325,17 @@
   }
 }
 
+.checkbox__list_label-rich-info{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* Dark 50% */
+  color: $darkshade50;
+  padding-left: 31px;
+}
+
 .radiobuttons{
   margin-bottom: 36px;
 
@@ -335,11 +346,18 @@
 
 .rich-checkbox__list_item{
   display: flex;
+  margin-bottom: 5px;
 }
 
 .checkbox__list_label-rich-title {
   display: flex;
   flex-direction: column;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: $darkshade75;
 }
 
 .bullet{

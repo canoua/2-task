@@ -308,13 +308,14 @@ html(lang="en")
               h3.h3 Rich Checkbox Buttons
             ul.checkbox__list 
               li.checkbox__list_item.rich-checkbox__list_item 
-                input(type="checkbox").checkbox__list_input#corridor
-                label(for="corridor").checkbox__list_label.checkbox__list_label-rich-title Широкий коридор
-                  .checkbox__list_label-rich-info Ширина коридоров в номере не менее 91 см.
+                .checkbox-wrapper
+                  input(type="checkbox").checkbox__list_input#corridor
+                  label(for="corridor").checkbox__list_label.checkbox__list_label-rich-title Широкий коридор
+              .checkbox__list_label-rich-info Ширина коридоров в номере не менее 91 см.
               li.checkbox__list_item.rich-checkbox__list_item   
                 input(type="checkbox").checkbox__list_input#assistant
                 label(for="assistant").checkbox__list_label.checkbox__list_label-rich-title Помощник для инвалидов
-                  .checkbox__list_label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
+              .checkbox__list_label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
         .column 
           .bullet.elements__item 
             .elements__item_header
@@ -351,6 +352,5 @@ html(lang="en")
                   span.material-icons.material-icons-favorite.like-icon favorite
                   span.like-button__item_text 12
                 .review__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шум
-
 
     script(src='form-elements.js')
