@@ -2384,16 +2384,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 console.log('range-slider');
 var rangeSlider = document.querySelector('#range-slider');
+var outputValues1 = document.querySelector('.elements__item_state-1');
+var outputValues2 = document.querySelector('.elements__item_state-2');
+var output = [outputValues1, outputValues2];
 
 if (rangeSlider) {
   _nouislider.default.create(rangeSlider, {
     start: [5000, 10000],
     connect: true,
-    step: 5,
+    step: 1,
     range: {
-      'min': 0,
-      'max': 15000
+      'min': [0],
+      'max': [15000]
     }
+  });
+
+  rangeSlider.noUiSlider.on('update', function (values, handle) {
+    output[handle].textContent = " ".concat(Math.round(values[handle]), "\u20BD ");
   });
 }
 },{"nouislider":"../../../../node_modules/nouislider/dist/nouislider.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -2424,7 +2431,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54986" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55147" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
