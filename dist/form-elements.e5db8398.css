@@ -1267,6 +1267,39 @@ input:checked + .slider:before {
   margin-bottom: 13px;
 }
 
+#range-slider {
+  height: 6px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 3px;
+}
+
+.noUi-connect {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 3px;
+}
+
+.noUi-handle {
+  border: none;
+  cursor: grab;
+  box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  right: -8px;
+  top: -5px;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/Montserrat-Regular.9d907c20.eot");
@@ -1515,7 +1548,6 @@ input:checked + .slider:before {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   padding-left: 31px;
   margin-bottom: 10px;

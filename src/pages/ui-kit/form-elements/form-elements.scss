@@ -6,6 +6,7 @@
 @import './styles/pagination.scss';
 @import './styles/review.scss';
 @import './styles/dropdown-expanded-guests.scss';
+@import './styles/range-slider.scss';
 @import url('./../../../pages/room-details/room-details.scss');
 @import url('./styles/material-icons.scss');
 @import url('./styles/checkbox.scss');
@@ -331,7 +332,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  /* Dark 50% */
   color: $darkshade50;
   padding-left: 31px;
   margin-bottom: 10px;
@@ -390,3 +390,37 @@
     }
   }
 }
+
+
+// #range-slider{
+//   height: 6px;
+//   background: #FFFFFF;
+//   border: 1px solid $darkshade25;
+//   border-radius: 3px;
+// }
+
+// .noUi-connect{
+//   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+//   border-radius: 3px;
+// }
+
+// .noUi-handle {
+//   border: none;
+//   cursor: grab; 
+//   box-shadow: none;
+// }
+
+// .noUi-horizontal .noUi-handle{
+//   width: 14px;
+//   height: 14px;
+//   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+//   border: 2px solid #FFFFFF;
+//   border-radius: 10px;
+//   right: -8px;
+//   top: -5px;
+// }
+
+// .noUi-handle::before,
+// .noUi-handle::after{
+//   display: none;
+// }
