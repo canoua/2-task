@@ -20,5 +20,8 @@
     "cssnano": "^5.1.7",
     "pug": "^3.0.2",
     "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "nouislider": "^15.6.1"
   }
 }
