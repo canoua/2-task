@@ -2400,7 +2400,11 @@ if (rangeSlider) {
   });
 
   rangeSlider.noUiSlider.on('update', function (values, handle) {
-    output[handle].textContent = " ".concat(Math.round(values[handle]), "\u20BD ");
+    output[handle].textContent = Number(values[handle]).toLocaleString('ru-RU', {
+      style: 'currency',
+      currency: 'RUB',
+      minimumFractionDigits: '0'
+    });
   });
 }
 },{"nouislider":"../../../../node_modules/nouislider/dist/nouislider.js"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -2431,7 +2435,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55147" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58229" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

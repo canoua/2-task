@@ -20,6 +20,7 @@ if(rangeSlider) {
   });
 
   rangeSlider.noUiSlider.on('update', function(values, handle) {
-    output[handle].textContent = ` ${Math.round(values[handle])}₽ `;
+    output[handle].textContent = Number(values[handle]).toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', minimumFractionDigits: '0' });
   })
 }
+
