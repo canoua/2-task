@@ -67,3 +67,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 10px;
 }
+
+.toggle__header.elements__item_header{
+  margin-bottom: 16px;
+}
