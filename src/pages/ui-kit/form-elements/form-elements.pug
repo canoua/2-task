@@ -6,7 +6,6 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title form-elements
     link(rel="stylesheet", href="./../../default.scss")
-    link(rel="stylesheet", href="nouislider.min.css")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(rel="stylesheet", href="form-elements.scss")
   body 
@@ -86,12 +85,6 @@ html(lang="en")
               p.radiobutton__item
                 input.input#test2(type='radio' name='radio-group')
                 label.radiobutton__item_label(for='test2') Женщина
-              //- .radiobutton__item 
-              //-   input.radiobutton__item_input.custom-radio(type="radio" id="man" name = "pol" checked)
-              //-   label.radiobutton__item_label(for="man") Мужчина
-              //- .radiobutton__item  
-              //-   input.radiobutton__item_input.custom-radio(type="radio" id="woman" name = "pol")
-              //-   label.radiobutton__item_label(for="woman") Мужчина
           .toggle.elements__item 
             .toggle__header.elements__item_header
               h3.h3 Toggle
@@ -357,6 +350,5 @@ html(lang="en")
                   span.like-button__item_text 12
                 .review__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шум
     
-  script(src="nouislider.min.js") 
   script(src="scripts/range-slider.js")
   script(src="form-elements.js")

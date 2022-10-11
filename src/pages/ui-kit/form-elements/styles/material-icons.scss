@@ -23,6 +23,10 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     cursor: pointer;
+
+    &-reverse{
+      transform: rotate(180deg);
+    }
   }
 
   &-favorite{

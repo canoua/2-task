@@ -1,16 +1,19 @@
 @import  './styles/variables.scss';
+@import './styles/nouislider.min.css';//range-slider
 
 @import './styles/toggle.scss';
 @import './styles/radiobuttons.scss';
 @import './styles/buttons.scss';
 @import './styles/pagination.scss';
 @import './styles/review.scss';
-@import './styles/dropdown-expanded-guests.scss';
 @import './styles/range-slider.scss';
+@import './styles/bullet.scss';
+@import './styles/like-button.scss';
+@import './styles/dropdown.scss';
 @import url('./../../../pages/room-details/room-details.scss');
 @import url('./styles/material-icons.scss');
 @import url('./styles/checkbox.scss');
-@import url('./styles/like-button.scss');
+
 
 @font-face {
     font-family: 'Montserrat';
@@ -230,89 +233,10 @@
   width: 266px;
 }
 
-
-.dropdown-expanded,
-.dropdown-default{
-  width: 266px;
-}
-
-.dropdown-expanded{
-  margin-bottom: 40px;
-}
-
-// .card__input-wrapper_expanded-shadow{
-//   filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.05));
-// }
-
-.dropdown-list{
-
-  &__item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 7px;
-
-    &_name{
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      color: $darkshade100;
-    }
-  }
-
-  &__count{
-    display: flex;
-    align-items: center;
-
-    &_minus,
-    &_plus{
-      width: 30px;
-      height: 30px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(31, 32, 65, 0.5);
-      cursor: pointer;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      border-radius: 22px;
-    }
-
-    &_number{
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 15px;
-      text-align: center;
-      text-transform: uppercase;
-      color: $darkshade100;
-      margin-left: 12px;
-      margin-right: 12px;
-    }
-  }
-}
-
-// .expandable-checkbox-list{
-//   margin-bottom: 100px;
-// }
-
-.material-icons-expand-reverse{
-  transform: rotate(180deg);
-}
-
 .unactive-element{
   cursor: auto;
   opacity: 0.38;
 }
-
 
 .checkbox{
 
@@ -347,45 +271,6 @@
 .rich-checkbox__list_item{
   display: flex;
   margin-bottom: 0;
-  // margin-bottom: 5px;
 }
 
-.checkbox__list_label-rich-title {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  color: $darkshade75;
-}
 
-.bullet{
-
-  &__list{
-
-    &_item{
-      position: relative;
-      padding-left: 20px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: $darkshade75;
-
-      &::before{
-        content:'';
-        width: 10px;
-        height: 10px;
-        background-color: #000;
-        position: absolute;
-        top: 7px;
-        left: 0;
-        border-radius: 100%;
-        background: rgba(31, 32, 65, 0.25);
-      }
-    }
-  }
-}
