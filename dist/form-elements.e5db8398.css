@@ -896,6 +896,16 @@ input:checked + .slider:before {
   line-height: 18px;
   color: rgba(31, 32, 65, 0.75);
 }
+.checkbox__list_label-rich-info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 31px;
+  margin-bottom: 10px;
+}
 .checkbox-buttons {
   margin-bottom: 40.88px;
 }
@@ -1395,6 +1405,36 @@ input:checked + .slider:before {
   margin-bottom: 13px;
 }
 
+.unactive-element {
+  cursor: auto;
+  opacity: 0.38;
+}
+
+.filter-date-dropdown.elements__item {
+  width: 266px;
+  margin-bottom: 40px;
+}
+
+.rate-button__header {
+  margin-bottom: 16px;
+}
+
+.stars-ratings {
+  display: flex;
+  margin-right: 20px;
+}
+.stars-ratings:last-child {
+  margin-right: 0;
+}
+.stars-ratings-wrapper {
+  display: flex;
+}
+
+.subscription-text-field.elements__item {
+  margin-bottom: 100px;
+  width: 266px;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/Montserrat-Regular.9d907c20.eot");
@@ -1411,22 +1451,6 @@ input:checked + .slider:before {
   font-style: normal;
   font-display: swap;
 }
-.rate-button__header {
-  margin-bottom: 16px;
-}
-
-.stars-ratings-wrapper {
-  display: flex;
-}
-
-.stars-ratings {
-  display: flex;
-  margin-right: 20px;
-}
-.stars-ratings:last-child {
-  margin-right: 0;
-}
-
 .elements {
   position: relative;
   padding: 140px 0 131px 0;
@@ -1555,37 +1579,11 @@ input:checked + .slider:before {
   margin-bottom: 40px;
 }
 
-.filter-date-dropdown {
-  width: 266px;
-  margin-bottom: 40px;
-}
-
-.subscription-text-field {
-  margin-bottom: 100px;
-  width: 266px;
-}
-
-.unactive-element {
-  cursor: auto;
-  opacity: 0.38;
-}
-
 .checkbox-buttons {
   margin-bottom: 40.88px;
 }
 .checkbox-buttons__header {
   margin-bottom: 16.56px;
-}
-
-.checkbox__list_label-rich-info {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(31, 32, 65, 0.5);
-  padding-left: 31px;
-  margin-bottom: 10px;
 }
 
 .radiobuttons {

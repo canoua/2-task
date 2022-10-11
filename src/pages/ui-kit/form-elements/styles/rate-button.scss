@@ -1,0 +1,19 @@
+.rate-button{
+
+  &__header{
+    margin-bottom: 16px;
+  }
+}
+
+.stars-ratings{
+  display: flex;
+  margin-right: 20px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &-wrapper{
+    display: flex;
+  }
+}
