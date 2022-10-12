@@ -1,7 +1,10 @@
 @import './variables.scss';
 
-.toggle{
+.toggle.elements__item{
   margin-bottom: 40px;
+}
+
+.toggle{
 
   &__header{
     margin-bottom: 16px;

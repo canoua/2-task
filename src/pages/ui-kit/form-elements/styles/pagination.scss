@@ -2,6 +2,7 @@
 
   &__list{
     display: flex;
+    margin-bottom: 10.56px;
   }
 
   &__link{
@@ -49,4 +50,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.elements__item_header.pagination__header{
+  margin-bottom: 16px;
 }

@@ -65,6 +65,10 @@
       display: flex;
       justify-content: space-between;
     }
+
+    &-2{
+      margin-bottom: 40px;
+    }
   }
 
   &__item{
@@ -228,4 +232,9 @@
 .rich-checkbox__list_item{
   display: flex;
   margin-bottom: 0;
+}
+
+.expandable-checkbox-list.elements__item{
+  cursor: pointer;
+  width: 266px;
 }

@@ -1,12 +1,11 @@
 .dropdown{
   
-  &-expanded,
-  &-default{
+  &-expanded.elements__item ,
+  &-default.elements__item {
     width: 266px;
   }
 
   &-expanded{
-    margin-bottom: 40px;
 
     &-guests{
       
@@ -101,4 +100,8 @@
 .unactive-element{
   cursor: auto;
   opacity: 0.38;
+}
+
+.dropdown-expanded.elements__item{
+  margin-bottom: 0;
 }

@@ -127,7 +127,7 @@ html(lang="en")
         
         .column 
           .range-slider.elements__item 
-            .elements__item_header
+            .elements__item_header.range-slider__header
               h3.h3 Range Slider
               span.elements__item_state
                span.elements__item_state-1
@@ -135,7 +135,7 @@ html(lang="en")
                span.elements__item_state-2 
             #range-slider
           .buttons.elements__item 
-            .elements__item_header
+            .elements__item_header.buttons__header
               h3.h3 buttons
             .buttons-content 
               .button-default-wrapper 
@@ -151,7 +151,7 @@ html(lang="en")
                 span перейти к оплате
                 .material-icons.material-icons-arrow_forward arrow_forward 
           .pagination.elements__item 
-            .elements__item_header
+            .elements__item_header.pagination__header
               h3.h3 pagination
             ul.pagination__list
               li.pagination__list_item 
@@ -272,33 +272,33 @@ html(lang="en")
 
       .container.elements-inner-3
         .column
-          .checkbox.elements__item
-          .checkbox__header.elements__item_header
-            h3.h3 expandable checkbox list
-            span.material-icons.material-icons-expand expand_more
-          .expandable-checkbox-list.checkbox.elements__item
-          .checkbox__header.elements__item_header
-            h3.h3 expandable checkbox list
-            span.material-icons.material-icons-expand.material-icons-expand-reverse expand_more
-          ul.checkbox__list 
-            li.checkbox__list_item 
-              input(type="checkbox").checkbox__list_input#breakfast
-              label(for="breakfast").checkbox__list_label Завтрак
-            li.checkbox__list_item  
-              input(type="checkbox").checkbox__list_input#desk
-              label(for="desk").checkbox__list_label Письменный стол
-            li.checkbox__list_item  
-              input(type="checkbox").checkbox__list_input#chair-for-feeding
-              label(for="chair-for-feeding").checkbox__list_label Стул для кормления
-            li.checkbox__list_item  
-              input(type="checkbox").checkbox__list_input#crib
-              label(for="crib").checkbox__list_label Кроватка
-            li.checkbox__list_item  
-              input(type="checkbox").checkbox__list_input#television
-              label(for="television").checkbox__list_label Телевизор
-            li.checkbox__list_item  
-              input(type="checkbox").checkbox__list_input#shampoo
-              label(for="shampoo").checkbox__list_label Шампунь
+          .expandable-checkbox-list.elements__item
+            .checkbox__header.elements__item_header
+              h3.h3 expandable checkbox list
+              span.material-icons.material-icons-expand expand_more
+          .expandable-checkbox-list.elements__item
+            .checkbox__header.elements__item_header
+              h3.h3 expandable checkbox list
+              span.material-icons.material-icons-expand.material-icons-expand-reverse expand_more
+            ul.checkbox__list 
+              li.checkbox__list_item 
+                input(type="checkbox").checkbox__list_input#breakfast
+                label(for="breakfast").checkbox__list_label Завтрак
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#desk
+                label(for="desk").checkbox__list_label Письменный стол
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#chair-for-feeding
+                label(for="chair-for-feeding").checkbox__list_label Стул для кормления
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#crib
+                label(for="crib").checkbox__list_label Кроватка
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#television
+                label(for="television").checkbox__list_label Телевизор
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#shampoo
+                label(for="shampoo").checkbox__list_label Шампунь
         .column  
           .rich-checkbox-buttons.elements__item 
             .checkbox-buttons__header.elements__item_header
