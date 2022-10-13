@@ -43,7 +43,7 @@
 .custom-radio:checked + label::before {
   border-color: #BC9CFF;
   background-color: #fff;
-  background-image: url("/7efe6e39b7a81e3f8b15735da2bcae1a.png");
+  background-image: url("/radio-rectangle.1d2d0d3c.png");
   background-repeat: no-repeat;
 }
 /*toggle*/

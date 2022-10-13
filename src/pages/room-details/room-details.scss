@@ -81,13 +81,13 @@
 
   &__item{
     display: flex;
-    padding-top: 20px;
     padding-bottom: 17px;
+    margin-bottom: 20px;
     border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 
-    &:last-child{
-      border: none;
-    }
+    // &:last-child{
+    //   border: none;
+    // }
   }
    
   &__title{

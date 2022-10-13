@@ -643,12 +643,9 @@ input:checked + .slider:before {
 }
 .information__item {
   display: flex;
-  padding-top: 20px;
   padding-bottom: 17px;
+  margin-bottom: 20px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-}
-.information__item:last-child {
-  border: none;
 }
 .information__title {
   font-family: "Montserrat";
@@ -1226,7 +1223,7 @@ input:checked + .slider:before {
   width: 100%;
   height: 100%;
   border-radius: 100%;
-  filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+  filter: drop-shadow(0px 9px 6px rgba(31, 32, 65, 0.1));
 }
 .review__content {
   display: flex;
@@ -1486,12 +1483,15 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
 }
-.elements-inner-2, .elements-inner-3 {
+.elements-inner-2, .elements-inner-3, .elements-inner-4 {
   display: flex;
   justify-content: space-between;
 }
 .elements-inner-2 {
   margin-bottom: 40px;
+}
+.elements-inner-3 {
+  margin-bottom: 100.56px;
 }
 .elements__item {
   width: 100%;
@@ -1522,6 +1522,7 @@ input:checked + .slider:before {
   border-bottom-right-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-top: none;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .column {
@@ -1623,8 +1624,21 @@ input:checked + .slider:before {
   margin-bottom: 0;
 }
 
-.expandable-checkbox-list.elements__item {
+.expandable-checkbox-list-default.elements__item,
+.expandable-checkbox-list-expanded.elements__item {
   cursor: pointer;
   width: 266px;
+}
+
+.expandable-checkbox-list-default {
+  margin-bottom: 40px;
+}
+
+.expandable-checkbox-list-default .elements__item_header {
+  margin-bottom: 0;
+}
+
+.expandable-checkbox-list-expanded .elements__item_header {
+  margin-bottom: 17.44px;
 }
 /*# sourceMappingURL=/form-elements.e5db8398.css.map */
