@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 li {
@@ -112,7 +113,7 @@ body {
   transform: translate(0, -50%);
   width: 16px;
   height: 16px;
-  background-image: url("/arrow_forward-white.1e30dbbf.svg");
+  background-image: url("/d62dd63aafdfab4aa6f78f73de3f991e.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -255,16 +256,16 @@ body {
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/Montserrat-Regular.ccc6e5e7.eot");
-  src: url("/Montserrat-Regular.ccc6e5e7.eot?#iefix") format("embedded-opentype"), url("/Montserrat-Regular.cc3a3a8e.woff2") format("woff2"), url("/Montserrat-Regular.79367ce6.woff") format("woff"), url("/Montserrat-Regular.75a838a3.ttf") format("truetype"), url("/Montserrat-Regular.d2e94de2.svg#Montserrat-Regular") format("svg");
+  src: url("/3cf900287c09bebabacc168d9d907c20.eot");
+  src: url("/3cf900287c09bebabacc168d9d907c20.eot?#iefix") format("embedded-opentype"), url("/c2d9d6f38f02ce8b64918fa6ebe5e4e8.woff2") format("woff2"), url("/46aeceae9421f3ec10d1c65d5c89aa5a.woff") format("woff"), url("/7764fc4e94289cae53d2c1660a4ca25e.ttf") format("truetype"), url("/21631782376e3f2e76e9af8d017c691e.svg#Montserrat-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/Montserrat-Bold.0431a85c.eot");
-  src: url("/Montserrat-Bold.0431a85c.eot?#iefix") format("embedded-opentype"), url("/Montserrat-Bold.b413c84b.woff2") format("woff2"), url("/Montserrat-Bold.d8947c46.woff") format("woff"), url("/Montserrat-Bold.ef380cc1.ttf") format("truetype"), url("/Montserrat-Bold.4c196e06.svg#Montserrat-Bold") format("svg");
+  src: url("/b40d18420e8ad4f51bbe06911f1857b7.eot");
+  src: url("/b40d18420e8ad4f51bbe06911f1857b7.eot?#iefix") format("embedded-opentype"), url("/8ed75f75c9e92b6ca9083cde57b4e5b0.woff2") format("woff2"), url("/3bdbf427c48a4f980cf7fe5bee55cb1e.woff") format("woff"), url("/845175a20eb6cca177742c718af4b350.ttf") format("truetype"), url("/b0ecd5a841828adf5ce7cc8689688af6.svg#Montserrat-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -339,7 +340,7 @@ body {
 .custom-radio:checked + label::before {
   border-color: #BC9CFF;
   background-color: #fff;
-  background-image: url("/radio-rectangle.a2bcae1a.png");
+  background-image: url("/9190860b53d7cae8404a964a1d2d0d3c.png");
   background-repeat: no-repeat;
 }
 /*toggle*/
