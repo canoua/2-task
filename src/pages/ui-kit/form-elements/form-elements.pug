@@ -1,3 +1,5 @@
+include mixins.pug
+
 doctype html
 html(lang="en")
   head
@@ -10,40 +12,6 @@ html(lang="en")
     link(rel="stylesheet", href="form-elements.scss")
   body 
     
-    mixin text-field-default(title, status, placeholder)
-      .text-field-default.elements__item
-        .elements__item_header
-          h3.h3=title 
-          span.elements__item_state=status
-        input.card__input(type="text" placeholder=placeholder)
-
-    mixin text-field-hover(title, status, placeholder)
-      .text-field-hover.elements__item 
-        .elements__item_header
-          h3.h3=title  
-          span.elements__item_state=status
-        input.card__input.card__input-hover(type="text" placeholder=placeholder)
-
-    mixin dropdown(title, inputText)
-      .dropdown.elements__item 
-        .elements__item_header
-          h3.h3=title
-        .card__input-wrapper 
-          .card__input-dropdown.card__input-dropdown-pre-default=inputText
-          span.material-icons.material-icons-expand expand_more
-
-    mixin subscription-text-field(title, placeholder)
-      .subscription-text-field.elements__item 
-        .elements__item_header
-          h3.h3=title
-        .footer__input-wrapper 
-          input.footer__box_item-input(type="text" placeholder=placeholder)
-          button.footer__button-input 
-            img(src="img/arrow_forward.svg", alt="arrow")
-
-    //- mixin toggle()
-
-
     .elements 
       img.elements__logo(src="images/ui-logo.svg", alt="ui-kit-logo")
       .container.elements-inner-1

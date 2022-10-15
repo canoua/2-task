@@ -22,6 +22,8 @@
     "sass": "^1.50.0"
   },
   "dependencies": {
+    "footer": "^1.0.0",
+    "header": "^0.1.1",
     "nouislider": "^15.6.1"
   }
 }

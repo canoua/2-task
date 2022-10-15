@@ -1,6 +1,6 @@
-include ./../../blocks/header/header.pug
-include ./../../blocks/footer/footer.pug
-include ./../../blocks/cards.pug
+include header/header.pug
+include footer/footer.pug
+include cards.pug
 
 doctype html
 html(lang="en")
@@ -10,14 +10,13 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Регистрация аккаунта
     link(rel="stylesheet", href="./../default.scss")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(rel="stylesheet", href="sign-up.scss")
   body
 
     +header 
-
     main.main.main-sign-up 
       +card-sign-up
-      
     +footer
     
     script(src='sign-up.js')

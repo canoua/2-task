@@ -1,0 +1,132 @@
+// @import url('./custom-radio.scss');
+// @import url('./toggle.scss');
+
+.card{
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px;
+  margin-bottom: 40px;
+
+  &-inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1F2041;
+    margin-bottom: 20px;
+  }
+
+  &__input{
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+
+    &::placeholder{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.25);
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.radiobutton-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.radiobutton__item{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.radiobutton__item_input{
+  cursor: pointer;
+}
+
+
+.radiobutton__item_label{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.date-of-birth{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card__input{
+  width: 100%;
+}
+
+.toggle__info{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.card__note{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__note_info{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.card-btn-white{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #BC9CFF;
+  border: 2px solid #BC9CFF;
+  border-radius: 22px;
+  padding: 9px 20px;
+  cursor: pointer;
+  transition: .07s;
+}
+.card__title-2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 5px;
+}
