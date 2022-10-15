@@ -1,7 +1,7 @@
-include ./../../blocks/header/header.pug
-include ./../../blocks/footer/footer.pug
-include ./../../blocks/cards.pug
-include ./../../blocks/likes/likes.pug
+//- include ./../../blocks/header/header.pug
+//- include ./../../blocks/footer/footer.pug
+//- include ./../../blocks/cards.pug
+//- include ./../../blocks/likes/likes.pug
 
 
 doctype html
@@ -11,12 +11,12 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Room-details
-    link(rel="stylesheet", href="./../default.scss")
+    //- link(rel="stylesheet", href="./../default.scss")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    link(rel="stylesheet", href="room-details.scss")
+    //- link(rel="stylesheet", href="room-details.scss")
   body 
 
-    +header 
+    //- +header 
 
     main.main.main-room-details 
       .content 
@@ -84,11 +84,10 @@ html(lang="en")
                 .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
             
             .info__box.info__box-2  
-              +card-sign-in
+              //- +card-sign-in
               
-                          
             span.material-icons star
 
-    +footer    
+    //- +footer    
 
   script(src='room-details.js')

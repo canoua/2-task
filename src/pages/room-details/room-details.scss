@@ -1,9 +1,9 @@
-@import url('./../default.scss');
-@import url('./../../blocks/header/header.scss');
-@import url('./../../blocks/footer/footer.scss');
-@import url('./../../blocks/header/menu/menu-list.scss');
-@import url('./../../blocks/cards.scss');
-@import url('./../../blocks/likes/likes.scss');
+// @import url('./../default.scss');
+// @import url('./../../blocks/header/header.scss');
+// @import url('./../../blocks/footer/footer.scss');
+// @import url('./../../blocks/header/menu/menu-list.scss');
+// @import url('./../../blocks/cards.scss');
+// @import url('./../../blocks/likes/likes.scss');
 
 .material-icons{
   font-family: 'Material Icons';
@@ -18,7 +18,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  // text-fill-color: transparent;
 }
 
 .content{
@@ -119,13 +118,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  // &__diagram{
-
-  // }
-  // &__descr{
-
-  // }
 
   &__list{
 
