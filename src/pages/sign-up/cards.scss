@@ -54,15 +54,16 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
 .radiobutton__item{
   display: flex;
   align-items: center;
   margin-right: 20px;
 }
+
 .radiobutton__item_input{
   cursor: pointer;
 }
-
 
 .radiobutton__item_label{
   font-family: 'Montserrat';
@@ -78,6 +79,7 @@
   width: 100%;
   margin-bottom: 20px;
 }
+
 .card__input{
   width: 100%;
 }
@@ -97,6 +99,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .card__note_info{
   font-family: 'Montserrat';
   font-style: normal;
@@ -105,6 +108,7 @@
   line-height: 18px;
   color: #000000;
 }
+
 .card-btn-white{
   font-family: 'Montserrat';
   font-style: normal;
@@ -120,6 +124,7 @@
   cursor: pointer;
   transition: .07s;
 }
+
 .card__title-2{
   font-family: 'Montserrat';
   font-style: normal;

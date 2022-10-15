@@ -1,6 +1,6 @@
-include ./../../blocks/header/header.pug
-include ./../../blocks/footer/footer.pug
-include ./../../blocks/cards.pug
+include header/header.pug
+include footer/footer.pug
+//- include ./../../blocks/cards.pug
 
 doctype html
 html(lang="en")
@@ -14,10 +14,8 @@ html(lang="en")
   body
 
     +header 
-
     main.main.main-sign-in
-      +card-sign-in
-
+    //-   +card-sign-in
     +footer    
     
     script(src='sign-in.js')

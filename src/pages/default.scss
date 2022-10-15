@@ -1,3 +1,11 @@
+$darkshade100:#1F2041;
+$darkshade75:rgba(31, 32, 65, 0.75);
+$darkshade50:rgba(31, 32, 65, 0.5);
+$darkshade25:rgba(31, 32, 65, 0.25);
+$darkshade5:rgba(31, 32, 65, 0.05);
+$purple:#BC9CFF;
+$green:#6FCF97;
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -8,14 +16,6 @@
     url('https://example.com/MaterialIcons-Regular.woff') format('woff'),
     url('https://example.com/MaterialIcons-Regular.ttf') format('truetype');
 }
-
-$darkshade100:#1F2041;
-$darkshade75:rgba(31, 32, 65, 0.75);
-$darkshade50:rgba(31, 32, 65, 0.5);
-$darkshade25:rgba(31, 32, 65, 0.25);
-$darkshade5:rgba(31, 32, 65, 0.05);
-$purple:#BC9CFF;
-$green:#6FCF97;
 
 *{
   margin: 0;
@@ -122,7 +122,7 @@ body{
   transform: translate(0, -50%);
   width: 16px;
   height: 16px;
-  background-image: url('images/arrow_forward-white.svg');
+  background-image: url('img/arrow_forward-white.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
