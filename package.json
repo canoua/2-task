@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "colors-types": "parcel src/pages/ui-kit/colors-types/colors-types.pug --open",
-    "form-elements": "parcel src/pages/ui-kit/form-elements/form-elements.pug --open",
-    "ui-headers-footers": "parcel src/pages/ui-kit/headers-and-footers/headers-footers.pug --open",
+    "colors-types": "parcel src/pages/ui-kit/colors-types.pug --open",
+    "form-elements": "parcel src/pages/ui-kit/form-elements.pug --open",
+    "ui-headers-footers": "parcel src/pages/ui-kit/headers-footers.pug --open",
     "cards": "parcel src/pages/ui-kit/cards/cards.pug --open",
     "start": "parcel src/pages/sign-up/sign-up.pug --open",
     "signin": "parcel src/pages/sign-in/sign-in.pug --open",

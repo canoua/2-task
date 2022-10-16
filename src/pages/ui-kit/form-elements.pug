@@ -1,0 +1,337 @@
+include mixins.pug
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title form-elements
+    //- link(rel="stylesheet", href="./../../default.scss")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(rel="stylesheet", href="form-elements.scss")
+  body 
+    
+    .elements 
+      img.elements__logo(src="img/ui-logo.svg", alt="ui-kit-logo")
+      .container.elements-inner-1
+        .column 
+          +text-field-default('Text Field', 'Default', 'Email')
+          +text-field-hover('Text Field', 'Hover / Focus', 'This is pretty awesome')
+          +dropdown('Dropdown', 'Сколько гостей')
+          .masked-text-field.elements__item 
+            .elements__item_header
+              h3.h3 masked text field
+            input.card__input.card__input-masked(type="text" placeholder="ДД.ММ.ГГГГ")
+          .date-dropdown-wrapper 
+            .date-dropwown.elements__item.elements__item-box
+              .elements__item_header
+                h3.h3 date Dropdown
+              .card__input-wrapper
+                .card__input-date-dropdown ДД.ММ.ГГГГ
+                span.material-icons.material-icons-expand expand_more
+            .date-dropdown.elements__item.elements__item-box 
+              .elements__item_header
+                h3.h3 date Dropdown
+              .card__input-wrapper
+                .card__input-date-dropdown 19.08.2019
+                span.material-icons.material-icons-expand expand_more
+          .filter-date-dropdown.elements__item 
+            .elements__item_header
+              h3.h3 filter date dropdown
+            .card__input-wrapper
+              .card__input-dropdown.card__input-filter-date 19 авг - 23 авг
+              span.material-icons.material-icons-expand expand_more
+          +subscription-text-field('subscription text field', 'Email')
+          
+        .column 
+          .checkbox-buttons.elements__item 
+            .checkbox-buttons__header.elements__item_header
+              h3.h3 Checkbox Buttons
+            ul.checkbox__list 
+              li.checkbox__list_item 
+                input(type="checkbox").checkbox__list_input#smoking
+                label(for="smoking").checkbox__list_label Можно курить
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#pets
+                label(for="pets").checkbox__list_label Можно с питомцами
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#guests
+                label(for="guests").checkbox__list_label Можно пригласить гостей (до 10 человек)
+          .radiobuttons.elements__item 
+            .elements__item_header.radiobuttons__header
+              h3.h3 Radio Buttons
+            .radiobutton-wrapper 
+              p.radiobutton__item
+                input.input#test1(type='radio' name='radio-group' checked='')
+                label.radiobutton__item_label(for='test1') Мужчина
+              p.radiobutton__item
+                input.input#test2(type='radio' name='radio-group')
+                label.radiobutton__item_label(for='test2') Женщина
+          .toggle.elements__item 
+            .toggle__header.elements__item_header
+              h3.h3 Toggle
+            .toggle__item 
+              label.switch   
+                input(type="checkbox")
+                span.slider.round
+              span Получать спецпредложения
+            .toggle__item 
+              label.switch   
+                input(type="checkbox")
+                span.slider.round
+              span Получать спецпредложения  
+          .like-button.elements__item 
+            .elements__item_header.like-button__header
+              h3.h3 like button
+            .like-button-inner 
+              .like-button__item 
+                span.material-icons.material-icons-favorite-border.like-icon favorite_border
+                span.like-button__item_text 2
+              .like-button__item.like-button__item-favorite 
+                span.material-icons.material-icons-favorite.like-icon favorite
+                span.like-button__item_text 12
+          .rate-button.elements__item 
+            .elements__item_header.rate-button__header
+              h3.h3 rate button
+            .stars-ratings-wrapper 
+              .stars-ratings 
+                span.material-icons.material-icons-star star
+                span.material-icons.material-icons-star star
+                span.material-icons.material-icons-star star
+                span.material-icons.material-icons-star star
+                span.material-icons.material-icons-star star_border
+              .stars-ratings 
+                span.material-icons.material-icons-star star
+                span.material-icons.material-icons-star star
+                span.material-icons.material-icons-star star
+                span.material-icons.material-icons-star star
+                span.material-icons.material-icons-star star
+        
+        .column 
+          .range-slider.elements__item 
+            .elements__item_header.range-slider__header
+              h3.h3 Range Slider
+              span.elements__item_state
+               span.elements__item_state-1
+               span -
+               span.elements__item_state-2 
+            #range-slider
+          .buttons.elements__item 
+            .elements__item_header.buttons__header
+              h3.h3 buttons
+            .buttons-content 
+              .button-default-wrapper 
+                button.button.button-default.form-element-btn CLICK ME
+                button.button.button-default.button-default-hover.form-element-btn CLICK ME
+              .button-border-hover-wrapper 
+                button.button.button-border.form-element-btn CLICK ME
+                button.button.button-border.button-border-hover.form-element-btn CLICK ME
+              .icon-link-wrapper 
+                a(href="#").icon-link CLICK ME
+                a(href="#").icon-link.icon-link-hover CLICK ME
+              button.button-default-big 
+                span перейти к оплате
+                .material-icons.material-icons-arrow_forward arrow_forward 
+          .pagination.elements__item 
+            .elements__item_header.pagination__header
+              h3.h3 pagination
+            ul.pagination__list
+              li.pagination__list_item 
+                a.pagination__link.pagination__link-active(href="#") 1
+              li.pagination__list_item
+                a.pagination__link(href="#") 2
+              li.pagination__list_item 
+                a.pagination__link(href="#") 3 
+              li.pagination__list_item 
+                a.pagination__link(href="#") ... 
+              li.pagination__list_item
+                a.pagination__link(href="#") 15 
+              li.pagination__list_item
+                a.pagination__link.pagination__link-arrow(href="#")
+                  span.material-icons.material-icons-pagination-link arrow_forward 
+            .pagination__info 1 – 12 из 100+ вариантов аренды
+
+      .container.elements-inner-2
+        .column 
+          .dropdown-default.elements__item 
+            .elements__item_header
+              h3.h3 dropdown
+              span.elements__item_state Default
+            .card__input-wrapper
+              .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
+              span.material-icons.material-icons-expand expand_more
+          .dropdown-expanded.elements__item 
+            .elements__item_header.elements__item_header-expanded
+              h3.h3 dropdown
+              span.elements__item_state expanded
+            .card__input-wrapper_expanded-shadow 
+              .card__input-wrapper.card__input-wrapper-expanded
+                .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
+                span.material-icons.material-icons-expand expand_more
+              .elements__item_content
+                ul.dropdown-list 
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name спальни
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus -
+                      .dropdown-list__count_number 2
+                      .dropdown-list__count_plus +
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name кровати
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus -
+                      .dropdown-list__count_number 2
+                      .dropdown-list__count_plus +
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name ванные комнаты
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus.unactive-element -
+                      .dropdown-list__count_number 0
+                      .dropdown-list__count_plus +
+        .colummn 
+          .dropdown-expanded-guests.elements__item 
+            .elements__item_header.elements__item_header-expanded
+              h3.h3 dropdown
+            .card__input-wrapper_expanded-shadow 
+              .card__input-wrapper.card__input-wrapper-expanded
+                .card__input-dropdown.card__input-filter-date Сколько гостей
+                span.material-icons.material-icons-expand expand_more
+              .elements__item_content
+                form(action="").dropdown-expanded-guests__form 
+                  ul.dropdown-list.dropdown-expanded-guests__list 
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name взрослые
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name дети
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name младенцы
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus + 
+                  .dropdown-btns 
+                    button.dropdown__submit(type="submit") Применить 
+        .column
+          .dropdown-expanded-guests.elements__item 
+            .elements__item_header.elements__item_header-expanded
+              h3.h3 dropdown
+            .card__input-wrapper_expanded-shadow 
+              .card__input-wrapper.card__input-wrapper-expanded
+                .card__input-dropdown.card__input-filter-date 3 гостя
+                span.material-icons.material-icons-expand expand_more
+              .elements__item_content
+                form(action="").dropdown-expanded-guests__form 
+                  ul.dropdown-list.dropdown-expanded-guests__list 
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name взрослые
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus -
+                        .dropdown-list__count_number 2
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name дети
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus -
+                        .dropdown-list__count_number 1
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name младенцы
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus + 
+                  .dropdown-btns.dropdown-btns-2  
+                    button.dropdown__submit(type="submit") Очистить 
+                    button.dropdown__reset(type="reset") Применить 
+
+      .container.elements-inner-3
+        .column
+          .expandable-checkbox-list-default.elements__item
+            .checkbox__header.elements__item_header
+              h3.h3 expandable checkbox list
+              span.material-icons.material-icons-expand expand_more
+          .expandable-checkbox-list-expanded.elements__item
+            .checkbox__header.elements__item_header
+              h3.h3 expandable checkbox list
+              span.material-icons.material-icons-expand.material-icons-expand-reverse expand_more
+            ul.checkbox__list 
+              li.checkbox__list_item 
+                input(type="checkbox").checkbox__list_input#breakfast
+                label(for="breakfast").checkbox__list_label Завтрак
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#desk
+                label(for="desk").checkbox__list_label Письменный стол
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#chair-for-feeding
+                label(for="chair-for-feeding").checkbox__list_label Стул для кормления
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#crib
+                label(for="crib").checkbox__list_label Кроватка
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#television
+                label(for="television").checkbox__list_label Телевизор
+              li.checkbox__list_item  
+                input(type="checkbox").checkbox__list_input#shampoo
+                label(for="shampoo").checkbox__list_label Шампунь
+        .column  
+          .rich-checkbox-buttons.elements__item 
+            .checkbox-buttons__header.elements__item_header
+              h3.h3 Rich Checkbox Buttons
+            ul.checkbox__list 
+              li.checkbox__list_item.rich-checkbox__list_item 
+                .checkbox-wrapper
+                  input(type="checkbox").checkbox__list_input#corridor
+                  label(for="corridor").checkbox__list_label.checkbox__list_label-rich-title Широкий коридор
+              .checkbox__list_label-rich-info Ширина коридоров в номере не менее 91 см.
+              li.checkbox__list_item.rich-checkbox__list_item   
+                input(type="checkbox").checkbox__list_input#assistant
+                label(for="assistant").checkbox__list_label.checkbox__list_label-rich-title Помощник для инвалидов
+              .checkbox__list_label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
+        .column 
+          .bullet.elements__item 
+            .elements__item_header
+              h3.h3 bullet list
+            ul.bullet__list 
+              li.bullet__list_item Нельзя с питомцами
+              li.bullet__list_item Без вечеринок и мероприятий
+              li.bullet__list_item Время прибытия — после 13:00, а выезд до 12:00
+
+      .container.elements-inner-4  
+        .column
+          .elements__item
+            .information__item 
+              img.information__icon(src="img/icons/insert_emoticon.png", alt="icon")
+              .information__item-inner 
+                .information__title Комфорт
+                .information__text Шумопоглощающие стены
+            .information__item 
+              img.information__icon(src="img/icons/location_city.png", alt="icon")
+              .information__item-inner
+                .information__title Удобство
+                .information__text Окно в каждой из спален
+        .column-2  
+          .reviews
+            .review
+              .review__header  
+                .review__avatar 
+                  img.review__avatar_image(src="img/avatar-1.png", alt="avatar")
+                .review__name-wrapper
+                  .review__name Мурад Сарафанов
+                  .review__date 5 дней назад
+              .review__content 
+                .like-button__item.like-button__item-favorite 
+                  span.material-icons.material-icons-favorite.like-icon favorite
+                  span.like-button__item_text 12
+                .review__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шум
+    
+  script(src="scripts/range-slider.js")
+  script(src="form-elements.js")

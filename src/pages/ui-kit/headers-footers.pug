@@ -1,0 +1,27 @@
+include header/header.pug
+include header-2/header-2.pug
+include footer/footer.pug
+include footer-mobile/footer-mobile.pug
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title headers and footers
+    link(rel="stylesheet", href="headers-footers.scss")
+  body 
+
+    .headers-footers 
+      img.headers-footers__logo(src="img/ui-logo.svg", alt="ui-kit-logo")
+      .headers-footers__box 
+        +header 
+      .headers-footers__box 
+        +header-2
+      .headers-footers__box
+        +footer
+      .headers-footers__box
+        +footer-mobile
+      
+  script(src='headers-footers.js')
