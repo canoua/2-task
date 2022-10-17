@@ -6,17 +6,6 @@ $darkshade5:rgba(31, 32, 65, 0.05);
 $purple:#BC9CFF;
 $green:#6FCF97;
 
-// @font-face {
-//   font-family: 'Material Icons';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('https://example.com/MaterialIcons-Regular.eot'); /* For IE6-8 */
-//   src: 
-//     url('https://example.com/MaterialIcons-Regular.woff2') format('woff2'),
-//     url('https://example.com/MaterialIcons-Regular.woff') format('woff'),
-//     url('https://example.com/MaterialIcons-Regular.ttf') format('truetype');
-// }
-
 *{
   margin: 0;
   padding: 0;
@@ -74,69 +63,3 @@ body{
   max-width: 1160px;
   margin: 0 auto;
 }
-
-// .btn-white{
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 12px;
-//   line-height: 15px;
-//   text-transform: uppercase;
-//   background-color: #fff;
-//   color: #BC9CFF;
-//   border: 2px solid #BC9CFF;
-//   border-radius: 22px;
-//   padding: 9px 20px;
-//   cursor: pointer;
-//   margin-right: 20px;
-//   transition: .07s;
-// }
-
-// .btn-gradient,
-// .btn-gradient-arrow{
-//   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-//   border-radius: 22px;
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 12px;
-//   line-height: 15px;
-//   text-transform: uppercase;
-//   color: #FFFFFF;
-//   border: none;
-//   padding: 9px 20px;
-//   cursor: pointer;
-//   transition: .3s;
-//   height: 44px;
-// }
-
-// .btn-gradient-arrow{
-//   position: relative;
-//   margin-bottom: 30px;
-//   margin-top: 20px;
-// }
-
-// .btn-gradient-arrow::after{
-//   content: '';
-//   position: absolute;
-//   top: 50%;
-//   right: 14px;
-//   transform: translate(0, -50%);
-//   width: 16px;
-//   height: 16px;
-//   background-image: url('img/arrow_forward-white.svg');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
-// .btn-white:hover,
-// .btn-gradient:hover,
-// .btn-gradient-arrow:hover{
-//   opacity: 0.5;
-// }
-
-// .btn-white:active,
-// .btn-gradient:active,
-// .btn-gradient-arrow:active{
-//   color: rgba(31, 32, 65, 0.5)
-// }
