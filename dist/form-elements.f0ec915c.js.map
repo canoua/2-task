@@ -1,1 +1,0 @@
-{"version":3,"sources":["form-elements.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,eAAZ","file":"form-elements.f0ec915c.js","sourceRoot":"..\\src\\pages\\ui-kit","sourcesContent":["console.log('form-elements');\r\n"]}

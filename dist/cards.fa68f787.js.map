@@ -1,1 +1,0 @@
-{"version":3,"sources":["cards.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,OAAZ","file":"cards.fa68f787.js","sourceRoot":"..\\src\\pages\\ui-kit\\cards","sourcesContent":["console.log('cards');"]}
