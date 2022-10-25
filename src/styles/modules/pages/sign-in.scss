@@ -1,0 +1,16 @@
+// @import './../default.scss';
+// @import './../../assets/fonts/Montserrat/stylesheet.css';
+// @import './header/header.scss';
+// @import './footer/footer.scss';
+
+.main{
+  padding: 19px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url('./../images/registration-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+

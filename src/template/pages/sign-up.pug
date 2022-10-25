@@ -1,0 +1,21 @@
+include header/header.pug
+include footer/footer.pug
+include cards.pug
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Регистрация аккаунта
+    link(rel="stylesheet", href="sign-up.scss")
+  body
+
+    +header 
+    main.main.main-sign-up 
+      +card-sign-up
+    +footer
+    
+    //- script(src='sign-up.js')
+    script(src='./../../scripts/app.js')
