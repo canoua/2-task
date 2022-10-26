@@ -1,25 +1,3 @@
-// @import './../../assets/fonts/Montserrat/stylesheet.css';
-// @import './../default.scss';
-// @import './styles/material-icons.scss';
-// @import  './../variables.scss';
-// @import './styles/nouislider.min.css';//range-slider
-
-// @import './styles/toggle.scss';
-// @import './styles/radiobuttons.scss';
-// @import './styles/buttons.scss';
-// @import './styles/pagination.scss';
-// @import './styles/review.scss';
-// @import './styles/range-slider.scss';
-// @import './styles/bullet.scss';
-// @import './styles/like-button.scss';
-// @import './styles/dropdown.scss';
-// @import './styles/filter-date-dropdown.scss';
-// @import './styles/rate-button.scss';
-// @import './styles/subscription-text-field.scss';
-// @import './../room-details/room-details.scss';
-// // @import './styles/material-icons.scss';
-// @import './styles/checkbox.scss';
-
 .elements{
   position: relative;
   padding: 140px 0 131px 0;
@@ -63,8 +41,6 @@
     }
 
     &_state{
-      font-family: 'Montserrat';
-      font-style: normal;
       font-weight: 400;
       font-size: 12px;
       line-height: 15px;
@@ -109,8 +85,6 @@
       border: 1px solid $darkshade50;
 
       &::placeholder{
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
@@ -122,8 +96,6 @@
       border: none;
       width: 276px;
       height: 100%;
-      font-family: 'Montserrat';
-      font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
@@ -169,8 +141,6 @@
         width: 100%;
         height: 100%;
         border: none;
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;

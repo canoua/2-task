@@ -1,3 +1,9 @@
-import rangeSlider from './modules/range-slider.js';
+import rangeSlider from './modules/range-slider';
 
-rangeSlider();
+'use strict'
+
+document.addEventListener('DOMContentLoaded', () => {
+  //range-slider 
+  if (document.querySelector('#range-slider')) rangeSlider();  
+})
+

@@ -1,6 +1,5 @@
 @import './variables.scss';
 
-
 .material-icons{
   font-family: 'Material Icons';
   font-style: normal;
@@ -36,12 +35,47 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 
-    &-border{
-      font-size: 10px;
-      background: $darkshade25;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+    // &-border{
+    //   font-size: 10px;
+    //   background: $darkshade25;
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: transparent;
+    //   background-clip: text;
+    // }
   }
+}
+
+.material-icons-arrow_forward{
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translate(0, -50%);
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons-pagination-link{
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons.material-icons-favorite-border{
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-size: 10px;
+  background: $darkshade25;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

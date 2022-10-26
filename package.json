@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "colors-types": "parcel src/template/pages/colors-types.pug --open",
-    "form-elements": "parcel src/pages/ui-kit/form-elements.pug --open",
-    "ui-headers-footers": "parcel src/pages/ui-kit/headers-footers.pug --open",
-    "cards": "parcel src/pages/ui-kit/cards/cards.pug --open",
-    "start": "parcel src/pages/sign-up/sign-up.pug --open",
-    "signin": "parcel src/pages/sign-in/sign-in.pug --open",
-    "room-details": "parcel src/pages/room-details/room-details.pug --open",
+    "form-elements": "parcel src/template/pages/form-elements.pug --open",
+    "headers-footers": "parcel src/template/pages/headers-footers.pug --open",
+    "cards": "parcel src/template/pages/cards.pug --open",
+    "sign-up": "parcel src/template/pages/sign-up.pug --open",
+    "sign-in": "parcel src/template/pages/sign-in.pug --open",
+    "room-details": "parcel src/template/pages/room-details.pug --open",
     "build": "parcel build src/pages/sign-in/sign-in.pug src/pages/sign-up/sign-up.pug src/pages/sign-in/sign-in.scss src/pages/sign-up/sign-up.scss -d docs --public-url ./"
   },
   "author": "Andrew Karyaka",

@@ -1,5 +1,5 @@
-include header/header.pug
-include footer/footer.pug
+include ../layout/header.pug
+include ../layout/footer.pug
 
 doctype html
 html(lang="en")
@@ -8,7 +8,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Вход
-    link(rel="stylesheet", href="sign-in.scss")
+    link(rel="stylesheet", href="/../../styles/commons.scss")
   body
 
     +header 
@@ -16,5 +16,4 @@ html(lang="en")
     //-   +card-sign-in
     +footer    
     
-    //- script(src='sign-in.js')
-    script(src='./../../scripts/app.js')
+    script(src='/../../scripts/app.js')

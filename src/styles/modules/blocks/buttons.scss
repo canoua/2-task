@@ -7,8 +7,6 @@
   border-radius: 22px;
   cursor: pointer;
   text-transform: uppercase;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -31,8 +29,6 @@
 
     &-big{
       padding: 15px 20px;
-      font-family: 'Montserrat';
-      font-style: normal;
       font-weight: 700;
       font-size: 12px;
       line-height: 15px;
@@ -74,8 +70,6 @@
 .icon{
 
   &-link{
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -94,16 +88,16 @@
   }
 }
 
-.material-icons-arrow_forward{
-  font-size: 24px;
-  line-height: 24px;
-  position: absolute;
-  top: 50%;
-  right: 14px;
-  transform: translate(0, -50%);
-  background: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+// .material-icons-arrow_forward{
+//   font-size: 24px;
+//   line-height: 24px;
+//   position: absolute;
+//   top: 50%;
+//   right: 14px;
+//   transform: translate(0, -50%);
+//   background: #fff;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   background-clip: text;
+// }
 

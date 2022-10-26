@@ -1,6 +1,6 @@
 import noUiSlider from 'nouislider';
 
-function rangeSlider() {
+export default function rangeSlider() {
   console.log('range-slider');
   const rangeSlider = document.querySelector('#range-slider');
 

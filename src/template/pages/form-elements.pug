@@ -1,4 +1,4 @@
-include mixins.pug
+include ../modules/mixins.pug
 
 doctype html
 html(lang="en")
@@ -8,11 +8,11 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title form-elements
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    link(rel="stylesheet", href="form-elements.scss")
+    link(rel="stylesheet", href="/../../styles/commons.scss")
   body 
     
     .elements 
-      img.elements__logo(src="img/ui-logo.svg", alt="ui-kit-logo")
+      img.elements__logo(src="/../../images/ui-logo.svg", alt="ui-kit-logo")
       .container.elements-inner-1
         .column 
           +text-field-default('Text Field', 'Default', 'Email')
@@ -308,12 +308,12 @@ html(lang="en")
         .column
           .elements__item
             .information__item 
-              img.information__icon(src="img/icons/insert_emoticon.png", alt="icon")
+              img.information__icon(src="/../../images/icons/insert_emoticon.png", alt="icon")
               .information__item-inner 
                 .information__title Комфорт
                 .information__text Шумопоглощающие стены
             .information__item 
-              img.information__icon(src="img/icons/location_city.png", alt="icon")
+              img.information__icon(src="/../../images/icons/location_city.png", alt="icon")
               .information__item-inner
                 .information__title Удобство
                 .information__text Окно в каждой из спален
@@ -322,7 +322,7 @@ html(lang="en")
             .review
               .review__header  
                 .review__avatar 
-                  img.review__avatar_image(src="img/avatar-1.png", alt="avatar")
+                  img.review__avatar_image(src="/../../images/avatar-1.png", alt="avatar")
                 .review__name-wrapper
                   .review__name Мурад Сарафанов
                   .review__date 5 дней назад
@@ -332,6 +332,4 @@ html(lang="en")
                   span.like-button__item_text 12
                 .review__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шум
     
-  //- script(src="scripts/range-slider.js")
-  //- script(src="form-elements.js")
-  script(src='./../../scripts/app.js')
+  script(src='/../../scripts/app.js')

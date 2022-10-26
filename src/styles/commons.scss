@@ -2,17 +2,17 @@
 @import './modules/libs/nouislider.min.css';
 
 /*defaults*/
+@import './modules/default/material-icons.scss';
 @import './../fonts/Montserrat/stylesheet.css';
 @import './modules/default/variables.scss';
 @import './modules/default/default.scss';
-@import './modules/default/material-icons.scss';
+
 
 // /*blocks*/
 @import './modules/blocks/bullet.scss';
 @import './modules/blocks/buttons.scss';
 @import './modules/blocks/cards.scss';
 @import './modules/blocks/checkbox.scss';
-
 @import './modules/blocks/dropdown.scss';
 @import './modules/blocks/filter-date-dropdown.scss';
 @import './modules/blocks/like-button.scss';
@@ -26,7 +26,6 @@
 @import './modules/blocks/subscription-text-field.scss';
 @import './modules/blocks/toggle.scss';
 @import './modules/blocks/toggle-2\(пров\).scss';
-// @import '/src/styles/modules/blocks/custom-radio.scss';
 @import './modules/blocks/custom-radio.scss';
 
 // /*layout*/
