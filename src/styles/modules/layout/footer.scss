@@ -20,14 +20,14 @@
         &::placeholder{
           font-size: 14px;
           line-height: 24px;
-          color: rgba(31, 32, 65, 0.25);
+          color: $darkshade25;
         }
       }
 
       &-info{
         font-size: 14px;
         line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
+        color: $darkshade75;
         margin-bottom: 20px;
       }
     }
@@ -44,7 +44,7 @@
     &_block{
       font-size: 14px;
       line-height: 24px;
-      color: rgba(31, 32, 65, 0.75);
+      color: $darkshade75;
     }
   }
 
@@ -59,7 +59,7 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #1F2041;
+    color: $darkshade100;
   }
 
   &__list{
@@ -71,10 +71,10 @@
     &_link{
       font-size: 14px;
       line-height: 17px;
-      color: rgba(31, 32, 65, 0.5);
+      color: $darkshade50;
 
       &:hover{
-        color: rgba(31, 32, 65, 0.75);
+        color: $darkshade75;
       }
     }
   }
@@ -83,7 +83,7 @@
 
     &-wrapper{
       background: #FFFFFF;
-      border: 1px solid rgba(31, 32, 65, 0.25);
+      border: 1px solid $darkshade25;
       box-sizing: border-box;
       border-radius: 4px;
       width: 100%;
@@ -117,7 +117,7 @@
     &-text{
       font-size: 14px;
       line-height: 17px;
-      color: rgba(31, 32, 65, 0.75);
+      color: $darkshade75;
     }
 
     &_link{

@@ -1,21 +1,3 @@
-// @import url('./../../blocks/cards.scss');
-// @import url('./../../blocks/likes/likes.scss');
-
-.material-icons{
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .content{
   display: flex;
   height: 485px;
@@ -35,16 +17,19 @@
     }
   }
 }
+
 .img-1{
   height: 100%;
 }
+
 .img-2,
 .img-3{
   height: 50%;
 }
+
 .info{
   padding: 70px 0;
-  border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+  border-bottom: 1px solid $darkshade25;
 
   &-inner{
     display: flex;
@@ -85,14 +70,14 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
   }
 
   &__text{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
   }
 }
 
@@ -113,7 +98,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
-      color: rgba(31, 32, 65, 0.75);
+      color: $darkshade75;
       position: relative;
 
       &::after{
@@ -178,7 +163,7 @@
       font-size: 14px;
       line-height: 14px;
       text-align: right;
-      color: rgba(31, 32, 65, 0.5);
+      color: $darkshade50;
     }
   }
 }
@@ -189,14 +174,14 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
   }
 
   &__date{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
   }
 
   &__avatar{
@@ -240,7 +225,7 @@
         width: 10px;
         height: 10px;
         border-radius: 100%;
-        background: rgba(31, 32, 65, 0.25);
+        background: $darkshade25;
       }
     }
   } 
@@ -257,6 +242,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
   }
 }

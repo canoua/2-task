@@ -1,12 +1,31 @@
 .header{
   padding: 15px 0;
   background-color: #fff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px $darkshade5;
 
   &-inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__btn{
+
+    &-white{
+      transition: .2s linear;
+
+      &:hover{
+        border-color: rgba(188, 156, 255, .5);
+      }
+    }
+
+    &-border{
+      transition: .2s linear;
+      
+      &:hover{
+        opacity: 0.5;
+      }
+    }
   }
 }
 

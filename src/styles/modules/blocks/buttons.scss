@@ -3,13 +3,15 @@
 }
 
 .button{
-  padding: 15px 21px;
+  font-family: 'Montserrat';
+  // padding: 15px 21px;
+  padding: 9px 21px;
   border-radius: 22px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 14.63px;
 
   &-default{
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -79,7 +81,7 @@
     margin-right: 20px;
 
     &-hover{
-      color: rgba(31, 32, 65, 0.5);
+      color: $darkshade50;
     }
 
     &-wrapper{
@@ -87,17 +89,4 @@
     }
   }
 }
-
-// .material-icons-arrow_forward{
-//   font-size: 24px;
-//   line-height: 24px;
-//   position: absolute;
-//   top: 50%;
-//   right: 14px;
-//   transform: translate(0, -50%);
-//   background: #fff;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-clip: text;
-// }
 

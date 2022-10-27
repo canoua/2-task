@@ -1,17 +1,19 @@
-/*toggle*/
 .toggle-wrapper{
   display: flex;
   align-items: center;
 }
+
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
 }
+
 .switch input {
-  display:none;
+  display: none;
 }
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -23,12 +25,13 @@
   -webkit-transition: .4s;
   transition: .4s;
   background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $darkshade25;
   box-sizing: border-box;
   border-radius: 10px;
   width: 40px;
   height: 20px;
 }
+
 .slider:before {
   position: absolute;
   content: "";
@@ -36,23 +39,27 @@
   width: 12px;
   left: 4px;
   bottom: 3px;
-  background: rgba(31, 32, 65, 0.25);
+  background: $darkshade25;
   border-radius: 10px;
   -webkit-transition: .4s;
   transition: .3s;
 }
+
 input:checked + .slider {
-  border: 1px solid  #BC9CFF;
+  border: 1px solid  $purple;
 }
+
 input:checked + .slider:before {
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
 }
+
 .slider.round {
   border-radius: 34px;
 }
+
 .slider.round:before {
   border-radius: 50%;
 }

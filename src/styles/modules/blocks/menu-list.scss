@@ -11,7 +11,8 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 17px;
-      color: rgba(31, 32, 65, 0.5);
+      color: $darkshade50;
+      transition: .2s linear;
 
       &:hover{
         text-shadow: 0 0 1px #333, 0 0 .65px #333;

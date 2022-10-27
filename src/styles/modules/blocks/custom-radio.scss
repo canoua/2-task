@@ -4,11 +4,13 @@
   opacity: 0;
   transition: .3s;
 }
+
 .custom-radio+label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
+
 .custom-radio+label::before {
   content: '';
   display: inline-block;
@@ -24,18 +26,22 @@
   background-size: 70% 70%;
   transition: .3s;
 }
+
 .custom-radio:not(:disabled):not(:checked)+label:hover::before {
-  border-color: #BC9CFF;
+  border-color: $purple;
 }
+
 .custom-radio:not(:disabled):active+label::before {
-  background-color: #BC9CFF;
+  background-color: $purple;
   border-color: #b3d7ff;
 }
+
 .custom-radio:focus:not(:checked)+label::before {
   border-color: #80bdff;
 }
+
 .custom-radio:checked+label::before {
-  border-color: #BC9CFF;
+  border-color: $purple;
   background-color: #fff;
   background-image: url('./../images/radio-rectangle.png');
   background-repeat: no-repeat;

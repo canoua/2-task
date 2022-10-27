@@ -1,13 +1,11 @@
 .btn-white{
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   background-color: #fff;
-  color: #BC9CFF;
-  border: 2px solid #BC9CFF;
+  color: $purple;
+  border: 2px solid $purple;
   border-radius: 22px;
   padding: 9px 20px;
   cursor: pointer;
@@ -17,10 +15,8 @@
 
 .btn-gradient,
 .btn-gradient-arrow{
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
   border-radius: 22px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -61,5 +57,5 @@
 .btn-white:active,
 .btn-gradient:active,
 .btn-gradient-arrow:active{
-  color: rgba(31, 32, 65, 0.5)
+  color: $darkshade50;
 }

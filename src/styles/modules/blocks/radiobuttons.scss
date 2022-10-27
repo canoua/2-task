@@ -3,15 +3,16 @@
     position: absolute;
     left: -9999px;
 }
+
 .input:checked + label,
-.input:not(:checked) + label
-{
+.input:not(:checked) + label{
     position: relative;
     padding-left: 28px;
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
 }
+
 .input:checked + label:before,
 .input:not(:checked) + label:before {
     content: '';
@@ -25,11 +26,11 @@
 }
 
 .input:not(:checked) + label:before{
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
 }
 
 .input:checked + label:before{
-    border: 1px solid #BC9CFF;
+    border: 1px solid $purple;
 }
 
 .input:checked + label:after,
@@ -45,11 +46,13 @@
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+
 .input:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
+
 .input:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);

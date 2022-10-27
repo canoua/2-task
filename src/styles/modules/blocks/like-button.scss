@@ -16,7 +16,7 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      border: 1px solid rgba(31, 32, 65, 0.25);
+      border: 1px solid $darkshade25;
       border-radius: 10px;
       width: 40px;
       height: 20px;
@@ -28,7 +28,7 @@
       }
 
       &-favorite{
-        border: 1px solid #BC9CFF;
+        border: 1px solid $purple;
       }
 
       &_text{

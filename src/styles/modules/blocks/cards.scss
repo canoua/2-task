@@ -1,7 +1,5 @@
-// @import url('./custom-radio.scss');
-// @import url('./toggle.scss');
-
 .card{
+  font-family: 'Montserrat';
   width: 380px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -26,17 +24,19 @@
 
   &__input{
     background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
     box-sizing: border-box;
     border-radius: 4px;
     padding: 12px 15px;
     margin-bottom: 10px;
 
     &::placeholder{
+      font-family: 'Montserrat';
+      font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
-      color: rgba(31, 32, 65, 0.25);
+      color: $darkshade25;
     }
 
     &:last-child{
@@ -65,7 +65,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.5);
+  color: $darkshade50;
   cursor: pointer;
 }
 
@@ -82,7 +82,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  color: $darkshade75;
 }
 
 .card__note{
@@ -106,7 +106,7 @@
   text-transform: uppercase;
   background-color: #fff;
   color: #BC9CFF;
-  border: 2px solid #BC9CFF;
+  border: 2px solid $purple;
   border-radius: 22px;
   padding: 9px 20px;
   cursor: pointer;
@@ -118,6 +118,6 @@
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1F2041;
+  color: $darkshade100;
   margin-bottom: 5px;
 }

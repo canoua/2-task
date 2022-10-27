@@ -1,5 +1,3 @@
-// @import './variables.scss';
-
 .toggle.elements__item{
   margin-bottom: 40px;
 }
@@ -51,20 +49,20 @@
   top: 3px;
   left: 4px;
   bottom: 4px;
-  background: rgba(31, 32, 65, 0.25);
+  background: $darkshade25;
   -webkit-transition: .1s; 
   transition: .1s ;
 }
 
 input:checked + .slider{
-  border: 1px solid #BC9CFF;
+  border: 1px solid $purple;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
 }
 
 .slider.round:before {

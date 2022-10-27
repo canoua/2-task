@@ -9,7 +9,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
 
     &-wrapper{
       display: flex;
@@ -21,7 +21,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    color: $darkshade75;
   }
 
   &__avatar{

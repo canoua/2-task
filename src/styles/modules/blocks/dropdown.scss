@@ -46,14 +46,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: rgba(31, 32, 65, 0.5);
+        color: $darkshade50;
         cursor: pointer;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $darkshade25;
         border-radius: 22px;
       }
 
       &_number{
         font-weight: 700;
+        width: 8px;
         font-size: 12px;
         line-height: 15px;
         text-align: center;
@@ -76,11 +77,13 @@
   
   &__submit,
   &__reset{
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #BC9CFF;
+    color: $purple;
     border: none;
     background: transparent;
     cursor: pointer;
