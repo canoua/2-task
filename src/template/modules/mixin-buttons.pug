@@ -4,5 +4,7 @@ mixin button-white(btnClass,text)
 mixin button-gradient(btnGradientClass,textGradient)
   button.button.button-default.header__btn-border(class=btnGradientClass)= textGradient
 
-//- mixin btn-gradient-arrow(classes, textGradBtn)
-//-   button(class=classes)= textGradBtn
+mixin btn-gradient-arrow(classes, textGradBtn)
+  button.button-default-big(class=classes)
+    span=textGradBtn
+    .material-icons.material-icons-arrow_forward arrow_forward 

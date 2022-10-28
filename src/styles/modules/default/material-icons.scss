@@ -73,3 +73,23 @@
   transform: rotate(180deg);
 }
 
+.material-icons.material-icons-arrow-blue{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons.material-icons-expand.material-icons-expand-menu {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21px;
+  color: $darkshade50;
+}
