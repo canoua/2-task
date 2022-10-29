@@ -28,3 +28,29 @@ mixin subscription-text-field(title, placeholder)
       input.footer__box_item-input(type="text" placeholder=placeholder)
       button.footer__button-input 
         span.material-icons.material-icons-arrow-blue arrow_forward
+
+mixin radiobuttons(title)
+  .radiobuttons.elements__item 
+    .elements__item_header.radiobuttons__header
+      h3.h3=title 
+    .radiobutton-wrapper 
+      p.radiobutton__item
+        input.input#test1(type='radio' name='radio-group' checked='')
+        label.radiobutton__item_label(for='test1') Мужчина
+      p.radiobutton__item
+        input.input#test2(type='radio' name='radio-group')
+        label.radiobutton__item_label(for='test2') Женщина
+
+mixin masked-text-field(title)
+  .masked-text-field.elements__item 
+    .elements__item_header
+      h3.h3=title
+    input.card__input.card__input-masked(type="text" placeholder="ДД.ММ.ГГГГ")
+
+mixin toggle(text)
+  .toggle.elements__item 
+    .toggle__item 
+      label.switch   
+        input(type="checkbox")
+        span.slider.round
+      span=text

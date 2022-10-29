@@ -2,6 +2,7 @@ import noUiSlider from 'nouislider';
 
 export default function rangeSlider() {
   console.log('range-slider');
+  
   const rangeSlider = document.querySelector('#range-slider');
 
   const outputValues1 = document.querySelector('.elements__item_state-1');

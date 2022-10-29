@@ -55,3 +55,15 @@ body{
   max-width: 1160px;
   margin: 0 auto;
 }
+
+.main{
+  // padding: 19px 0;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./../images/registration-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

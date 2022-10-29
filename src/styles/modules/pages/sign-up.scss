@@ -1,11 +1,21 @@
-.main{
-  padding: 19px 0;
-  display: flex;
-  justify-content: center;
-  background-image: url('./../images/registration-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.main-sign-up .text-field-default{
+  margin-bottom: 10px;
+}
+
+.main-sign-up .inputs-wrapper,
+.main-sign-up .radiobuttons__header,
+.main-sign-up .radiobutton-wrapper{
+  margin-bottom: 0;
+}
+
+.main-sign-up .radiobuttons,
+.main-sign-up .masked-text-field,
+.main-sign-up .toggle{
+  margin-bottom: 20px;
+}
+
+.main-sign-up form .card{
+  margin-bottom: 0;
 }
 
 
