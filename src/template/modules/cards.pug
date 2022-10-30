@@ -31,4 +31,12 @@ mixin card-sign-up
         .card__note 
           span.card__note_info Уже есть аккаунт на Toxin?
           +button-white('card-btn-white', 'войти')
+
+mixin landing-card 
+  form(action="")
+    .card 
+      .card-inner  
+        h1.card__title Найдём номера под ваши пожелания
+        +btn-gradient-arrow('', 'подобрать номер')
+        input.calendar(type="text")
           

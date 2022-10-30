@@ -12,6 +12,7 @@
     "sign-up": "parcel src/template/pages/sign-up.pug --open",
     "sign-in": "parcel src/template/pages/sign-in.pug --open",
     "room-details": "parcel src/template/pages/room-details.pug --open",
+    "landing": "parcel src/template/pages/landing.pug --open",
     "build": "parcel build src/pages/sign-in/sign-in.pug src/pages/sign-up/sign-up.pug src/pages/sign-in/sign-in.scss src/pages/sign-up/sign-up.scss -d docs --public-url ./"
   },
   "author": "Andrew Karyaka",
@@ -22,6 +23,7 @@
     "sass": "^1.50.0"
   },
   "dependencies": {
+    "air-datepicker": "^3.3.0",
     "footer": "^1.0.0",
     "header": "^0.1.1",
     "imask": "^6.4.3",
