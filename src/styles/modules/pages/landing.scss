@@ -2,3 +2,50 @@
   display: block;
   padding: 70px 0;
 }
+
+.air-datepicker{
+  padding: 20px;
+}
+
+.air-datepicker-body--day-name{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: $purple;
+  text-transform: none;
+}
+
+.air-datepicker-nav--title{
+  font-weight: 700;
+}
+
+.air-datepicker--pointer{
+  display: none;
+}
+
+.air-datepicker-button{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.air-datepicker-nav {
+  border-bottom: none;
+}
+
+// .air-datepicker-nav--action svg{
+//   display: none;
+// }
+
+.air-datepicker--content {
+    padding: 0;
+  // box-sizing: content-box;
+    // padding: var(--adp-padding);
+    // grid-area: body;
+}
