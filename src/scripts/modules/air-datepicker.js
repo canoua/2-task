@@ -1,22 +1,21 @@
 import AirDatepicker from 'air-datepicker';
 
 export default function airDatePicker() {
-  let button = {
-    className: 'custom-button-classname',
+  let buttonApply = {
+    className: 'buttonAirData',
+    content: 'Применить'
   }
-
-  // let arrows = document.querySelector('.air-datepicker-nav--action');
   
   new AirDatepicker('.calendar', {
     selectedDates: [new Date()],
     range: true,
+    dynamicRange: true,
+    multipleDates: true,
     multipleDatesSeparator: ' - ',
     navTitles: {
-        days: '<div>MMMM yyyy</div>'
+      days: '<div>MMMM yyyy</div>'
     },
-    buttons: ['clear'],
-    visible: true
+    buttons: ['clear', buttonApply],
+    visible: true,
   });
-
-  // console.log(arrows.childNodes);
 }

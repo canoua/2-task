@@ -27,6 +27,7 @@
     "footer": "^1.0.0",
     "header": "^0.1.1",
     "imask": "^6.4.3",
+    "item-quantity-dropdown": "^2.1.0",
     "nouislider": "^15.6.1"
   }
 }

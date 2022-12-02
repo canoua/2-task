@@ -37,6 +37,12 @@ mixin landing-card
     .card 
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
+        .date-dropdown-wrapper
+          +date-dropdown('прибытие')
+          +date-dropdown('выезд')
+        +dropdown
+        //- +dropdown('гости', 'Сколько гостей')
         +btn-gradient-arrow('', 'подобрать номер')
-        input.calendar(type="text")
+
+         
           
