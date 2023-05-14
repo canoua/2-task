@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.h1{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: $darkshade100;
+}
+
+.h2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: $darkshade100;
+}
+
+.h3{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $darkshade100;
+}
+
+.container{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.main{
+  // padding: 19px 0;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./../images/registration-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

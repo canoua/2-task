@@ -1,0 +1,95 @@
+@import './variables.scss';
+
+.material-icons{
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.material-icons.material-icons-star{
+  line-height: 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+}
+
+.material-icons.material-icons-favorite{
+  font-size: 10px;
+  background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons.material-icons-arrow_forward{
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translate(0, -50%);
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons.material-icons-pagination-link{
+  line-height: 20px;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons.material-icons-favorite-border{
+  font-size: 10px;
+  background: $darkshade25;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons.material-icons-expand{
+  line-height: 24px;
+  background: $darkshade50;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+}
+
+.material-icons.material-icons-expand.material-icons-expand-dark{
+  background: $darkshade75;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons.material-icons-reverse{
+  transform: rotate(180deg);
+}
+
+.material-icons.material-icons-arrow-blue{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.material-icons.material-icons-expand.material-icons-expand-menu {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21px;
+  color: $darkshade50;
+}
