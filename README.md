@@ -1,6 +1,8 @@
 # 2-task
 
 Проект состоит из 5 страниц
+ 
+Сборка на Parcel
 
 Технологии(PUG, SCSS, JavaScript, Parcel)
 
