@@ -1,4 +1,6 @@
 # 2-task
+задание
+https://coda.io/@metalamp/education/front-end-2
 
 Проект состоит из 5 страниц
  
