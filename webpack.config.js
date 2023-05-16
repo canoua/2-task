@@ -2,17 +2,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PugPlugin = require('pug-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const { watchFile } = require('fs');
 // const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: {
-    cards: path.join(__dirname, 'src', 'index.js'),
+    index: './src/pages/index/index.pug',
+    cTypes: './src/pages/colors-types/index.pug',
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'index.[contenthash].js',
-    assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+    clean: true,
+    path: path.join(__dirname, 'dist/pages/'),
+    // filename: 'index.[contenthash].js',
+    // assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
   },
 
   module: {
@@ -23,8 +27,8 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.pug$/,
-        loader: 'pug-loader',
+        test: /.pug$/,
+        loader: PugPlugin.loader, // Pug loader
       },
       {
         test: /\.(scss|css)$/,
@@ -56,10 +60,19 @@ module.exports = {
   },
   
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'index.pug'),
-      filename: 'index.html',
+    new PugPlugin({
+      pretty: true,
+      js:{
+        filename: '[name].js'
+      },
+      css:{
+        filename: '[name].css'
+      }
     }),
+    // new HtmlWebpackPlugin({
+    //   template: path.join(__dirname, 'src', 'index.pug'),
+    //   filename: 'index.html',
+    // }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({      
       filename: '[name].[contenthash].css',
@@ -81,10 +94,11 @@ module.exports = {
     // })
   ],
 
-  devServer: {
-    watchFiles: path.join(__dirname, 'src'),
-    port: 9000,
-  },
+  devServer: 
+    {
+      watchFiles: path.join(__dirname, 'src'),
+      port: 9000,
+    },
 
   optimization: {
     minimizer: [
