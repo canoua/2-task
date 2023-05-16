@@ -1,2 +1,2 @@
-import './scripts/app.js';
-import './styles/commons.scss';
+// import './scripts/app.js';
+// import './styles/commons.scss';

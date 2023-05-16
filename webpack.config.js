@@ -6,7 +6,9 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 // const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
-  entry: path.join(__dirname, 'src', 'index.js'),
+  entry: {
+    cards: path.join(__dirname, 'src', 'index.js'),
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'index.[contenthash].js',
@@ -57,10 +59,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'index.pug'),
       filename: 'index.html',
-    }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'template/pages/cards.pug'),
-      filename: 'cards.html',
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({      
