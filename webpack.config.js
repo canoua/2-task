@@ -1,82 +1,57 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PugPlugin = require('pug-plugin');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
-const { watchFile } = require('fs');
-// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: './src/pages/index/index.pug',
-    cTypes: './src/pages/colors-types/index.pug',
+    'pages/cards': './src/pages/cards/index.pug',
+    'pages/index': './src/pages/landing/index.pug',
   },
   output: {
-    clean: true,
-    path: path.join(__dirname, 'dist/pages/'),
-    // filename: 'index.[contenthash].js',
-    // assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+    path: path.join(__dirname, 'dist/'),
+    // publicPath: '/',
   },
+
+ plugins: [
+    new PugPlugin({
+      js: {
+        filename: 'js/[name].[contenthash:8].js',
+      },
+      css: {
+        filename: 'css/[name].[contenthash:8].css',
+      },
+    }),
+  ],
 
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/,
+        test: /\.pug$/,
+        loader: PugPlugin.loader,
       },
       {
-        test: /.pug$/,
-        loader: PugPlugin.loader, // Pug loader
+        test: /\.(css|sass|scss)$/,
+        use: ['css-loader', 'sass-loader']
       },
       {
-        test: /\.(scss|css)$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader', 
-          'postcss-loader', 
-          'sass-loader'],
-      },
-      {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/inline',
-      },
-      {
-        test: /\.svg$/,
+        test: /\.(png|jpg|jpeg|ico)/,
         type: 'asset/resource',
         generator: {
-          filename: path.join('icons', '[name].[contenthash][ext]'),
+          filename: 'assets/img/[name].[hash:8][ext]',
         },
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: 'asset/resource',
-        generator:{
-          filename: 'fonts/[name].[ext]'
-        }
+        generator: {
+          filename: 'assets/fonts/[name][ext][query]',
+        },
       },
     ],
   },
   
-  plugins: [
-    new PugPlugin({
-      pretty: true,
-      js:{
-        filename: '[name].js'
-      },
-      css:{
-        filename: '[name].css'
-      }
-    }),
-    // new HtmlWebpackPlugin({
-    //   template: path.join(__dirname, 'src', 'index.pug'),
-    //   filename: 'index.html',
-    // }),
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({      
-      filename: '[name].[contenthash].css',
-    }),
+  
+
     //пригодится для фавикона
     // new FaviconsWebpackPlugin({
     //   logo: './src/images/favicon-1.png',
@@ -92,30 +67,10 @@ module.exports = {
     //     theme_color: '#333',
     //   }
     // })
-  ],
 
   devServer: 
     {
-      watchFiles: path.join(__dirname, 'src'),
+      watchFiles: path.join(__dirname, 'src/pages/index/'),
       port: 9000,
     },
-
-  optimization: {
-    minimizer: [
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: 
-            ImageMinimizerPlugin.imageminMinify,
-            options: {
-              plugins: [
-                ['gifsicle', { interlaced: true }],
-                ['jpegtran', { progressive: true }],
-                ['optipng', { optimizationLevel: 5 }],
-                ['svgo', { name: 'preset-default' }],
-              ],
-            },
-        },
-      }),
-     ],
-   },
 };
