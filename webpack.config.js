@@ -1,76 +1,33 @@
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const PugPlugin = require('pug-plugin');
 
 module.exports = {
-  entry: {
-    'pages/cards': './src/pages/cards/index.pug',
-    'pages/index': './src/pages/landing/index.pug',
-  },
+  entry: path.join(__dirname, 'src', 'index.js'),
   output: {
-    path: path.join(__dirname, 'dist/'),
-    // publicPath: '/',
+    path: path.join(__dirname, 'dist'),
+    filename: 'main.[contenthash].js',
   },
-
- plugins: [
-    new PugPlugin({
-      js: {
-        filename: 'js/[name].[contenthash:8].js',
-      },
-      css: {
-        filename: 'css/[name].[contenthash:8].css',
-      },
-    }),
-  ],
-
   module: {
     rules: [
       {
-        test: /\.pug$/,
-        loader: PugPlugin.loader,
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: /node_modules/,
       },
       {
-        test: /\.(css|sass|scss)$/,
-        use: ['css-loader', 'sass-loader']
-      },
-      {
-        test: /\.(png|jpg|jpeg|ico)/,
-        type: 'asset/resource',
-        generator: {
-          filename: 'assets/img/[name].[hash:8][ext]',
-        },
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'assets/fonts/[name][ext][query]',
-        },
+          test: /\.pug$/,
+          loader: 'pug-loader',
       },
     ],
   },
-  
-  
-
-    //пригодится для фавикона
-    // new FaviconsWebpackPlugin({
-    //   logo: './src/images/favicon-1.png',
-    //   mode: 'webapp',
-    //   devMode: 'webapp',
-    //   prefix: 'assets/favicons/', 
-    //   cache: true,
-    //   inject: htmlPlugin => {
-    //     return true
-    //   },
-    //   favicons: {
-    //     background: '#ddd',
-    //     theme_color: '#333',
-    //   }
-    // })
-
-  devServer: 
-    {
-      watchFiles: path.join(__dirname, 'src/pages/index/'),
-      port: 9000,
-    },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src', 'index.pug'),
+      filename: 'index.html',
+    }),
+  ],
+  devServer: {
+    watchFiles: path.join(__dirname, 'src'),
+    port: 9000,
+  },
 };
