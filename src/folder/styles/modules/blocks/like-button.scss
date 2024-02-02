@@ -1,0 +1,51 @@
+@import './../default/variables.scss';
+
+.like{
+
+  &-icon{
+    margin-right: 7px;
+  }
+
+  &-button{
+
+    &-inner{
+      display: flex;
+    }
+
+    &__item{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 1px solid $darkshade25;
+      border-radius: 10px;
+      width: 40px;
+      height: 20px;
+      padding-left: 4px;
+      margin-right: 10px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &-favorite{
+        border: 1px solid $purple;
+      }
+
+      &_text{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: $darkshade25;
+      }
+    }
+  }
+}
+
+.like-button.elements__item{
+  margin-bottom: 40px;
+}
+
+.like-button__header.elements__item_header{
+  margin-bottom: 16px;
+}

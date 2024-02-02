@@ -1,0 +1,131 @@
+.ui{
+   
+  &-color{
+
+    &-types{
+      padding: 145px 0;
+      position: relative;
+
+      &__logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+
+      &-inner{
+        max-width: 1132px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__box-1{
+        width: 281px;
+      }
+
+      &__box-2{
+        width: 436px;
+      }
+    }
+  }
+} 
+
+.color{
+
+  &-type{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &__square{
+      width: 70px;
+      height: 70px;
+      background-color: #000;
+      border-radius: 6px;
+      margin-right: 40px;
+
+      &-1{
+        background-color: $darkshade100;
+      }
+
+      &-2{
+        background-color: $darkshade75;
+      }
+
+      &-3{
+        background-color: $darkshade50;
+      }
+
+      &-4{
+        background-color: $darkshade25;
+      }
+
+      &-5{
+        background-color: $darkshade5;
+      }
+
+      &-6{
+        background-color: $purple;
+      }
+
+      &-7{
+        background-color: $green;
+      }
+    }
+
+    &__text{
+
+      &_title{
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        color: $darkshade100;
+      }
+    }
+  }
+}
+
+.title{
+
+  &-styles{
+    display: flex;
+    margin-bottom: 51px;
+  }
+
+  &-number{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: $darkshade25;
+    margin-right: 30px;
+    width: 37px;
+  
+    &-2{
+      font-size: 19px;
+      line-height: 23px;
+    }
+
+    &-3{
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+    }
+
+    &-4{
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &-text{
+      width: calc(100% - 37px);    
+    }
+  }
+}
+  
