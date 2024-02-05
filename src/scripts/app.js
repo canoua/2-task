@@ -3,7 +3,7 @@ import mask from './modules/mask';
 import airDatePicker from './modules/air-datepicker';
 // import itemQuantityDropdown from './modules/item-quantity-dropdown';
 
-'use strict'
+'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
   if(document.querySelector('#range-slider')) rangeSlider();  

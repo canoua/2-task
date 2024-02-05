@@ -38,6 +38,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^10.0.1",
     "imask": "^6.6.1",
+    "material-icons": "^1.13.12",
     "mini-css-extract-plugin": "^2.7.3",
     "nouislider": "^15.7.0",
     "postcss-loader": "^7.0.2",
