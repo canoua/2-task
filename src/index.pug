@@ -1,20 +1,18 @@
-include ./layout/header.pug
-include ./layout/header-2.pug
-include ./layout/footer.pug
-include ./layout/footer-mobile.pug
-
 doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title task-2
-    link(rel="stylesheet", href="styles/commons.scss")
-  body 
-    +header
-    br
-    +header-2
-    br
-    +footer
-    br
-    +footer-mobile
+    title Главная страница
+  body   
+    main.index-links
+      article.index-links__block
+        h2.index__title UI
+        a(href="/headers-footers.html" target = "_blank") Шапки и подвалы (header-footers)
+        a(href="/form-elements.html" target = "_blank") Элементы форм (form-elements) 
+        a(href="/colors-types.html" target = "_blank") Цвета (colors-types)   
+        a(href="/cards.html" target = "_blank") Карточки (cards)
+      article.index-links__block
+        h2.index__title Страницы
+        a(href="/sign-up.html" target = "_blank") Регистрация (sign-up)
+      

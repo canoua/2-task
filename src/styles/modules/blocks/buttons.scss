@@ -4,7 +4,6 @@
 
 .button{
   font-family: 'Montserrat';
-  // padding: 15px 21px;
   padding: 9px 21px;
   border-radius: 22px;
   cursor: pointer;
@@ -12,23 +11,19 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14.63px;
-
   &-default{
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     color: #FFFFFF;
     border: transparent;
-
     &-hover{
       opacity: 0.5;
     }
-
     &-wrapper{
       display: flex;
       justify-content: space-around;
       margin-bottom: 30px;
       width: 233px;
     }
-
     &-big{
       padding: 15px 20px;
       font-weight: 700;
@@ -50,10 +45,8 @@
     color: #BC9CFF;
     border: 2px solid #BC9CFF;
     background-color: #fff;
-    
     &-hover{
       border-color: rgba(188, 156, 255, .5);
-
       &-wrapper{
         margin-bottom: 30px;
       }
@@ -63,14 +56,12 @@
 
 .form-element-btn{
   margin-right: 19px;
-
   &:last-child{
     margin-right: 0;
   }
 }
 
 .icon{
-
   &-link{
     font-weight: 700;
     font-size: 12px;
@@ -79,11 +70,9 @@
     color: #BC9CFF;
     display: inline-block;
     margin-right: 20px;
-
     &-hover{
       color: $darkshade50;
     }
-
     &-wrapper{
       margin-bottom: 30px;
     }

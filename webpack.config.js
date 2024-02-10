@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FileManagerPlugin = require('filemanager-webpack-plugin');
+// const FileManagerPlugin = require('filemanager-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'main.[contenthash].js',
-    assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+    // assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
   },
   module: {
     rules: [
@@ -16,17 +16,17 @@ module.exports = {
         use: 'babel-loader',
         exclude: /node_modules/,
       },
-       {
-         test: /\.(png|jpg|jpeg|gif)$/i,
-         type: 'asset/resource',
-       },
-       {
-         test: /\.svg$/,
-         type: 'asset/resource',
-         generator: {
-           filename: path.join('icons', '[name].[contenthash][ext]'),
-         },
-       },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.svg$/,
+        type: 'asset/resource',
+        generator: {
+          filename: path.join('icons', '[name].[contenthash][ext]'),
+        },
+      },
       {
         test: /\.pug$/,
         loader: 'pug-loader',
@@ -42,13 +42,33 @@ module.exports = {
       template: path.join(__dirname, 'src', 'index.pug'),
       filename: 'index.html',
     }),
-    new FileManagerPlugin({
-      events: {
-        onStart: {
-          delete: ['dist'],
-        },
-      },
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/pages', 'sign-up.pug'),
+      filename: 'sign-up.html',
     }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/ui', 'headers-footers.pug'),
+      filename: 'headers-footers.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/ui', 'form-elements.pug'),
+      filename: 'form-elements.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/ui', 'colors-types.pug'),
+      filename: 'colors-types.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/ui', 'cards.pug'),
+      filename: 'cards.html',
+    }),
+    // new FileManagerPlugin({
+    //   events: {
+    //     onStart: {
+    //       delete: ['dist'],
+    //     },
+    //   },
+    // }),
   ],
   devServer: {
     watchFiles: path.join(__dirname, 'src'),

@@ -3,16 +3,13 @@
 }
 
 .toggle{
-
   &__header{
     margin-bottom: 16px;
   }
-
   &__item{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-
     &:last-child{
       margin-bottom: 0;
     }

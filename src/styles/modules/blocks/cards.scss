@@ -1,5 +1,4 @@
 .card{
-  font-family: 'Montserrat';
   width: 380px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -8,12 +7,10 @@
   border-radius: 4px;
   padding: 40px 30px;
   margin-bottom: 40px;
-
   &-inner{
     display: flex;
     flex-direction: column;
   }
-
   &__title{
     font-weight: 700;
     font-size: 24px;
@@ -21,7 +18,6 @@
     color: #1F2041;
     margin-bottom: 20px;
   }
-
   &__input{
     background: #FFFFFF;
     border: 1px solid $darkshade25;
@@ -29,16 +25,12 @@
     border-radius: 4px;
     padding: 12px 15px;
     margin-bottom: 10px;
-
     &::placeholder{
-      font-family: 'Montserrat';
-      font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
       color: $darkshade25;
     }
-
     &:last-child{
       margin-bottom: 0;
     }

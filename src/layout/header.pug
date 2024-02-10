@@ -1,5 +1,5 @@
-//- include ../modules/mixin-buttons.pug
-include ../modules/menu-list.pug
+include ./../modules/mixin-buttons.pug
+include ./blocks/menu-list.pug
 
 mixin header  
   header.header 
@@ -7,9 +7,9 @@ mixin header
       .header-inner 
         .header__box
           a.logo-link(href="#") 
-            img.logo(src=require('./images/logo.png') alt="logo")
+            img.logo(src=require('./../assets/images/logo.png') alt="logo")
         .header__box.header__box-right
           +menu
-          //- +button-white('form-element-btn','Войти')
-          //- +button-gradient('form-element-btn','Зарегистрироваться')
+          +button-white('form-element-btn','Войти')
+          +button-gradient('form-element-btn','Зарегистрироваться')
         

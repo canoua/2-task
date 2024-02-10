@@ -1,4 +1,4 @@
-include ../modules/menu-list.pug
+include ./blocks/menu-list.pug
 
 mixin header-2  
   header.header 
@@ -6,7 +6,7 @@ mixin header-2
       .header-inner 
         .header__box
           a.logo-link(href="#") 
-            img.logo(src=require('./images/logo.png')  alt="logo")
+            img.logo(src=require("./../assets/images/logo.png")  alt="logo")
         .header__box.header__box-right
           +menu
           a(href="#").user 

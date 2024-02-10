@@ -1,28 +1,21 @@
 .dropdown{
-  
   &-expanded.elements__item ,
   &-default.elements__item {
     width: 266px;
   }
-
   &-expanded{
-
     &-guests{
-      
       &__list{
       margin-bottom: 20px;
       }
     }
   }
-
   &-list{
-
     &__item{
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 7px;
-
       &_name{
         font-weight: 700;
         font-size: 12px;
@@ -31,11 +24,9 @@
         color: $darkshade100;
       }
     }
-
     &__count{
       display: flex;
       align-items: center;
-
       &_minus,
       &_plus{
         width: 30px;
@@ -51,7 +42,6 @@
         border: 1px solid $darkshade25;
         border-radius: 22px;
       }
-
       &_number{
         font-weight: 700;
         width: 8px;
@@ -65,16 +55,13 @@
       }
     }
   }
-
   &-btns{
     display: flex;
     justify-content: flex-end;
-
     &-2{
       justify-content: space-between;
     }
   }
-  
   &__submit,
   &__reset{
     font-family: 'Montserrat';

@@ -1,34 +1,28 @@
 .checkbox{
   width: 266px;
   cursor: pointer;
-
   &__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   &__list{
-
     &_item{
       display: flex;
       align-items: center;
       margin-bottom: 10.56px;
     }
-
     &_input{
       position: absolute;
       z-index: -1;
       opacity: 0;
     }
-
     &_input+label {
       display: inline-flex;
       align-items: center;
       flex-direction: inherit;//для правильного расположения RICH CHECKBOX BUTTONS
       user-select: none;
     }
-
     &_input+label::before{
       content: '';
       width: 20px;
@@ -40,25 +34,21 @@
       background-position: center center;
       background-size: 50% 50%;
     }
-
     &_input:checked+label::before {
       content: '';
       border: 1px solid #BC9CFF;
       border-radius: 4px;
-      background-image: url('./../images/check-mark.svg');
+      // background-image: url('./../images/check-mark.svg');
       background-repeat: no-repeat;
       background-size: 10px 8px;
     }
-
     &_label{
       font-weight: 400;
       font-size: 14px;
       line-height: 18px;
       color: $darkshade50;
       cursor: pointer;
-
       &-rich{
-
         &-title{
           display: flex;
           flex-direction: column;
@@ -67,7 +57,6 @@
           line-height: 18px;
           color: $darkshade75;
         }
-
         &-info{
           font-weight: 400;
           font-size: 12px;
@@ -79,10 +68,8 @@
       }
     }
   }
-
   &-buttons{
     margin-bottom: 40.88px;
-
     &__header{
       margin-bottom: 16.56px;
     }

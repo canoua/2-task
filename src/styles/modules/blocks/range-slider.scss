@@ -14,19 +14,16 @@
 }
 
 .noUi{
-
   &-connect{
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     border-radius: 3px;
     height: 8px;
     border: 1px solid linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
   }
-
   &-handle{
     border: none;
     cursor: grab; 
     box-shadow: none;
-
     &::before,
     &::after{
       display: none;

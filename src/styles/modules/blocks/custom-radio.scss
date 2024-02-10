@@ -43,6 +43,6 @@
 .custom-radio:checked+label::before {
   border-color: $purple;
   background-color: #fff;
-  background-image: url('./../images/radio-rectangle.png');
+  // background-image: url('./../images/radio-rectangle.png');
   background-repeat: no-repeat;
 }
