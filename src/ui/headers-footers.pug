@@ -12,7 +12,9 @@ html(lang="en")
     title headers and footers
   body 
     .headers-footers 
-      img.headers-footers__logo(src=require('./../assets/images/ui-logo.svg') alt="ui-kit-logo")
+      svg.headers-footers__logo 
+        use(href=require('./../assets/images/sprite.svg#ui-logo')) 
+      //- img.headers-footers__logo(src=require('./../assets/images/ui-logo.svg') alt="ui-kit-logo")
       .headers-footers__box 
         +header 
       .headers-footers__box 
