@@ -9,7 +9,8 @@ html(lang="en")
     title form-elements
   body 
     .elements 
-      img.elements__logo(src=require('./../assets/images/ui-logo.svg') alt="ui-kit-logo")
+      .elements__logo
+        include ./../assets/images/ui-logo.svg
       .container.elements-inner-1
         .column 
           +text-field-default('Text Field', 'Default', 'Email')
