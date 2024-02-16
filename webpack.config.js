@@ -47,19 +47,19 @@ module.exports = {
       filename: 'sign-up.html',
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/ui', 'headers-footers.pug'),
+      template: path.join(__dirname, 'src/ui-pages', 'headers-footers.pug'),
       filename: 'headers-footers.html',
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/ui', 'form-elements.pug'),
+      template: path.join(__dirname, 'src/ui-pages', 'form-elements.pug'),
       filename: 'form-elements.html',
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/ui', 'colors-types.pug'),
+      template: path.join(__dirname, 'src/ui-pages', 'colors-types.pug'),
       filename: 'colors-types.html',
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/ui', 'cards.pug'),
+      template: path.join(__dirname, 'src/ui-pages', 'cards.pug'),
       filename: 'cards.html',
     }),
     new HtmlWebpackPlugin({

@@ -1,4 +1,4 @@
-/*libs*/
+/* libs */
 // @import './modules/libs/nouislider.min.css';
 // @import 'air-datepicker/air-datepicker.css';
 
@@ -10,35 +10,20 @@
 @import './assets/styles/default/variables.scss';
 @import './assets/styles/default/default.scss';
 
-/* blocks */
-@import './styles/modules/bullet.scss';
-@import './styles/modules/buttons.scss';
-@import './styles/modules/cards.scss';
-@import './styles/modules/checkbox.scss';
-@import './styles/modules/dropdown.scss';
-@import './styles/modules/filter-date-dropdown.scss';
-// @import './styles/modules/like-button.scss';
-@import './styles/modules/likes.scss';
-// @import './styles/modules/blocks/menu-list.scss';
-@import './styles/modules/pagination.scss';
-@import './styles/modules/radiobuttons.scss';
-@import './styles/modules/range-slider.scss';
-@import './styles/modules/rate-button.scss';
-@import './styles/modules/review.scss';
-@import './styles/modules/subscription-text-field.scss';
-@import './styles/modules/toggle.scss';
-@import './styles/modules/toggle-2.scss';
-@import './styles/modules/custom-radio.scss';
+/* modules */
+@import './modules/modules.scss';
 
-// /*layout*/
+/* layout */
 @import './layout/layout.scss';
 
-// /*pages*/
+/* ui-pages */
+@import './ui-pages/ui.scss';
+
+/* pages */
 @import './pages/pages.scss';
 @import './index.scss';
 
-// /*ui*/
-@import './ui/ui.scss';
+
 
 
 
