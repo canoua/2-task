@@ -70,6 +70,10 @@ module.exports = {
       template: path.join(__dirname, 'src/pages', 'landing.pug'),
       filename: 'landing.html',
     }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/pages', 'search.pug'),
+      filename: 'search.html',
+    }),
     // new FileManagerPlugin({
     //   events: {
     //     onStart: {
