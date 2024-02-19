@@ -2,6 +2,11 @@
 
 Сделать:
 
+alias: {
+"@": path.resolve(**dirname, 'src/'),
+"@data": path.resolve(**dirname, 'src/data/'),
+},
+
 - страница form-elements(не отображается иконка checkbox), переделать svg на include
 
 - разобраться с путями картинок, подключениями миксинов
