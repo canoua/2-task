@@ -1,0 +1,28 @@
+include ./blocks/color-type.pug
+include ./blocks/title-styles.pug
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title colors-types
+  body 
+    .ui-color-types 
+      .ui-color-types__logo
+        include ./../../assets/images/ui-logo.svg
+      .ui-color-types-inner 
+        .ui-color-types__box-1 
+          +color-type('Dark Shade 100%', '#1F2041', 'color-type__square-1')
+          +color-type('Dark Shade 75%', '#1F2041', 'color-type__square-2')
+          +color-type('Dark Shade 50%', '#1F2041', 'color-type__square-3')
+          +color-type('Dark Shade 25%', '#1F2041', 'color-type__square-4')
+          +color-type('Dark Shade 5%', '#1F204', 'color-type__square-5')
+          +color-type('Purple', '#BC9CFF', 'color-type__square-6')
+          +color-type('Green', '#6FCF97', 'color-type__square-7')
+        .ui-color-types__box-2 
+          +title-styles('H1', '', 'This one is the sub-section or widget title', 'h1')
+          +title-styles('H2', 'title-number-2', 'Next one is the item title inside widgets', 'h2')
+          +title-styles('H3', 'title-number-3', 'This is a label or CTA text', 'h3')
+          +title-styles('Body', 'title-number-4', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', '')

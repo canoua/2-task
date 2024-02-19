@@ -43,10 +43,6 @@ module.exports = {
       filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/pages', 'sign-up.pug'),
-      filename: 'sign-up.html',
-    }),
-    new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/ui-pages', 'headers-footers.pug'),
       filename: 'headers-footers.html',
     }),
@@ -55,7 +51,7 @@ module.exports = {
       filename: 'form-elements.html',
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/ui-pages', 'colors-types.pug'),
+      template: path.join(__dirname, 'src/ui-pages/colors-types', 'colors-types.pug'),
       filename: 'colors-types.html',
     }),
     new HtmlWebpackPlugin({
@@ -73,6 +69,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/pages', 'search.pug'),
       filename: 'search.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/pages', 'sign-up.pug'),
+      filename: 'sign-up.html',
     }),
     // new FileManagerPlugin({
     //   events: {
