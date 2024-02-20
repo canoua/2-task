@@ -44,35 +44,35 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/ui-pages/headers-footers', 'headers-footers.pug'),
-      filename: 'headers-footers.html',
+      filename: 'ui-pages/headers-footers.html',
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/ui-pages/form-elements', 'form-elements.pug'),
-      filename: 'form-elements.html',
+      filename: 'ui-pages/form-elements.html',
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/ui-pages/colors-types', 'colors-types.pug'),
-      filename: 'colors-types.html',
+      filename: 'ui-pages/colors-types.html',
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/ui-pages/cards', 'cards.pug'),
-      filename: 'cards.html',
+      filename: 'ui-pages/cards.html',
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/pages/sign-in', 'sign-in.pug'),
-      filename: 'sign-in.html',
+      filename: 'pages/sign-in.html',
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/pages/landing', 'landing.pug'),
-      filename: 'landing.html',
+      filename: 'pages/landing.html',
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/pages/search', 'search.pug'),
-      filename: 'search.html',
+      filename: 'pages/search.html',
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/pages/sign-up', 'sign-up.pug'),
-      filename: 'sign-up.html',
+      filename: 'pages/sign-up.html',
     }),
     new FileManagerPlugin({
       events: {
