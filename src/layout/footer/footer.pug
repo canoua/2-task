@@ -1,3 +1,9 @@
+mixin list(...items)
+  ul.footer__list_item
+    each item in items
+      li.footer__list_item
+        a(href="#").footer__list_link=item 
+
 mixin footer 
   footer.footer
     .footer__box 
@@ -11,37 +17,15 @@ mixin footer
           .footer__box_item 
             h3.footer__title навигация
             nav.footer__navigation
-              ul.footer__list 
-                li.footer__list_item
-                  a.footer__list_link(href="#") О нас 
-                li.footer__list_item
-                  a.footer__list_link(href="#") Новости
-                li.footer__list_item
-                  a.footer__list_link(href="#") Служба поддержки
-                li.footer__list_item
-                  a.footer__list_link(href="#") Услуги
+              +list('О нас', 'Новости', 'Служба поддержки', 'Услуги')
           .footer__box_item 
             h3.footer__title о нас
             nav.footer__navigation
-              ul.footer__list 
-                li.footer__list_item
-                  a.footer__list_link(href="#") О сервисе 
-                li.footer__list_item
-                  a.footer__list_link(href="#") Наша команда
-                li.footer__list_item
-                  a.footer__list_link(href="#") Вакансии
-                li.footer__list_item
-                  a.footer__list_link(href="#") Инвесторы
+              +list('О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
           .footer__box_item 
             h3.footer__title Служба поддержки
             nav.footer__navigation
-              ul.footer__list 
-                li.footer__list_item
-                  a.footer__list_link(href="#") Соглашения
-                li.footer__list_item
-                  a.footer__list_link(href="#") Сообщества
-                li.footer__list_item
-                  a.footer__list_link(href="#") Связь с нами
+              +list('Соглашения', 'Сообщества', 'Связь с нами')
           .footer__box_item 
             h3.footer__title Подписка
             .footer__box_item-info Получайте специальные предложения и новости сервиса
