@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const FileManagerPlugin = require('filemanager-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'main.[contenthash].js',
-    // assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+    assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
   },
   module: {
     rules: [
@@ -74,13 +74,13 @@ module.exports = {
       template: path.join(__dirname, 'src/pages/sign-up', 'sign-up.pug'),
       filename: 'sign-up.html',
     }),
-    // new FileManagerPlugin({
-    //   events: {
-    //     onStart: {
-    //       delete: ['dist'],
-    //     },
-    //   },
-    // }),
+    new FileManagerPlugin({
+      events: {
+        onStart: {
+          delete: ['dist'],
+        },
+      },
+    }),
   ],
   devServer: {
     watchFiles: path.join(__dirname, 'src'),
