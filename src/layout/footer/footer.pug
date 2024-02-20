@@ -1,51 +1,7 @@
-mixin list(...items)
-  ul.footer__list_item
-    each item in items
-      li.footer__list_item
-        a(href="#").footer__list_link=item 
+include __box.pug
+include __copy.pug
 
 mixin footer 
   footer.footer
-    .footer__box 
-      .container 
-        .footer-inner
-          .footer__info
-            .footer__logo 
-              a(href="#") 
-                img.logo(src=require('./../../assets/images/logo.png') alt="logo")
-            span.footer__info_block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
-          .footer__box_item 
-            h3.footer__title навигация
-            nav.footer__navigation
-              +list('О нас', 'Новости', 'Служба поддержки', 'Услуги')
-          .footer__box_item 
-            h3.footer__title о нас
-            nav.footer__navigation
-              +list('О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
-          .footer__box_item 
-            h3.footer__title Служба поддержки
-            nav.footer__navigation
-              +list('Соглашения', 'Сообщества', 'Связь с нами')
-          .footer__box_item 
-            h3.footer__title Подписка
-            .footer__box_item-info Получайте специальные предложения и новости сервиса
-            .footer__input-wrapper 
-              input.footer__box_item-input(type="text" placeholder="Email")
-              button.footer__button-input 
-                span.material-icons.material-icons-arrow-blue arrow_forward
-
-    .footer__copy
-      .container
-        .footer__copy-inner 
-          .footer__copy_item 
-            span.footer__copy-text Copyright © 2018 Toxin отель. Все права защищены.
-          .footer__copy_item.social-wrapper 
-            a.footer__copy_link-social(href="#") 
-              .twitter
-                include ./../../assets/images/icons/twitter.svg
-            a.footer__copy_link-social(href="#") 
-              .facebook
-                include ./../../assets/images/icons/fb.svg
-            a.footer__copy_link-social(href="#") 
-              .instagram
-                include ./../../assets/images/icons/inst.svg
+    +__box
+    +__copy
