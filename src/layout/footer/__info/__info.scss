@@ -1,0 +1,10 @@
+.footer {
+  &__info{
+    max-width: 260px;
+    &_block{
+      font-size: 14px;
+      line-height: 24px;
+      color: $darkshade75;
+    }
+  }
+}

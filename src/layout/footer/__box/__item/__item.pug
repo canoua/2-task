@@ -1,0 +1,7 @@
+include ../../__list/__list.pug
+
+mixin __item(title, ...items)
+  .footer__box__item 
+    h3.footer__title=title
+    nav.footer__navigation
+      +list(...items)

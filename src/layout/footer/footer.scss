@@ -1,5 +1,6 @@
 @import './__box/_box';
 @import './__copy/_copy';
+@import './__info/_info';
 
 .footer{
   background-color: #fff;
@@ -7,14 +8,6 @@
   &-inner{
     display: flex;
     justify-content: space-between;
-  }
-  &__info{
-    max-width: 260px;
-    &_block{
-      font-size: 14px;
-      line-height: 24px;
-      color: $darkshade75;
-    }
   }
   &__logo{
     margin-bottom: 20px;
@@ -28,7 +21,6 @@
     text-transform: uppercase;
     color: $darkshade100;
   }
-
   &__input{
     &-wrapper{
       background: #FFFFFF;

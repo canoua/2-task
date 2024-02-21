@@ -1,30 +1,20 @@
 include ../__list/__list.pug
+include ../__info/__info.pug
+include __item/__item.pug
+
 
 mixin __box
   .footer__box 
     .container 
       .footer-inner
-        .footer__info
-          .footer__logo 
-            a(href="#") 
-              img.logo(src=require('./../../assets/images/logo.png') alt="logo")
-          span.footer__info_block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
-        .footer__box_item 
-          h3.footer__title навигация
-          nav.footer__navigation
-            +list('О нас', 'Новости', 'Служба поддержки', 'Услуги')
-        .footer__box_item 
-          h3.footer__title о нас
-          nav.footer__navigation
-            +list('О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
-        .footer__box_item 
-          h3.footer__title Служба поддержки
-          nav.footer__navigation
-            +list('Соглашения', 'Сообщества', 'Связь с нами')
-        .footer__box_item 
+        +__info
+        +__item('навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги')
+        +__item('о нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
+        +__item('Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами')
+        .footer__box__item 
           h3.footer__title Подписка
-          .footer__box_item-info Получайте специальные предложения и новости сервиса
+          .footer__box__item-info Получайте специальные предложения и новости сервиса
           .footer__input-wrapper 
-            input.footer__box_item-input(type="text" placeholder="Email")
+            input.footer__box__item-input(type="text" placeholder="Email")
             button.footer__button-input 
               span.material-icons.material-icons-arrow-blue arrow_forward
