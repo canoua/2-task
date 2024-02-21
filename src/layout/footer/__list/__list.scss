@@ -1,0 +1,15 @@
+.footer {
+  &__list{
+    &_item{
+      margin-bottom: 20px;
+    }
+    &_link{
+      font-size: 14px;
+      line-height: 17px;
+      color: $darkshade50;
+      &:hover{
+        color: $darkshade75;
+      }
+    }
+  }
+}
