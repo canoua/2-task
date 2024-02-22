@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 const path = require('path');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
@@ -34,6 +35,15 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
       },
     ],
   },
@@ -85,5 +95,22 @@ module.exports = {
   devServer: {
     watchFiles: path.join(__dirname, 'src'),
     port: 9000,
+  },
+  optimization: {
+    minimizer: [
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            plugins: [
+              ['gifsicle', { interlaced: true }],
+              ['jpegtran', { progressive: true }],
+              ['optipng', { optimizationLevel: 5 }],
+              ['svgo', { name: 'preset-default' }],
+            ],
+          },
+        },
+      }),
+    ],
   },
 };
