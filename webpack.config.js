@@ -25,7 +25,7 @@ module.exports = {
         test: /\.svg$/,
         type: 'asset/resource',
         generator: {
-          filename: path.join('icons', '[name].[contenthash][ext]'),
+          filename: path.join('fonts', '[name].[contenthash][ext]'),
         },
       },
       {
@@ -39,6 +39,9 @@ module.exports = {
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]',
+        }
       },
       {
         test: /\.js$/,
@@ -95,6 +98,11 @@ module.exports = {
   devServer: {
     watchFiles: path.join(__dirname, 'src'),
     port: 9000,
+  },
+  resolve: {
+    alias: {
+      "@images": path.resolve(__dirname, "src/assets/images/")
+    },
   },
   optimization: {
     minimizer: [

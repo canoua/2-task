@@ -1,19 +1,22 @@
 .footer {
-  &__copy{
+  &__copy {
     padding: 23px 0;
-    &-inner{
+    &-inner {
       display: flex;
       justify-content: space-between;
     }
-    &__text{
+    &__social {
+      display: flex;
+    }
+    &__text {
       font-size: 14px;
       line-height: 17px;
       color: $darkshade75;
     }
-    &__link{
+    &__link {
       display: block;
       margin-right: 20px;
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }

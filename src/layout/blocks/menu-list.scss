@@ -1,24 +1,23 @@
-.menu{
-  &-list{
-    display: flex;
-    align-items: center; //29.10, поправка после замены картинок на иконочный шрифт
-    &__item{
-      margin-right: 20px;
-      height: 19px;//29.10 - из-за того, что 2 ссылки в меню располагаются неровно по отношению к остальным. 
-                  //После того как вставил иконочный шрифт 
-    }
-    &__link{
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 17px;
-      color: $darkshade50;
-      transition: .2s linear;
-      &:hover{
-        text-shadow: 0 0 1px #333, 0 0 .65px #333;
-      }
+.list{
+  display: flex;
+  align-items: center; //29.10, поправка после замены картинок на иконочный шрифт
+  &__item{
+    margin-right: 20px;
+    height: 19px;//29.10 - из-за того, что 2 ссылки в меню располагаются неровно по отношению к остальным. 
+                //После того как вставил иконочный шрифт 
+  }
+  &__link{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $darkshade50;
+    transition: .2s linear;
+    &:hover{
+      text-shadow: 0 0 1px #333, 0 0 .65px #333;
     }
   }
 }
+
 
 .drop-link:hover #arrow{
   fill-opacity: 0.8;
@@ -29,7 +28,7 @@
   line-height: 17px;
 }
 
-.menu-list__link.menu-list__link-drop{
+.list__link.list__link-drop{
   line-height: 17px;
   display: flex;
   justify-content: center;
