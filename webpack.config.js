@@ -87,6 +87,10 @@ module.exports = {
       template: path.join(__dirname, 'src/pages/sign-up', 'sign-up.pug'),
       filename: 'pages/sign-up.html',
     }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src/pages/room-details', 'room-details.pug'),
+      filename: 'pages/room-details.html',
+    }),
     new FileManagerPlugin({
       events: {
         onStart: {
