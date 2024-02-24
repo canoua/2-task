@@ -7,18 +7,27 @@
   border-radius: 4px;
   padding: 40px 30px;
   margin-bottom: 40px;
-  &-inner{
+  &-inner {
     display: flex;
     flex-direction: column;
   }
-  &__title{
+  &__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #1F2041;
     margin-bottom: 20px;
+    &-2 {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: $darkshade100;
+      margin-bottom: 5px;
+    }
   }
   &__input{
+    width: 100%;
     background: #FFFFFF;
     border: 1px solid $darkshade25;
     box-sizing: border-box;
@@ -35,30 +44,41 @@
       margin-bottom: 0;
     }
   }
-}
-
-.radiobutton-wrapper{
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.radiobutton__item{
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.radiobutton__item_input{
-  cursor: pointer;
-}
-
-.radiobutton__item_label{
-  font-weight: 400;
+  &__note {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_info {
+      font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  color: $darkshade50;
-  cursor: pointer;
+  line-height: 18px;
+  color: #000000;
+    }
+  }
+}
+
+.radiobutton {
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    &_input {
+      cursor: pointer;
+    }
+    &_label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $darkshade50;
+      cursor: pointer;
+    }
+  }
 }
 
 .date-of-birth{
@@ -66,29 +86,11 @@
   margin-bottom: 20px;
 }
 
-.card__input{
-  width: 100%;
-}
-
 .toggle__info{
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: $darkshade75;
-}
-
-.card__note{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card__note_info{
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
 }
 
 .card-btn-white{
@@ -103,15 +105,6 @@
   padding: 9px 20px;
   cursor: pointer;
   transition: .07s;
-}
-
-.card__title-2{
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $darkshade100;
-  margin-bottom: 5px;
 }
 
 .inputs-wrapper{
