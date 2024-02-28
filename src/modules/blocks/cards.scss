@@ -51,9 +51,24 @@
     align-items: center;
     &_info {
       font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+    }
+  }
+  &-btn {
+    &-white {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      background-color: #fff;
+      color: #BC9CFF;
+      border: 2px solid $purple;
+      border-radius: 22px;
+      padding: 9px 20px;
+      cursor: pointer;
+      transition: .07s;
     }
   }
 }
@@ -91,20 +106,6 @@
   font-size: 14px;
   line-height: 24px;
   color: $darkshade75;
-}
-
-.card-btn-white{
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  background-color: #fff;
-  color: #BC9CFF;
-  border: 2px solid $purple;
-  border-radius: 22px;
-  padding: 9px 20px;
-  cursor: pointer;
-  transition: .07s;
 }
 
 .inputs-wrapper{

@@ -36,19 +36,18 @@
   border-radius: 10px;
   -webkit-transition: .4s;
   transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  top: 3px;
-  left: 4px;
-  bottom: 4px;
-  background: $darkshade25;
-  -webkit-transition: .1s; 
-  transition: .1s ;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    top: 3px;
+    left: 4px;
+    bottom: 4px;
+    background: $darkshade25;
+    -webkit-transition: .1s; 
+    transition: .1s ;
+  }
 }
 
 input:checked + .slider{

@@ -1,11 +1,11 @@
 сборка для нескольких страниц https://github.com/webdiscus/pug-plugin#example-pug-in-js-compile
 
 Сделать:
-до 26.02
 
 - нэйминг классов по бэм
 - на входной странице добавить картинки страниц
 - стили(минификация)
+- шрифты https://tocode.ru/courses/nastroika-webpack4/podkluchenie-shriftov/
 - картинки(минификация)
 - убрать лишнее в package.json: mini-css-extract-plugin(убрать позже)
 - form-elements(page, просто стили)
