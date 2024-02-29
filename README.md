@@ -27,6 +27,7 @@
 Готово:
 
 - colors-type
+- menu-list
 
 Изучить:
 
