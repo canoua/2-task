@@ -6,11 +6,8 @@ mixin __copy
           span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
         .footer__copy__social 
           a.footer__copy__link(href="#") 
-            .twitter
-              include ./../../../assets/images/icons/twitter.svg
+            img(src=require("@images/icons/twitter.svg"), alt="twitter").twitter
           a.footer__copy__link(href="#") 
-            .facebook
-              include ./../../../assets/images/icons/fb.svg
-          a.footer__copy__link(href="#") 
-            .instagram
-              include ./../../../assets/images/icons/inst.svg
+            img(src=require("@images/icons/fb.svg"), alt="facebook").facebook
+          a.footer__copy__link(href="#")
+            img(src=require("@images/icons/inst.svg"), alt="inst").instagram

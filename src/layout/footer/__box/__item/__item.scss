@@ -1,8 +1,8 @@
 .footer {
   &__box {
-    &__item{
+    &__item { 
       max-width: 260px;
-      &-info{
+      &__info {
         font-size: 14px;
         line-height: 24px;
         color: $darkshade75;
