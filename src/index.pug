@@ -8,15 +8,21 @@ html(lang="en")
     main.index
       article.index__block
         h2.index__title UI
-        a(href="/ui-pages/headers-footers.html" target = "_blank") Шапки и подвалы (header-footers)
-        a(href="/ui-pages/form-elements.html" target = "_blank") Элементы форм (form-elements) 
-        a(href="/ui-pages/colors-types.html" target = "_blank") Цвета (colors-types)   
-        a(href="/ui-pages/cards.html" target = "_blank") Карточки (cards)
-      article.index-links__block
-        h2.index__title Страницы
-        a(href="/pages/sign-up.html" target = "_blank") Регистрация (sign-up)
-        a(href="/pages/sign-in.html" target = "_blank") Вход (sign-in)
-        a(href="/pages/landing.html" target = "_blank") Landing 
-        a(href="/pages/search.html" target = "_blank") Search 
-        a(href="/pages/room-details.html" target = "_blank") Room-details 
+        a.index__link(href="/ui-pages/headers-footers.html" target = "_blank") 
+          span.index__link__text Шапки и подвалы (header-footers)
+          img.index__img(src=require("@images/index/headers.jpg"), alt="headers")
+        a.index__link(href="/ui-pages/form-elements.html" target = "_blank") Элементы форм (form-elements) 
+        a.index__link(href="/ui-pages/colors-types.html" target = "_blank")   
+          span.index__link__text Цвета (colors-types) 
+          img.index__img(src=require("@images/index/colors.jpg"), alt="colors")
+        a.index__link(href="/ui-pages/cards.html" target = "_blank") Карточки (cards)
+      article.index__block
+        h2.index__title Страницы 
+        a.index__link(href="/pages/sign-up.html" target = "_blank") Регистрация (sign-up)
+        a.index__link(href="/pages/sign-in.html" target = "_blank") 
+          span.index__link__text Вход (sign-in)
+          img.index__img(src=require("@images/index/sign-in.jpg"), alt="colors")
+        a.index__link(href="/pages/landing.html" target = "_blank") Landing 
+        a.index__link(href="/pages/search.html" target = "_blank") Search 
+        a.index__link(href="/pages/room-details.html" target = "_blank") Room-details 
       
