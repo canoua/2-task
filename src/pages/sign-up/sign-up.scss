@@ -1,19 +1,17 @@
-.main-sign-up .text-field-default{
+.text-field-default{
   margin-bottom: 10px;
 }
-
-.main-sign-up .inputs-wrapper,
-.main-sign-up .radiobuttons__header,
-.main-sign-up .radiobutton-wrapper{
+.inputs-wrapper,
+.radiobuttons__header,
+.radiobutton-wrapper{
+  margin-bottom: 0;
+}
+.card{
   margin-bottom: 0;
 }
 
-.main-sign-up .radiobuttons,
-.main-sign-up .masked-text-field,
-.main-sign-up .toggle{
+.sign-up .radiobuttons,
+.sign-up .masked-text-field,
+.sign-up .toggle{
   margin-bottom: 20px;
-}
-
-.main-sign-up form .card{
-  margin-bottom: 0;
 }

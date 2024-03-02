@@ -2,7 +2,6 @@
 
 Сделать:
 
-- проверить sign-in, sign-up по бэм
 - стили(минификация)
 - шрифты https://tocode.ru/courses/nastroika-webpack4/podkluchenie-shriftov/
 - картинки(минификация)
@@ -22,7 +21,8 @@
 
 Готово:
 
-- colors-type
+- page: sign-in, sign-up
+- ui-pages: headers-footers, colors-type
 - menu-list
 
 Изучить:
