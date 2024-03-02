@@ -2,8 +2,7 @@
 
 Сделать:
 
-Позже
-
+- проверить sign-in, sign-up по бэм
 - стили(минификация)
 - шрифты https://tocode.ru/courses/nastroika-webpack4/podkluchenie-shriftov/
 - картинки(минификация)
