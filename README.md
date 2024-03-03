@@ -2,6 +2,8 @@
 
 Сделать:
 
+cards-ui-pages
+
 - стили(минификация)
 - шрифты https://tocode.ru/courses/nastroika-webpack4/podkluchenie-shriftov/
 - картинки(минификация)
