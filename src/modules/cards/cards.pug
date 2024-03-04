@@ -1,18 +1,5 @@
-include mixin-buttons.pug
-include mixins.pug
-
-mixin card-sign-in
-  form(action="") 
-    .card
-      .card-inner
-        h1.card__title Войти
-        .inputs-wrapper 
-          +text-field-default('', '', 'Email')
-          +text-field-default('', '', 'Пароль')
-        +btn-gradient-arrow('button-default-big', 'Войти')
-        .card__note 
-          span.card__note_info Нет аккаунта на Toxin?
-          +button-white('card-btn-white', 'Создать')
+include ../mixin-buttons.pug
+include ../mixins.pug
 
 mixin card-sign-up 
   form(action="") 
