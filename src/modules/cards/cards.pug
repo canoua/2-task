@@ -1,25 +1,6 @@
 include ../mixin-buttons.pug
 include ../mixins.pug
 
-mixin card-sign-up 
-  form(action="") 
-    .card
-      .card-inner 
-        h1.card__title Регистрация аккаунта
-        .inputs-wrapper 
-          +text-field-default('', '', 'Имя')
-          +text-field-default('', '', 'Фамилия')
-        +radiobuttons('')
-        +masked-text-field('дата рождения')
-        +text-field-default('данные для входа в сервис', '', 'Email')
-        +text-field-default('', '', 'Пароль')
-        +toggle('Получать спецпредложения')
-        +btn-gradient-arrow('', 'перейти к оплате')
-        .card__note 
-          span.card__note_info Уже есть аккаунт на Toxin?
-          +button-white('card-btn-white', 'войти')
-
-
 //- перенести в папку с landing
 mixin landing-card 
   form(action="")
