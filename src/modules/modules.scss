@@ -1,10 +1,8 @@
 //?
 @import './blocks/bullet.scss';
 
-// folder button, mixin-buttons.pug
-@import './blocks/buttons.scss';
+@import './buttons/buttons.scss';
 
-// folder cards, cards.pug
 @import './cards/cards.scss';
 
 @import './blocks/checkbox.scss';
@@ -18,7 +16,8 @@
 @import './blocks/range-slider.scss';
 @import './blocks/rate-button.scss';
 @import './blocks/review.scss';
-@import './blocks/subscription-text-field.scss';
 @import './blocks/toggle-2.scss';
 @import './blocks/toggle.scss';
+
+@import './subscription-text-field/subscription-text-field.scss';
 

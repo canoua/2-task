@@ -4,6 +4,7 @@
 
 до 11.03
 
+- убрать mixins.pug
 - cards-ui-pages
 - form-elements(page, просто стили)
   посмотреть лучшие практики webpack и реализовать, если возможно,:

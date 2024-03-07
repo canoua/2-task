@@ -1,9 +1,9 @@
-include ../mixin-buttons.pug
+include ../buttons/button-gradient-arrow.pug
 include ../mixins.pug
 
-//- перенести в папку с landing
-mixin landing-card 
-  form(action="")
+//- перенести в папку с landing??
+mixin card-landing 
+  form(action="#")
     .card 
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
@@ -11,7 +11,7 @@ mixin landing-card
           +date-dropdown('прибытие')
           +date-dropdown('выезд')
         +dropdown
-        //- +dropdown('гости', 'Сколько гостей')
+        +dropdown('гости', 'Сколько гостей')
         +btn-gradient-arrow('', 'подобрать номер')
 
          
