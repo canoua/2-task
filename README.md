@@ -2,13 +2,18 @@
 
 Сделать:
 
-cards-ui-pages
+до 11.03
 
+- cards-ui-pages
+- form-elements(page, просто стили)
+  посмотреть лучшие практики webpack и реализовать, если возможно,:
 - стили(минификация)
 - шрифты https://tocode.ru/courses/nastroika-webpack4/podkluchenie-shriftov/
 - картинки(минификация)
 - убрать лишнее в package.json: mini-css-extract-plugin(убрать позже)
-- form-elements(page, просто стили)
+
+после 11.03
+
 - itemQuantityDropdown не работает должным образом, попробовать на vanilla js
 
 Информация о проекте:
