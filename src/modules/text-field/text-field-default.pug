@@ -1,0 +1,6 @@
+mixin text-field-default(title, status, placeholder)
+  .text-field-default.elements__item
+    .elements__item_header
+      h3.h3=title 
+      span.elements__item_state=status
+    input.card__input(type="text" placeholder=placeholder)

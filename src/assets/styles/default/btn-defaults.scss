@@ -13,6 +13,7 @@
     margin-right: 20px;
     transition: .07s;
   }
+  //используется вообще эта кнопка???
   &-gradient {
     &-arrow {
       position: relative;
@@ -26,7 +27,7 @@
         transform: translate(0, -50%);
         width: 16px;
         height: 16px;
-        // background-image: url('/../../images/arrow_forward-white.svg');
+        // background-image: url('@images/arrow_forward-white.svg');
         background-repeat: no-repeat;
         background-size: cover;
       }

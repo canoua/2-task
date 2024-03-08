@@ -4,6 +4,7 @@
 
 до 11.03
 
+- btn-defaults.scss перенести в modules/buttons
 - убрать mixins.pug
 - cards-ui-pages
 - form-elements(page, просто стили)
@@ -15,7 +16,7 @@
 
 после 11.03
 
-- itemQuantityDropdown не работает должным образом, попробовать на vanilla js
+- itemQuantityDropdown удалил, попробовать на vanilla js
 
 Информация о проекте:
 

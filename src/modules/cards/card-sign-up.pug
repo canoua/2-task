@@ -1,6 +1,8 @@
 include ../buttons/button-white.pug
 include ../buttons/button-gradient-arrow.pug
 include ../mixins.pug
+include ../text-field/text-field-default.pug
+include ../text-field/text-field-masked.pug
 
 mixin card-sign-up 
   form(action="#") 
@@ -11,7 +13,7 @@ mixin card-sign-up
           +text-field-default('', '', 'Имя')
           +text-field-default('', '', 'Фамилия')
         +radiobuttons('')
-        +masked-text-field('дата рождения')
+        +text-field-masked('дата рождения')
         +text-field-default('данные для входа в сервис', '', 'Email')
         +text-field-default('', '', 'Пароль')
         +toggle('Получать спецпредложения')

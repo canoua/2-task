@@ -1,0 +1,6 @@
+mixin text-field-hover(title, status, placeholder)
+  .text-field-hover.elements__item 
+    .elements__item_header
+      h3.h3=title  
+      span.elements__item_state=status
+    input.card__input.card__input-hover(type="text" placeholder=placeholder)

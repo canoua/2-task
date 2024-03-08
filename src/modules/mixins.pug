@@ -1,41 +1,20 @@
-mixin text-field-default(title, status, placeholder)
-  .text-field-default.elements__item
-    .elements__item_header
-      h3.h3=title 
-      span.elements__item_state=status
-    input.card__input(type="text" placeholder=placeholder)
-
-mixin text-field-hover(title, status, placeholder)
-  .text-field-hover.elements__item 
-    .elements__item_header
-      h3.h3=title  
-      span.elements__item_state=status
-    input.card__input.card__input-hover(type="text" placeholder=placeholder)
-
+//- написать на чистом js
 mixin dropdown
-  <div class="iqdropdown">
-    <p class="iqdropdown-selection"></p>
-    <div class="iqdropdown-menu">
-      <div class="iqdropdown-menu-option" data-id="item1">
-        <div>
-          <p class="iqdropdown-item">Item 1</p>
-          <p class="iqdropdown-description">A short description</p>
-        </div>
-      </div>
-      <div class="iqdropdown-menu-option" data-id="item2">
-        <div>
-          <p class="iqdropdown-item">Item 2</p>
-          <p class="iqdropdown-description">A short description</p>
-        </div>
-      </div>
-      <div class="iqdropdown-menu-option" data-id="item3">
-        <div>
-          <p class="iqdropdown-item">Item 3</p>
-          <p class="iqdropdown-description">A short description</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  .iqdropdown
+    p.iqdropdown-selection
+    .iqdropdown-menu
+      .iqdropdown-menu-option(data-id='item1')
+        div
+          p.iqdropdown-item Item 1
+          p.iqdropdown-description A short description
+      .iqdropdown-menu-option(data-id='item2')
+        div
+          p.iqdropdown-item Item 2
+          p.iqdropdown-description A short description
+      .iqdropdown-menu-option(data-id='item3')
+        div
+          p.iqdropdown-item Item 3
+          p.iqdropdown-description A short description
   .dropdown.elements__item 
     .elements__item_header
       h3.h3=title
@@ -55,12 +34,6 @@ mixin radiobuttons(title)
         input.input#test2(type='radio' name='radio-group')
         label.radiobutton__item_label(for='test2') Женщина
 
-mixin masked-text-field(title)
-  .masked-text-field.elements__item 
-    .elements__item_header
-      h3.h3=title
-    input.card__input.card__input-masked(type="text" placeholder="ДД.ММ.ГГГГ")
-
 mixin toggle(text)
   .toggle.elements__item 
     .toggle__item 
@@ -77,4 +50,3 @@ mixin date-dropdown(title)
     .card__input-wrapper
       input.card__input-date-dropdown.calendar
       span.material-icons.material-icons-expand expand_more
-         
