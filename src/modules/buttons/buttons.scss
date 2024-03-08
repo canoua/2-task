@@ -78,3 +78,67 @@
   }
 }
 
+//раскидать по папкам
+.btn{
+  &-white {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: $purple;
+    border: 2px solid $purple;
+    border-radius: 22px;
+    padding: 9px 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: .07s;
+  }
+  //используется вообще эта кнопка???
+  &-gradient {
+    &-arrow {
+      position: relative;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        transform: translate(0, -50%);
+        width: 16px;
+        height: 16px;
+        // background-image: url('@images/arrow_forward-white.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  &-gradient, 
+  &-gradient-arrow {
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 20px;
+    cursor: pointer;
+    transition: .3s;
+    height: 44px;
+  }
+}
+
+.btn-white:hover,
+.btn-gradient:hover,
+.btn-gradient-arrow:hover{
+  opacity: 0.5;
+}
+
+.btn-white:active,
+.btn-gradient:active,
+.btn-gradient-arrow:active{
+  color: $darkshade50;
+}

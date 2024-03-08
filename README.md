@@ -1,11 +1,7 @@
-сборка для нескольких страниц https://github.com/webdiscus/pug-plugin#example-pug-in-js-compile
-
 Сделать:
 
 до 11.03
 
-- btn-defaults.scss перенести в modules/buttons
-- убрать mixins.pug
 - cards-ui-pages
 - form-elements(page, просто стили)
   посмотреть лучшие практики webpack и реализовать, если возможно,:
@@ -16,7 +12,7 @@
 
 после 11.03
 
-- itemQuantityDropdown удалил, попробовать на vanilla js
+- itemQuantityDropdown попробовать на vanilla js
 
 Информация о проекте:
 

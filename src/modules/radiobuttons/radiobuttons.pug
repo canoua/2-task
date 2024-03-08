@@ -1,0 +1,11 @@
+mixin radiobuttons(title)
+  .radiobuttons.elements__item 
+    .elements__item_header.radiobuttons__header
+      h3.h3=title 
+    .radiobutton-wrapper 
+      p.radiobutton__item
+        input.input#test1(type='radio' name='radio-group' checked='')
+        label.radiobutton__item_label(for='test1') Мужчина
+      p.radiobutton__item
+        input.input#test2(type='radio' name='radio-group')
+        label.radiobutton__item_label(for='test2') Женщина

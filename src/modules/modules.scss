@@ -1,23 +1,20 @@
-//?
+//form-elements
 @import './blocks/bullet.scss';
-
-@import './buttons/buttons.scss';
-
-@import './cards/cards.scss';
 
 @import './blocks/checkbox.scss';
 @import './blocks/custom-radio.scss';
-@import './blocks/dropdown.scss';
 @import './blocks/filter-date-dropdown.scss';
 @import './blocks/like-button.scss';
 @import './blocks/likes.scss';
 @import './blocks/pagination.scss';
-@import './blocks/radiobuttons.scss';
 @import './blocks/range-slider.scss';
 @import './blocks/rate-button.scss';
 @import './blocks/review.scss';
-@import './blocks/toggle-2.scss';
-@import './blocks/toggle.scss';
 
+@import './buttons/buttons.scss';
+@import './cards/cards.scss';
+@import './dropdown/dropdown.scss';
+@import './toggle/toggle.scss';
 @import './text-field/text-field-subscription/text-field-subscription.scss';
+@import './radiobuttons/radiobuttons.scss';
 
