@@ -5,10 +5,8 @@
 - cards-ui-pages
 - form-elements(page, просто стили)
   посмотреть лучшие практики webpack и реализовать, если возможно,:
-- стили(минификация)
 - шрифты https://tocode.ru/courses/nastroika-webpack4/podkluchenie-shriftov/
 - картинки(минификация)
-- убрать лишнее в package.json: mini-css-extract-plugin(убрать позже)
 
 после 11.03
 

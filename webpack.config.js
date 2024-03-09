@@ -36,13 +36,14 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
               sourceMap: true,
             },
           },
+          'postcss-loader',
           {
             loader: "sass-loader",
             options: {
@@ -104,9 +105,9 @@ module.exports = {
       template: path.join(__dirname, 'src/pages/room-details', 'room-details.pug'),
       filename: 'pages/room-details.html',
     }),
-    // new MiniCssExtractPlugin({
-    //   filename: "style.css",
-    // }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
+    }),
     new FileManagerPlugin({
       events: {
         onStart: {
