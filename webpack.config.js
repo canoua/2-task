@@ -1,15 +1,16 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 const path = require('path');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+// const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'main.[contenthash].js',
-    assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+    // assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
   },
   module: {
     rules: [
@@ -19,16 +20,16 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|svg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
-      {
-        test: /\.svg$/,
-        type: 'asset/resource',
-        generator: {
-          filename: path.join('fonts', '[name].[contenthash][ext]'),
-        },
-      },
+      // {
+      //   test: /\.svg$/,
+      //   type: 'asset/resource',
+      //   generator: {
+      //     filename: path.join('fonts', '[name].[contenthash][ext]'),
+      //   },
+      // },
       {
         test: /\.pug$/,
         loader: 'pug-loader',
@@ -55,13 +56,13 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(woff2?|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[hash][ext][query]',
-        }
-      },
+      // {
+      //   test: /\.(woff2?|eot|ttf|otf)$/i,
+      //   type: 'asset/resource',
+      //   generator: {
+      //     filename: 'fonts/[hash][ext][query]',
+      //   }
+      // },
     ],
   },
   plugins: [
@@ -115,6 +116,11 @@ module.exports = {
         },
       },
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: "src/assets/fonts/", to: "fonts/" },
+      ],
+    }),
   ],
   devServer: {
     watchFiles: path.join(__dirname, 'src'),
@@ -125,21 +131,21 @@ module.exports = {
       "@images": path.resolve(__dirname, "src/assets/images/")
     },
   },
-  optimization: {
-    minimizer: [
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
-          options: {
-            plugins: [
-              ['gifsicle', { interlaced: true }],
-              ['jpegtran', { progressive: true }],
-              ['optipng', { optimizationLevel: 5 }],
-              ['svgo', { name: 'preset-default' }],
-            ],
-          },
-        },
-      }),
-    ],
-  },
+  // optimization: {
+  //   minimizer: [
+  //     new ImageMinimizerPlugin({
+  //       minimizer: {
+  //         implementation: ImageMinimizerPlugin.imageminMinify,
+  //         options: {
+  //           plugins: [
+  //             ['gifsicle', { interlaced: true }],
+  //             ['jpegtran', { progressive: true }],
+  //             ['optipng', { optimizationLevel: 5 }],
+  //             ['svgo', { name: 'preset-default' }],
+  //           ],
+  //         },
+  //       },
+  //     }),
+  //   ],
+  // },
 };
