@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 const path = require('path');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
@@ -34,7 +35,24 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+              sassOptions: {
+                outputStyle: "compressed",
+              }
+            },
+          },
+        ],
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
@@ -42,11 +60,6 @@ module.exports = {
         generator: {
           filename: 'fonts/[hash][ext][query]',
         }
-      },
-      {
-        test: /\.js$/,
-        enforce: "pre",
-        use: ["source-map-loader"],
       },
     ],
   },
@@ -91,6 +104,9 @@ module.exports = {
       template: path.join(__dirname, 'src/pages/room-details', 'room-details.pug'),
       filename: 'pages/room-details.html',
     }),
+    // new MiniCssExtractPlugin({
+    //   filename: "style.css",
+    // }),
     new FileManagerPlugin({
       events: {
         onStart: {
