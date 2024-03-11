@@ -1,15 +1,14 @@
 Сделать:
 
-до 11.03
+В первую очередь
 
-- рефакторинг структуры
 - cards-ui-pages
 - form-elements(page, просто стили)
-
-после 11.03
-
 - itemQuantityDropdown попробовать на vanilla js
-  настроить прод
+
+В последнюю очередь
+
+- настроить прод
 - шрифты https://tocode.ru/courses/nastroika-webpack4/podkluchenie-shriftov/
 - картинки(минификация)
 

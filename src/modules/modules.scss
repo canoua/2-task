@@ -1,14 +1,15 @@
-@import './blocks/bullet.scss';
-@import './blocks/checkbox.scss';
-@import './blocks/filter-date-dropdown.scss';
+@import './scss/bullet.scss';
+@import './scss/checkbox.scss';
+@import './scss/filter-date-dropdown.scss';
 
-@import './blocks/likes.scss';
-@import './blocks/pagination.scss';
-@import './blocks/range-slider.scss';
-@import './blocks/rate-button.scss';
-@import './blocks/review.scss';
-@import './blocks/custom-radio.scss';
+@import './scss/likes.scss';
+@import './scss/pagination.scss';
+@import './scss/range-slider.scss';
+@import './scss/rate-button.scss';
+@import './scss/review.scss';
+@import './scss/custom-radio.scss';
 
+@import './menu/menu.scss';
 @import './buttons/buttons.scss';
 @import './cards/cards.scss';
 @import './dropdown/dropdown.scss';
