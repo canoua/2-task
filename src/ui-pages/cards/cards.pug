@@ -1,5 +1,5 @@
-include ./../../modules/cards/card-sign-in.pug
-include ./../../modules/cards/card-sign-up.pug
+include ../../modules/cards/card-sign-in.pug
+include ../../modules/cards/card-sign-up.pug
 
 doctype html
 html(lang="en")
@@ -9,5 +9,12 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title cards
   body 
-    +card-sign-in
-    +card-sign-up
+    .ui-cards 
+      .ui-cards__logo
+        img(src=require("@images/ui-logo.svg"), alt="ui-logo")
+      .ui-cards-inner 
+        .col.col_1
+          +card-sign-up
+        .col.col_2 
+           +card-sign-in
+        .col.col_3

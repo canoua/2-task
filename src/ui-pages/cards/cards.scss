@@ -1,11 +1,26 @@
-.ui{
-  &-cards{
-    padding: 150px 0;
+.ui {
+  &-cards {
+    padding: 150px 140px 140px 140px;
     background-color: #F4F4F6;
-    &__logo{
+    &__logo {
       position: absolute;
       top: 30px;
       left: 30px;
     }
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.col {
+  margin-right: 40px;
+  &_1, &_2 {
+    width: 380px;
+  }
+  &_3 {
+    width: 320px;
+    margin-right: 0;
   }
 }
