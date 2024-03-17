@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'main.[contenthash].js',
-    // assetModuleFilename: path.join('images/', '[name].[contenthash][ext]'),
+    assetModuleFilename: path.join('images/', '[name].[contenthash][ext]'),
   },
   module: {
     rules: [
@@ -19,16 +19,9 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|svg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
-      // {
-      //   test: /\.svg$/,
-      //   type: 'asset/resource',
-      //   generator: {
-      //     filename: path.join('fonts', '[name].[contenthash][ext]'),
-      //   },
-      // },
       {
         test: /\.pug$/,
         loader: 'pug-loader',
@@ -56,11 +49,8 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[hash][ext][query]',
-        }
+        test: /\.(woff2?|eot|ttf|svg|otf)$/i,
+        type: 'asset/inline'
       },
     ],
   },
