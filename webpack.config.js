@@ -9,7 +9,11 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'main.[contenthash].js',
-    assetModuleFilename: path.join('images/', '[name].[contenthash][ext]'),
+    // сделано, для того, чтобы структура папок из src повторилась в dist
+    assetModuleFilename: pathData => {
+      const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
+      return `${filepath}/[name][ext]`;
+    }
   },
   module: {
     rules: [
@@ -19,12 +23,15 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|svg|gif)$/i,
         type: 'asset/resource',
       },
       {
         test: /\.pug$/,
         loader: 'pug-loader',
+        options: {
+          pretty: true,
+        },
       },
       {
         test: /\.(scss|css)$/,
@@ -49,8 +56,8 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff2?|eot|ttf|svg|otf)$/i,
-        type: 'asset/inline'
+        test: /\.(woff2?|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
     ],
   },
@@ -115,21 +122,21 @@ module.exports = {
       "@images": path.resolve(__dirname, "src/assets/images/")
     },
   },
-  // optimization: {
-  //   minimizer: [
-  //     new ImageMinimizerPlugin({
-  //       minimizer: {
-  //         implementation: ImageMinimizerPlugin.imageminMinify,
-  //         options: {
-  //           plugins: [
-  //             ['gifsicle', { interlaced: true }],
-  //             ['jpegtran', { progressive: true }],
-  //             ['optipng', { optimizationLevel: 5 }],
-  //             ['svgo', { name: 'preset-default' }],
-  //           ],
-  //         },
-  //       },
-  //     }),
-  //   ],
-  // },
+  optimization: {
+    minimizer: [
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            plugins: [
+              ['gifsicle', { interlaced: true }],
+              ['jpegtran', { progressive: true }],
+              ['optipng', { optimizationLevel: 5 }],
+              ['svgo', { name: 'preset-default' }],
+            ],
+          },
+        },
+      }),
+    ],
+  },
 };
