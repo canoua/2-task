@@ -1,23 +1,8 @@
 //- написать на чистом js
-mixin dropdown
-  .iqdropdown
-    p.iqdropdown-selection
-    .iqdropdown-menu
-      .iqdropdown-menu-option(data-id='item1')
-        div
-          p.iqdropdown-item Item 1
-          p.iqdropdown-description A short description
-      .iqdropdown-menu-option(data-id='item2')
-        div
-          p.iqdropdown-item Item 2
-          p.iqdropdown-description A short description
-      .iqdropdown-menu-option(data-id='item3')
-        div
-          p.iqdropdown-item Item 3
-          p.iqdropdown-description A short description
+mixin dropdown(title, inputText)
   .dropdown.elements__item 
     .elements__item_header
       h3.h3=title
-    .card__input-wrapper 
+    .card__input-wrapper(class=className) 
       .card__input-dropdown.card__input-dropdown-pre-default=inputText
       span.material-icons.material-icons-expand expand_more

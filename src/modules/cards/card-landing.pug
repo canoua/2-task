@@ -1,18 +1,17 @@
 include ../buttons/button-gradient-arrow.pug
-//- include ../dropdown/dropdown.pug
+include ../date-dropdown/date-dropdown.pug
+include ../dropdown/dropdown.pug
 
-//- перенести в папку с landing??
 mixin card-landing 
   form(action="#")
     .card 
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
         .date-dropdown-wrapper
-          //- +date-dropdown('прибытие')
-          //- +date-dropdown('выезд')
-        //- +dropdown
-        //- +dropdown('гости', 'Сколько гостей')
-        +btn-gradient-arrow('', 'подобрать номер')
+          +date-dropdown('прибытие')
+          +date-dropdown('выезд')
+        +dropdown('гости', 'Сколько гостей', 'card-landing-dropdown')
+        +btn-gradient-arrow('card-btn-landing', 'подобрать номер')
 
          
           

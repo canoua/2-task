@@ -1,5 +1,6 @@
 include ../../modules/cards/card-sign-in.pug
 include ../../modules/cards/card-sign-up.pug
+include ../../modules/cards/card-landing.pug
 
 doctype html
 html(lang="en")
@@ -14,7 +15,10 @@ html(lang="en")
         img(src=require("@images/ui-logo.svg"), alt="ui-logo")
       .ui-cards-inner 
         .col.col_1
-          +card-sign-up
+          .ui-card
+            +card-landing
+          .ui-card
+            +card-sign-up
         .col.col_2 
-           +card-sign-in
+          +card-sign-in
         .col.col_3
