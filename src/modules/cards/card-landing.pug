@@ -8,8 +8,8 @@ mixin card-landing
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
         .date-dropdown-wrapper
-          +date-dropdown('прибытие')
-          +date-dropdown('выезд')
+          +date-dropdown('прибытие', 'ДД.ММ.ГГГГ')
+          +date-dropdown('выезд', 'ДД.ММ.ГГГГ')
         +dropdown('гости', 'Сколько гостей', 'card-landing-dropdown')
         +btn-gradient-arrow('card-btn-landing', 'подобрать номер')
 

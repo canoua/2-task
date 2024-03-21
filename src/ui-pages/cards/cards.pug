@@ -1,6 +1,7 @@
 include ../../modules/cards/card-sign-in.pug
 include ../../modules/cards/card-sign-up.pug
 include ../../modules/cards/card-landing.pug
+include ../../modules/cards/card-calculate.pug
 
 doctype html
 html(lang="en")
@@ -19,6 +20,9 @@ html(lang="en")
             +card-landing
           .ui-card
             +card-sign-up
-        .col.col_2 
-          +card-sign-in
+        .col.col_2
+          .ui-card 
+            +card-calculate
+          .ui-card
+            +card-sign-in
         .col.col_3

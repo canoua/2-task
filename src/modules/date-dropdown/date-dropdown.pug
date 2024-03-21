@@ -1,7 +1,7 @@
-mixin date-dropdown(title)
+mixin date-dropdown(title, placeholder)
   .date-dropdown.elements__item.elements__item-box
     .elements__item_header
       h3.h3=title 
     .card__input-wrapper
-      input.card__input-date-dropdown(placeholder="ДД.ММ.ГГГГ")
+      input.card__input-date-dropdown(placeholder=placeholder)
       span.material-icons.material-icons-expand expand_more
