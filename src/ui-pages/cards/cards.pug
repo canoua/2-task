@@ -14,15 +14,16 @@ html(lang="en")
     .ui-cards 
       .ui-cards__logo
         img(src=require("@images/ui-logo.svg"), alt="ui-logo")
-      .ui-cards-inner 
-        .col.col_1
-          .ui-card
-            +card-landing
-          .ui-card
-            +card-sign-up
-        .col.col_2
-          .ui-card 
-            +card-calculate
-          .ui-card
-            +card-sign-in
-        .col.col_3
+      .container 
+        .ui-cards-inner 
+          .col.col_1
+            .ui-card
+              +card-landing
+            .ui-card
+              +card-sign-up
+          .col.col_2
+            .ui-card 
+              +card-calculate
+            .ui-card
+              +card-sign-in
+          .col.col_3
