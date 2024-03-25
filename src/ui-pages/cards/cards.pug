@@ -2,6 +2,9 @@ include ../../modules/cards/card-sign-in.pug
 include ../../modules/cards/card-sign-up.pug
 include ../../modules/cards/card-landing.pug
 include ../../modules/cards/card-calculate.pug
+include ../../modules/cards/card-calendar.pug
+include ../../modules/cards/card-room.pug
+include ../../modules/cards/card-room-arrow.pug
 
 doctype html
 html(lang="en")
@@ -27,3 +30,9 @@ html(lang="en")
             .ui-card
               +card-sign-in
           .col.col_3
+            .ui-card 
+              +card-calendar
+            .ui-card 
+              +card-room-arrow
+            .ui-card  
+              +card-room
