@@ -121,4 +121,64 @@
 
 .card-calendar {
   width: 320px;
+  padding: 20px;
+  &__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    color: #1f2041;
+    margin-bottom: 30px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 12px;
+      text-align: center;
+      color: $purple;
+      text-transform: uppercase;
+    }
+    &__numbers {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      font-weight: 400;
+      font-size: 12px;
+      text-align: center;
+      color: rgba(31, 32, 65, 0.5);
+      cursor: pointer;
+      &_current {
+        // background-image: url('./../../assets/images/current-number.svg');
+        // fill: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: $purple;
+    background-color: #fff;
+    border: none;
+  }
+}
+
+.calendar__item {
+  width: 40px;
+  height: 40px;
 }
