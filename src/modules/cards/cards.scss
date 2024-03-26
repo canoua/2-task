@@ -122,13 +122,22 @@
 .card-calendar {
   width: 320px;
   padding: 20px;
+  // &-inner {
+    // display: block;
+  // }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
   &__title {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 19px;
     text-align: center;
     color: #1f2041;
-    margin-bottom: 30px;
   }
   &__main {
     display: flex;
@@ -209,4 +218,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-calendar__btn {
+  background: none;
+  border: none;
+}
+
+.material-icons.card-calendar__arrow-prev {
+  //не работает в строчном теге????
+  // background: #bc9cff;
+  // background-clip: text;
+  color: #bc9cff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 85%;
+  cursor: pointer;
+  transform: rotate(-180deg);
+  display: block;
+}
+
+.material-icons.card-calendar__arrow-next{
+  color: #bc9cff;
+  // background: #bc9cff;
+  // background-clip: text;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 85%;
+  cursor: pointer;
+  display: block;
 }
