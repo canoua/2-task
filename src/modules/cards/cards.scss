@@ -155,10 +155,35 @@
       font-size: 12px;
       text-align: center;
       color: rgba(31, 32, 65, 0.5);
+      margin-bottom: 20px;
+    }
+    &__number {
       cursor: pointer;
+      border-radius: 100%;
       &_current {
-        // background-image: url('./../../assets/images/current-number.svg');
-        // fill: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        color: #fff;
+        font-weight: 700;
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+      }
+      &_range {
+        color: #fff;
+        font-weight: 700;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        &-last {
+          position: relative;
+          z-index: 10;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 15px;
+            width: 160px;
+            height: 100%;
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            opacity: 0.25;
+            z-index: -1;
+          }
+        }
       }
     }
   }
@@ -181,4 +206,7 @@
 .calendar__item {
   width: 40px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
