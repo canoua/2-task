@@ -117,14 +117,15 @@
 
 .card-room {
   width: 270px;
+  box-shadow: 0 10px 20px 0 rgba(31, 32, 65, 0.05);
+  border: none;
 }
 
 .card-calendar {
   width: 320px;
   padding: 20px;
-  // &-inner {
-    // display: block;
-  // }
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-shadow: 0 10px 20px 0 rgba(31, 32, 65, 0.05);
   &__header {
     display: flex;
     justify-content: space-between;
@@ -227,8 +228,6 @@
 
 .material-icons.card-calendar__arrow-prev {
   //не работает в строчном теге????
-  // background: #bc9cff;
-  // background-clip: text;
   color: #bc9cff;
   font-weight: 400;
   font-size: 24px;
@@ -240,8 +239,6 @@
 
 .material-icons.card-calendar__arrow-next{
   color: #bc9cff;
-  // background: #bc9cff;
-  // background-clip: text;
   font-weight: 400;
   font-size: 24px;
   line-height: 85%;
