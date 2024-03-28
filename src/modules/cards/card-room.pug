@@ -1,5 +1,12 @@
 mixin card-room 
   .card.card-room
-    .card-inner
-      .card__slider
-      .card__footer
+    .card-inner.card-room-inner
+      .card-room__slider
+        .slide 
+          img(src=require('@images/cards/slide-1.png'), alt="slide-1").slide-1__img
+        .pagination
+          .dot.dot_active 
+          .dot 
+          .dot 
+          .dot 
+      .card-room__footer
