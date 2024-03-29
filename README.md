@@ -2,7 +2,6 @@
 
 В первую очередь
 
-- cards-ui-pages
 - form-elements(page, просто стили, отступы блоков)
 - itemQuantityDropdown попробовать на vanilla js
 
