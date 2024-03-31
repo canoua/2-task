@@ -2,7 +2,7 @@
 
 В первую очередь
 
-- form-elements(page, просто стили, отступы блоков)
+- form-elements(рефактор, просто стили, отступы блоков): radiobuttons отступы
 - itemQuantityDropdown попробовать на vanilla js
 
 В последнюю очередь
