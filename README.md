@@ -2,7 +2,8 @@
 
 В первую очередь
 
-- form-elements(рефактор, просто стили, отступы блоков): radiobuttons отступы
+- form-elements(рефактор)
+- colors, дебаг
 - itemQuantityDropdown попробовать на vanilla js
 
 В последнюю очередь
