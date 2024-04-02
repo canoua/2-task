@@ -72,8 +72,8 @@ module.exports = {
       filename: 'ui-pages/form-elements.html',
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src/ui-pages/colors-types', 'colors-types.pug'),
-      filename: 'ui-pages/colors-types.html',
+      template: path.join(__dirname, 'src/ui-pages/colors-types', 'ct.pug'),
+      filename: 'ui-pages/ct.html',
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/ui-pages/cards', 'cards.pug'),

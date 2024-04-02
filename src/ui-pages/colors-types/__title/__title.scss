@@ -1,0 +1,33 @@
+.ct {
+  display: flex;
+  margin-bottom: 51px;
+  &__title {
+    display: flex;
+    &__number {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: right;
+      color: $darkshade25;
+      margin-right: 30px;
+      width: 37px;
+      margin-bottom: 51px;
+      &_2 {
+        font-size: 19px;
+        line-height: 23px;
+      }
+      &_3 {
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+      &_4 {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      &-text{
+        width: calc(100% - 37px);    
+      }
+    }
+  }
+}

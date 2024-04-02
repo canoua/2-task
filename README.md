@@ -2,8 +2,7 @@
 
 В первую очередь
 
-- form-elements(рефактор)
-- colors, дебаг
+- form-elements(рефактор структуры)
 - itemQuantityDropdown попробовать на vanilla js
 
 В последнюю очередь
