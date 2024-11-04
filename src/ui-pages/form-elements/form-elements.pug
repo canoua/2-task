@@ -2,6 +2,9 @@ include ../../modules/dropdown/dropdown.pug
 include ../../modules/text-field/text-field-subscription/text-field-subscription.pug
 include ../../modules/text-field/text-field-default.pug
 include ../../modules/text-field/text-field-hover.pug
+include ../../modules/text-field/text-field-masked.pug
+include ../../modules/date-dropdown/date-dropdown.pug
+include ../../modules/date-dropdown/filter-date-dropdown.pug
 
 doctype html
 html(lang="en")
@@ -19,29 +22,11 @@ html(lang="en")
           +text-field-default('Text Field', 'Default', 'Email')
           +text-field-hover('Text Field', 'Hover / Focus', 'This is pretty awesome')
           +dropdown('Dropdown', 'Сколько гостей')
-          .masked-text-field.elements__item 
-            .elements__item_header
-              h3.h3 masked text field
-            input.card__input.card__input-masked(type="text" placeholder="ДД.ММ.ГГГГ")
+          +text-field-masked('masked text field')
           .date-dropdown-wrapper 
-            .date-dropwown.elements__item.elements__item-box
-              .elements__item_header
-                h3.h3 date Dropdown
-              .card__input-wrapper
-                .card__input-date-dropdown ДД.ММ.ГГГГ
-                span.material-icons.material-icons-expand expand_more
-            .date-dropdown.elements__item.elements__item-box 
-              .elements__item_header
-                h3.h3 date Dropdown
-              .card__input-wrapper
-                .card__input-date-dropdown 19.08.2019
-                span.material-icons.material-icons-expand expand_more
-          .filter-date-dropdown.elements__item 
-            .elements__item_header
-              h3.h3 filter date dropdown
-            .card__input-wrapper
-              .card__input-dropdown.card__input-filter-date 19 авг - 23 авг
-              span.material-icons.material-icons-expand expand_more
+            +date-dropdown('date Dropdown', 'ДД.ММ.ГГГГ')
+            +date-dropdown('date Dropdown', '19.08.2019')
+          +filter-date-dropdown('filter date dropdown', '19 авг - 23 авг')
           +subscription-text-field('subscription text field', 'Email')
           
         .column 
