@@ -4,6 +4,7 @@
 
 - form-elements(рефактор структуры)
 - itemQuantityDropdown попробовать на vanilla js
+- modules/radiobuttons??
 
 В последнюю очередь
 
