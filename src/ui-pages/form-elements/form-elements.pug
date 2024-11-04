@@ -29,23 +29,17 @@ html(lang="en")
               h3.h3 Checkbox Buttons
             ul.checkbox__list 
               li.checkbox__list_item 
-                div
-                  input(type="checkbox").checkbox__list_input#smoking
-                  label(for="smoking").checkbox__list_label Можно курить
+                +checkbox('smoking','Можно курить')
               li.checkbox__list_item  
-                div
-                  input(type="checkbox").checkbox__list_input#pets
-                  label(for="pets").checkbox__list_label Можно с питомцами
-              li.checkbox__list_item  
-                div
-                  input(type="checkbox").checkbox__list_input#guests
-                  label(for="guests").checkbox__list_label Можно пригласить гостей (до 10 человек)
+                +checkbox('pets','Можно с питомцами')
+              li.checkbox__list_item 
+                +checkbox('guests', 'Можно пригласить гостей (до 10 человек)') 
           .radiobuttons.elements__item 
             .elements__item_header.radiobuttons__header
               h3.h3 Radio Buttons
             .radiobutton-wrapper 
               p.radiobutton__item
-                input.input#test1(type='radio' name='radio-group' checked='')
+                input.input#test1(type='radio' name='radio-group' checked='none')
                 label.radiobutton__item_label(for='test1') Мужчина
               p.radiobutton__item
                 input.input#test2(type='radio' name='radio-group')
@@ -85,35 +79,20 @@ html(lang="en")
               h3.h3 buttons
             .buttons-content 
               .button-default-wrapper 
-                button.button.button-default.form-element-btn CLICK ME
+                +button-gradient('form-element-btn', 'CLICK ME')
                 button.button.button-default.button-default-hover.form-element-btn CLICK ME
+              //-class?????????
               .button-border-hover-wrapper 
-                button.button.button-border.form-element-btn CLICK ME
+                +button-white('form-element-btn', 'CLICK ME')
                 button.button.button-border.button-border-hover.form-element-btn CLICK ME
               .icon-link-wrapper 
                 a(href="#").icon-link CLICK ME
                 a(href="#").icon-link.icon-link-hover CLICK ME
-              button.button-default-big 
-                span перейти к оплате
-                .material-icons.material-icons-arrow_forward arrow_forward 
+              +btn-gradient-arrow('', 'перейти к оплате')
           .pagination.elements__item 
             .elements__item_header.pagination__header
               h3.h3 pagination
-            ul.pagination__list
-              li.pagination__list_item 
-                a.pagination__link.pagination__link-active(href="#") 1
-              li.pagination__list_item
-                a.pagination__link(href="#") 2
-              li.pagination__list_item 
-                a.pagination__link(href="#") 3 
-              li.pagination__list_item 
-                a.pagination__link(href="#") ... 
-              li.pagination__list_item
-                a.pagination__link(href="#") 15 
-              li.pagination__list_item
-                a.pagination__link.pagination__link-arrow(href="#")
-                  span.material-icons.material-icons-pagination-link arrow_forward 
-            .pagination__info 1 – 12 из 100+ вариантов аренды
+            +pagination
 
       .container.elements-inner-2
         .column 

@@ -2,7 +2,8 @@
 
 В первую очередь
 
-- form-elements(рефактор структуры)
+- form-elements(рефактор структуры) - начал
+- room details(делать все с миксинами)
 - itemQuantityDropdown попробовать на vanilla js
 - modules/radiobuttons??
 
