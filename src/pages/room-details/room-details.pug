@@ -1,5 +1,6 @@
 //- include __information/__information.pug
 include ../../modules/information/information.pug
+include ../../modules/review/review.pug
 
 doctype html
 html(lang="en")
@@ -40,12 +41,8 @@ html(lang="en")
                 h2.title.info-title.reviews__title 
                   span Отзывы посетителей номера
                   span.reviews__title-info 2 отзыва
-                .review 
-                  .review__name Мурад Сарафанов
-                  .review__date 5 дней назад
-                  .review__avatar 
-                    img.review__avatar_image(src=require("@images/avatar-1.png"), alt="avatar")
-                  .review__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шум
+                +review(require('@images/avatar-1.png'), 'Мурад Сарафанов', '5 дней назад', 'favorite', '12', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+                +review(require('@images/avatar-2.png'), 'Патрисия Стёклышкова', 'Неделю назад', 'favorite_border', '2', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
               article.rd__regulations
                 h2.title.info-title.regulations__title Правила
                 ul.regulations__list 
@@ -56,4 +53,4 @@ html(lang="en")
                 h2.title.info-title.cancellation__title Отмена
                 .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
             .info__box.info__box-2  
-            span.material-icons star
+            //- span.material-icons star
