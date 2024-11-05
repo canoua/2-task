@@ -1,5 +1,5 @@
-mixin bullet-list  
+mixin bullet-list(...items)
   ul.bullet__list 
-    li.bullet__list_item Нельзя с питомцами
-    li.bullet__list_item Без вечеринок и мероприятий
-    li.bullet__list_item Время прибытия — после 13:00, а выезд до 12:00
+    each item in items
+      li.bullet__list_item=item
+  

@@ -1,6 +1,5 @@
-//- include __information/__information.pug
-include ../../modules/information/information.pug
-include ../../modules/review/review.pug
+include includes.pug 
++includes
 
 doctype html
 html(lang="en")
@@ -45,12 +44,8 @@ html(lang="en")
                 +review(require('@images/avatar-2.png'), 'Патрисия Стёклышкова', 'Неделю назад', 'favorite_border', '2', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
               article.rd__regulations
                 h2.title.info-title.regulations__title Правила
-                ul.regulations__list 
-                  li.regulations__list_item Нельзя с питомцами
-                  li.regulations__list_item Без вечеринок и мероприятий
-                  li.regulations__list_item Время прибытия — после 13:00, а выезд до 12:00
+                +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
               article.rd__cancellation 
                 h2.title.info-title.cancellation__title Отмена
                 .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-            .info__box.info__box-2  
-            //- span.material-icons star
+            //- .info__box.info__box-2  
