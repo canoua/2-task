@@ -247,16 +247,8 @@ html(lang="en")
       .container.elements-inner-4  
         .column
           .elements__item
-            .information__item 
-              img.information__icon(src=require('@images/icons/insert_emoticon.png') alt="icon")
-              .information__item-inner 
-                .information__title Комфорт
-                .information__text Шумопоглощающие стены
-            .information__item 
-              img.information__icon(src=require('@images/icons/location_city.png') alt="icon")
-              .information__item-inner
-                .information__title Удобство
-                .information__text Окно в каждой из спален
+            +information(require('@images/icons/insert_emoticon.png'), 'Комфорт', 'Шумопоглощающие стены')
+            +information(require('@images/icons/location_city.png'), 'Удобство', 'Окно в каждой из спален')
         .column-2  
           .reviews
             +review

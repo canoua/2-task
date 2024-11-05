@@ -1,4 +1,5 @@
-include __information/__information.pug
+//- include __information/__information.pug
+include ../../modules/information/information.pug
 
 doctype html
 html(lang="en")
@@ -19,7 +20,11 @@ html(lang="en")
         .container
           .rd__info-inner 
             .rd__info__box.rd__info__box-1 
-              +__information
+              article.rd__information
+                h2.title.rd__info-title Сведения о номере
+                +information(require('@images/icons/insert_emoticon.png'), 'Комфорт', 'Шумопоглощающие стены')
+                +information(require('@images/icons/location_city.png'), 'Удобство', 'Окно в каждой из спален')
+                +information(require('@images/icons/whatshot.png'), 'Уют', 'Номер оснащён камином')
               article.rd__impression
                 h2.title.info-title.impression__title Впечатления от номера
                 .impression-inner 
