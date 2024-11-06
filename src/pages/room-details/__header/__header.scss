@@ -1,0 +1,11 @@
+.rd{
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -11,40 +11,38 @@ html(lang="en")
   body 
     +header
     header.rd 
-      .rd__header
-        .rd__header__box
-          img.rd__img_1(src=require('@images/bg-1.jpg'), alt="photo")
-        .rd__header__box
-          img.rd__img_2(src=require('@images/bg-2.png'), alt="photo")
-          img.rd__img_3(src=require('@images/bg-3.png'), alt="photo")
-      main.rd__main 
-        .container
-          .rd__info-inner 
-            .rd__col
-              .rd__content 
-                article.rd__information
-                  h2.title.rd__title Сведения о номере
-                  +information('rd__information__item', require('@images/icons/insert_emoticon.png'), 'Комфорт', 'Шумопоглощающие стены')
-                  +information('rd__information__item', require('@images/icons/location_city.png'), 'Удобство', 'Окно в каждой из спален')
-                  +information('rd__information__item', require('@images/icons/whatshot.png'), 'Уют', 'Номер оснащён камином')
-                article.rd__impression
-                  h2.title.rd__title Впечатления от номера
-                  ul.impression__list
-                    li.impression__list_item.impression__list_item-1 Великолепно
-                    li.impression__list_item.impression__list_item-2 Хорошо
-                    li.impression__list_item.impression__list_item-3 Удовлетворительно
-                    li.impression__list_item.impression__list_item-4 Разочарован
-              
-              .rd__reviews
-                h2.title.rd__title.rd__reviews__title
-                  span Отзывы посетителей номера
-                  span.reviews__title-info 2 отзыва
-                +review(require('@images/avatar-1.png'), 'Мурад Сарафанов', '5 дней назад', 'favorite', '12', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
-                +review(require('@images/avatar-2.png'), 'Патрисия Стёклышкова', 'Неделю назад', 'favorite_border', '2', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
-              .rd__regulations 
-                article.rd__regulations
-                  h2.title.rd__title Правила
-                  +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
-                article.rd__cancellation 
-                  h2.title.info-title.cancellation__title Отмена
-                  .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.   
+      +__header
+    main.rd__main 
+      .container
+        .rd__info-inner 
+          .rd__col_1
+            .rd__block.rd__content 
+              article.rd__information
+                h2.title.rd__title Сведения о номере
+                +information('rd__information__item', require('@images/icons/insert_emoticon.png'), 'Комфорт', 'Шумопоглощающие стены')
+                +information('rd__information__item', require('@images/icons/location_city.png'), 'Удобство', 'Окно в каждой из спален')
+                +information('rd__information__item', require('@images/icons/whatshot.png'), 'Уют', 'Номер оснащён камином')
+              article.rd__impression
+                h2.title.rd__title Впечатления от номера
+                ul.impression__list
+                  li.impression__list_item.impression__list_item-1 Великолепно
+                  li.impression__list_item.impression__list_item-2 Хорошо
+                  li.impression__list_item.impression__list_item-3 Удовлетворительно
+                  li.impression__list_item.impression__list_item-4 Разочарован
+            
+            .rd__block.rd__reviews
+              h2.title.rd__title.rd__reviews__title
+                span Отзывы посетителей номера
+                span.reviews__title-info 2 отзыва
+              +review(require('@images/avatar-1.png'), 'Мурад Сарафанов', '5 дней назад', 'favorite', '12', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+              +review(require('@images/avatar-2.png'), 'Патрисия Стёклышкова', 'Неделю назад', 'favorite_border', '2', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
+            .rd__block.rd__regulations 
+              article.rd__regulations__item
+                h2.title.rd__title Правила
+                +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
+              article.rd__regulations__item.rd__regulations__item_cancellation 
+                h2.title.rd__title Отмена
+                .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги. 
+          .rd__col_2
+            //- +card-calculate
+    +footer
