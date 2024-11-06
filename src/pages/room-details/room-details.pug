@@ -45,12 +45,13 @@ html(lang="en")
                   span.reviews__title-info 2 отзыва
                 +review(require('@images/avatar-1.png'), 'Мурад Сарафанов', '5 дней назад', 'favorite', '12', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
                 +review(require('@images/avatar-2.png'), 'Патрисия Стёклышкова', 'Неделю назад', 'favorite_border', '2', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
-              article.rd__regulations
-                h2.title.info-title.regulations__title Правила
-                +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
-              article.rd__cancellation 
-                h2.title.info-title.cancellation__title Отмена
-                .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+              .regulations-wrapper 
+                article.rd__regulations
+                  h2.title.info-title.regulations__title Правила
+                  +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
+                article.rd__cancellation 
+                  h2.title.info-title.cancellation__title Отмена
+                  .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
             .info__box.info__box-2  
             //- +card-calculate
     //- +footer         
