@@ -1,0 +1,26 @@
+.information{
+  width: 291px;
+  &__icon{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+  }
+  &__item{
+    display: flex;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkshade75;
+  }
+  &__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkshade75;
+  }
+}
