@@ -4,6 +4,7 @@
 
 - form-elements(рефактор структуры) - начал
 - room details(делать все с миксинами)
+- review-mixin - переверстать
 - itemQuantityDropdown попробовать на vanilla js
 - modules/radiobuttons??
 

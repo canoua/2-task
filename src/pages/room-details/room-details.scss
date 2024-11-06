@@ -2,33 +2,17 @@
   background-image: none;
   display: block;
   width: 100%;
-  &__content {
+  &__header {
     display: flex;
     justify-content: space-between;
-    // height: 485px;
     width: 100%;
-    @media(min-width:1455px) {
-      height: 600px;
-    }
     &__box {
-      height: auto;
       display: flex;
       flex-direction: column;
-      &_1 {
-        width: 65%;
-        object-fit: cover;
-        @media(min-width: 1455px) {
-          height: auto;
-        }
-      }
-      &_2 {
-        object-fit: cover;
-        width: 35%;
-        @media(min-width: 1455px) {
-          // height: auto;
-        }
-      }
     }
+  }
+  &__title {
+    margin-bottom: 20px;
   }
   &__img {
     &_1 {
@@ -41,39 +25,34 @@
       width: 100%;
     }
   }
-  &__info {
+  &__main {
     padding: 70px 0;
     border-bottom: 1px solid $darkshade25;
-    &-inner{
+  }
+  &__col {
+    width: 70%;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__reviews {
+    width: 100%;
+    &__title {
+      width: 100%;
       display: flex;
+      justify-content: space-between;
     }
-    &__title{
-      margin-bottom: 20px;
-    }
-    &__article{
-      &__wrapper{
-        display: flex;
-      }
-    }
-    &__box{
-      &-1{
-        // width: 60%;
-      }
-      &-2{
-        // width: 30%;
-      }
+  }
+  &__information {
+    &__item {
+      width: 100%;
     }
   }
 }
 
 .impression{
-  &__title{
-    margin-bottom: 20px;
-  }
-  &-inner{
-    display: flex;
-    justify-content: space-between;
-  }
   &__list{
     &_item{
       font-weight: 400;
@@ -130,6 +109,7 @@
   }
 }
 
+//перенести в modules
 .review{
   &__name{
     font-weight: 700;
@@ -158,20 +138,8 @@
   }
 }
 
-.regulations{
-  &__title{
-    margin-bottom: 20px;
-  }
-  &-wrapper {
-    display: flex;
-  }
-}
-
 .cancellation{
   width: 341px;
-  &__title{
-    margin-bottom: 20px;
-  }
   &__text{
     font-weight: 400;
     font-size: 14px;

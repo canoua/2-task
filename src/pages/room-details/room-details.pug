@@ -10,48 +10,41 @@ html(lang="en")
     title Room-details(rd)
   body 
     +header
-    main.main.rd 
-      .rd__content
-        .rd__content__box.content__box_1 
+    header.rd 
+      .rd__header
+        .rd__header__box
           img.rd__img_1(src=require('@images/bg-1.jpg'), alt="photo")
-        .rd__content__box.content__box_2 
-          img.rd__img_2(src=require('@images/bg-3.png'), alt="photo")
+        .rd__header__box
+          img.rd__img_2(src=require('@images/bg-2.png'), alt="photo")
           img.rd__img_3(src=require('@images/bg-3.png'), alt="photo")
-      .rd__info 
+      main.rd__main 
         .container
           .rd__info-inner 
-            .rd__info__box.rd__info__box-1 
-              .rd__article__wrapper 
+            .rd__col
+              .rd__content 
                 article.rd__information
-                  h2.title.rd__info__title Сведения о номере
-                  +information(require('@images/icons/insert_emoticon.png'), 'Комфорт', 'Шумопоглощающие стены')
-                  +information(require('@images/icons/location_city.png'), 'Удобство', 'Окно в каждой из спален')
-                  +information(require('@images/icons/whatshot.png'), 'Уют', 'Номер оснащён камином')
+                  h2.title.rd__title Сведения о номере
+                  +information('rd__information__item', require('@images/icons/insert_emoticon.png'), 'Комфорт', 'Шумопоглощающие стены')
+                  +information('rd__information__item', require('@images/icons/location_city.png'), 'Удобство', 'Окно в каждой из спален')
+                  +information('rd__information__item', require('@images/icons/whatshot.png'), 'Уют', 'Номер оснащён камином')
                 article.rd__impression
-                  h2.title.info-title.impression__title Впечатления от номера
-                .impression-inner 
-                  //- .impression__diagram
-                  //-   .semicircle
-                  .impression__descr
-                    ul.impression__list
-                      li.impression__list_item.impression__list_item-1 Великолепно
-                      li.impression__list_item.impression__list_item-2 Хорошо
-                      li.impression__list_item.impression__list_item-3 Удовлетворительно
-                      li.impression__list_item.impression__list_item-4 Разочарован
+                  h2.title.rd__title Впечатления от номера
+                  ul.impression__list
+                    li.impression__list_item.impression__list_item-1 Великолепно
+                    li.impression__list_item.impression__list_item-2 Хорошо
+                    li.impression__list_item.impression__list_item-3 Удовлетворительно
+                    li.impression__list_item.impression__list_item-4 Разочарован
               
-              article.rd__reviews
-                h2.title.info-title.reviews__title 
+              .rd__reviews
+                h2.title.rd__title.rd__reviews__title
                   span Отзывы посетителей номера
                   span.reviews__title-info 2 отзыва
                 +review(require('@images/avatar-1.png'), 'Мурад Сарафанов', '5 дней назад', 'favorite', '12', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
                 +review(require('@images/avatar-2.png'), 'Патрисия Стёклышкова', 'Неделю назад', 'favorite_border', '2', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
-              .regulations-wrapper 
+              .rd__regulations 
                 article.rd__regulations
-                  h2.title.info-title.regulations__title Правила
+                  h2.title.rd__title Правила
                   +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
                 article.rd__cancellation 
                   h2.title.info-title.cancellation__title Отмена
-                  .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-            .info__box.info__box-2  
-            //- +card-calculate
-    //- +footer         
+                  .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.   

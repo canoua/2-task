@@ -1,5 +1,5 @@
-mixin information(source, title, text)  
-  .information__item 
+mixin information(classinformation, source, title, text)  
+  .information__item(class=classinformation) 
     img.information__icon(src=source  alt="icon")
     .information__item-inner 
       .information__title=title
