@@ -24,11 +24,13 @@ html(lang="en")
                 +information('rd__information__item', require('@images/icons/whatshot.png'), 'Уют', 'Номер оснащён камином')
               article.rd__impression
                 h2.title.rd__title Впечатления от номера
-                ul.impression__list
-                  li.impression__list_item.impression__list_item-1 Великолепно
-                  li.impression__list_item.impression__list_item-2 Хорошо
-                  li.impression__list_item.impression__list_item-3 Удовлетворительно
-                  li.impression__list_item.impression__list_item-4 Разочарован
+                .rd__impression-inner 
+                  +pie
+                  ul.impression__list
+                    li.impression__list_item.impression__list_item-1 Великолепно
+                    li.impression__list_item.impression__list_item-2 Хорошо
+                    li.impression__list_item.impression__list_item-3 Удовлетворительно
+                    li.impression__list_item.impression__list_item-4 Разочарован
             
             .rd__block.rd__reviews
               h2.title.rd__title.rd__reviews__title
