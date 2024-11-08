@@ -1,0 +1,12 @@
+.footer {
+  &__copy {
+    &__link {
+      display: block;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    
+    }
+  }
+}

@@ -1,14 +1,14 @@
 include ../../modules/buttons/button-white.pug
 include ../../modules/buttons/button-gradient.pug
 include ../../modules/menu/menu.pug
+include ../../modules/logo/logo.pug
 
 mixin header  
   header.header 
     .container 
       .header-inner 
         .header__box
-          a.logo-link(href="#") 
-            img.logo(src=require('@images/logo.png') alt="logo")
+          +logo
         .header__box.header__box_right
           +menu
           +button-white('form-element-btn','Войти')

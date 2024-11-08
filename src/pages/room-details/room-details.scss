@@ -26,6 +26,7 @@
   &__col {
     &_1 {
       width: 60%;
+      margin-right: 69px;
     }
     &_2 {
       width: 40%;
@@ -33,6 +34,12 @@
   }
   &__block {
     margin-bottom: 30px;
+  }
+  &__info {
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__content {
     display: flex;
@@ -52,6 +59,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
   &__information {
