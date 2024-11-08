@@ -42,4 +42,17 @@
       display: flex;
     } 
   }
+  &__list{
+    &__item{
+      margin-bottom: 20px;
+    }
+    &__link{
+      font-size: 14px;
+      line-height: 17px;
+      color: $darkshade50;
+      &:hover{
+        color: $darkshade75;
+      }
+    }
+  }
 }
