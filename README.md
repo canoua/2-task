@@ -3,7 +3,6 @@
 В первую очередь
 
 - form-elements(рефактор структуры) - начал
-- review-mixin - переверстать
 - itemQuantityDropdown попробовать на vanilla js
 - modules/radiobuttons??
 
