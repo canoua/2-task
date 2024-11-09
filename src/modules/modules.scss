@@ -1,22 +1,22 @@
-@import './scss/bullet.scss';
-@import './scss/checkbox.scss';
-@import './scss/filter-date-dropdown.scss';
+@import 'bullet/bullet.scss';
+@import 'buttons/rate-button.scss';
+@import 'buttons/likes.scss';
+@import 'buttons/buttons.scss';
+@import 'cards/cards.scss';
+@import 'checkbox/checkbox.scss';
+@import 'date-dropdown/filter-date-dropdown.scss';
+@import 'date-dropdown/date-dropdown.scss';
+@import 'dropdown/dropdown.scss';
+@import 'information/information.scss';
+@import 'menu/menu.scss';
+@import 'pagination/pagination.scss';
+@import 'radiobuttons/custom-radio.scss';
+@import 'radiobuttons/radiobuttons.scss';
+@import 'range-slider/range-slider.scss';
+@import 'review/review.scss';
+@import 'text-field/text-field-subscription/text-field-subscription.scss';
+@import 'toggle/toggle.scss';
 
-@import './scss/likes.scss';
-@import './scss/pagination.scss';
-@import './scss/range-slider.scss';
-@import './scss/rate-button.scss';
-@import './scss/review.scss';
-@import './scss/custom-radio.scss';
 
-@import './menu/menu.scss';
-@import './buttons/buttons.scss';
-@import './cards/cards.scss';
-@import './dropdown/dropdown.scss';
-@import './date-dropdown/date-dropdown.scss';
-@import './toggle/toggle.scss';
-@import './text-field/text-field-subscription/text-field-subscription.scss';
-@import './radiobuttons/radiobuttons.scss';
-@import './information/information.scss';
 
 
