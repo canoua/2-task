@@ -209,23 +209,17 @@ html(lang="en")
             ul.checkbox__list 
               li.checkbox__list_item 
                 //- сделать миксин
-                input(type="checkbox").checkbox__list_input#breakfast
-                label(for="breakfast").checkbox__list_label Завтрак
+                +checkbox('breakfast', 'Завтрак')
               li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#desk
-                label(for="desk").checkbox__list_label Письменный стол
+                +checkbox('desk', 'Письменный стол')
               li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#chair-for-feeding
-                label(for="chair-for-feeding").checkbox__list_label Стул для кормления
+                +checkbox('chair-for-feeding', 'Стул для кормления')
               li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#crib
-                label(for="crib").checkbox__list_label Кроватка
+                +checkbox('crib', 'Кроватка')
               li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#television
-                label(for="television").checkbox__list_label Телевизор
+                +checkbox('television', 'Телевизор')
               li.checkbox__list_item  
-                input(type="checkbox").checkbox__list_input#shampoo
-                label(for="shampoo").checkbox__list_label Шампунь
+                +checkbox('shampoo', 'Шампунь')
         .column  
           .rich-checkbox-buttons.elements__item 
             .checkbox-buttons__header.elements__item_header
