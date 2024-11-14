@@ -1,6 +1,6 @@
 include ../buttons/button-white.pug
 include ../buttons/button-gradient-arrow.pug
-include ../radiobuttons/radiobuttons.pug
+include ../radiobuttons/radiobutton.pug
 include ../toggle/toggle.pug
 include ../text-field/text-field-default.pug
 include ../text-field/text-field-masked.pug
@@ -13,7 +13,9 @@ mixin card-sign-up
         .inputs-wrapper 
           +text-field-default('', '', 'Имя')
           +text-field-default('', '', 'Фамилия')
-        +radiobuttons('')
+        .radiobutton-wrapper 
+          +radiobutton('test1', 'Мужчина')
+          +radiobutton('test2', 'Женщина')
         +text-field-masked('дата рождения')
         +text-field-default('данные для входа в сервис', '', 'Email')
         +text-field-default('', '', 'Пароль')

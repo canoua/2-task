@@ -1,4 +1,4 @@
-mixin radiobutton
+mixin radiobutton(id, label)
   p.radiobutton__item
-    input.input#test1(type='radio' name='radio-group' checked='')
-    label.radiobutton__item_label(for='test1') Мужчина
+    input.input(type='radio' id=id name='radio-group')
+    label.radiobutton__item_label(for=id)=label 

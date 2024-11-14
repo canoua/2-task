@@ -38,12 +38,8 @@ html(lang="en")
             .elements__item_header.radiobuttons__header
               h3.h3 Radio Buttons
             .radiobutton-wrapper 
-              p.radiobutton__item
-                input.input#test1(type='radio' name='radio-group' checked='none')
-                label.radiobutton__item_label(for='test1') Мужчина
-              p.radiobutton__item
-                input.input#test2(type='radio' name='radio-group')
-                label.radiobutton__item_label(for='test2') Женщина
+              +radiobutton('test1', 'Мужчина')
+              +radiobutton('test2', 'Женщина')
           .toggle.elements__item 
             .toggle__header.elements__item_header
               h3.h3 Toggle
@@ -208,7 +204,6 @@ html(lang="en")
             //- сделать миксин
             ul.checkbox__list 
               li.checkbox__list_item 
-                //- сделать миксин
                 +checkbox('', 'breakfast', 'Завтрак')
               li.checkbox__list_item  
                 +checkbox('', 'desk', 'Письменный стол')
