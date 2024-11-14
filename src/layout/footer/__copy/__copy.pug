@@ -1,4 +1,4 @@
-include __link/__link.pug
+include ../../modules/footer__copy__link/footer__copy__link.pug
 
 mixin __copy
   .footer__copy
@@ -7,6 +7,6 @@ mixin __copy
         .footer__copy__item 
           span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
         .footer__copy__social 
-          +__link(require("@images/icons/twitter.svg"), 'twitter')
-          +__link(require("@images/icons/fb.svg"), 'facebook')
-          +__link(require("@images/icons/inst.svg"), 'instagram')
+          +footer__copy__link(require("@images/icons/twitter.svg"), 'twitter')
+          +footer__copy__link(require("@images/icons/fb.svg"), 'facebook')
+          +footer__copy__link(require("@images/icons/inst.svg"), 'instagram')
