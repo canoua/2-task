@@ -1,0 +1,115 @@
+.card-calculate {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__room {
+    &__icon {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: $darkshade100;
+      margin-right: 5px;
+    }
+    &__number {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: $darkshade100;
+      margin-right: 8px;
+    }
+    &__class {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: $purple;
+    }
+  }
+  &__price {
+    &__values {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.5);
+      margin-right: 5px;
+    }
+    &__duration {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.5);
+    }
+  }
+  &__result {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &__item {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 23px;
+      color: $darkshade100;
+      &:first-child {
+        position: relative;
+        &::after {
+          position: absolute;
+          left: calc(100% + 5px);
+          bottom: 4px;
+          content: '';
+          width: 182px;
+          height: 1px;
+          background-image: url('@images/cards/dots.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 0;
+        }
+      }
+    }
+  }
+  &__count {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkshade75;
+    span {
+      &:first-child {
+        width: 214px;
+      }
+    }
+    &__info {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -25px;
+        top: 3px;
+        background-image: url('@images/cards/info.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+      }
+    }
+  }
+}
