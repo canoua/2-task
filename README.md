@@ -5,6 +5,7 @@
 - form-elements(рефактор структуры) - начал
 - itemQuantityDropdown попробовать на vanilla js
 - room-details, баг с картинками в хэдере
+- range-slider, добавить класс в миксин
 - диаграмму в room-details с помощью canvas
 
 В последнюю очередь

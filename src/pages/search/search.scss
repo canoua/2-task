@@ -1,3 +1,35 @@
 .search {
   padding: 30px 0 70px 0;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__sidebar {
+    width: 266px;
+    margin-right: 60px;
+  }
+  &__range {
+    &__info {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: $darkshade50;
+    }
+  }
+  &__content {
+    width: calc(100% - 266px);
+  }
+  &__title {
+    width: 100%;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $darkshade100;
+    margin-bottom: 21px;
+  }
 }

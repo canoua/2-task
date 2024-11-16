@@ -69,7 +69,7 @@ html(lang="en")
                 span.material-icons.material-icons-star star
         
         .column
-          +range-slider 
+          +range-slider('range slider')
           .buttons.elements__item 
             .elements__item_header.buttons__header
               h3.h3 buttons
@@ -220,12 +220,12 @@ html(lang="en")
             .checkbox-buttons__header.elements__item_header
               h3.h3 Rich Checkbox Buttons
             ul.checkbox__list 
-              li.checkbox__list_item.rich-checkbox__list_item 
-                +checkbox('checkbox__list_label-rich-title', 'corridor', 'Широкий коридор')
-              .checkbox__list_label-rich-info Ширина коридоров в номере не менее 91 см.
-              li.checkbox__list_item.rich-checkbox__list_item   
-                +checkbox('checkbox__list_label-rich-title', 'assistant', 'Помощник для инвалидов')
-              .checkbox__list_label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
+              li.checkbox__list__item.rich-checkbox__list__item 
+                +checkbox('checkbox__list__label-rich-title', 'corridor', 'Широкий коридор')
+              .checkbox__list__label-rich-info Ширина коридоров в номере не менее 91 см.
+              li.checkbox__list_item.rich-checkbox__list__item   
+                +checkbox('checkbox__list__label-rich-title', 'assistant', 'Помощник для инвалидов')
+              .checkbox__list__label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
         .column 
           .bullet.elements__item 
             .elements__item_header

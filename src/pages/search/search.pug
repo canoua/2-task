@@ -14,5 +14,33 @@ html(lang="en")
         .search-inner 
           .search__sidebar 
             +filter-date-dropdown('даты пребывания в отеле', '19 авг - 23 авг')
+            +dropdown('гости', '3 гостя, 1 младенец')
+            .search__range 
+              +range-slider('диапазон цены')
+              span.search__range__info Стоимость за сутки пребывания в номере
+            .search__checkbox 
+              h3.h3 правила дома
+              ul.checkbox__list 
+                li.checkbox__list_item 
+                  +checkbox('', 'smoking','Можно курить')
+                li.checkbox__list_item  
+                  +checkbox('', 'pets','Можно с питомцами')
+                li.checkbox__list_item 
+                  +checkbox('', 'guests', 'Можно пригласить гостей (до 10 человек)') 
+            .search__rich-checkbox 
+              h3.h3 доступность
+              ul.checkbox__list 
+                li.checkbox__list__item.rich-checkbox__list__item 
+                  +checkbox('checkbox__list__label-rich-title', 'corridor', 'Широкий коридор')
+                .checkbox__list__label-rich-info Ширина коридоров в номере не менее 91 см.
+                li.checkbox__list_item.rich-checkbox__list__item   
+                  +checkbox('checkbox__list__label-rich-title', 'assistant', 'Помощник для инвалидов')
+                .checkbox__list__label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
           .search__content
+            .search__title Номера, которые мы для вас подобрали
+            .search__content-inner
+              +card-room-arrow
+              +card-room-arrow
+              +card-room-arrow
+
     +footer
