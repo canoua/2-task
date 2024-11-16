@@ -9,4 +9,10 @@ html(lang="en")
     title Search room
   body 
     +header 
+    main.search
+      .container 
+        .search-inner 
+          .search__sidebar 
+            +filter-date-dropdown('даты пребывания в отеле', '19 авг - 23 авг')
+          .search__content
     +footer
