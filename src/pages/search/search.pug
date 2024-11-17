@@ -16,10 +16,10 @@ html(lang="en")
             +filter-date-dropdown('search__filter-date-dropdown', 'даты пребывания в отеле', '19 авг - 23 авг')
             +dropdown('search__dropdown', 'гости', '3 гостя, 1 младенец')
             .search__range 
-              +range-slider('диапазон цены')
+              +range-slider('', 'диапазон цены')
               span.search__range__info Стоимость за сутки пребывания в номере
             .search__checkbox 
-              h3.h3 правила дома
+              h3.h3.search__checkbox__title правила дома
               ul.checkbox__list 
                 li.checkbox__list_item 
                   +checkbox('', 'smoking', 'Можно курить')
@@ -28,7 +28,7 @@ html(lang="en")
                 li.checkbox__list_item 
                   +checkbox('', 'guests', 'Можно пригласить гостей (до 10 человек)') 
             .search__rich-checkbox 
-              h3.h3 доступность
+              h3.h3.search__rich-checkbox__title доступность
               ul.checkbox__list 
                 li.checkbox__list__item.rich-checkbox__list__item 
                   +checkbox('checkbox__list__label-rich-title', 'corridor', 'Широкий коридор')
@@ -36,6 +36,12 @@ html(lang="en")
                 li.checkbox__list_item.rich-checkbox__list__item   
                   +checkbox('checkbox__list__label-rich-title', 'assistant', 'Помощник для инвалидов')
                 .checkbox__list__label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
+            +dropdown('search__dropdown', 'удобства номера', '2 спальни, 2 кровати...')
+            //- миксин
+            .expandable-checkbox-list-default.elements__item
+              .checkbox__header.elements__item_header
+                h3.h3 дополнительные удобства
+                span.material-icons.material-icons-expand expand_more
           .search__content
             .search__title Номера, которые мы для вас подобрали
             .search__content__rooms

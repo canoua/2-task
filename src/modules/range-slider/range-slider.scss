@@ -1,9 +1,8 @@
-.range-slider.elements__item{
-  margin-bottom: 40px;
-}
-
-.elements__item_header.range-slider__header{
+.range-slider__header{
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #range-slider{
@@ -11,6 +10,7 @@
   background: #FFFFFF;
   border: 1px solid $darkshade25;
   border-radius: 3px;
+  margin-bottom: 10.56px;
 }
 
 .noUi{

@@ -9,6 +9,7 @@
     margin-right: 60px;
   }
   &__range {
+    margin-bottom: 30px;
     &__info {
       font-family: 'Montserrat';
       font-style: normal;
@@ -49,5 +50,17 @@
   }
   &__dropdown {
     margin-bottom: 30px;
+  }
+  &__checkbox {
+    margin-bottom: 30.88px;
+    &__title {
+      margin-bottom: 16.56px;
+    }
+  }
+  &__rich-checkbox {
+    margin-bottom: 30.44px;
+    &__title {
+      margin-bottom: 16px;
+    }
   }
 }
