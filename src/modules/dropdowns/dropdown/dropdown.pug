@@ -1,8 +1,7 @@
 //- написать на чистом js
-mixin dropdown(title, inputText)
-  .dropdown.elements__item 
-    .elements__item_header
-      h3.h3=title
+mixin dropdown(className, title, inputText)
+  .dropdown(class=className)
+    h3.h3.dropdown__title=title
     .card__input-wrapper(class=className) 
       .card__input-dropdown.card__input-dropdown-pre-default=inputText
       span.material-icons.material-icons-expand expand_more

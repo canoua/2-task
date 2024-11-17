@@ -14,7 +14,7 @@ html(lang="en")
         .search-inner 
           .search__sidebar 
             +filter-date-dropdown('search__filter-date-dropdown', 'даты пребывания в отеле', '19 авг - 23 авг')
-            +dropdown('гости', '3 гостя, 1 младенец')
+            +dropdown('search__dropdown', 'гости', '3 гостя, 1 младенец')
             .search__range 
               +range-slider('диапазон цены')
               span.search__range__info Стоимость за сутки пребывания в номере

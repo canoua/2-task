@@ -7,7 +7,6 @@
   &__sidebar {
     width: 266px;
     margin-right: 60px;
-    
   }
   &__range {
     &__info {
@@ -47,5 +46,8 @@
   }
   &__filter-date-dropdown {
     margin-bottom: 20.44px;
+  }
+  &__dropdown {
+    margin-bottom: 30px;
   }
 }

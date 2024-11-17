@@ -1,4 +1,7 @@
 .dropdown{
+  &__title {
+    margin-bottom: 5px;
+  }
   &-expanded.elements__item ,
   &-default.elements__item {
     width: 266px;
