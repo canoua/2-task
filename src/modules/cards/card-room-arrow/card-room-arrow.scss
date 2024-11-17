@@ -1,0 +1,23 @@
+.arrow-next {
+  position: absolute;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  right: 18px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(-90deg);
+  cursor: pointer;
+}
+
+.arrow-prev {
+  position: absolute;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  left: 18px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(90deg);
+  cursor: pointer;
+}
