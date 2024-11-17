@@ -104,6 +104,28 @@
 .custom-radio:checked+label::before {
   border-color: $purple;
   background-color: #fff;
-  // background-image: url('./../images/radio-rectangle.png');
   background-repeat: no-repeat;
+}
+
+.radiobutton {
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    &_input {
+      cursor: pointer;
+    }
+    &_label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $darkshade50;
+      cursor: pointer;
+    }
+  }
 }

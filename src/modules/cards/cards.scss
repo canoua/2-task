@@ -1,5 +1,3 @@
-// @import 'card-calculate/card-calculate.scss';
-
 .card{
   width: 380px;
   background: #FFFFFF;
@@ -79,29 +77,6 @@
   }
 }
 
-.radiobutton {
-  &-wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  &__item {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    &_input {
-      cursor: pointer;
-    }
-    &_label {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: $darkshade50;
-      cursor: pointer;
-    }
-  }
-}
-
 .date-of-birth{
   width: 100%;
   margin-bottom: 20px;
@@ -118,129 +93,10 @@
   margin-bottom: 10px;
 }
 
-.card-room {
-  width: 270px;
-  box-shadow: 0 10px 20px 0 rgba(31, 32, 65, 0.05);
-  border: none;
-  padding: 0;
-  &__title {
-    display: flex;
-    align-items: self-end;
-    font-size: 19px;
-    font-weight: 700;
-    color: #1f2041;
-    &__number {
-      margin-right: 2px;
-    }
-    &__text {
-      font-weight: 700;
-      font-size: 12px;
-      text-transform: uppercase;
-      color: #bc9cff;
-    }
-  }
-  &__slider {
-    width: 100%;
-    height: 151px;
-    position: relative;
-  }
-  &__content {
-    width: 100%;
-    height: 106px;
-    padding: 20px;
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(31, 32, 65, 0.1);;
-    }
-    &__footer {
-      padding-top: 8px;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-  &__price,
-  &__reviews {
-    display: flex;
-  }
-  &__price {
-    color: rgba(31, 32, 65, 0.5);
-    &__number {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 129%;
-      
-      margin-right: 5px;
-    }
-    &__text {
-      font-weight: 400;
-      font-size: 12px;
-    }
-  }
-  &__reviews {
-    color: rgba(31, 32, 65, 0.5);
-    font-size: 14px;
-    line-height: 129%;
-    &__number {
-      font-weight: 700;
-      margin-right: 5px;
-    }
-    &__text {
-      font-weight: 400;
-    }
-  }
-}
-
-.card-room__pagination {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  display: flex;
-}
-
-.dot {
-  width: 7.5px;
-  height: 7.5px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  margin-right: 3.75px;
-  cursor: pointer;
-  &:last-child {
-    margin-right: 0;
-  }
-  &_active {
-    background-color: #fff;
-  }
-}
-
 .slide {
   width: 100%;
   height: 151px;
   overflow: hidden;
-}
-
-.card-room__slide {
-  position: relative;
-  &::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 42px;
-  height: 100%;
-  background-image: url('@images/cards/effect-slide.png');
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 42px;
-    height: 100%;
-    background-image: url('@images/cards/effect-slide.png');
-    transform: rotate(-180deg);
-  }
 }
 
 .slide-1__img {
@@ -248,111 +104,6 @@
   margin-top: -5px;
   width: 332px;
   height: 189px;
-}
-
-.card-calendar {
-  width: 320px;
-  padding: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-shadow: 0 10px 20px 0 rgba(31, 32, 65, 0.05);
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  &__title {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 19px;
-    text-align: center;
-    color: #1f2041;
-  }
-  &__main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    &__days {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      justify-content: center;
-      align-items: center;
-      font-weight: 700;
-      font-size: 12px;
-      text-align: center;
-      color: $purple;
-      text-transform: uppercase;
-    }
-    &__numbers {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      font-weight: 400;
-      font-size: 12px;
-      text-align: center;
-      color: rgba(31, 32, 65, 0.5);
-      margin-bottom: 20px;
-    }
-    &__number {
-      cursor: pointer;
-      border-radius: 100%;
-      &_current {
-        color: #fff;
-        font-weight: 700;
-        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-      }
-      &_range {
-        color: #fff;
-        font-weight: 700;
-        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-        &-last {
-          position: relative;
-          z-index: 10;
-          &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 15px;
-            width: 160px;
-            height: 100%;
-            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-            opacity: 0.25;
-            z-index: -1;
-          }
-        }
-      }
-    }
-  }
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__btn {
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: $purple;
-    background-color: #fff;
-    border: none;
-  }
-}
-
-.calendar__item {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-calendar__btn {
-  background: none;
-  border: none;
 }
 
 .material-icons.card-calendar__arrow-prev {
