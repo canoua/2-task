@@ -95,7 +95,6 @@
       box-sizing: border-box;
       border-radius: 4px;
       padding: 12px 15px;
-      // margin-bottom: 10px;
       height: 44px;
       cursor: pointer;
       &-expanded{
@@ -132,9 +131,7 @@
   justify-content: space-between;
 }
 
-.masked-text-field{
-  margin-bottom: 40px;
-}
+
 
 .checkbox{
   &-buttons{
