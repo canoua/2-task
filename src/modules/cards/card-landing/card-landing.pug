@@ -2,7 +2,7 @@ include ../../buttons/button-gradient-arrow/button-gradient-arrow.pug
 include ../../dropdowns/date-dropdown/date-dropdown.pug
 include ../../dropdowns/dropdown/dropdown.pug
 
-mixin card-landing 
+mixin card-landing(className) 
   form(action="#")
     .card 
       .card-inner  
@@ -10,7 +10,7 @@ mixin card-landing
         .date-dropdown-wrapper
           +date-dropdown('прибытие', 'ДД.ММ.ГГГГ')
           +date-dropdown('выезд', 'ДД.ММ.ГГГГ')
-        +dropdown('card-landing-dropdown', 'гости', 'Сколько гостей')
+        +dropdown(className, 'гости', 'Сколько гостей')
         +btn-gradient-arrow('card-btn-landing', 'подобрать номер')
 
          

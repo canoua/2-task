@@ -2,7 +2,7 @@ include ../../dropdowns/date-dropdown/date-dropdown.pug
 include ../../dropdowns/dropdown/dropdown.pug
 include ../../buttons/button-gradient-arrow/button-gradient-arrow.pug
 
-mixin card-calculate
+mixin card-calculate(dropdownClass)
   form(action="#")
     .card.card-calculate 
       .card-inner 
@@ -17,7 +17,7 @@ mixin card-calculate
         .date-dropdown-wrapper
           +date-dropdown('прибытие', '19.08.2019')
           +date-dropdown('выезд', '23.08.2019')
-        +dropdown('гости', '3 гостя', '')
+        +dropdown(dropdownClass, 'гости', '3 гостя')
         .card-calculate__count-wrapper
           .card-calculate__count 
             span 9 990₽ х 4 суток
