@@ -1,7 +1,9 @@
 mixin __header  
   .rd__header
-    .rd__header__box
+    .rd__header__box_1
       img.rd__img_1(src=require('@images/bg-1.jpg'), alt="photo")
-    .rd__header__box
-      img.rd__img_2(src=require('@images/bg-2.png'), alt="photo")
-      img.rd__img_3(src=require('@images/bg-3.png'), alt="photo")
+    .rd__header__box_2
+      .rd__header__box__image
+        img.rd__img_2(src=require('@images/bg-2.png'), alt="photo")
+      .rd__header__box__image
+        img.rd__img_3(src=require('@images/bg-3.png'), alt="photo")
