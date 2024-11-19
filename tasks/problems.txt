@@ -1,0 +1,3 @@
+Изучить:
+
+1. Почему путь из checkbox.scss к иконке check-mark прописывается от файла commons.scss?
