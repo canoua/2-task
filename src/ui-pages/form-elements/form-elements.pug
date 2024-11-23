@@ -21,7 +21,7 @@ html(lang="en")
           .date-dropdown-wrapper 
             +date-dropdown('date Dropdown', 'ДД.ММ.ГГГГ')
             +date-dropdown('date Dropdown', '19.08.2019')
-          +filter-date-dropdown('filter date dropdown', '19 авг - 23 авг')
+          +filter-date-dropdown('elements__item ', 'filter date dropdown', '19 авг - 23 авг')
           +subscription-text-field('subscription text field', 'Email')
         .column 
           .checkbox-buttons.elements__item 
@@ -65,9 +65,8 @@ html(lang="en")
                 span.material-icons.material-icons-star star
                 span.material-icons.material-icons-star star
                 span.material-icons.material-icons-star star
-        
         .column
-          +range-slider('range slider')
+          +range-slider('', 'range slider')
           .buttons.elements__item 
             .elements__item_header.buttons__header
               h3.h3 buttons
@@ -130,9 +129,7 @@ html(lang="en")
             .elements__item_header.elements__item_header-expanded
               h3.h3 dropdown
             .card__input-wrapper_expanded-shadow 
-              .card__input-wrapper.card__input-wrapper-expanded
-                .card__input-dropdown.card__input-filter-date Сколько гостей
-                span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
+              +dropdown('dropdown-page', 'гости', 'Сколько гостей')
               .elements__item_content
                 form(action="").dropdown-expanded-guests__form 
                   ul.dropdown-list.dropdown-expanded-guests__list 
@@ -161,6 +158,7 @@ html(lang="en")
             .elements__item_header.elements__item_header-expanded
               h3.h3 dropdown
             .card__input-wrapper_expanded-shadow 
+              //- +dropdown('dropdown-page', 'гости', '3 гостя')
               .card__input-wrapper.card__input-wrapper-expanded
                 .card__input-dropdown.card__input-filter-date 3 гостя
                 span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
