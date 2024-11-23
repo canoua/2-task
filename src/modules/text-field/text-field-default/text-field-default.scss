@@ -1,0 +1,32 @@
+ .card {
+  &__input{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid $darkshade25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    &::placeholder{
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $darkshade25;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &:focus {
+      background: #FFFFFF;
+      border: 1px solid $darkshade50;
+      transition: all .3s;
+      &::placeholder{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $darkshade75;
+      }
+    }
+  }
+ }
