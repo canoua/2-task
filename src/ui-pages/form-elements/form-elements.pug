@@ -11,7 +11,7 @@ html(lang="en")
   body 
     .elements 
       .elements__logo
-        include ./../../assets/images/ui-logo.svg
+        include ../../assets/images/ui-logo.svg
       .container.elements-inner-1
         .column 
           +text-field-default('Text Field', 'Default', 'Email')
@@ -129,7 +129,9 @@ html(lang="en")
             .elements__item_header.elements__item_header-expanded
               h3.h3 dropdown
             .card__input-wrapper_expanded-shadow 
-              +dropdown('dropdown-page', 'гости', 'Сколько гостей')
+              .card__input-wrapper.card__input-wrapper-expanded
+                .card__input-dropdown.card__input-filter-date 3 гостя
+                span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
               .elements__item_content
                 form(action="").dropdown-expanded-guests__form 
                   ul.dropdown-list.dropdown-expanded-guests__list 

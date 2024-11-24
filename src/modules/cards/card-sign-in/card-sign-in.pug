@@ -1,6 +1,7 @@
 include ../../buttons/button-white/button-white.pug
 include ../../buttons/button-gradient-arrow/button-gradient-arrow.pug
 include ../../text-field/text-field-default/text-field-default.pug
+include ../card__note/card__note.pug
 
 mixin card-sign-in
   form(action="#") 
@@ -11,6 +12,4 @@ mixin card-sign-in
           +text-field-default('', '', 'Email')
           +text-field-default('', '', 'Пароль')
         +btn-gradient-arrow('button-default-big', 'Войти')
-        .card__note 
-          span.card__note_info Нет аккаунта на Toxin?
-          +button-white('card-btn-white', 'Создать')
+        +card__note('sign-in')

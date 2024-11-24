@@ -6,7 +6,7 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px 30px;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   &-inner {
     display: flex;
     flex-direction: column;
@@ -24,19 +24,6 @@
       text-transform: uppercase;
       color: $darkshade100;
       margin-bottom: 5px;
-    }
-  }
-
-  &__note {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &_info {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
-      color: #000000;
     }
   }
   &-btn {

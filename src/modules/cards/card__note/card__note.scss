@@ -1,0 +1,14 @@
+.card {
+  &__note {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_info {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+    }
+  }
+}
