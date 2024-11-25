@@ -1,7 +1,6 @@
 mixin text-field-default(title, status, placeholder)
-  //-убрать класс elements__item
-  .text-field-default.elements__item
-    .elements__item_header
+  .text-field-default
+    .text-field-default__header
       h3.h3=title 
-      span.elements__item_state=status
+      span.text-field-default__state=status
     input.card__input(type="text" placeholder=placeholder)

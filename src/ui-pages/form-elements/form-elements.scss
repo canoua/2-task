@@ -25,19 +25,19 @@
   &__item{
     width: 100%;
     margin-bottom: 20px;
-    &_header{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 5px;
-    }
-    &_state{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      color: $darkshade50;
-    }
+    // &_header{
+    //   width: 100%;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   margin-bottom: 5px;
+    // }
+    // &_state{
+    //   font-weight: 400;
+    //   font-size: 12px;
+    //   line-height: 15px;
+    //   text-transform: uppercase;
+    //   color: $darkshade50;
+    // }
     &-box{
       width: 150px;  
     }
@@ -120,8 +120,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .checkbox{
   &-buttons{

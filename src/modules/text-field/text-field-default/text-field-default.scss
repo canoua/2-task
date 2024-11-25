@@ -30,3 +30,21 @@
     }
   }
  }
+
+.text-field-default {
+  &__header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  &__state{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $darkshade50;
+  }
+ }
+
+
