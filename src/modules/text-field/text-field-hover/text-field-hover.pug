@@ -1,7 +1,8 @@
+include ../../card-input/card-input.pug
+
 mixin text-field-hover(title, status, placeholder)
-  //-убрать класс elements__item
   .text-field-hover
     .text-field-hover__header
       h3.h3=title  
       span.text-field-hover__state=status
-    input.card__input.card__input-hover(type="text" placeholder=placeholder)
+    +card-input('card__input-hover', placeholder)
