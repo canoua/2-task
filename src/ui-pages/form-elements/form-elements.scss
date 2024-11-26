@@ -50,6 +50,12 @@
   }
 }
 
+.fe {
+  &__text-field-default {
+    margin-bottom: 20px;
+  }
+}
+
 .card{
   &-input{
     &-dropdown{

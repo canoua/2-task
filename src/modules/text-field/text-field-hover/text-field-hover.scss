@@ -1,4 +1,11 @@
 // для демонстрации на странице form-elements
+.text-field-hover {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .card{
   &__input{
     &-hover{
