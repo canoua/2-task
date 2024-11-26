@@ -1,7 +1,7 @@
 include ../../card-input/card-input.pug
 
-mixin text-field-hover(title, status, placeholder)
-  .text-field-hover
+mixin text-field-hover(className, title, status, placeholder)
+  .text-field-hover(class=className)
     .text-field-hover__header
       h3.h3=title  
       span.text-field-hover__state=status

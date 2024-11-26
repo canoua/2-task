@@ -51,7 +51,8 @@
 }
 
 .fe {
-  &__text-field-default {
+  &__text-field-default,
+  &__text-field-hover {
     margin-bottom: 20px;
   }
 }
