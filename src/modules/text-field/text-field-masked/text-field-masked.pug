@@ -1,9 +1,8 @@
 include ../../card-input/card-input.pug
 
-mixin text-field-masked(title, placeholder)
-  //-убрать класс elements__item
-  .elements__item 
-    .elements__item_header
+mixin text-field-masked(className, title, placeholder)
+  .text-field-masked(class=className) 
+    .text-field-masked__header 
       h3.h3=title
     +card-input('card__input-masked', placeholder)
 

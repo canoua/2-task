@@ -1,9 +1,8 @@
 mixin subscription-text-field(title, placeholder)
-  //-убрать класс elements__item
-  .subscription-text-field.elements__item 
-    .elements__item_header
+  .subscription-text-field
+    .subscription-text-field__header
       h3.h3=title
-    .footer__input-wrapper 
-      input.footer__input(type="text" placeholder=placeholder)
-      button.footer__input__button 
+    .subscription-text-field__input-wrapper 
+      input.subscription-text-field__input(type="text" placeholder=placeholder)
+      button.subscription-text-field__input__button 
         span.material-icons.material-icons-arrow-blue arrow_forward

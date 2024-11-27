@@ -21,27 +21,6 @@
     text-transform: uppercase;
     color: $darkshade100;
   }
-  &__input{
-    height: 100%;
-    width: 100%;
-    padding: 12px 15px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: none;
-    &::placeholder{
-      font-size: 14px;
-      line-height: 24px;
-      color: $darkshade25;
-    }   
-    &-wrapper{
-      background: #FFFFFF;
-      border: 1px solid $darkshade25;
-      box-sizing: border-box;
-      border-radius: 4px;
-      width: 100%;
-      display: flex;
-    } 
-  }
   &__list{
     &__item{
       margin-bottom: 20px;

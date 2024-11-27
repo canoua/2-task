@@ -9,23 +9,23 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title form-elements
   body 
-    .elements 
-      .elements__logo
+    .fe 
+      .fe__logo
         include ../../assets/images/ui-logo.svg
-      .container.elements-inner-1
+      .container.fe-inner-1
         .column 
           +text-field-default('fe__text-field-default', 'Text Field', 'Default', 'Email')
           +text-field-hover('fe__text-field-hover', 'Text Field', 'Hover / Focus', 'This is pretty awesome')
           +dropdown('fe__dropdown','Dropdown', 'Сколько гостей')
-          +text-field-masked('masked text field', 'ДД.ММ.ГГГГ')
-          .date-dropdown-wrapper 
+          +text-field-masked('fe__text-field-masked', 'masked text field', 'ДД.ММ.ГГГГ')
+          .date-dropdown-wrapper.fe__date-dropdown-wrapper 
             +date-dropdown('date Dropdown', 'ДД.ММ.ГГГГ')
             +date-dropdown('date Dropdown', '19.08.2019')
-          +filter-date-dropdown('elements__item ', 'filter date dropdown', '19 авг - 23 авг')
+          +filter-date-dropdown('fe__filter-date-dropdown', 'filter date dropdown', '19 авг - 23 авг')
           +subscription-text-field('subscription text field', 'Email')
         .column 
-          .checkbox-buttons.elements__item 
-            .checkbox-buttons__header.elements__item_header
+          .checkbox-buttons.fe__item 
+            .checkbox-buttons__header.fe__item_header
               h3.h3 Checkbox Buttons
             ul.checkbox__list 
               li.checkbox__list_item 
@@ -34,23 +34,23 @@ html(lang="en")
                 +checkbox('', 'pets','Можно с питомцами')
               li.checkbox__list_item 
                 +checkbox('', 'guests', 'Можно пригласить гостей (до 10 человек)') 
-          .radiobuttons.elements__item 
-            .elements__item_header.radiobuttons__header
+          .radiobuttons.fe__item 
+            .fe__item_header.radiobuttons__header
               h3.h3 Radio Buttons
             +radiobuttons('')
-          .toggle.elements__item 
-            .toggle__header.elements__item_header
+          .toggle.fe__item 
+            .toggle__header.fe__item_header
               h3.h3 Toggle
             +toggle('Получать спецпредложения')
             +toggle('Получать спецпредложения')
-          .like-button.elements__item 
-            .elements__item_header.like-button__header
+          .like-button.fe__item 
+            .fe__item_header.like-button__header
               h3.h3 like button
             .like-button-inner 
               +like-button('material-icons-favorite-border','favorite_border', '2')
               +like-button('material-icons-favorite','favorite', '12')
-          .rate-button.elements__item 
-            .elements__item_header.rate-button__header
+          .rate-button.fe__item 
+            .fe__item_header.rate-button__header
               h3.h3 rate button
             .stars-ratings-wrapper 
               .stars-ratings 
@@ -67,8 +67,8 @@ html(lang="en")
                 span.material-icons.material-icons-star star
         .column
           +range-slider('', 'range slider')
-          .buttons.elements__item 
-            .elements__item_header.buttons__header
+          .buttons.fe__item 
+            .fe__item_header.buttons__header
               h3.h3 buttons
             .buttons-content 
               .button-default-wrapper 
@@ -82,29 +82,29 @@ html(lang="en")
                 a(href="#").icon-link CLICK ME
                 a(href="#").icon-link.icon-link-hover CLICK ME
               +btn-gradient-arrow('', 'перейти к оплате')
-          .pagination.elements__item 
-            .elements__item_header.pagination__header
+          .pagination.fe__item 
+            .fe__item_header.pagination__header
               h3.h3 pagination
             +pagination
 
-      .container.elements-inner-2
+      .container.fe-inner-2
         .column 
-          .dropdown-default.elements__item 
-            .elements__item_header
+          .dropdown-default.fe__item 
+            .fe__item_header
               h3.h3 dropdown
-              span.elements__item_state Default
+              span.fe__item_state Default
             .card__input-wrapper
               .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
               span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
-          .dropdown-expanded.elements__item 
-            .elements__item_header.elements__item_header-expanded
+          .dropdown-expanded.fe__item 
+            .fe__item_header.fe__item_header-expanded
               h3.h3 dropdown
-              span.elements__item_state expanded
+              span.fe__item_state expanded
             .card__input-wrapper_expanded-shadow 
               .card__input-wrapper.card__input-wrapper-expanded
                 .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
                 span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
-              .elements__item_content
+              .fe__item_content
                 ul.dropdown-list 
                   li.dropdown-list__item 
                     .dropdown-list__item_name спальни
@@ -125,14 +125,14 @@ html(lang="en")
                       .dropdown-list__count_number 0
                       .dropdown-list__count_plus +
         .colummn 
-          .dropdown-expanded-guests.elements__item 
-            .elements__item_header.elements__item_header-expanded
+          .dropdown-expanded-guests.fe__item 
+            .fe__item_header.fe__item_header-expanded
               h3.h3 dropdown
             .card__input-wrapper_expanded-shadow 
               .card__input-wrapper.card__input-wrapper-expanded
                 .card__input-dropdown.card__input-filter-date 3 гостя
                 span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
-              .elements__item_content
+              .fe__item_content
                 form(action="").dropdown-expanded-guests__form 
                   ul.dropdown-list.dropdown-expanded-guests__list 
                     li.dropdown-list__item 
@@ -156,15 +156,15 @@ html(lang="en")
                   .dropdown-btns 
                     button.dropdown__submit(type="submit") Применить 
         .column
-          .dropdown-expanded-guests.elements__item 
-            .elements__item_header.elements__item_header-expanded
+          .dropdown-expanded-guests.fe__item 
+            .fe__item_header.fe__item_header-expanded
               h3.h3 dropdown
             .card__input-wrapper_expanded-shadow 
               //- +dropdown('dropdown-page', 'гости', '3 гостя')
               .card__input-wrapper.card__input-wrapper-expanded
                 .card__input-dropdown.card__input-filter-date 3 гостя
                 span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
-              .elements__item_content
+              .fe__item_content
                 form(action="").dropdown-expanded-guests__form 
                   ul.dropdown-list.dropdown-expanded-guests__list 
                     li.dropdown-list__item 
@@ -189,15 +189,15 @@ html(lang="en")
                     button.dropdown__submit(type="submit") Очистить 
                     button.dropdown__reset(type="reset") Применить 
 
-      .container.elements-inner-3
+      .container.fe-inner-3
         .column
           //- вынести в миксин
-          .expandable-checkbox-list-default.elements__item
-            .checkbox__header.elements__item_header
+          .expandable-checkbox-list-default.fe__item
+            .checkbox__header.fe__item_header
               h3.h3 expandable checkbox list
               span.material-icons.material-icons-expand expand_more
-          .expandable-checkbox-list-expanded.elements__item
-            .checkbox__header.elements__item_header
+          .expandable-checkbox-list-expanded.fe__item
+            .checkbox__header.fe__item_header
               h3.h3 expandable checkbox list
               span.material-icons.material-icons-expand.material-icons-expand-reverse expand_more
             //- сделать миксин
@@ -215,8 +215,8 @@ html(lang="en")
               li.checkbox__list_item  
                 +checkbox('', 'shampoo', 'Шампунь')
         .column  
-          .rich-checkbox-buttons.elements__item 
-            .checkbox-buttons__header.elements__item_header
+          .rich-checkbox-buttons.fe__item 
+            .checkbox-buttons__header.fe__item_header
               h3.h3 Rich Checkbox Buttons
             ul.checkbox__list 
               li.checkbox__list__item.rich-checkbox__list__item 
@@ -226,14 +226,14 @@ html(lang="en")
                 +checkbox('checkbox__list__label-rich-title', 'assistant', 'Помощник для инвалидов')
               .checkbox__list__label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
         .column 
-          .bullet.elements__item 
-            .elements__item_header
+          .bullet.fe__item 
+            .fe__item_header
               h3.h3 bullet list
             +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
 
-      .container.elements-inner-4  
+      .container.fe-inner-4  
         .column
-          .elements__item
+          .fe__item
             //- поменять классы
             +information('rd__information__item', require('@images/icons/insert_emoticon.png'), 'Комфорт', 'Шумопоглощающие стены')
             +information('rd__information__item', require('@images/icons/location_city.png'), 'Удобство', 'Окно в каждой из спален')
