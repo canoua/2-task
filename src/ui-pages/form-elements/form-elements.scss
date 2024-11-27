@@ -59,34 +59,11 @@
 
 .card{
   &-input{
-    &-dropdown{
-      border: none;
-      width: 276px;
-      height: 100%;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: $darkshade75;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-    }
-    &-wrapper{
-      display: flex;
-      align-items: center;
-      background: #FFFFFF;
-      border: 1px solid $darkshade25;
-      box-sizing: border-box;
-      border-radius: 4px;
-      padding: 12px 15px;
-      height: 44px;
-      cursor: pointer;
-      &-expanded{
-        margin-bottom: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        border: 1px solid $darkshade50;
-      }
+    &-expanded{
+      margin-bottom: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border: 1px solid $darkshade50;
     }
     &-dropdown{
       &-pre{
