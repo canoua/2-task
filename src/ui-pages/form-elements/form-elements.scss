@@ -25,6 +25,14 @@
       margin-bottom: 100.56px;
     }
   }
+  &__text-field-default,
+  &__text-field-hover,
+  &__dropdown {
+    margin-bottom: 20px;
+  }
+  &__text-field-masked {
+    margin-bottom: 40px;
+  }
   &__date-dropdown-wrapper,
   &__filter-date-dropdown {
     margin-bottom: 40px;
@@ -41,6 +49,20 @@
       box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     }
   }
+  &__checkbox {
+    margin-bottom: 5px;
+    &-buttons {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40.88px;
+      &__header {
+        margin-bottom: 16.56px;
+      }
+    }
+  }
+  &__toggle {
+    margin-bottom: 40.44px;
+  }
 }
 
 .column{
@@ -50,17 +72,6 @@
   }
   &-3{
     width: 100%;
-  }
-}
-
-.fe {
-  &__text-field-default,
-  &__text-field-hover,
-  &__dropdown {
-    margin-bottom: 20px;
-  }
-  &__text-field-masked {
-    margin-bottom: 40px;
   }
 }
 
@@ -78,15 +89,6 @@
           width: 276px;
         }
       }
-    }
-  }
-}
-
-.checkbox{
-  &-buttons{
-    margin-bottom: 40.88px;
-    &__header{
-      margin-bottom: 16.56px;
     }
   }
 }

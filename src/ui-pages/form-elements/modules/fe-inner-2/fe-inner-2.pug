@@ -1,0 +1,105 @@
+include includes.pug
++includes
+
+mixin fe-inner-2   
+  .container.fe-inner-2
+    .column 
+      .dropdown-default.fe__item 
+        .fe__item_header
+          h3.h3 dropdown
+          span.fe__item_state Default
+        .card__input-wrapper
+          .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
+          span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
+      .dropdown-expanded.fe__item 
+        .fe__item_header-expanded
+          h3.h3 dropdown
+          span.fe__item_state expanded
+        .card__input-wrapper_expanded-shadow 
+          .card__input-wrapper.card__input-wrapper-expanded
+            .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
+            span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
+          .fe__item_content
+            ul.dropdown-list 
+              li.dropdown-list__item 
+                .dropdown-list__item_name спальни
+                .dropdown-list__count 
+                  .dropdown-list__count_minus -
+                  .dropdown-list__count_number 2
+                  .dropdown-list__count_plus +
+              li.dropdown-list__item 
+                .dropdown-list__item_name кровати
+                .dropdown-list__count 
+                  .dropdown-list__count_minus -
+                  .dropdown-list__count_number 2
+                  .dropdown-list__count_plus +
+              li.dropdown-list__item 
+                .dropdown-list__item_name ванные комнаты
+                .dropdown-list__count 
+                  .dropdown-list__count_minus.unactive-element -
+                  .dropdown-list__count_number 0
+                  .dropdown-list__count_plus +
+    .colummn 
+      .dropdown-expanded-guests.fe__item 
+        .fe__item_header-expanded
+          h3.h3 dropdown
+        .card__input-wrapper_expanded-shadow 
+          .card__input-wrapper.card__input-wrapper-expanded
+            .card__input-dropdown.card__input-filter-date 3 гостя
+            span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
+          .fe__item_content
+            form(action="").dropdown-expanded-guests__form 
+              ul.dropdown-list.dropdown-expanded-guests__list 
+                li.dropdown-list__item 
+                  .dropdown-list__item_name взрослые
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus.unactive-element -
+                    .dropdown-list__count_number 0
+                    .dropdown-list__count_plus +
+                li.dropdown-list__item 
+                  .dropdown-list__item_name дети
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus.unactive-element -
+                    .dropdown-list__count_number 0
+                    .dropdown-list__count_plus +
+                li.dropdown-list__item 
+                  .dropdown-list__item_name младенцы
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus.unactive-element -
+                    .dropdown-list__count_number 0
+                    .dropdown-list__count_plus + 
+              .dropdown-btns 
+                button.dropdown__submit(type="submit") Применить 
+    .column
+      .dropdown-expanded-guests.fe__item 
+        .fe__item_header-expanded
+          h3.h3 dropdown
+        .card__input-wrapper_expanded-shadow 
+          //- +dropdown('dropdown-page', 'гости', '3 гостя')
+          .card__input-wrapper.card__input-wrapper-expanded
+            .card__input-dropdown.card__input-filter-date 3 гостя
+            span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
+          .fe__item_content
+            form(action="").dropdown-expanded-guests__form 
+              ul.dropdown-list.dropdown-expanded-guests__list 
+                li.dropdown-list__item 
+                  .dropdown-list__item_name взрослые
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus -
+                    .dropdown-list__count_number 2
+                    .dropdown-list__count_plus +
+                li.dropdown-list__item 
+                  .dropdown-list__item_name дети
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus -
+                    .dropdown-list__count_number 1
+                    .dropdown-list__count_plus +
+                li.dropdown-list__item 
+                  .dropdown-list__item_name младенцы
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus.unactive-element -
+                    .dropdown-list__count_number 0
+                    .dropdown-list__count_plus + 
+              .dropdown-btns.dropdown-btns-2  
+                button.dropdown__submit(type="submit") Очистить 
+                button.dropdown__reset(type="reset") Применить 

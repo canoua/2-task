@@ -7,11 +7,12 @@
     align-items: center;
   }
   &__list{
-    &__item{
-      display: flex;
-      align-items: center;
-      margin-bottom: 10.56px;
-    }
+    // &__item{
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   margin-bottom: 10.56px;
+    // }
     &__input{
       position: absolute;
       z-index: -1;
@@ -20,12 +21,14 @@
     &__input+label {
       display: inline-flex;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: left;
       flex-direction: inherit;//для правильного расположения RICH CHECKBOX BUTTONS
       user-select: none;
     }
     &__input+label::before{
       content: '';
-      width: 20px;
+      min-width: 20px;
       height: 20px;
       border: 1px solid $darkshade25;
       border-radius: 4px;
@@ -48,6 +51,9 @@
       line-height: 18px;
       color: $darkshade50;
       cursor: pointer;
+      &_2 {
+        padding-left: 31px;
+      }
       &-rich{
         &-title{
           display: flex;

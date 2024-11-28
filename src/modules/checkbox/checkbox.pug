@@ -1,3 +1,7 @@
-mixin checkbox(classes, id, text)
-  input(type="checkbox" id=id).checkbox__list__input
-  label(for=id class=classes).checkbox__list__label=text
+mixin checkbox(classes, id, text1, text2)
+  .checkbox(class=classes) 
+    input(type="checkbox" id=id).checkbox__list__input
+    //- label(for=id).checkbox__list__label=text
+    label(for=id).checkbox__list__label
+      p=text1
+      p.checkbox__list__label_2=text2 

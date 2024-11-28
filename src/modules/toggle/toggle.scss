@@ -1,6 +1,12 @@
-.toggle-wrapper{
-  display: flex;
-  align-items: center;
+.toggle{
+  &__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 }
 
 .switch {
@@ -8,13 +14,11 @@
   display: inline-block;
   width: 60px;
   height: 34px;
+  input {
+    display: none;
+  }
 }
 
-.switch input {
-  display: none;
-}
-
-//??????
 .slider {
   position: absolute;
   cursor: pointer;
@@ -31,19 +35,24 @@
   border-radius: 10px;
   width: 40px;
   height: 20px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 4px;
-  bottom: 3px;
-  background: $darkshade25;
-  border-radius: 10px;
-  -webkit-transition: .4s;
-  transition: .3s;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 3px;
+    background: $darkshade25;
+    border-radius: 10px;
+    -webkit-transition: .4s;
+    transition: .3s;
+  }
+  .round {
+    border-radius: 34px;
+    &:before {
+      border-radius: 50%;
+    }
+  }
 }
 
 input:checked + .slider {
@@ -55,26 +64,4 @@ input:checked + .slider:before {
   -ms-transform: translateX(18px);
   transform: translateX(18px);
   background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.toggle{
-  &__header{
-    margin-bottom: 16px;
-  }
-  &__item{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    &:last-child{
-      margin-bottom: 0;
-    }
-  }
 }

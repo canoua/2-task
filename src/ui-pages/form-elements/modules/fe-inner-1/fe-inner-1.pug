@@ -1,0 +1,73 @@
+include includes.pug
++includes
+
+mixin fe-inner-1
+  .container.fe-inner-1
+    .column 
+      +text-field-default('fe__text-field-default', 'Text Field', 'Default', 'Email')
+      +text-field-hover('fe__text-field-hover', 'Text Field', 'Hover / Focus', 'This is pretty awesome')
+      +dropdown('fe__dropdown','Dropdown', 'Сколько гостей')
+      +text-field-masked('fe__text-field-masked', 'masked text field', 'ДД.ММ.ГГГГ')
+      .date-dropdown-wrapper.fe__date-dropdown-wrapper 
+        +date-dropdown('date Dropdown', 'ДД.ММ.ГГГГ')
+        +date-dropdown('date Dropdown', '19.08.2019')
+      +filter-date-dropdown('fe__filter-date-dropdown', 'filter date dropdown', '19 авг - 23 авг')
+      +subscription-text-field('subscription text field', 'Email')
+    .column 
+      .fe__checkbox-buttons
+        h3.h3.fe__checkbox-buttons__header Checkbox Buttons
+        +checkbox('fe__checkbox', 'smoking', 'Можно курить', '')
+        +checkbox('fe__checkbox', 'pets', 'Можно с питомцами', '') 
+        +checkbox('fe__checkbox', 'guests', 'Можно пригласить гостей ', '(до 10 человек)') 
+      .radiobuttons.fe__item 
+        .fe__item_header.radiobuttons__header
+          h3.h3 Radio Buttons
+        +radiobuttons('')
+      .fe__toggle 
+        .fe__toggle__header
+          h3.h3 Toggle
+        +toggle('Получать спецпредложения')
+        +toggle('Получать спецпредложения')
+      .fe__button-like
+        .fe__button-like__header
+          h3.h3 like button
+        .like-button-inner 
+          +like-button('material-icons-favorite-border','favorite_border', '2')
+          +like-button('material-icons-favorite','favorite', '12')
+      .rate-button.fe__item 
+        .fe__item_header.rate-button__header
+          h3.h3 rate button
+        .stars-ratings-wrapper 
+          .stars-ratings 
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star_border
+          .stars-ratings 
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+    .column
+      +range-slider('', 'range slider')
+      .buttons.fe__item 
+        .fe__item_header.buttons__header
+          h3.h3 buttons
+        .buttons-content 
+          .button-default-wrapper 
+            +button-gradient('form-element-btn', 'CLICK ME')
+            button.button.button-default.button-default-hover.form-element-btn CLICK ME
+          //-class?????????
+          .button-border-hover-wrapper 
+            +button-white('form-element-btn', 'CLICK ME')
+            button.button.button-border.button-border-hover.form-element-btn CLICK ME
+          .icon-link-wrapper 
+            a(href="#").icon-link CLICK ME
+            a(href="#").icon-link.icon-link-hover CLICK ME
+          +btn-gradient-arrow('', 'перейти к оплате')
+      .pagination.fe__item 
+        .pagination__header
+          h3.h3 pagination
+        +pagination
