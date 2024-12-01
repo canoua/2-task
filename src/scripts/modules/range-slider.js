@@ -5,8 +5,8 @@ export default function rangeSlider() {
   
   const rangeSlider = document.querySelector('#range-slider');
 
-  const outputValues1 = document.querySelector('.elements__item_state-1');
-  const outputValues2 = document.querySelector('.elements__item_state-2');
+  const outputValues1 = document.querySelector('.range-slider__state_1');
+  const outputValues2 = document.querySelector('.range-slider__state_2');
   const output = [outputValues1, outputValues2];
 
   if(rangeSlider) {

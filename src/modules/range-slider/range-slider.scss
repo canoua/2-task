@@ -1,8 +1,21 @@
-.range-slider__header{
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@import 'lib.scss';
+
+.range-slider {
+  &__header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__state {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $darkshade25;
+  }
 }
 
 #range-slider{
@@ -13,30 +26,3 @@
   margin-bottom: 10.56px;
 }
 
-.noUi{
-  &-connect{
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-    border-radius: 3px;
-    height: 8px;
-    border: 1px solid linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  }
-  &-handle{
-    border: none;
-    cursor: grab; 
-    box-shadow: none;
-    &::before,
-    &::after{
-      display: none;
-    }
-  }
-}
-
-.noUi-horizontal .noUi-handle{
-  width: 14px;
-  height: 14px;
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border: 2px solid #FFFFFF;
-  border-radius: 10px;
-  right: -8px;
-  top: -5px;
-}

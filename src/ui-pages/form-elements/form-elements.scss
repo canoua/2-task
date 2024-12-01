@@ -69,6 +69,28 @@
       margin-bottom: 16px;
     }
   }
+  &__buttons {
+    &__header {
+      margin-bottom: 16px;
+    }
+  }
+  &__button {
+    &-gradient {
+      height: 44px;
+      margin-right: 20px;
+    }
+    &-white {
+      height: 44px;
+      margin-right: 20px;
+      &_hover {
+        height: 44px;
+      }
+    }
+  }
+  &__range-slider {
+    margin-bottom: 40.56px;
+    width: 266px;
+  }
 }
 
 .fe__button-like__header {
