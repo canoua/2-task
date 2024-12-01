@@ -87,6 +87,11 @@
       }
     }
   }
+  &__pagination {
+    &__header {
+      margin-bottom: 16px;
+    }
+  }
   &__range-slider {
     margin-bottom: 40.56px;
     width: 266px;
