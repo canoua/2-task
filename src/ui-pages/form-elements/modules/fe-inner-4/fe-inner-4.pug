@@ -1,0 +1,13 @@
+include includes.pug 
++includes
+
+mixin fe-inner-4
+  .container.fe-inner-4  
+      .column
+        .fe__information
+          //- поменять классы
+          +information('rd__information__item', require('@images/icons/insert_emoticon.png'), 'Комфорт', 'Шумопоглощающие стены')
+          +information('rd__information__item', require('@images/icons/location_city.png'), 'Удобство', 'Окно в каждой из спален')
+      .column-2  
+        .reviews
+          +review(require('@images/avatar-1.png'), 'Мурад Сарафанов', '5 дней назад', 'favorite', '12', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
