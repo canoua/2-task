@@ -1,5 +1,6 @@
 include ../__info/__info.pug
 include __item/__item.pug
+include ../../../../modules/text-field-subscription/text-field-subscription.pug
 
 mixin __box
   .footer__box 
@@ -13,7 +14,8 @@ mixin __box
           h3.footer__title Подписка
           .footer__box__item__info Получайте специальные предложения и новости сервиса
           //-сделать миксином
-          .footer__input-wrapper 
-            input.footer__input(type="text" placeholder="Email")
-            button.footer__input__button 
-              span.material-icons.material-icons-arrow-blue arrow_forward
+          +subscription-text-field('subscription text field', 'Email')
+          //- .footer__input-wrapper 
+          //-   input.footer__input(type="text" placeholder="Email")
+          //-   button.footer__input__button 
+          //-     span.material-icons.material-icons-arrow-blue arrow_forward
