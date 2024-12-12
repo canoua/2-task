@@ -12,12 +12,12 @@ mixin card-sign-up
       .card-inner 
         h1.card__title Регистрация аккаунта
         .inputs-wrapper 
-          +text-field-default('', '', 'Имя')
-          +text-field-default('', '', 'Фамилия')
+          +text-field-default('', '', '', 'Имя')
+          +text-field-default('', '', '', 'Фамилия')
         +radiobuttons('')
-        +text-field-masked('дата рождения')
-        +text-field-default('данные для входа в сервис', '', 'Email')
-        +text-field-default('', '', 'Пароль')
+        +text-field-masked('', 'дата рождения', 'ДД.ММ.ГГГГ')
+        +text-field-default('', 'данные для входа в сервис', '', 'Email')
+        +text-field-default('', '', '', 'Пароль')
         +toggle('Получать спецпредложения')
         +btn-gradient-arrow('', 'перейти к оплате')
         +card__note('sign-up')
