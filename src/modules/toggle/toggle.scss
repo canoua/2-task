@@ -6,6 +6,13 @@
     &:last-child{
       margin-bottom: 0;
     }
+    &__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color:  $darkshade75
+    }
   }
 }
 

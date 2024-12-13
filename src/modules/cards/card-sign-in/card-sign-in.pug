@@ -8,7 +8,7 @@ mixin card-sign-in
     .card
       .card-inner
         h1.card__title Войти
-        .inputs-wrapper 
+        .inputs-wrapper.card-sign-in__inputs-wrapper 
           +text-field-default('', '', '', 'Email')
           +text-field-default('', '', '', 'Пароль')
         +btn-gradient-arrow('button-default-big', 'Войти')

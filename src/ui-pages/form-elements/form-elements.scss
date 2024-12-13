@@ -33,6 +33,10 @@
   &__text-field-masked {
     margin-bottom: 40px;
   }
+  &__date-dropdown-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   &__date-dropdown-wrapper,
   &__filter-date-dropdown {
     margin-bottom: 40px;
