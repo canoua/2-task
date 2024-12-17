@@ -5,22 +5,8 @@ mixin fe-inner-2
   .container.fe-inner-2
     .column 
       +dropdown('fe__dropdown', 'dropdown', '2 спальни, 2 кровати...')
-      //- .dropdown-default.fe__item 
-      //-   .fe__item_header
-      //-     h3.h3 dropdown
-      //-     span.fe__item_state Default
-      //-   .card__input-wrapper
-      //-     .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
-      //-     span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
       .dropdown-expanded.fe__item 
-        //- .fe__item_header-expanded
-        //-   h3.h3 dropdown
-        //-   span.fe__item_state expanded
-        //- .card__input-wrapper_expanded-shadow 
-        //-   .card__input-wrapper.card__input-wrapper-expanded
-        //-     .card__input-dropdown.card__input-filter-date 2 спальни, 2 кровати...
-        //-     span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
-        +dropdown('fe__dropdown', 'dropdown', '2 спальни, 2 кровати...')
+        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', '2 спальни, 2 кровати...')
         .fe__item_content
           ul.dropdown-list 
             li.dropdown-list__item 
@@ -42,12 +28,13 @@ mixin fe-inner-2
                 .dropdown-list__count_number 0
                 .dropdown-list__count_plus +
     .colummn 
+      //-- миксин!
       .dropdown-expanded-guests.fe__item 
         .fe__item_header-expanded
           h3.h3 dropdown
         .card__input-wrapper_expanded-shadow 
           .card__input-wrapper.card__input-wrapper-expanded
-            .card__input-dropdown.card__input-filter-date 3 гостя
+            .card__input-dropdown.card__input-filter-date Сколько гостей
             span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
           .fe__item_content
             form(action="").dropdown-expanded-guests__form 

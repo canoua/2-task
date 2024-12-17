@@ -167,3 +167,8 @@
 .dropdown-expanded > .dropdown {
   margin-bottom: 0;
 }
+
+.fe__dropdown.dropdown-expanded-active > .card__input-wrapper {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; 
+}
