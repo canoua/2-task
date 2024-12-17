@@ -42,6 +42,19 @@ html(lang="en")
               .checkbox__header.elements__item_header
                 h3.h3 дополнительные удобства
                 span.material-icons.material-icons-expand expand_more
+              ul.checkbox__list.expandable-checkbox-list.search__checkbox__list 
+                li.checkbox__list_item 
+                  +checkbox('', 'breakfast', 'Завтрак')
+                li.checkbox__list_item  
+                  +checkbox('', 'desk', 'Письменный стол')
+                li.checkbox__list_item  
+                  +checkbox('', 'chair-for-feeding', 'Стул для кормления')
+                li.checkbox__list_item  
+                  +checkbox('', 'crib', 'Кроватка')
+                li.checkbox__list_item  
+                  +checkbox('', 'television', 'Телевизор')
+                li.checkbox__list_item  
+                  +checkbox('', 'shampoo', 'Шампунь')
           .search__content
             .search__title Номера, которые мы для вас подобрали
             .search__content__rooms

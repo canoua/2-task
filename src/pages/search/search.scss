@@ -53,6 +53,15 @@
   }
   &__checkbox {
     margin-bottom: 30.88px;
+    &__list {
+      opacity: 0;
+      height: 0;
+      &_active {
+        transition: all .3s;
+        opacity: 1;
+        height: auto;
+      }
+    }
     &__title {
       margin-bottom: 16.56px;
     }
