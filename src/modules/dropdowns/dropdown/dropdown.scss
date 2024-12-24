@@ -47,6 +47,7 @@
         cursor: pointer;
         border: 1px solid $darkshade25;
         border-radius: 22px;
+        user-select: none;
       }
       &_number{
         font-weight: 700;

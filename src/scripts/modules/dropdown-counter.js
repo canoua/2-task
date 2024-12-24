@@ -1,14 +1,30 @@
 export default function dropdownCounter() {
   let minus = document.querySelectorAll('.dropdown-list__count_minus');
   let plus = document.querySelectorAll('.dropdown-list__count_plus');
+  // let submit;
+  // let reset = 
+
+  document.addEventListener('DOMContentLoaded', function() {
+    minus.forEach(function(item) {
+      if(item.nextElementSibling.textContent == 0) {
+        item.classList.add('unactive-element')
+      }
+    })
+  })
+
 
   minus.forEach(function(item) {
     item.addEventListener('click', function(event) {
       if(!item.classList.contains('unactive-element')) {
         event.preventDefault();
-        console.log('minus');
-        // let input = item.nextElementSibling;
-        // input.textContent = input.textContent - 1;
+        
+        if(item.nextElementSibling.textContent != 0) {
+          item.nextElementSibling.textContent = item.nextElementSibling.textContent - 1;
+        } 
+      }
+
+      if(item.nextElementSibling.textContent == 0) {
+        item.classList.add('unactive-element')
       }
     })
   })
@@ -16,9 +32,11 @@ export default function dropdownCounter() {
   plus.forEach(function(item) {
     item.addEventListener('click', function(event) {
       event.preventDefault();
-      console.log('plus');
-      // let input = item;
-        // input.textContent = input.textContent - 1;
+      let output = item.previousElementSibling;
+      let parent = item.parentElement;
+
+      output.textContent = Number(output.textContent) + 1;
+      parent.firstElementChild.classList.remove('unactive-element')
     })
   })
 }
