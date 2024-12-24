@@ -4,10 +4,10 @@ include includes.pug
 mixin fe-inner-2   
   .container.fe-inner-2
     .column 
-      +dropdown('fe__dropdown', 'dropdown', '2 спальни, 2 кровати...')
+      +dropdown('fe__dropdown_unactive', 'dropdown', '2 спальни, 2 кровати...')
       .dropdown-expanded.fe__item 
         +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', '2 спальни, 2 кровати...')
-        .fe__item_content
+        .fe__dropdown__content
           ul.dropdown-list 
             li.dropdown-list__item 
               .dropdown-list__item_name спальни
@@ -29,41 +29,59 @@ mixin fe-inner-2
                 .dropdown-list__count_plus +
     .colummn 
       //-- миксин!
-      .dropdown-expanded-guests.fe__item 
-        .fe__item_header-expanded
-          h3.h3 dropdown
-        .card__input-wrapper_expanded-shadow 
-          .card__input-wrapper.card__input-wrapper-expanded
-            .card__input-dropdown.card__input-filter-date Сколько гостей
-            span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
-          .fe__item_content
-            form(action="").dropdown-expanded-guests__form 
-              ul.dropdown-list.dropdown-expanded-guests__list 
-                li.dropdown-list__item 
-                  .dropdown-list__item_name взрослые
-                  .dropdown-list__count 
-                    .dropdown-list__count_minus.unactive-element -
-                    .dropdown-list__count_number 0
-                    .dropdown-list__count_plus +
-                li.dropdown-list__item 
-                  .dropdown-list__item_name дети
-                  .dropdown-list__count 
-                    .dropdown-list__count_minus.unactive-element -
-                    .dropdown-list__count_number 0
-                    .dropdown-list__count_plus +
-                li.dropdown-list__item 
-                  .dropdown-list__item_name младенцы
-                  .dropdown-list__count 
-                    .dropdown-list__count_minus.unactive-element -
-                    .dropdown-list__count_number 0
-                    .dropdown-list__count_plus + 
-              .dropdown-btns 
-                button.dropdown__submit(type="submit") Применить 
+      .dropdown-expanded.fe__item 
+        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', 'Сколько гостей')
+        .fe__dropdown__content
+          ul.dropdown-list.dropdown-expanded-guests__list  
+            li.dropdown-list__item 
+              .dropdown-list__item_name взрослые
+              .dropdown-list__count 
+                .dropdown-list__count_minus -
+                .dropdown-list__count_number 2
+                .dropdown-list__count_plus +
+            li.dropdown-list__item 
+              .dropdown-list__item_name дети
+              .dropdown-list__count 
+                .dropdown-list__count_minus -
+                .dropdown-list__count_number 2
+                .dropdown-list__count_plus +
+            li.dropdown-list__item 
+              .dropdown-list__item_name младенцы
+              .dropdown-list__count 
+                .dropdown-list__count_minus.unactive-element -
+                .dropdown-list__count_number 0
+                .dropdown-list__count_plus +
+          .dropdown-btns 
+            button.dropdown__submit(type="submit") Применить 
     .column
-      .dropdown-expanded-guests.fe__item 
-        .fe__item_header-expanded
-          h3.h3 dropdown
-        .card__input-wrapper_expanded-shadow 
+      .dropdown-expanded-guests.fe__item.fe__dropdown.dropdown-expanded-active  
+        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', '3 гостя')
+        .fe__dropdown__content
+          ul.dropdown-list.dropdown-expanded-guests__list  
+            li.dropdown-list__item 
+              .dropdown-list__item_name взрослые
+              .dropdown-list__count 
+                .dropdown-list__count_minus -
+                .dropdown-list__count_number 2
+                .dropdown-list__count_plus +
+            li.dropdown-list__item 
+              .dropdown-list__item_name дети
+              .dropdown-list__count 
+                .dropdown-list__count_minus -
+                .dropdown-list__count_number 2
+                .dropdown-list__count_plus +
+            li.dropdown-list__item 
+              .dropdown-list__item_name младенцы
+              .dropdown-list__count 
+                .dropdown-list__count_minus.unactive-element -
+                .dropdown-list__count_number 0
+                .dropdown-list__count_plus +
+          .dropdown-btns.dropdown-btns-2  
+            button.dropdown__reset(type="reset") Очистить 
+            button.dropdown__submit(type="submit") Применить 
+        //- .fe__item_header-expanded
+        //-   h3.h3 dropdown
+        //- .card__input-wrapper_expanded-shadow 
           .card__input-wrapper.card__input-wrapper-expanded
             .card__input-dropdown.card__input-filter-date 3 гостя
             span.material-icons.material-icons-expand.material-icons-expand-dark expand_more
