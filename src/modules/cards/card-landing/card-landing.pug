@@ -10,7 +10,30 @@ mixin card-landing
         .card-landing__date-dropdown-wrapper
           +date-dropdown('прибытие', 'ДД.ММ.ГГГГ')
           +date-dropdown('выезд', 'ДД.ММ.ГГГГ')
-        +dropdown('dropdown-page', 'гости', 'Сколько гостей')
+        .dropdown-page
+          +dropdown('', 'гости', 'Сколько гостей')
+          .fe__dropdown__content
+            ul.dropdown-list.dropdown-expanded-guests__list  
+              li.dropdown-list__item 
+                .dropdown-list__item_name взрослые
+                .dropdown-list__count 
+                  .dropdown-list__count_minus -
+                  .dropdown-list__count_number 2
+                  .dropdown-list__count_plus +
+              li.dropdown-list__item 
+                .dropdown-list__item_name дети
+                .dropdown-list__count 
+                  .dropdown-list__count_minus -
+                  .dropdown-list__count_number 2
+                  .dropdown-list__count_plus +
+              li.dropdown-list__item 
+                .dropdown-list__item_name младенцы
+                .dropdown-list__count 
+                  .dropdown-list__count_minus.unactive-element -
+                  .dropdown-list__count_number 0
+                  .dropdown-list__count_plus +
+            .dropdown-btns 
+              button.dropdown__submit(type="submit") Применить 
         +btn-gradient-arrow('card-btn-landing', 'подобрать номер')
 
          
