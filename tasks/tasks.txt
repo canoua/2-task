@@ -2,7 +2,6 @@
 
 В первую очередь
 - text-fields, list, buttons, header - уменьшить количество миксинов(заменить условным ветвлением)
-- Dropdown попробовать на vanilla js
 - expandable
 
 В последнюю очередь
