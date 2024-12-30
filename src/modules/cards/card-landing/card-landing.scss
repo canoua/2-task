@@ -8,3 +8,16 @@
     margin-bottom: 20.56px;
   } 
 }
+
+.dropdown-page {
+  position: relative;
+}
+
+.dropdown-page > .fe__dropdown__content{
+  // display: none;
+  position: absolute;
+  left: 0;
+  top: 65px;
+  background-color: #fff;
+  z-index: 10;
+}
