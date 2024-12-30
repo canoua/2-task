@@ -11,13 +11,17 @@
 
 .dropdown-page {
   position: relative;
-}
-
-.dropdown-page > .fe__dropdown__content{
-  // display: none;
-  position: absolute;
-  left: 0;
-  top: 65px;
-  background-color: #fff;
-  z-index: 10;
+  & > .fe__dropdown__content{
+    position: absolute;
+    left: 0;
+    top: -15px;
+    opacity: 0;
+    background-color: #fff;
+    z-index: -10;
+    &_active {
+      opacity: 1;
+      z-index: 10;
+      top: 65px;
+    }
+  }
 }
