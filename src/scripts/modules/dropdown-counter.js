@@ -1,9 +1,7 @@
 export default function dropdownCounter() {
   let minus = document.querySelectorAll('.dropdown-list__count_minus');
   let plus = document.querySelectorAll('.dropdown-list__count_plus');
-  // let submit;
-  // let reset = 
-
+  
   document.addEventListener('DOMContentLoaded', function() {
     minus.forEach(function(item) {
       if(item.nextElementSibling.textContent == 0) {
@@ -11,7 +9,6 @@ export default function dropdownCounter() {
       }
     })
   })
-
 
   minus.forEach(function(item) {
     item.addEventListener('click', function(event) {
