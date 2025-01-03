@@ -33,12 +33,12 @@ export default function landing() {
       sum += Number(item.textContent)
     })
     
-    if(sum % 10 == 1 && sum > 20) {
+    if((sum == 1) || ((sum >= 21) && (sum % 10 == 1))) {
       dropdownOutput.textContent = sum + ' гость';
-    } else if( ((sum % 10 >= 2) && (sum % 10 <= 4)) ) {
+    } else if((sum >= 2 && sum <=4) || ((sum >= 22) && (sum % 10 >= 2 && sum % 10 <= 4))) {
       dropdownOutput.textContent = sum + ' гостя';
-    } else if( ((sum >= 5) && (sum <= 9)) || (sum == 11) || (sum % 10 == 0)) {
+    } else if((sum >= 5) && (sum <= 9) || ((sum >= 11) && (sum <= 19)) || (sum % 10 == 0) || ((sum >= 25) && (sum % 10 >= 5 && sum % 10 <= 9))) {
       dropdownOutput.textContent = sum + ' гостей';
-    } 
+    }
   })
 }
