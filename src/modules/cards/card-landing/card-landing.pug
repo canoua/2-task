@@ -10,7 +10,7 @@ mixin card-landing
         .card-landing__date-dropdown-wrapper
           +date-dropdown('прибытие', 'ДД.ММ.ГГГГ')
           +date-dropdown('выезд', 'ДД.ММ.ГГГГ')
-        .dropdown-page
+        .dropdown-page.dropdown-expanded-guests__form
           +dropdown('card-landing__dropdown', 'гости', 'Сколько гостей')
           .fe__dropdown__content
             ul.dropdown-list.dropdown-expanded-guests__list  

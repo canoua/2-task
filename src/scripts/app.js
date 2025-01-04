@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if(document.querySelector('.card__input-masked')) mask();
   if(document.querySelector('.expandable-checkbox-list-default')) searchDropdown();
   if(document.querySelector('.dropdown-expanded-guests__form')) dropdownCounter();
-  // упростить
-  if(document.querySelector('.dropdown-list__count')) dropdownCounter();
   if(document.querySelector('.main-landing')) landing();
   // if(document.querySelector('.calendar')) airDatePicker();
 })
