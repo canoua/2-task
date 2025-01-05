@@ -32,7 +32,7 @@ export default function landing() {
     input.forEach(function(item) {
       sum += Number(item.textContent)
     })
-    
+    // упростить по возможности
     if((sum == 1) || ((sum >= 21) && (sum % 10 == 1))) {
       dropdownOutput.textContent = sum + ' гость';
     } else if((sum >= 2 && sum <=4) || ((sum >= 22) && (sum % 10 >= 2 && sum % 10 <= 4))) {
@@ -46,9 +46,16 @@ export default function landing() {
       if(item.textContent == 'младенцы') {
         let dropdownListCount = item.nextElementSibling;
         let countKids = dropdownListCount.childNodes[2];
+        // упростить, доделать 
         if(countKids.textContent != 0) {
-          
-          dropdownOutput.textContent = sum + ' гостей' + ', ' + countKids.textContent + ' младенцы';
+          if(countKids.textContent == 1) {
+            dropdownOutput.textContent = sum + ' гостей' + ', ' + countKids.textContent + ' младенец';
+          } else if(countKids.textContent == 2 || countKids.textContent == 3 || countKids.textContent == 4 ) {
+            dropdownOutput.textContent = sum + ' гостей' + ', ' + countKids.textContent + ' младенца';
+          } else if(countKids.textContent == 5 || countKids.textContent == 6 || countKids.textContent == 7 || countKids.textContent == 8 || countKids.textContent == 9 || countKids.textContent >= 10 ) {
+            dropdownOutput.textContent = sum + ' гостей' + ', ' + countKids.textContent + ' младенцев';
+          }
+          // dropdownOutput.textContent = sum + ' гостей' + ', ' + countKids.textContent + ' младенцы';
         }
       }
     })
