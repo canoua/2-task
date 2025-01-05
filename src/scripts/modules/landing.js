@@ -1,6 +1,6 @@
 export default function landing() {  
-  let dropdown = document.querySelector('.card-landing__dropdown > .card__input-wrapper');
-  let dropdownOutput = document.querySelector('.card-landing__dropdown > .card__input-wrapper > .card__input-dropdown');
+  let dropdown = document.querySelector('.card-landing__dropdown-js > .card__input-wrapper-js');
+  let dropdownOutput = document.querySelector('.card-landing__dropdown-js > .card__input-wrapper-js > .card__input-dropdown');
   
   // выпадающий блок
   let dropdownContent = document.querySelector('.fe__dropdown__content');
