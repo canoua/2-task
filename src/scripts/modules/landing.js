@@ -40,5 +40,17 @@ export default function landing() {
     } else if((sum >= 5) && (sum <= 9) || ((sum >= 11) && (sum <= 19)) || (sum % 10 == 0) || ((sum >= 25) && (sum % 10 >= 5 && sum % 10 <= 9))) {
       dropdownOutput.textContent = sum + ' гостей';
     }
+
+    let dropdownListItemName = document.querySelectorAll('.dropdown-list__item_name');
+    dropdownListItemName.forEach(function(item) {
+      if(item.textContent == 'младенцы') {
+        let dropdownListCount = item.nextElementSibling;
+        let countKids = dropdownListCount.childNodes[2];
+        if(countKids.textContent != 0) {
+          
+          dropdownOutput.textContent = sum + ' гостей' + ', ' + countKids.textContent + ' младенцы';
+        }
+      }
+    })
   })
 }
