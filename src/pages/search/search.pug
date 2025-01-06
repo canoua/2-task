@@ -9,12 +9,37 @@ html(lang="en")
     title Search room
   body 
     +header 
-    main.search
+    main.search.app-js-dropdown
       .container 
         .search-inner 
           .search__sidebar 
             +filter-date-dropdown('search__filter-date-dropdown', 'даты пребывания в отеле', '19 авг - 23 авг')
-            +dropdown('search__dropdown', 'гости', '3 гостя, 1 младенец')
+            .dropdown-page.dropdown-expanded-guests__form
+              +dropdown('card-landing__dropdown dropdown card-landing__dropdown-js', 'гости', 'Сколько гостей')
+              .fe__dropdown__content
+                ul.dropdown-list.dropdown-expanded-guests__list  
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name взрослые
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus -
+                      .dropdown-list__count_number.dropdown-list__count_number_test 2
+                      .dropdown-list__count_plus +
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name дети
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus -
+                      .dropdown-list__count_number 2
+                      .dropdown-list__count_plus +
+                  li.dropdown-list__item 
+                    .dropdown-list__item_name младенцы
+                    .dropdown-list__count 
+                      .dropdown-list__count_minus.unactive-element -
+                      .dropdown-list__count_number 0
+                      .dropdown-list__count_plus +
+                .dropdown-btns.dropdown-btns-2  
+                  button.dropdown__reset(type="reset") Очистить 
+                  button.dropdown__submit(type="submit") Применить 
+            //- +dropdown('search__dropdown', 'гости', '3 гостя, 1 младенец')
             .search__range 
               +range-slider('', 'диапазон цены')
               span.search__range__info Стоимость за сутки пребывания в номере
@@ -36,7 +61,32 @@ html(lang="en")
                 li.checkbox__list_item.rich-checkbox__list__item   
                   +checkbox('checkbox__list__label-rich-title', 'assistant', 'Помощник для инвалидов')
                 .checkbox__list__label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
-            +dropdown('search__dropdown', 'удобства номера', '2 спальни, 2 кровати...')
+              .dropdown-page.dropdown-expanded-guests__form
+                +dropdown('card-landing__dropdown-js card-landing__dropdown dropdown', 'удобства номера', 'Сколько гостей')
+                .fe__dropdown__content
+                  ul.dropdown-list.dropdown-expanded-guests__list  
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name спальни
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus -
+                        .dropdown-list__count_number.dropdown-list__count_number_test 2
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name кровати
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus -
+                        .dropdown-list__count_number 2
+                        .dropdown-list__count_plus +
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name ванные комнаты
+                      .dropdown-list__count 
+                        .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number 0
+                        .dropdown-list__count_plus +
+                  .dropdown-btns.dropdown-btns-2  
+                    button.dropdown__reset(type="reset") Очистить 
+                    button.dropdown__submit(type="submit") Применить 
+            //- +dropdown('search__dropdown', 'удобства номера', '2 спальни, 2 кровати...')
             //- миксин
             .expandable-checkbox-list-default.elements__item
               .checkbox__header.elements__item_header

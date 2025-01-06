@@ -1,7 +1,9 @@
 export default function landing() {  
   let dropdown = document.querySelector('.card-landing__dropdown-js > .card__input-wrapper-js');
+
+  // function dropdown(block) {
   let dropdownOutput = document.querySelector('.card-landing__dropdown-js > .card__input-wrapper-js > .card__input-dropdown');
-  
+
   // выпадающий блок
   let dropdownContent = document.querySelector('.fe__dropdown__content');
   
@@ -9,26 +11,7 @@ export default function landing() {
   let reset = document.querySelector('.dropdown__reset');
   let submit = document.querySelector('.dropdown__submit');
 
-  dropdown.addEventListener('click', function() {
-    dropdownContent.classList.toggle('fe__dropdown__content_active')
-  })
-
-  // кнопка reset
-  reset.addEventListener('click', function(event) {
-    event.preventDefault();
-    let countNumber = document.querySelectorAll('.dropdown-list__count_number');
-    
-    countNumber.forEach(function(item) {
-      item.textContent = '0';
-      item.previousElementSibling.classList.add('unactive-element')
-    })
-
-    dropdownOutput.textContent = 'Сколько гостей';
-  })
-
-  // кнопка подтвердить
-  submit.addEventListener('click', function(event) {
-    event.preventDefault();
+  function submitFunc() {
     let input = document.querySelectorAll('.dropdown-list__count_number')
     let sum = 0;
     let guestsVar = '';
@@ -38,19 +21,17 @@ export default function landing() {
     })
 
     // упростить по возможности, рефактор - сложно читать
-    if(sum != 0) {
-      if((sum == 1) || ((sum >= 21) && (sum % 10 == 1))) {
-        guestsVar = ' гость';
-      } else if((sum >= 2 && sum <=4) || ((sum >= 22) && (sum % 10 >= 2 && sum % 10 <= 4))) {
-        guestsVar = ' гостя';
-      } else if((sum >= 5) && (sum <= 9) || ((sum >= 11) && (sum <= 19)) || (sum % 10 == 0) || ((sum >= 25) && (sum % 10 >= 5 && sum % 10 <= 9))) {
-        guestsVar = ' гостей';
-      }
+    if((sum == 1) || ((sum >= 21) && (sum % 10 == 1))) {
+      guestsVar = ' гость';
+    } else if((sum >= 2 && sum <=4) || ((sum >= 22) && (sum % 10 >= 2 && sum % 10 <= 4))) {
+      guestsVar = ' гостя';
+    } else if((sum >= 5) && (sum <= 9) || ((sum >= 11) && (sum <= 19)) || (sum % 10 == 0) || ((sum >= 25) && (sum % 10 >= 5 && sum % 10 <= 9))) {
+      guestsVar = ' гостей';
     }
 
     string = sum + guestsVar;
     dropdownOutput.textContent = string;
-    
+
     let dropdownListItemName = document.querySelectorAll('.dropdown-list__item_name');
     dropdownListItemName.forEach(function(item) {
       if(item.textContent == 'младенцы') {
@@ -69,5 +50,30 @@ export default function landing() {
       }
       dropdownContent.classList.remove('fe__dropdown__content_active');
     })
+  }
+
+  function resetFunc() {
+    let countNumber = document.querySelectorAll('.dropdown-list__count_number');
+    countNumber.forEach(function(item) {
+      item.textContent = '0';
+      item.previousElementSibling.classList.add('unactive-element')
+    })
+    dropdownOutput.textContent = 'Сколько гостей';
+  }
+
+  dropdown.addEventListener('click', function() {
+    dropdownContent.classList.toggle('fe__dropdown__content_active')
+  })
+
+  // кнопка подтвердить
+  submit.addEventListener('click', function(event) {
+    event.preventDefault();
+    submitFunc();
+  })
+
+  // кнопка reset
+  reset.addEventListener('click', function(event) {
+    event.preventDefault();
+    resetFunc();
   })
 }
