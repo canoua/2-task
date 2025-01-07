@@ -6,7 +6,6 @@ export default function searchDropdown() {
     // выпадающий блок
   let dropdownContent = document.querySelector('.dropdown-convenience__content');
 
-
   input.addEventListener('click', function() {
     console.log('dropdown');
     dropdown.classList.toggle('search__checkbox__list_active')
