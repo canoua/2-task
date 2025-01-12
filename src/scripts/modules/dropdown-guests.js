@@ -1,6 +1,5 @@
-export default function landing() {  
+export default function dropdownGuests() {
   let dropdown = document.querySelector('.card-landing__dropdown-js > .card__input-wrapper-js');
-
   let dropdownOutput = document.querySelector('.card-landing__dropdown-js > .card__input-wrapper-js > .card__input-dropdown');
 
   // выпадающий блок
@@ -11,7 +10,7 @@ export default function landing() {
   let submit = document.querySelector('.dropdown__submit');
 
   function submitFunc() {
-    let input = document.querySelectorAll('.dropdown-list__count_number')
+    let input = document.querySelectorAll('.dropdown__guests-list__count_number')
     let sum = 0;
     let guestsVar = '';
     let string;

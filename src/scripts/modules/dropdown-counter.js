@@ -5,7 +5,7 @@ export default function dropdownCounter() {
   document.addEventListener('DOMContentLoaded', function() {
     minus.forEach(function(item) {
       if(item.nextElementSibling.textContent == 0) {
-        item.classList.add('unactive-element')
+        item.classList.add('unactive-element');
       }
     })
   })
@@ -21,7 +21,7 @@ export default function dropdownCounter() {
       }
 
       if(item.nextElementSibling.textContent == 0) {
-        item.classList.add('unactive-element')
+        item.classList.add('unactive-element');
       }
     })
   })
@@ -33,7 +33,7 @@ export default function dropdownCounter() {
       let parent = item.parentElement;
 
       output.textContent = Number(output.textContent) + 1;
-      parent.firstElementChild.classList.remove('unactive-element')
+      parent.firstElementChild.classList.remove('unactive-element');
     })
   })
 }

@@ -7,12 +7,12 @@ export default function searchDropdown() {
   let dropdownContent = document.querySelector('.dropdown-convenience__content');
 
   input.addEventListener('click', function() {
-    console.log('dropdown');
+    // console.log('dropdown');
     dropdown.classList.toggle('search__checkbox__list_active')
   })
 
   dropdownConvenience.addEventListener('click', function() {
-    console.log('удобства');
+    // console.log('удобства');
     dropdownContent.classList.toggle('fe__dropdown__content_active');
   })
 }
