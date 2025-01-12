@@ -62,31 +62,27 @@ html(lang="en")
                   +checkbox('checkbox__list__label-rich-title', 'assistant', 'Помощник для инвалидов')
                 .checkbox__list__label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
               .dropdown-page.dropdown-expanded-guests__form
-                +dropdown('card-landing__dropdown dropdown-convenience dropdown', 'удобства номера', 'Сколько гостей')
+                +dropdown('card-landing__dropdown dropdown-convenience dropdown', 'удобства номера', '2 спальни, 2 кровати...')
                 .fe__dropdown__content.dropdown-convenience__content
                   ul.dropdown-list.dropdown-expanded-guests__list  
                     li.dropdown-list__item 
                       .dropdown-list__item_name спальни
                       .dropdown-list__count 
                         .dropdown-list__count_minus -
-                        .dropdown-list__count_number 2
-                        .dropdown-list__count_plus +
+                        .dropdown-list__count_number.dropdown__convenience-list__count_number 2
+                        .dropdown-list__count_plus.dropdown__convenience-list__count_plus +
                     li.dropdown-list__item 
                       .dropdown-list__item_name кровати
                       .dropdown-list__count 
                         .dropdown-list__count_minus -
-                        .dropdown-list__count_number 2
-                        .dropdown-list__count_plus +
+                        .dropdown-list__count_number.dropdown__convenience-list__count_number 2
+                        .dropdown-list__count_plus.dropdown__convenience-list__count_plus +
                     li.dropdown-list__item 
                       .dropdown-list__item_name ванные комнаты
                       .dropdown-list__count 
                         .dropdown-list__count_minus.unactive-element -
-                        .dropdown-list__count_number 0
-                        .dropdown-list__count_plus +
-                  .dropdown-btns.dropdown-btns-2  
-                    button.dropdown__reset(type="reset") Очистить 
-                    button.dropdown__submit(type="submit") Применить 
-            //- +dropdown('search__dropdown', 'удобства номера', '2 спальни, 2 кровати...')
+                        .dropdown-list__count_number.dropdown__convenience-list__count_number 0
+                        .dropdown-list__count_plus.dropdown__convenience-list__count_plus +
             //- миксин
             .expandable-checkbox-list-default.elements__item
               .checkbox__header.elements__item_header
