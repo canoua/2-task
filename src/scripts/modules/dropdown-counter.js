@@ -1,6 +1,6 @@
 export default function dropdownCounter() {
-  let minus = document.querySelectorAll('.dropdown-list__count_minus');
-  let plus = document.querySelectorAll('.dropdown-list__count_plus');
+  let minus = document.querySelectorAll('.dropdown-list__count_minus-js');
+  let plus = document.querySelectorAll('.dropdown-list__count_plus-js');
   
   document.addEventListener('DOMContentLoaded', function() {
     minus.forEach(function(item) {

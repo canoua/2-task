@@ -9,11 +9,26 @@ export default function searchDropdown() {
 
   let btnPlus = document.querySelectorAll('.dropdown__convenience-list__count_plus');
   
-  let convenience = {
-    bedrooms: 0,
-    beds: 0,
-    bathrooms: 0
-  }
+  // let convenience = {
+  //   bedrooms: 0,
+  //   beds: 0,
+  //   bathrooms: 0
+  // }
+  let resultCounter = document.querySelectorAll('.dropdown__convenience-list__count_number');
+
+  function sum() {
+    let sum = 0;
+    resultCounter.forEach(function(item) {
+      sum += parseInt(item.textContent);
+    })
+    return sum;
+  } 
+
+  btnPlus.forEach(function(item) {
+    item.addEventListener('click', function() {
+      console.log(sum());
+    })
+  })
   
     
   input.addEventListener('click', function() {
