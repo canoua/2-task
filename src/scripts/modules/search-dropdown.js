@@ -30,7 +30,7 @@ export default function searchDropdown() {
   function sum() {
     let sum = 0;
     resultCounter.forEach(function(item) {
-      sum += parseInt(item.textContent);
+      // sum += parseInt(item.textContent);
     })
     return sum;
   } 
@@ -42,9 +42,9 @@ export default function searchDropdown() {
       let parent = item.parentElement;
 
       output.textContent = Number(output.textContent) + 1;
-      console.log(sum());
+      
       parent.firstElementChild.classList.remove('unactive-element');
-      // view();
+      console.log(parent.parentElement.firstElementChild.textContent);
     })
   })
 
@@ -62,6 +62,18 @@ export default function searchDropdown() {
 
       if(item.nextElementSibling.textContent == 0) {
         item.classList.add('unactive-element');
+      }
+
+      // console.log(item.parentElement.parentElement.firstElementChild.textContent);
+      if(item.parentElement.parentElement.firstElementChild.textContent == 'спальни') {
+        convenience.bedrooms--;
+        console.log(convenience.bedrooms);
+      } else if(item.parentElement.parentElement.firstElementChild.textContent == 'кровати') {
+        convenience.bathrooms--;
+        console.log(convenience.bathrooms);
+      } else if(item.parentElement.parentElement.firstElementChild.textContent == 'ванные комнаты') {
+        convenience.beds--;
+        console.log(convenience.bathrooms);
       }
     })
   })
