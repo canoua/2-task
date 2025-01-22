@@ -13,14 +13,18 @@ export default function searchDropdown() {
   let btnMinus = document.querySelectorAll('.dropdown__convenience-list__count_minus');
   let resultCounter = document.querySelectorAll('.dropdown__convenience-list__count_number');
 
+  // bedrooms-спальни
   let bedroomsCount = document.querySelector('.dropdown__convenience-list__count_bedrooms');
-  let bathroomsCount = document.querySelector('.dropdown__convenience-list__count_bathrooms');
+  // beds - кровати
   let bedsCount = document.querySelector('.dropdown__convenience-list__count_beds');
+  // ванные комнаты
+  let bathroomsCount = document.querySelector('.dropdown__convenience-list__count_bathrooms');
+
   
   let convenience = {
-    bedrooms: 1,
-    bathrooms: 2,
-    beds: 0
+    bedrooms: 3,
+    beds: 2,
+    bathrooms: 1
   }
 
   function view() {
@@ -56,27 +60,38 @@ export default function searchDropdown() {
         
         if(item.nextElementSibling.textContent != 0) {
           item.nextElementSibling.textContent = item.nextElementSibling.textContent - 1;
-          console.log(sum());
         } 
       }
+      // if(item) {
+
+      // }
 
       if(item.nextElementSibling.textContent == 0) {
         item.classList.add('unactive-element');
       }
 
       // console.log(item.parentElement.parentElement.firstElementChild.textContent);
+      // bedrooms-спальни
       if(item.parentElement.parentElement.firstElementChild.textContent == 'спальни') {
-        convenience.bedrooms--;
-        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни`;
-        console.log(convenience.bedrooms);
+        if(convenience.bedrooms>0) {
+          convenience.bedrooms--;
+        }
+        bedroomsCount.textContent = convenience.bedrooms;
+        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни`;       
+        // beds - кровати
       } else if(item.parentElement.parentElement.firstElementChild.textContent == 'кровати') {
-        convenience.bathrooms--;
-        dropdownConvenienceOutput.textContent = `${convenience.bathrooms} кровати`;
-        console.log(convenience.bathrooms);
+        if(convenience.beds>0) {
+          convenience.beds--;
+        }
+        bedsCount.textContent = convenience.beds;
+        dropdownConvenienceOutput.textContent = `${convenience.beds} кровати`;
       } else if(item.parentElement.parentElement.firstElementChild.textContent == 'ванные комнаты') {
-        convenience.beds--;
-        dropdownConvenienceOutput.textContent = `${convenience.beds} ванные комнаты`;
-        console.log(convenience.bathrooms);
+        if(convenience.bathrooms>0) {
+          convenience.bathrooms--;
+        }
+        bathroomsCount.textContent = convenience.bathrooms;
+        dropdownConvenienceOutput.textContent = `${convenience.bathrooms} ванные комнаты`;   
+        console.log(convenience.beds);
       }
     })
   })
