@@ -32,15 +32,16 @@ export default function searchDropdown() {
       bathroomsCount.textContent = convenience.bathrooms;
       bedsCount.textContent = convenience.beds;
       
-      const size = 20,
-        newsContent= `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`,
-        newsText = newsContent.text();
-        
-      if(newsText.length > size) {
-        newsContent.text(newsText.slice(0, size) + ' ...');
-      }
+      let size = 20,
+        str = `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`,
+        newStr = str.substring(0, size);
 
-      dropdownConvenienceOutput.textContent = newsContent;
+      if(str.length>size) {
+        dropdownConvenienceOutput.textContent = newStr + '...';
+      } else {
+        dropdownConvenienceOutput.textContent = str;
+      }
+      
     })
   }
 
