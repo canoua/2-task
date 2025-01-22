@@ -11,7 +11,6 @@ export default function searchDropdown() {
 
   let btnPlus = document.querySelectorAll('.dropdown__convenience-list__count_plus');
   let btnMinus = document.querySelectorAll('.dropdown__convenience-list__count_minus');
-  // let resultCounter = document.querySelectorAll('.dropdown__convenience-list__count_number');
 
   // bedrooms-спальни
   let bedroomsCount = document.querySelector('.dropdown__convenience-list__count_bedrooms');
@@ -22,9 +21,9 @@ export default function searchDropdown() {
 
   
   let convenience = {
-    bedrooms: 3,
+    bedrooms: 2,
     beds: 2,
-    bathrooms: 1
+    bathrooms: 0
   }
 
   function view() {
@@ -32,7 +31,16 @@ export default function searchDropdown() {
       bedroomsCount.textContent = convenience.bedrooms;
       bathroomsCount.textContent = convenience.bathrooms;
       bedsCount.textContent = convenience.beds;
-      dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни`;
+      
+      const size = 20,
+        newsContent= `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`,
+        newsText = newsContent.text();
+        
+      if(newsText.length > size) {
+        newsContent.text(newsText.slice(0, size) + ' ...');
+      }
+
+      dropdownConvenienceOutput.textContent = newsContent;
     })
   }
 
@@ -52,15 +60,18 @@ export default function searchDropdown() {
       if(parent.parentElement.firstElementChild.textContent == 'спальни') {
         convenience.bedrooms++;
         bedroomsCount.textContent = convenience.bedrooms;
-        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни`;    
+        // dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни`;    
+        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`;
       } else if(parent.parentElement.firstElementChild.textContent == 'кровати') {
         convenience.beds++;
         bedsCount.textContent = convenience.beds;
-        dropdownConvenienceOutput.textContent = `${convenience.beds} спальни`;    
+        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`;
+        // dropdownConvenienceOutput.textContent = `${convenience.beds} кровати`;    
       } else if(parent.parentElement.firstElementChild.textContent == 'ванные комнаты') {
         convenience.bathrooms++;
         bathroomsCount.textContent = convenience.bathrooms;
-        dropdownConvenienceOutput.textContent = `${convenience.bathrooms} ванные комнаты`;  
+        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`;
+        // dropdownConvenienceOutput.textContent = `${convenience.bathrooms} ванные комнаты`;  
       }
     })
   })
@@ -86,20 +97,23 @@ export default function searchDropdown() {
           convenience.bedrooms--;
         }
         bedroomsCount.textContent = convenience.bedrooms;
-        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни`;       
+        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`;
+        // dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни`;       
         // beds - кровати
       } else if(item.parentElement.parentElement.firstElementChild.textContent == 'кровати') {
         if(convenience.beds>0) {
           convenience.beds--;
         }
         bedsCount.textContent = convenience.beds;
-        dropdownConvenienceOutput.textContent = `${convenience.beds} кровати`;
+        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`;
+        // dropdownConvenienceOutput.textContent = `${convenience.beds} кровати`;
       } else if(item.parentElement.parentElement.firstElementChild.textContent == 'ванные комнаты') {
         if(convenience.bathrooms>0) {
           convenience.bathrooms--;
         }
         bathroomsCount.textContent = convenience.bathrooms;
-        dropdownConvenienceOutput.textContent = `${convenience.bathrooms} ванные комнаты`;   
+        dropdownConvenienceOutput.textContent = `${convenience.bedrooms} спальни, ${convenience.beds} кроватей, ${convenience.bathrooms} ванных комнат`;
+        // dropdownConvenienceOutput.textContent = `${convenience.bathrooms} ванные комнаты`;   
         console.log(convenience.beds);
       }
     })
