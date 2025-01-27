@@ -88,10 +88,10 @@ export default function searchDropdown() {
 
   btnMinus.forEach(function(item) {
     item.addEventListener('click', function() {
+      convenience.minus(item.parentElement.parentElement.firstElementChild.textContent);
       if(item.nextElementSibling.textContent == 0) {
         item.classList.add('unactive-element');
       }
-      convenience.minus(item.parentElement.parentElement.firstElementChild.textContent);
     })
   })
   
