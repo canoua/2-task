@@ -60,18 +60,25 @@ export default function searchDropdown() {
     },
     view: function() {
       let size = 21,
-        str = `${this.bedrooms} спальни, ${this.beds} кроватей, ${this.bathrooms} ванных комнат`,
-        newStr = str.substring(0, size);
+        bedroomsString = 'спальни',
+        bedsString = 'кровати',
+        bathroomsString = 'ванных комнат',
+        str = `${this.bedrooms} ${bedroomsString}, ${this.beds} ${bedsString}, ${this.bathrooms} ${bathroomsString}`;
       
-      bedroomsCount.textContent = this.bedrooms;
-      bathroomsCount.textContent = this.bathrooms;
-      bedsCount.textContent = this.beds;
+        bedroomsCount.textContent = this.bedrooms;
+        bathroomsCount.textContent = this.bathrooms;
+        bedsCount.textContent = this.beds;
 
-      if(str.length>size) {
-        dropdownConvenienceOutput.textContent = newStr + '...';
-      } else {
-        dropdownConvenienceOutput.textContent = str;
+      function addDots() {
+        let newStr = str.substring(0, size);
+        if(str.length>size) {
+          dropdownConvenienceOutput.textContent = newStr + '...';
+        } else {
+          dropdownConvenienceOutput.textContent = str;
+        }
       }
+
+      addDots();
     }
   }
 
