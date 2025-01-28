@@ -18,12 +18,11 @@ export default function dropdownGuests() {
       sum += Number(item.textContent)
     })
 
-    // упростить по возможности, рефактор - сложно читать
-    if((sum == 1) || ((sum >= 21) && (sum % 10 == 1))) {
+    if (sum == 1 || (sum >= 21 && sum % 10 == 1)) {
       guestsVar = ' гость';
-    } else if((sum >= 2 && sum <=4) || ((sum >= 22) && (sum % 10 >= 2 && sum % 10 <= 4))) {
+    } else if ((sum >= 2 && sum <= 4) || (sum >= 22 && sum % 10 >= 2 && sum % 10 <= 4)) {
       guestsVar = ' гостя';
-    } else if((sum >= 5) && (sum <= 9) || ((sum >= 11) && (sum <= 19)) || (sum % 10 == 0) || ((sum >= 25) && (sum % 10 >= 5 && sum % 10 <= 9))) {
+    } else {
       guestsVar = ' гостей';
     }
 
@@ -35,16 +34,25 @@ export default function dropdownGuests() {
       if(item.textContent == 'младенцы') {
         let dropdownListCount = item.nextElementSibling;
         let countKids = dropdownListCount.childNodes[2];
-        // упростить
+        // упростить, баг после 20
         if(countKids.textContent != 0) {
           if(countKids.textContent == 1) {
             dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенец';
           } else if(countKids.textContent == 2 || countKids.textContent == 3 || countKids.textContent == 4 ) {
             dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенца';
-          } else if(countKids.textContent == 5 || countKids.textContent == 6 || countKids.textContent == 7 || countKids.textContent == 8 || countKids.textContent == 9 || countKids.textContent >= 10 ) {
+          } else {
             dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенцев';
           }
         }
+        // if(countKids.textContent != 0) {
+        //   if(countKids.textContent == 1) {
+        //     dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенец';
+        //   } else if(countKids.textContent == 2 || countKids.textContent == 3 || countKids.textContent == 4 ) {
+        //     dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенца';
+        //   } else if(countKids.textContent == 5 || countKids.textContent == 6 || countKids.textContent == 7 || countKids.textContent == 8 || countKids.textContent == 9 || countKids.textContent >= 10 ) {
+        //     dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенцев';
+        //   }
+        // }
       }
       dropdownContent.classList.remove('fe__dropdown__content_active');
     })
