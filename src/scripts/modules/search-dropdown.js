@@ -69,18 +69,23 @@ export default function searchDropdown() {
       let str = `${this.count.bedrooms} ${this.name.bedroomsString}, ${this.count.beds} ${this.name.bedsString}, ${this.count.bathrooms} ${this.name.bathroomsString}`;
       return str;
     },
+    // упростить
     declination: function() {
-      // доработать
       if(this.count.bedrooms==0 || this.count.bedrooms==5  || (this.count.bedrooms%10>=5 && this.count.bathrooms%10<=9 && this.count.bedrooms>=21)) {
         this.name.bedroomsString = 'спален';
-        this.rewriteString();
       } else if((this.count.bedrooms==1) || (this.count.bedrooms>=21 && this.count.bedrooms%10==1)) {
         this.name.bedroomsString = 'спальня';
-        this.rewriteString();
       } else if((this.count.bedrooms==2) || (this.count.bedrooms>21 && this.count.bedrooms%10>1)) {
         this.name.bedroomsString = 'спальни';
-        this.rewriteString();
       }
+      if(this.count.beds==0 || this.count.beds==5  || (this.count.beds%10>=5 && this.count.beds%10<=9 && this.count.beds>=21)) {
+        this.name.bedsString = 'кроватей';
+      } else if((this.count.beds==1) || (this.count.beds>=21 && this.count.beds%10==1)) {
+        this.name.bedsString = 'кровать';
+      } else if((this.count.beds==2) || (this.count.beds>21 && this.count.beds%10>1)) {
+        this.name.bedsString = 'кровати';
+      }
+      this.rewriteString();
     },
     changeCounter: function() {
       bedroomsCount.textContent = this.count.bedrooms;
