@@ -69,15 +69,7 @@ export default function searchDropdown() {
       let str = `${this.count.bedrooms} ${this.name.bedroomsString}, ${this.count.beds} ${this.name.bedsString}, ${this.count.bathrooms} ${this.name.bathroomsString}`;
       return str;
     },
-    view: function() {
-      let size = 20;      
-
-      this.rewriteString;
-
-      bedroomsCount.textContent = this.count.bedrooms;
-      bathroomsCount.textContent = this.count.bathrooms;
-      bedsCount.textContent = this.count.beds;
-
+    declination: function() {
       // доработать
       if(this.count.bedrooms==0 || this.count.bedrooms==5  || (this.count.bedrooms%10>=5 && this.count.bathrooms%10<=9 && this.count.bedrooms>=21)) {
         this.name.bedroomsString = 'спален';
@@ -89,6 +81,18 @@ export default function searchDropdown() {
         this.name.bedroomsString = 'спальни';
         this.rewriteString();
       }
+    },
+    changeCounter: function() {
+      bedroomsCount.textContent = this.count.bedrooms;
+      bathroomsCount.textContent = this.count.bathrooms;
+      bedsCount.textContent = this.count.beds;
+    },
+    view: function() {
+      let size = 20;      
+
+      this.rewriteString();
+      this.changeCounter();
+      this.declination();
  
       function addDots(string) {
         let str = string;
