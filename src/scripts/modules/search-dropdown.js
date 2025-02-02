@@ -79,7 +79,7 @@ export default function searchDropdown() {
       bedsCount.textContent = this.count.beds;
 
       // доработать
-      if(this.count.bedrooms==0 || this.count.bedrooms==5 || (this.count.bedrooms%10==5 && this.count.bedrooms>=21)) {
+      if(this.count.bedrooms==0 || this.count.bedrooms==5  || (this.count.bedrooms%10>=5 && this.count.bathrooms%10<=9 && this.count.bedrooms>=21)) {
         this.name.bedroomsString = 'спален';
         this.rewriteString();
       } else if((this.count.bedrooms==1) || (this.count.bedrooms>=21 && this.count.bedrooms%10==1)) {
