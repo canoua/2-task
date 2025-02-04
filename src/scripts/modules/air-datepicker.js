@@ -1,38 +1,32 @@
 import AirDatepicker from 'air-datepicker';
 
 export default function airDatePicker() {
-  let buttonApply = {
-    className: 'buttonAirData',
-    content: 'Применить'
-  }
-  
-  new AirDatepicker('.calendar', {
-    selectedDates: [new Date()],
-    range: true,
-    dynamicRange: true,
-    multipleDates: true,
-    multipleDatesSeparator: '',
-    navTitles: {
-      days: '<div>MMMM yyyy</div>'
-    },
-    buttons: ['clear', buttonApply],
-    visible: true,
-    // onRenderCell({date, cellType}) {
-    //     // Disable all 12th dates in month
-    //     if (cellType === 'day') {
-    //         if (date.getDate() === 12) {
-    //             return {
-    //                 disabled: true,
-    //                 classes: 'disabled-class',
-    //                 attrs: {
-    //                     title: 'Cell is disabled'
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-  });
-}
+  // let buttonApply = {
+  //   className: 'buttonAirData',
+  //   content: 'Применить'
+  // }
+
+  let dpMin, dpMax;
+
+dpMin = new AirDatepicker('.input1', {
+    onSelect({date}) {
+        dpMax.update({
+            minDate: date
+        })
+        dpMin.update({
+            maxDate: date
+        })
+    }
+})
+
+// dpMax = new AirDatepicker('.input2', {
+//     onSelect({date}) {
+//         dpMin.update({
+//             maxDate: date
+//         })
+//     }
+// })
+
   // new AirDatepicker('.calendar', {
   //   selectedDates: [new Date()],
   //   range: true,
@@ -43,33 +37,7 @@ export default function airDatePicker() {
   //     days: '<div>MMMM yyyy</div>'
   //   },
   //   buttons: ['clear', buttonApply],
-  //   visible: true,
-    // onRenderCell({date, cellType}) {
-    //     // Disable all 12th dates in month
-    //     if (cellType === 'day') {
-    //         if (date.getDate() === 12) {
-    //             return {
-    //                 disabled: true,
-    //                 classes: 'disabled-class',
-    //                 attrs: {
-    //                     title: 'Cell is disabled'
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+  //   visible: true
   // });
-// }
-
-// let btn = document.querySelector('.air-datepicker-cell.-day-');
-
-// function ready() {
-//   console.log(btn);
-// }
-
-// document.addEventListener("DOMContentLoaded", ready)
-
-let dp = new AirDatepicker('#el');
-
-
-console.log(dp.getViewDates);
+};
+ 

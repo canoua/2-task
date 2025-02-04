@@ -8,7 +8,8 @@ mixin card-landing
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
         .card-landing__date-dropdown-wrapper
-          input(type="text").calendar
+          input(type="text").calendar.input1
+          input(type="text").input2
           //- .date-dropdown.date-dropdown-item.date-dropdown-item-box
           //-   .date-dropdown__header
           //-     h3.h3 прибытие
@@ -16,7 +17,7 @@ mixin card-landing
           //-     input.card__input-date-dropdown(placeholder="ДД.ММ.ГГГГ")
           //-     span.material-icons.material-icons-expand expand_more
           //- +date-dropdown('прибытие', 'ДД.ММ.ГГГГ')
-          +date-dropdown('выезд', 'ДД.ММ.ГГГГ')
+          //- +date-dropdown('выезд', 'ДД.ММ.ГГГГ')
         .dropdown-page.dropdown-expanded-guests__form
           +dropdown('card-landing__dropdown card-landing__dropdown-js', 'гости', 'Сколько гостей')
           .fe__dropdown__content
