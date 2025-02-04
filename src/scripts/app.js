@@ -4,7 +4,7 @@ import searchDropdown from './modules/search-dropdown';
 import dropdownCounter from './modules/dropdown-counter';
 // import landing from './modules/landing';
 import dropdownGuests from './modules/dropdown-guests';
-// import airDatePicker from './modules/air-datepicker';
+import airDatePicker from './modules/air-datepicker';
 
 'use strict';
 
@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
   if(document.querySelector('.expandable-checkbox-list-default')) searchDropdown();
   if(document.querySelector('.dropdown-expanded-guests__form')) dropdownCounter();
   if(document.querySelector('.app-js-dropdown')) dropdownGuests();
-  // if(document.querySelector('.calendar')) airDatePicker();
+  if(document.querySelector('.calendar')) airDatePicker();
 })

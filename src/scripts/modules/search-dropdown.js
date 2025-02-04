@@ -69,7 +69,7 @@ export default function searchDropdown() {
       let str = `${this.count.bedrooms} ${this.name.bedroomsString}, ${this.count.beds} ${this.name.bedsString}, ${this.count.bathrooms} ${this.name.bathroomsString}`;
       return str;
     },
-    // упростить
+    // упростить, попробовать через массив
     declination: function() {
       if(this.count.bedrooms==0 || this.count.bedrooms==5  || (this.count.bedrooms%10>=5 && this.count.bathrooms%10<=9 && this.count.bedrooms>=21)) {
         this.name.bedroomsString = 'спален';
