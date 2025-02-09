@@ -36,3 +36,16 @@ export default function airDatePicker() {
 
   startDate = new Date(calendar.selectedDates[0]);
 }
+
+  new AirDatepicker('.calendar', {
+    selectedDates: [new Date()],
+    range: true,
+    dynamicRange: true,
+    multipleDates: true,
+    multipleDatesSeparator: '',
+    navTitles: {
+      days: '<div>MMMM yyyy</div>'
+    },
+    buttons: [button, buttonApply],
+    visible: true,
+  });
