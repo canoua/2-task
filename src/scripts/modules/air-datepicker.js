@@ -7,26 +7,8 @@ export default function airDatePicker() {
     onClick: () => {
       let input1 = document.querySelector('.input1');
       let input2 = document.querySelector('.input2');
-      // input2.value = calendar.selectedDates[1];
-      let dateString = calendar.selectedDates[0]
-      // const dayOfMonth = date.getDate();
-      console.log(dateString.getDate());
-      // попробовать использовать это
-      /*
-      var options = {
-        day: 'numeric',
-        month: 'numeric',
-        year: 'numeric'
-      }
-
-      function getDate(str) {
-        var date = new Date(str);
-        return date.toLocaleString('ru', options)
-      }
-
-      console.log(getDate('2017-09-21T21:00:00.000Z'));
-            
-      */
+      input1.value = calendar.selectedDates[0];
+      input2.value = calendar.selectedDates[1];
     },
   }
 
@@ -50,9 +32,20 @@ export default function airDatePicker() {
     },
     buttons: [button, buttonApply],
     selectedDates: [startDate, endDate],
-    onSelect: (date)=> {
-      // попытка не выводить дату в инпут   
-      console.log("Выбранная дата:", date); // Для отладки, если нужно
+    onSelect: function(date, formattedDate, datepicker) {
+    
+      let input1 = document.querySelector('.input1');
+      let input2 = document.querySelector('.input2');
+      
+      let val1 = date.formattedDate[0];
+      let val2 = date.formattedDate[1];
+      input1.value = val1;
+      if(date.formattedDate[1]!=undefined) {
+        input2.value = val2;
+      } else {
+        input2.value = '';
+      }
+      
     },
   });
 }
