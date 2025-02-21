@@ -8,14 +8,18 @@ mixin card-landing
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
         .card-landing__date-dropdown-wrapper
-          input(type="text" data-range="true" data-multiple-dates-separator=" - ").calendar.input1
-          input(type="text").input2
-          //- .date-dropdown.date-dropdown-item.date-dropdown-item-box
-          //-   .date-dropdown__header
-          //-     h3.h3 прибытие
-          //-   .card__input-wrapper
-          //-     input.card__input-date-dropdown(placeholder="ДД.ММ.ГГГГ")
-          //-     span.material-icons.material-icons-expand expand_more
+          .date-dropdown.date-dropdown-item.date-dropdown-item-box
+            .date-dropdown__header
+              h3.h3 прибытие
+            .card__input-wrapper
+              input(type="text" data-range="true").calendar.input1.card__input-date-dropdown(placeholder="ДД.ММ.ГГГГ")
+              span.material-icons.material-icons-expand expand_more
+          .date-dropdown.date-dropdown-item.date-dropdown-item-box
+            .date-dropdown__header
+              h3.h3 выезд
+            .card__input-wrapper
+              input(type="text").input2.card__input-date-dropdown(placeholder="ДД.ММ.ГГГГ")
+              span.material-icons.material-icons-expand expand_more
           //- +date-dropdown('прибытие', 'ДД.ММ.ГГГГ')
           //- +date-dropdown('выезд', 'ДД.ММ.ГГГГ')
         .dropdown-page.dropdown-expanded-guests__form
