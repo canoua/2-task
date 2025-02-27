@@ -1,7 +1,6 @@
 .air-datepicker-custom {
   width: 320px;
   height: 369px;
-  // left: 30px !important;
   & > .air-datepicker--pointer {
     &::after {
       display: none;
@@ -27,19 +26,15 @@
 .air-datepicker-body--day-name {
   width: 40px;
   height: 40px;
-  /* Пн */
-
-
-font-family: 'Montserrat';
-font-style: normal;
-font-size: 12px;
-line-height: 15px;
-display: flex;
-align-items: center;
-text-align: center;
-
-/* Primary Color */
-color: #BC9CFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: initial;
+  color: $purple;
 }
 
 .air-datepicker-cell.-day- {
@@ -48,41 +43,50 @@ color: #BC9CFF;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* 1 */
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-// display: flex;
-// align-items: center;
-// text-align: center;
-
-/* Dark 50% */
-color: $darkshade50;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: $darkshade50;
 }
 
 .air-datepicker-cell.-day-.-current- {
-  /* 8 */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+}
 
+.air-datepicker--buttons {
+  border-top: none;
+}
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 15px;
-display: flex;
-align-items: center;
-text-align: center;
+.air-datepicker-nav {
+  padding: 20px;
+}
 
-color: #FFFFFF;
+.air-datepicker-button{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $purple;
+}
 
-
-/* Secondary Gradient */
-background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-border-radius: 22px;
-
+.air-datepicker--content{
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 

@@ -28,6 +28,8 @@ export default function airDatePicker() {
     classes: 'air-datepicker-custom',
     dynamicRange: false,
     multipleDates: true,
+    // inline: true,
+    // visible: true,
     multipleDatesSeparator: '-',
     startDate,
     secondDate: new Date(),
@@ -59,8 +61,7 @@ export default function airDatePicker() {
       $datepicker.style.top = `${top}px`;
       $pointer.style.display = 'none';
     },
-    prevHtml: `<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.1757 8.01562V9.98438H3.98819L9.56632 15.6094L8.16007 17.0156L0.144441 9L8.16007 0.984375L9.56632 2.39062L3.98819 8.01562H16.1757Z" fill="#BC9CFF"/></svg>`
-
+    // prevHtml: `<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.1757 8.01562V9.98438H3.98819L9.56632 15.6094L8.16007 17.0156L0.144441 9L8.16007 0.984375L9.56632 2.39062L3.98819 8.01562H16.1757Z" fill="#BC9CFF"/></svg>`
   });
-  calendar.show()
+  // calendar.show()
 }
