@@ -44,15 +44,6 @@ export default function dropdownGuests() {
             dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенцев';
           }
         }
-        // if(countKids.textContent != 0) {
-        //   if(countKids.textContent == 1) {
-        //     dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенец';
-        //   } else if(countKids.textContent == 2 || countKids.textContent == 3 || countKids.textContent == 4 ) {
-        //     dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенца';
-        //   } else if(countKids.textContent == 5 || countKids.textContent == 6 || countKids.textContent == 7 || countKids.textContent == 8 || countKids.textContent == 9 || countKids.textContent >= 10 ) {
-        //     dropdownOutput.textContent = string + ', ' + countKids.textContent + ' младенцев';
-        //   }
-        // }
       }
       dropdownContent.classList.remove('fe__dropdown__content_active');
     })

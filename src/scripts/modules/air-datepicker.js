@@ -28,8 +28,6 @@ export default function airDatePicker() {
     classes: 'air-datepicker-custom',
     dynamicRange: false,
     multipleDates: true,
-    // inline: true,
-    // visible: true,
     multipleDatesSeparator: '-',
     startDate,
     secondDate: new Date(),
@@ -52,7 +50,7 @@ export default function airDatePicker() {
       }
     },
     position({$datepicker, $target, $pointer}) {
-        // координаты инпута  
+      // координаты инпута  
       let coords = $target.getBoundingClientRect();
       let top = coords.y + 2*coords.height + window.scrollY;
       let left = coords.x - 17;
