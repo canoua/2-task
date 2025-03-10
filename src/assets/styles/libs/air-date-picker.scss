@@ -12,6 +12,7 @@
     text-align: center;
     color: $darkshade100;
     padding: 20px;
+    padding-bottom: 0;
   }
   &-button {
     font-family: 'Montserrat';
@@ -33,6 +34,11 @@
   }
 }
 
+.air-datepicker-body--cells.-days- {
+    grid-template-columns: repeat(7, var(--adp-day-cell-width));
+    grid-auto-rows: 40px;
+}
+
 .air-datepicker-body--day-name {
   width: 40px;
   height: 40px;
@@ -40,9 +46,10 @@
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  // display: block;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
   text-transform: initial;
   color: $purple;
 }
@@ -96,9 +103,12 @@
   color: #FFFFFF;
 }
 
+.air-datepicker-cell.-day-:hover {
+  border-radius: 22px;
+}
+
 .air-datepicker-cell.-day-.-in-range- {
-  /* Primary Gradient */
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: #BC9CFF;
   opacity: 0.25;
   font-family: 'Montserrat';
   font-style: normal;
@@ -108,7 +118,12 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: $darkshade50;
+/* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+
+  &:hover {
+    border-radius: 0;
+  }
 }
 
 .air-datepicker--content{
