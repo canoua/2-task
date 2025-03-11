@@ -46,10 +46,6 @@
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
-  // display: block;
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
   text-transform: initial;
   color: $purple;
 }
@@ -118,9 +114,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-/* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-
+  color: $darkshade50;
   &:hover {
     border-radius: 0;
   }
