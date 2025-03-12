@@ -39,6 +39,21 @@
     grid-auto-rows: 40px;
 }
 
+.air-datepicker-cell.-day-.-weekend-.-selected-.-range-to- {
+  position: relative;
+  &::after {
+    content: '';
+    z-index: -3;
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    left: -10px;
+    top: 0;
+    background-color: purple;
+  }
+
+}
+
 .air-datepicker-body--day-name {
   width: 40px;
   height: 40px;
