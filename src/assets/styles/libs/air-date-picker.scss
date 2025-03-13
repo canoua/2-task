@@ -39,19 +39,49 @@
     grid-auto-rows: 40px;
 }
 
-.air-datepicker-cell.-day-.-weekend-.-selected-.-range-to- {
+// .air-datepicker-cell.-day-.-weekend-.-selected-.-range-to- {
+//   position: relative;
+//   &::after {
+//     content: '';
+//     z-index: -3;
+//     position: absolute;
+//     width: 20px;
+//     height: 100%;
+//     left: 0px;
+//     top: 0;
+//     background-color: $purple;
+//     opacity: 0.25;
+//   }
+// }
+
+.air-datepicker-cell.-day-.-in-range- {
   position: relative;
+  &:first-child {
+    background-color: red;
+  }
+    &::before {
+    content: '';
+    z-index: 33;
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -16px;
+    top: 0;
+    background-color: $purple;
+    // opacity: 0.25;
+  
+  }
+  
   &::after {
     content: '';
-    z-index: -3;
+    z-index: 33;
     position: absolute;
-    width: 40px;
+    width: 20px;
     height: 100%;
-    left: -10px;
+    right: -16px;
     top: 0;
-    background-color: purple;
+    background-color: $purple;
   }
-
 }
 
 .air-datepicker-body--day-name {
@@ -132,6 +162,10 @@
   color: $darkshade50;
   &:hover {
     border-radius: 0;
+  }
+  position: relative;
+  &:first-child {
+    background-color: red !important;
   }
 }
 
