@@ -25,7 +25,6 @@
   } 
   &-custom {
     width: 320px;
-    height: 369px;
     & > .air-datepicker--pointer {
       &::after {
         display: none;
@@ -99,7 +98,6 @@
   font-size: 12px;
   line-height: 15px;
   color: $darkshade50;
-  font-size: 26px;
 }
 
 .air-datepicker-cell.-day-.-current- {
@@ -124,9 +122,7 @@
 }
 
 .air-datepicker-cell.-day-.-selected-.-range-from-,
-.air-datepicker-cell.-day-.-selected-.-range-to- {
-  width: 40.87px;
-  height: 40px;
+.air-datepicker-cell.-day-.-selected-.-range-to-{
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
   font-family: 'Montserrat';
@@ -134,9 +130,6 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #FFFFFF;
 }
 
@@ -144,7 +137,8 @@
   border-radius: 22px;
 }
 
-.air-datepicker-cell.-day-.-in-range- {
+.air-datepicker-cell.-day-.-in-range-,
+.air-datepicker-cell.-day-.-other-month-.-in-range- {
   background: #BC9CFF;
   opacity: 0.25;
   font-family: 'Montserrat';
@@ -158,6 +152,7 @@
   color: $darkshade50;
   &:hover {
     border-radius: 0;
+    background: #BC9CFF;
   }
 }
 

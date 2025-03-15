@@ -34,7 +34,7 @@ export default function airDatePicker() {
     endDate,
     dateFormat: 'dd.MM.yyyy',
     // для постоянного отображения после инициализации
-    inline: true,
+    // inline: true,
     navTitles: {
       days: '<div class = "air-datepicker-navTitle-custom">MMMM yyyy</div>',
     },
