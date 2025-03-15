@@ -35,8 +35,8 @@
 }
 
 .air-datepicker-body--cells.-days- {
-    grid-template-columns: repeat(7, var(--adp-day-cell-width));
-    grid-auto-rows: 40px;
+  grid-template-columns: repeat(7, var(--adp-day-cell-width));
+  grid-auto-rows: 40px;
 }
 
 .air-datepicker-cell.-day-.-selected-.-range-to- {
@@ -70,7 +70,6 @@
 }
 
 .air-datepicker-cell.-day-.-in-range- {
-    
   &:last-child {
     position: relative;
     background-color: #fff;
