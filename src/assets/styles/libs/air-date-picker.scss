@@ -162,7 +162,19 @@
   padding-right: 20px;
 }
 
-.svg > path {
-  fill: red;
+.air-datepicker-nav--action > .custom-prev {
+  width: 24px;
+  height: 24px;
+  background-image: url('@images/arrow_back.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
+.air-datepicker-nav--action > .custom-next {
+  width: 24px;
+  height: 24px;
+  background-image: url('@images/arrow_back.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
