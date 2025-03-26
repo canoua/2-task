@@ -42,7 +42,7 @@
   position: relative;
   &::after {
     content: '';
-    z-index: 23;
+    z-index: -1;
     position: absolute;
     width: 20px;
     height: 100%;
@@ -53,20 +53,7 @@
   }
 }
 
-.air-datepicker-cell.-day-.-selected-.-range-from- {
-  position: relative;
-  &::after {
-    content: '';
-    z-index: 23;
-    position: absolute;
-    width: 20px;
-    height: 100%;
-    right: 0px;
-    top: 0;
-    background-color: $purple;
-    opacity: 0.25;
-  }
-}
+
 
 .air-datepicker-cell.-day-.-in-range- {
   &:last-child {
@@ -121,16 +108,34 @@
   border-top: none;
 }
 
-.air-datepicker-cell.-day-.-selected-.-range-from-,
-.air-datepicker-cell.-day-.-selected-.-range-to-{
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
+
+.air-datepicker-cell.-day-.-selected-{
+  &.-range-from-{
+    position: relative;
+    z-index: 100 !important;
+    &::after {
+      content: '';
+      z-index: -10 !important;
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      right: 0px;
+      top: 0;
+      background: #e5e8fe;
+      display: block;
+    }
+  }
+  &.-range-from-,
+  &.-range-to- {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
 }
 
 .air-datepicker-cell.-day-:hover {
@@ -139,8 +144,7 @@
 
 .air-datepicker-cell.-day-.-in-range-,
 .air-datepicker-cell.-day-.-other-month-.-in-range- {
-  background: #BC9CFF;
-  opacity: 0.25;
+  background-color: #e5e8fe;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -152,9 +156,9 @@
   color: $darkshade50;
   &:hover {
     border-radius: 0;
-    background: #BC9CFF;
   }
 }
+
 
 .air-datepicker--content{
   margin-bottom: 20px;
