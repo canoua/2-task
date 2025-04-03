@@ -1,5 +1,4 @@
 import AirDatepicker from 'air-datepicker';
-// 
 
 export default function airDatePicker() {
   let input1 = document.querySelector('.input1');
@@ -20,6 +19,7 @@ export default function airDatePicker() {
       
       input1.value = `${day1}.${month1}.${year1}`;
       input2.value = `${day2}.${month2}.${year2}`;
+      calendar.hide();
     }
   }
   
@@ -35,7 +35,7 @@ export default function airDatePicker() {
     endDate,
     dateFormat: 'dd.MM.yyyy',
     // для постоянного отображения после инициализации
-    inline: true,
+    // inline: true,
     navTitles: {
       days: '<div class = "air-datepicker-navTitle-custom">MMMM yyyy</div>',
     },
@@ -65,4 +65,8 @@ export default function airDatePicker() {
     prevHtml: '<div class="custom-prev"></div>',
     nextHtml: '<div class="custom-next"></div>'
   });
+
+  input2.addEventListener('click', function() {
+    calendar.show();
+  })
 }
