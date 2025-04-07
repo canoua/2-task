@@ -1,17 +1,18 @@
 mixin menu
   nav.menu__navigation&attributes(attributes)
     ul.list 
-      li.list__item 
-        a.list__link(href="#") О нас
-      li.list__item 
-        a.list__link.list__link_drop(href="#") 
-          span.drop-link  Услуги
-          span.material-icons.material-icons-expand.material-icons-expand-menu expand_more
-      li.list__item 
-        a.list__link(href="#") Вакансии
-      li.list__item 
-        a.list__link(href="#") Новости
-      li.list__item 
-        a.list__link.list__link_drop(href="#")
-          span.drop-link Соглашения
-          span.material-icons.material-icons-expand.material-icons-expand-menu expand_more
+      - var lists = [
+      - { name: 'О нас', link: '#' }, 
+      - { name: 'Услуги', link: '#', drop: true },
+      - { name: 'Вакансии', link: '#' }, 
+      - { name: 'Новости', link: '#' },
+      - { name: 'Соглашения', link: '#', drop: true},];
+      
+      each listItem in lists
+        li.list__item
+          if !listItem.drop
+            a.list__link(href=listItem.link) #{listItem.name}
+          else
+            a.list__link.list__link_drop(href="#") 
+              span.drop-link  #{listItem.name}
+              span.material-icons.material-icons-expand.material-icons-expand-menu expand_more
