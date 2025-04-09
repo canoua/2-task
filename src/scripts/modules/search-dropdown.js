@@ -123,7 +123,6 @@ export default function searchDropdown() {
     })
   })
 
-
   btnMinus.forEach(function(item) {
     item.addEventListener('click', function() {
       convenience.minus(item.parentElement.parentElement.firstElementChild.textContent);

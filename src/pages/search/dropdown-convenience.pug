@@ -1,0 +1,13 @@
+mixin dropdown-convenience
+  ul.dropdown-list.dropdown-expanded-guests__list  
+    +item('спальни', 'dropdown__convenience-list__count_bedrooms')
+    +item('кровати', 'dropdown__convenience-list__count_beds')
+    +item('ванные комнаты', 'dropdown__convenience-list__count_bathrooms')
+
+mixin item(name, itemClass)
+  li.dropdown-list__item 
+    .dropdown-list__item_name=name
+    .dropdown-list__count 
+      .dropdown-list__count_minus.dropdown__convenience-list__count_minus -
+      .dropdown-list__count_number.dropdown__convenience-list__count_number(class=itemClass)
+      .dropdown-list__count_plus.dropdown__convenience-list__count_plus +
