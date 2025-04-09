@@ -18,24 +18,21 @@ html(lang="en")
               +dropdown('card-landing__dropdown dropdown card-landing__dropdown-js', 'гости', 'Сколько гостей')
               .fe__dropdown__content
                 ul.dropdown-list.dropdown-expanded-guests__list  
-                  li.dropdown-list__item 
-                    .dropdown-list__item_name взрослые
-                    .dropdown-list__count 
-                      .dropdown-list__count_minus.dropdown-list__count_minus-js -
-                      .dropdown-list__count_number.dropdown__guests-list__count_number 2
-                      .dropdown-list__count_plus.dropdown-list__count_plus-js +
-                  li.dropdown-list__item 
-                    .dropdown-list__item_name дети
-                    .dropdown-list__count 
-                      .dropdown-list__count_minus.dropdown-list__count_minus-js -
-                      .dropdown-list__count_number.dropdown__guests-list__count_number 2
-                      .dropdown-list__count_plus.dropdown-list__count_plus-js +
-                  li.dropdown-list__item 
-                    .dropdown-list__item_name младенцы
-                    .dropdown-list__count 
-                      .dropdown-list__count_minus.dropdown-list__count_minus-js.unactive-element -
-                      .dropdown-list__count_number.dropdown__guests-list__count_number 0
-                      .dropdown-list__count_plus.dropdown-list__count_plus-js +
+                  - 
+                    const dropdownExpandedGuestsList = [
+                      {name:'взрослые', number: 2}, 
+                      {name:'дети', number: 2},
+                      {name:'младенцы', number: 0}];
+                  each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList
+                    li.dropdown-list__item 
+                      .dropdown-list__item_name #{dropdownExpandedGuestsListItem.name}
+                      .dropdown-list__count 
+                        if dropdownExpandedGuestsListItem.number > 1
+                          .dropdown-list__count_minus.dropdown-list__count_minus-js -
+                        else 
+                          .dropdown-list__count_minus.unactive-element -
+                        .dropdown-list__count_number.dropdown__guests-list__count_number #{dropdownExpandedGuestsListItem.number}
+                        .dropdown-list__count_plus.dropdown-list__count_plus-js +
                 .dropdown-btns.dropdown-btns-2  
                   button.dropdown__reset(type="reset") Очистить 
                   button.dropdown__submit(type="submit") Применить 
