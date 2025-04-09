@@ -9,48 +9,30 @@ mixin fe-inner-2
         +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', '2 спальни, 2 кровати...')
         .fe__dropdown__content.dropdown-expanded-guests__form
           ul.dropdown-list 
-            li.dropdown-list__item 
-              .dropdown-list__item_name спальни
-              .dropdown-list__count 
-                .dropdown-list__count_minus -
-                .dropdown-list__count_number 2
-                .dropdown-list__count_plus +
-            li.dropdown-list__item 
-              .dropdown-list__item_name кровати
-              .dropdown-list__count 
-                .dropdown-list__count_minus -
-                .dropdown-list__count_number 2
-                .dropdown-list__count_plus +
-            li.dropdown-list__item 
-              .dropdown-list__item_name ванные комнаты
-              .dropdown-list__count 
-                .dropdown-list__count_minus.unactive-element -
-                .dropdown-list__count_number 0
-                .dropdown-list__count_plus +
+            - var dropdownListItems = [{name:'спальни', number: 2}, {name:'кровати', number: 2},{name:'ванные комнаты', number: 0}];
+            each dropdownListItem in dropdownListItems
+              li.dropdown-list__item 
+                .dropdown-list__item_name #{dropdownListItem.name}
+                .dropdown-list__count 
+                  .dropdown-list__count_minus -
+                  .dropdown-list__count_number #{dropdownListItem.number}
+                  .dropdown-list__count_plus +
     .colummn 
-      //-- миксин!
       .dropdown-expanded.fe__item 
         +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', 'Сколько гостей')
         .fe__dropdown__content
           ul.dropdown-list.dropdown-expanded-guests__list  
-            li.dropdown-list__item 
-              .dropdown-list__item_name взрослые
-              .dropdown-list__count 
-                .dropdown-list__count_minus -
-                .dropdown-list__count_number 2
-                .dropdown-list__count_plus +
-            li.dropdown-list__item 
-              .dropdown-list__item_name дети
-              .dropdown-list__count 
-                .dropdown-list__count_minus -
-                .dropdown-list__count_number 2
-                .dropdown-list__count_plus +
-            li.dropdown-list__item 
-              .dropdown-list__item_name младенцы
-              .dropdown-list__count 
-                .dropdown-list__count_minus.unactive-element -
-                .dropdown-list__count_number 0
-                .dropdown-list__count_plus +
+            - var dropdownExpandedGuestsList = [{name:'взрослые', number: 2}, {name:'дети', number: 2},{name:'младенцы', number: 0}];
+            each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList
+              li.dropdown-list__item 
+                .dropdown-list__item_name #{dropdownExpandedGuestsListItem.name}
+                .dropdown-list__count 
+                  if dropdownExpandedGuestsListItem.number > 1
+                    .dropdown-list__count_minus -
+                  else 
+                    .dropdown-list__count_minus.unactive-element -
+                  .dropdown-list__count_number #{dropdownExpandedGuestsListItem.number}
+                  .dropdown-list__count_plus +
           .dropdown-btns 
             button.dropdown__submit(type="submit") Применить 
     .column
@@ -58,25 +40,17 @@ mixin fe-inner-2
         +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', '3 гостя')
         .fe__dropdown__content
           ul.dropdown-list.dropdown-expanded-guests__list  
-            li.dropdown-list__item 
-              .dropdown-list__item_name взрослые
-              .dropdown-list__count 
-                .dropdown-list__count_minus -
-                .dropdown-list__count_number 2
-                .dropdown-list__count_plus +
-            li.dropdown-list__item 
-              .dropdown-list__item_name дети
-              .dropdown-list__count 
-                .dropdown-list__count_minus -
-                .dropdown-list__count_number 2
-                .dropdown-list__count_plus +
-            li.dropdown-list__item 
-              .dropdown-list__item_name младенцы
-              .dropdown-list__count 
-                .dropdown-list__count_minus.unactive-element -
-                .dropdown-list__count_number 0
-                .dropdown-list__count_plus +
+            - var dropdownExpandedGuestsList = [{name:'взрослые', number: 2}, {name:'дети', number: 2},{name:'младенцы', number: 0}];
+            each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList
+              li.dropdown-list__item 
+                .dropdown-list__item_name #{dropdownExpandedGuestsListItem.name}
+                .dropdown-list__count 
+                  if dropdownExpandedGuestsListItem.number > 1
+                    .dropdown-list__count_minus -
+                  else 
+                    .dropdown-list__count_minus.unactive-element -
+                  .dropdown-list__count_number #{dropdownExpandedGuestsListItem.number}
+                  .dropdown-list__count_plus +
           .dropdown-btns.dropdown-btns-2  
             button.dropdown__reset(type="reset") Очистить 
             button.dropdown__submit(type="submit") Применить 
-       
