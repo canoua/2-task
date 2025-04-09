@@ -1,13 +1,13 @@
 mixin menu
   nav.menu__navigation&attributes(attributes)
     ul.list 
-      - var lists = [
-      - { name: 'О нас', link: '#' }, 
-      - { name: 'Услуги', link: '#', drop: true },
-      - { name: 'Вакансии', link: '#' }, 
-      - { name: 'Новости', link: '#' },
-      - { name: 'Соглашения', link: '#', drop: true},];
-      
+      -
+        var lists = [
+          { name: 'О нас', link: '#' }, 
+          { name: 'Услуги', link: '#', drop: true },
+          { name: 'Вакансии', link: '#' }, 
+          { name: 'Новости', link: '#' },
+          { name: 'Соглашения', link: '#', drop: true},];
       each listItem in lists
         li.list__item
           if !listItem.drop

@@ -1,18 +1,15 @@
 mixin __information
   article.rd__information
     h2.title.rd__info-title Сведения о номере
-    .rd__information__item 
-      img.information__icon(src=require('@images/icons/insert_emoticon.png'), alt="icon")
-      .information__item-inner 
-        .information__title Комфорт
-        .information__text Шумопоглощающие стены
-    .rd__information__item 
-      img.rd__information__icon(src=require('@images/icons/location_city.png'), alt="icon")
-      .rd__information__item-inner
-        .rd__information__title Удобство
-        .rd__information__text Окно в каждой из спален
-    .rd__information__item 
-      img.rd__information__icon(src=require("@images/icons/whatshot.png"), alt="icon")
-      .rd__information__item-inner
-        .rd__information__title Уют
-        .rd__information__text Номер оснащён камином
+    - 
+      const rdInformationItems = [
+        {img:'@images/icons/insert_emoticon.png', title: 'Комфорт', text: 'Шумопоглощающие стены'},
+        {img:'@images/icons/location_city.png', title: 'Удобство', text: 'Окно в каждой из спален'},
+        {img:'@images/icons/whatshot.png', title: 'Уют', text: 'Номер оснащён камином'}
+      ];
+    each rdInformationItem in rdInformationItems
+      .rd__information__item 
+        img.information__icon(src=require(rdInformationItem.img), alt="icon")
+        .information__item-inner 
+          .information__title #{rdInformationItem.title}
+          .information__text #{rdInformationItem.text}
