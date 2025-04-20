@@ -9,13 +9,10 @@ mixin card-calendar
             span.material-icons.card-calendar__arrow-next arrow_forward 
         main.card-calendar__main 
           .card-calendar__main__days 
-            div.calendar__item пн
-            div.calendar__item вт
-            div.calendar__item ср
-            div.calendar__item чт
-            div.calendar__item пт
-            div.calendar__item сб
-            div.calendar__item вс
+            - 
+              var days = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс']
+            each day in days 
+              div.calendar__item #{day}
           .card-calendar__main__numbers
             div.calendar__item.card-calendar__main__number 29
             div.calendar__item.card-calendar__main__number 30

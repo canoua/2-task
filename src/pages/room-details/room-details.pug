@@ -27,11 +27,12 @@ html(lang="en")
                 .rd__impression-inner 
                   +pie
                   ul.impression__list
-                    - var impressionList = [
-                    - {name: 'Великолепно', class: 'impression__list_item-1'},
-                    - {name: 'Хорошо', class: 'impression__list_item-2'},
-                    - {name: 'Удовлетворительно', class: 'impression__list_item-3'},
-                    - {name: 'Разочарован', class: 'impression__list_item-4'}];
+                    - 
+                      var impressionList = [
+                        {name: 'Великолепно', class: 'impression__list_item-1'},
+                        {name: 'Хорошо', class: 'impression__list_item-2'},
+                        {name: 'Удовлетворительно', class: 'impression__list_item-3'},
+                        {name: 'Разочарован', class: 'impression__list_item-4'}];
                     each impressionListItem in impressionList
                       li.impression__list_item(class=impressionListItem.class) #{impressionListItem.name}
             
