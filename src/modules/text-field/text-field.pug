@@ -1,0 +1,31 @@
+include ../card-input/card-input.pug
+
+mixin text-field-default(className, title, status, placeholder)
+  .text-field-default(class=className)
+    .text-field-default__header
+      h3.h3=title 
+      span.text-field-default__state=status
+    +card-input('', placeholder)
+
+mixin text-field-hover(className, title, status, placeholder)
+  .text-field-hover(class=className)
+    .text-field-hover__header
+      h3.h3=title  
+      span.text-field-hover__state=status
+    +card-input('card__input-hover', placeholder)
+
+
+mixin text-field-masked(className, title, placeholder)
+  .text-field-masked(class=className) 
+    .text-field-masked__header 
+      h3.h3=title
+    +card-input('card__input-masked', placeholder)
+
+mixin subscription-text-field(title, placeholder)
+  .subscription-text-field
+    .subscription-text-field__header
+      h3.h3=title
+    .subscription-text-field__input-wrapper 
+      input.subscription-text-field__input(type="text" placeholder=placeholder)
+      button.subscription-text-field__input__button 
+        span.material-icons.material-icons-arrow-blue arrow_forward

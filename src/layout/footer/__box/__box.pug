@@ -1,12 +1,13 @@
 include ../__info/__info.pug
 include __item/__item.pug
-include ../../../modules/text-field/text-field-subscription/text-field-subscription.pug
+include ../../../modules/text-field/text-field.pug
 
 mixin __box
   .footer__box 
     .container 
       .footer-inner
         +__info
+        //- вывести циклом - 08.07
         +__item('навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги')
         +__item('о нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
         +__item('Служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами')

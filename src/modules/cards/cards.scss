@@ -94,3 +94,87 @@
   cursor: pointer;
   display: block;
 }
+
+.card {
+  &__note {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_info {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+    }
+  }
+}
+
+.card-landing {
+  &__dropdown {
+    margin-bottom: 30.44px;
+  }
+  &__date-dropdown-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20.56px;
+  } 
+}
+
+.dropdown-page {
+  position: relative;
+  & > .fe__dropdown__content{
+    position: absolute;
+    left: 0;
+    top: -15px;
+    opacity: 0;
+    background-color: #fff;
+    z-index: -10;
+    &_active {
+      opacity: 1;
+      z-index: 10;
+      top: 65px;
+    }
+  }
+}
+
+.inputs-wrapper.card-sign-in__inputs-wrapper {
+  margin-bottom: 20px;
+}
+
+.inputs-wrapper.card-sign-up__inputs-wrapper {
+  margin-bottom: 10px;
+}
+
+.card-sign-up {
+  &__date-birthday {
+    margin-bottom: 20px;
+  }
+  &__toggle {
+    margin-bottom: 20px;
+  }
+}
+
+.arrow-next {
+  position: absolute;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  right: 18px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(-90deg);
+  cursor: pointer;
+}
+
+.arrow-prev {
+  position: absolute;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  left: 18px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(90deg);
+  cursor: pointer;
+}

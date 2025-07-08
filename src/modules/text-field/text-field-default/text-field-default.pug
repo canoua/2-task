@@ -1,8 +1,0 @@
-include ../../card-input/card-input.pug
-
-mixin text-field-default(className, title, status, placeholder)
-  .text-field-default(class=className)
-    .text-field-default__header
-      h3.h3=title 
-      span.text-field-default__state=status
-    +card-input('', placeholder)

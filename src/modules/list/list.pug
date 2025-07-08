@@ -1,0 +1,11 @@
+mixin list-a(...items)
+  ul.footer__list
+    each item in items
+      li.footer__list__item
+        a(href="#").footer__list__link=item 
+
+mixin bullet-list(...items)
+  ul.bullet__list 
+    each item in items
+      li.bullet__list__item=item
+  

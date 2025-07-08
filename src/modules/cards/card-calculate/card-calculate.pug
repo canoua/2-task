@@ -1,5 +1,4 @@
-include ../../dropdowns/date-dropdown/date-dropdown.pug
-include ../../dropdowns/dropdown/dropdown.pug
+include ../../dropdown/dropdown.pug
 include ../../buttons/buttons.pug
 
 mixin card-calculate(dropdownClass)
@@ -20,6 +19,7 @@ mixin card-calculate(dropdownClass)
         .dropdown-page.dropdown-expanded-guests__form
           +dropdown('dropdown-page card-landing__dropdown-js', 'гости', 'Сколько гостей')
           .fe__dropdown__content
+            //- в миксин или в цикл
             ul.dropdown-list.dropdown-expanded-guests__list  
               li.dropdown-list__item 
                 .dropdown-list__item_name взрослые
