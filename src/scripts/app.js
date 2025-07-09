@@ -2,7 +2,6 @@ import rangeSlider from './modules/range-slider';
 import mask from './modules/mask';
 import searchDropdown from './modules/search-dropdown';
 import dropdownCounter from './modules/dropdown-counter';
-// import landing from './modules/landing';
 import dropdownGuests from './modules/dropdown-guests';
 import airDatePicker from './modules/air-datepicker';
 
