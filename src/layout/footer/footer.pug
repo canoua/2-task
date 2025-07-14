@@ -1,7 +1,21 @@
-include __box/__box.pug
-include __copy/__copy.pug
+include __box.pug
 include ../modules/logo/logo.pug
-include ../modules/footer__copy__link/footer__copy__link.pug
+
+mixin footer__copy__link(source, classes)
+  a.footer__copy__link(href="#") 
+    img(class=classes src=source, alt=classes)
+
+mixin __copy
+  .footer__copy
+    .container
+      .footer__copy-inner 
+        .footer__copy__item 
+          span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
+        .footer__copy__social 
+          +footer__copy__link(require("@images/icons/twitter.svg"), 'twitter')
+          +footer__copy__link(require("@images/icons/fb.svg"), 'facebook')
+          +footer__copy__link(require("@images/icons/inst.svg"), 'instagram')
+
 
 mixin footer 
   footer.footer

@@ -1,5 +1,44 @@
-@import './__box/_box';
-@import './__copy/_copy';
+.footer {
+  &__box {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 100px 0;
+    &__item { 
+      max-width: 260px;
+      &__info {
+        font-size: 14px;
+        line-height: 24px;
+        color: $darkshade75;
+        margin-bottom: 20px;
+      }
+    } 
+  }
+  &__info{
+    max-width: 260px;
+    &__block{
+      font-size: 14px;
+      line-height: 24px;
+      color: $darkshade75;
+    }
+  }
+}
+
+.footer {
+  &__copy {
+    padding: 23px 0;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__social {
+      display: flex;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+      color: $darkshade75;
+    }
+  }
+}
 
 .footer{
   background-color: #fff;
@@ -51,6 +90,18 @@
     &__copy{
       &__item{
         margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.footer {
+  &__copy {
+    &__link {
+      display: block;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

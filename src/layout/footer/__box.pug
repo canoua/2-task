@@ -1,6 +1,12 @@
-include __item/__item.pug
-include ../../../modules/text-field/text-field.pug
+include ../../modules/text-field/text-field.pug
+include ../../modules/list/list.pug
 
+mixin __item(title, ...items)
+  .footer__box__item 
+    h3.footer__title=title
+    nav.footer__navigation
+      +list-a(...items)
+      
 mixin __box
   .footer__box 
     .container 
