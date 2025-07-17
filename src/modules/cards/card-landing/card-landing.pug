@@ -25,10 +25,13 @@ mixin card-landing
           +dropdown('card-landing__dropdown card-landing__dropdown-js', 'гости', 'Сколько гостей')
           .fe__dropdown__content
             ul.dropdown-list.dropdown-expanded-guests__list  
-              - 
-                const dropdownExpandedGuestsList = [
-                  {name: 'взрослые'}
-                ]
+              //- - 
+              //-   const dropdownExpandedGuestsList = [
+              //-     {name: 'взрослые', number: 2},
+              //-     {name: 'дети', number: 2},
+              //-     {name: 'младенцы', number: 2},
+              //-   ]
+          
               li.dropdown-list__item 
                 .dropdown-list__item_name взрослые
                 .dropdown-list__count 

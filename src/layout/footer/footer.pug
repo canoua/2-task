@@ -1,25 +1,50 @@
-include __box.pug
+//- include __box.pug
 include ../modules/logo/logo.pug
+include ../../modules/text-field/text-field.pug
 
-mixin footer__copy__link(source, classes)
-  a.footer__copy__link(href="#") 
-    img(class=classes src=source, alt=classes)
-
-mixin __copy
-  .footer__copy
-    .container
-      .footer__copy-inner 
-        .footer__copy__item 
-          span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
-        .footer__copy__social 
-          +footer__copy__link(require("@images/icons/twitter.svg"), 'twitter')
-          +footer__copy__link(require("@images/icons/fb.svg"), 'facebook')
-          +footer__copy__link(require("@images/icons/inst.svg"), 'instagram')
+-  
+  var links = [
+    {src: require("@images/icons/twitter.svg"), social: 'twitter'},
+    {src: require("@images/icons/fb.svg"), social: 'facebook'},
+    {src: require("@images/icons/inst.svg"), social: 'insta'},
+  ] 
+  var _items = [
+    {title: 'навигация', links: ['О нас', 'Новости', 'Служба поддержки','Услуги']},
+    {title: 'о нас', links: ['О сервисе', 'Наша команда', 'Вакансии','Инвесторы']},
+    {title: 'Служба поддержки', links: ['Соглашения', 'Сообщества', 'Связь с нами']},
+  ]
 
 mixin footer 
   footer.footer
-    +__box
-    +__copy
+    .footer__box 
+      .container 
+        .footer-inner
+          .footer__info
+            .footer__logo 
+              +logo
+            span.footer__info__block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
+          each item in _items
+            .footer__box__item 
+              h3.footer__title #{item.title}
+              nav.footer__navigation
+                each link in item.links
+                  li.footer__list__item
+                    a(href="#").footer__list__link #{link}
+                
+          .footer__box__item 
+            h3.footer__title Подписка
+            .footer__box__item__info Получайте специальные предложения и новости сервиса
+            //-сделать миксином? посмотреть в form-elements
+            +subscription-text-field('', 'Email')
+    .footer__copy
+      .container
+        .footer__copy-inner 
+          .footer__copy__item 
+            span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
+          .footer__copy__social 
+            each link in links  
+              a.footer__copy__link(href="#") 
+                img(class=link.social src=link.src, alt=link.social)
 
 mixin footer-mobile
   footer.footer-mobile 
@@ -29,6 +54,6 @@ mixin footer-mobile
       .footer__copy__item.footer-mobile__copy__item 
         span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
       .footer__copy__social 
-        +footer__copy__link(require("@images/icons/twitter.svg"), 'twitter')
-        +footer__copy__link(require("@images/icons/fb.svg"), 'facebook')
-        +footer__copy__link(require("@images/icons/inst.svg"), 'instagram')
+        each link in links  
+          a.footer__copy__link(href="#") 
+            img(class=link.social src=link.src, alt=link.social)
