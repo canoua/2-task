@@ -1,4 +1,3 @@
-//- include __box.pug
 include ../modules/logo/logo.pug
 include ../../modules/text-field/text-field.pug
 
@@ -30,7 +29,6 @@ mixin footer
                 each link in item.links
                   li.footer__list__item
                     a(href="#").footer__list__link #{link}
-                
           .footer__box__item 
             h3.footer__title Подписка
             .footer__box__item__info Получайте специальные предложения и новости сервиса
