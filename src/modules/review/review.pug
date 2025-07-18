@@ -1,7 +1,13 @@
-include review__header.pug
-include review__content.pug
-
 mixin review(source, name, date, icon, icontext, text)
   .review
-    +review__header(source, name, date)
-    +review__content(icon, icontext, text)
+    .review__header  
+      .review__avatar 
+        img.review__avatar_image(src=source alt="avatar")
+      .review__name-wrapper
+        .review__name=name 
+        .review__date=date 
+    .review__content 
+      .like-button__item.like-button__item-favorite 
+        span.material-icons.material-icons-favorite.like-icon=icon 
+        span.like-button__item_text=icontext 
+      .review__text=text 
