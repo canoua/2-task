@@ -2,7 +2,7 @@ include ../../modules/buttons/buttons.pug
 include ../modules/menu/menu.pug
 include ../modules/logo/logo.pug
 
-mixin header  
+mixin header(variable)  
   header.header 
     .container 
       .header-inner 
@@ -10,17 +10,12 @@ mixin header
           +logo
         .header__box.header__box_right
           +menu
-          +button-white('form-element-btn','Войти')
-          +button-gradient('form-element-btn','Зарегистрироваться')
+          if variable=='header'  
+            +button-white('form-element-btn','Войти')
+            +button-gradient('form-element-btn','Зарегистрироваться')
+          else if variable=='header-2'
+            a(href="#").user 
+              span.user__name Юлий Цезар
+          else 
+            p mixin falied
         
-//- убрать, сделать через условное ветвление
-mixin header-2  
-  header.header 
-    .container 
-      .header-inner 
-        .header__box
-          +logo
-        .header__box.header__box_right
-          +menu
-          a(href="#").user 
-            span.user__name Юлий Цезарь
