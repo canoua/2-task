@@ -1,0 +1,42 @@
+-
+  const colors = [
+    {title: 'Dark Shade 100%', info: '#1F2041', colorClass: 'ct__color__square_1'},
+    {title: 'Dark Shade 75%', info: '#1F2041', colorClass: 'ct__color__square_2'},
+    {title: 'Dark Shade 50%', info: '#1F2041', colorClass: 'ct__color__square_3'},
+    {title: 'Dark Shade 25%', info: '#1F2041', colorClass: 'ct__color__square_4'},
+    {title: 'Dark Shade 5%', info: '#1F2041', colorClass: 'ct__color__square_5'},
+    {title: 'Purple', info: '#BC9CFF', colorClass: 'ct__color__square_6'},
+    {title: 'Green', info: '#6FCF97', colorClass: 'ct__color__square_7'},
+  ]
+  const titles = [
+    {title: 'H1', titleClass: '', text: 'This one is the sub-section or widget title', textClass: 'h1'},
+    {title: 'H2', titleClass: 'ct__title__number_2', text: 'Next one is the item title inside widgets', textClass: 'h2'},
+    {title: 'H3', titleClass: 'ct__title__number_3', text: 'This is a label or CTA text', textClass: 'h3'},
+    {title: 'Body', titleClass: 'ct__title__number_4', text: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', textClass: ''},
+  ]
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title colors-types(ct)
+  body 
+    .ct 
+      .ct__logo
+        img(src=require("@images/ui-logo.svg"), alt="ui-logo")
+      .container
+        .ct-inner 
+          .ct__box_1 
+            each color in colors 
+              .ct__color 
+                .ct__color__square(class=color.colorClass)
+                .ct__color__text 
+                  .ct__text__title #{color.title}
+                  .ct__text__info #{color.info}
+          .ct__box_2 
+            each title in titles
+              .ct__title 
+                .ct__title__number(class=title.titleClass) #{title.title}
+                .ct__title-text(class=title.textClass) #{title.text}
