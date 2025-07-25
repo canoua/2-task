@@ -3,24 +3,12 @@ include ../../dropdown/dropdown.pug
 
 mixin card-landing 
   form(action="#")
-    .card 
+    .card.app-js-dropdown.card 
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
         .card-landing__date-dropdown-wrapper
-          .date-dropdown.date-dropdown-item.date-dropdown-item-box
-            .date-dropdown__header
-              h3.h3 прибытие
-            .card__input-wrapper
-              input(type="text" data-range="true").calendar.input1.card__input-date-dropdown(placeholder="ДД.ММ.ГГГГ")
-              span.material-icons.material-icons-expand expand_more
-          .date-dropdown.date-dropdown-item.date-dropdown-item-box
-            .date-dropdown__header
-              h3.h3 выезд
-            .card__input-wrapper
-              input(type="text").input2.card__input-date-dropdown(placeholder="ДД.ММ.ГГГГ")
-              span.material-icons.material-icons-expand expand_more
-          //- +date-dropdown('прибытие', 'ДД.ММ.ГГГГ')
-          //- +date-dropdown('выезд', 'ДД.ММ.ГГГГ')
+          +date-dropdown('input1','прибытие', 'ДД.ММ.ГГГГ')
+          +date-dropdown('input2','выезд', 'ДД.ММ.ГГГГ')
         .dropdown-page.dropdown-expanded-guests__form
           +dropdown('card-landing__dropdown card-landing__dropdown-js', 'гости', 'Сколько гостей')
           .fe__dropdown__content
