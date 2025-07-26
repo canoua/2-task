@@ -5,22 +5,20 @@ mixin text-field-default(className, title, status, placeholder)
     .text-field-default__header
       h3.h3=title 
       span.text-field-default__state=status
-    +card-input('', placeholder)
+    +input-card('', placeholder)
 
-//- убрать, сделать через условное ветвление
 mixin text-field-hover(className, title, status, placeholder)
   .text-field-hover(class=className)
-    .text-field-hover__header
+    .text-field-default__header
       h3.h3=title  
-      span.text-field-hover__state=status
-    +card-input('card__input-hover', placeholder)
-//-
+      span.text-field-default__state=status
+    +input-card('card__input-hover', placeholder)
 
 mixin text-field-masked(className, title, placeholder)
-  .text-field-masked(class=className) 
-    .text-field-masked__header 
+  .text-field-default(class=className) 
+    .text-field-default__header
       h3.h3=title
-    +card-input('card__input-masked', placeholder)
+    +input-card('card__input-masked', placeholder)
 
 mixin subscription-text-field(title, placeholder)
   .subscription-text-field

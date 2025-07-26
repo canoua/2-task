@@ -19,26 +19,20 @@ mixin card-calculate(dropdownClass)
         .dropdown-page.dropdown-expanded-guests__form
           +dropdown('dropdown-page card-landing__dropdown-js', 'гости', 'Сколько гостей')
           .fe__dropdown__content
-            //- в миксин или в цикл
+            - 
+              const guests = [
+                {name: 'взрослые', count: 2},
+                {name: 'дети', count: 2},
+                {name: 'младенцы', count: 0}
+              ]
             ul.dropdown-list.dropdown-expanded-guests__list  
-              li.dropdown-list__item 
-                .dropdown-list__item_name взрослые
-                .dropdown-list__count 
-                  .dropdown-list__count_minus.dropdown-list__count_minus-js -
-                  .dropdown-list__count_number.dropdown__guests-list__count_number 2
-                  .dropdown-list__count_plus.dropdown-list__count_plus-js +
-              li.dropdown-list__item 
-                .dropdown-list__item_name дети
-                .dropdown-list__count 
-                  .dropdown-list__count_minus.dropdown-list__count_minus-js -
-                  .dropdown-list__count_number.dropdown__guests-list__count_number 2
-                  .dropdown-list__count_plus.dropdown-list__count_plus-js +
-              li.dropdown-list__item 
-                .dropdown-list__item_name младенцы
-                .dropdown-list__count 
-                  .dropdown-list__count_minus.dropdown-list__count_minus-js.unactive-element -
-                  .dropdown-list__count_number.dropdown__guests-list__count_number 0
-                  .dropdown-list__count_plus.dropdown-list__count_plus-js +
+              each guest in guests 
+                li.dropdown-list__item 
+                  .dropdown-list__item_name #{guest.name}
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus.dropdown-list__count_minus-js -
+                    .dropdown-list__count_number.dropdown__guests-list__count_number #{guest.count}
+                    .dropdown-list__count_plus.dropdown-list__count_plus-js +
             .dropdown-btns.dropdown-btns-2  
               button.dropdown__reset(type="reset") Очистить 
               button.dropdown__submit(type="submit") Применить  
