@@ -78,7 +78,21 @@
       border-radius: 4px;
       width: 100%;
       display: flex;
+      &:focus-within {
+        background: #FFFFFF;
+        border: 1px solid $darkshade75 !important;
+        transition: all .3s;
+      }
     }
+    &:focus {
+      &::placeholder{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $darkshade75;
+      }
+    }
+
     &__button {
       padding-right: 9px;
       background-color: transparent;
