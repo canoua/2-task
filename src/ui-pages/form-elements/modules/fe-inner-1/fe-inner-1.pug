@@ -3,6 +3,8 @@ include includes.pug
 
 mixin fe-inner-1
   .container.fe-inner-1
+    .fe__logo
+      include ../../../../assets/images/ui-logo.svg
     .column 
       +text-field-default('fe__text-field-default', 'Text Field', 'Default', 'Email')
       +text-field-hover('fe__text-field-hover', 'Text Field', 'Hover / Focus', 'This is pretty awesome')

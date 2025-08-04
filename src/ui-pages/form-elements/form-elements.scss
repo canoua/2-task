@@ -1,16 +1,18 @@
 .fe{
   position: relative;
-  padding: 140px 0 131px 0;
+  padding: 143px 0 131px 0;
   &__logo{
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: -113px;
+    left: -110px;
   }
   &-inner{
     &-1{
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 320px 269px 320px;
+      grid-column-gap: 127px;
       margin-bottom: 100px;
+      position: relative;
     }
     &-2,
     &-3,
@@ -112,7 +114,6 @@
 }
 
 .column{
-  width: 320px;
   &-2{
     width: 711px;
   }
@@ -120,6 +121,7 @@
     width: 100%;
   }
 }
+
 
 .dropdown-expanded-active > .card__input-wrapper {
   border-bottom-left-radius: 4px;
