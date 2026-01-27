@@ -5,17 +5,19 @@
   margin-bottom: 51px;
   &__logo{
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: -114px;
+    left: -119px;
   }
   &-inner{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    padding-right: 19px;
   }
   &__box { 
     &_1 {
-      width: 281px;
+      // width: 281px;
     }
     &_2 {
       width: 436px;
@@ -26,15 +28,21 @@
       font-weight: 700;
       font-size: 19px;
       line-height: 28px;
-      display: flex;
-      align-items: center;
+      margin-bottom: 1px;
       color: $darkshade100;
+    }
+    &__info {
+      font-size: 19px;
     }
   }
   &__color{
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
+    // для pp
+    // align-items: center; 
+    &__text {
+      padding-top: 9px;
+    }
     &:last-child{
       margin-bottom: 0;
     }
