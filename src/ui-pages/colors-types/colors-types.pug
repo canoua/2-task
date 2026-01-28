@@ -12,7 +12,7 @@
     {title: 'H1', titleClass: '', text: 'This one is the sub-section or widget title', textClass: 'h1'},
     {title: 'H2', titleClass: 'ct__title__number_2', text: 'Next one is the item title inside widgets', textClass: 'h2'},
     {title: 'H3', titleClass: 'ct__title__number_3', text: 'This is a label or CTA text', textClass: 'h3'},
-    {title: 'Body', titleClass: 'ct__title__number_4', text: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', textClass: ''},
+    {title: 'Body', titleClass: 'ct__title__number_4', text: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', textClass: 'ct__title__text_4'},
   ]
 
 doctype html
@@ -39,4 +39,4 @@ html(lang="en")
             each title in titles
               .ct__title 
                 .ct__title__number(class=title.titleClass) #{title.title}
-                .ct__title-text(class=title.textClass) #{title.text}
+                .ct__title__text(class=title.textClass) #{title.text}
