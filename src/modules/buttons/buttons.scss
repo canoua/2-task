@@ -4,7 +4,7 @@
 
 .button{
   font-family: 'Montserrat';
-  padding: 9px 21px;
+  padding: 10px 20px;
   border-radius: 22px;
   cursor: pointer;
   text-transform: uppercase;
@@ -44,6 +44,7 @@
     color: #BC9CFF;
     border: 2px solid #BC9CFF;
     background-color: #fff;
+    padding: 8px 19px;
     &-hover{
       border-color: rgba(188, 156, 255, .5);
       &-wrapper{
