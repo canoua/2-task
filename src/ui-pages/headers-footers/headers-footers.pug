@@ -10,8 +10,9 @@ html(lang="en")
     title headers and footers
   body 
     .headers-footers
-      .headers-footers__logo 
-        img(src=require("@images/ui-logo.svg"), alt="ui-logo")
+      //- .headers-footers__logo 
+      .container.headers-footers__container 
+        img(src=require("@images/ui-logo.svg"), alt="ui-logo").headers-footers__logo 
       .headers-footers__box 
         +header('header') 
       .headers-footers__box 

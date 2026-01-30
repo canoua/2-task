@@ -2,10 +2,14 @@
   &-footers{
     background: #F4F4F6;
     padding: 140px 0;
+    // padding: 89px 0;
+    &__container {
+      position: relative; 
+    }
     &__logo{
       position: absolute;
-      top: 30px;
-      left: 30px;
+      top: -110px;
+      left: -110px;
     }
     &__box{
       margin-bottom: 40px;
