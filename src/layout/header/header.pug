@@ -3,7 +3,7 @@ include ../modules/menu/menu.pug
 include ../modules/logo/logo.pug
 
 mixin header(variable)  
-  header.header 
+  header.header(class=variable) 
     .container 
       .header-inner 
         .header__box
@@ -15,7 +15,7 @@ mixin header(variable)
             +button-gradient('form-element-btn','Зарегистрироваться')
           else if variable=='header-2'
             a(href="#").user 
-              span.user__name Юлий Цезар
+              span.user__name Юлий Цезарь
           else 
             p mixin failed
         
