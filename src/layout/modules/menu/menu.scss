@@ -1,3 +1,8 @@
+.menu__navigation {
+  margin-bottom: 5px;
+  margin-left: 1px;
+}
+
 .list {
   display: flex;
   align-items: center; //29.10, поправка после замены картинок на иконочный шрифт
@@ -8,13 +13,45 @@
     //После того как вставил иконочный шрифт 
   }
   &__link {
-    font-weight: normal;
+    font-family: 'Montserrat';
+    font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
     color: $darkshade50;
+    display: inline-block;
     transition: .2s linear;
+    // position: relative;
+    // text-decoration: none;
+    // &:after {
+    //   content: 'hello'; 
+    //   display: block;
+    //   font-weight: bold;
+    //   height: 0;
+    //   overflow: hidden;
+    //   visibility: hidden;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
+
     &:hover{
-      text-shadow: 0 0 1px #333, 0 0 .65px #333;
+      // font-family: Montserrat;
+      // font-weight: 700;
+      // font-size: 14px;
+      // leading-trim: NONE;
+      // line-height: 100%;
+      // letter-spacing: 0%;
+//       font-family: Montserrat;
+// font-size: 14px;
+// line-height: 100%;
+// letter-spacing: 0%;
+text-shadow:
+  1.2px 0 0 rgba(0, 0, 0, 0.4),
+  0 0 0 rgba(0, 0, 0, 0.4),
+  0 1.2px 0 rgba(0, 0, 0, 0.4),
+  0 0 0 rgba(0, 0, 0, 0.4);
+      // text-shadow: 0 0 1px #333, 0 0 .65px #333;
     }
   }
   &__link {
