@@ -10,12 +10,13 @@ mixin header(variable)
           +logo
         .header__box.header__box_right
           +menu
-          if variable=='header'  
-            +button-white('form-element-btn','Войти')
-            +button-gradient('form-element-btn','Зарегистрироваться')
-          else if variable=='header-2'
-            a(href="#").user 
-              span.user__name Юлий Цезарь
-          else 
-            p mixin failed
+          .header__buttons-wrapper 
+            if variable=='header'  
+              +button-white('form-element-btn','Войти')
+              +button-gradient('form-element-btn','Зарегистрироваться')
+            else if variable=='header-2'
+              a(href="#").user 
+                span.user__name Юлий Цезарь
+            else 
+              p mixin failed
         

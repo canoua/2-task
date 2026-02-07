@@ -11,6 +11,13 @@
   &__btn{
     &-white{
       transition: .2s linear;
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 12px;
+      leading-trim: NONE;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
       &:hover{
         border-color: rgba(188, 156, 255, .5);
       }
@@ -20,6 +27,13 @@
       &:hover{
         opacity: 0.5;
       }
+    }
+  }
+  &__buttons {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      padding-bottom: 5px;
     }
   }
 }
