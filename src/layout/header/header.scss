@@ -7,6 +7,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .header__box_right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 772px;
+      padding-left: 1px;
+    }
   }
   &__btn{
     &-white{
@@ -36,12 +43,6 @@
       padding-bottom: 5px;
     }
   }
-}
-
-
-.header-inner .header__box_right{
-  display: flex;
-  align-items: center;
 }
 
 .class{
