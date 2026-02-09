@@ -20,8 +20,8 @@ mixin text-field-masked(className, title, placeholder)
       h3.h3=title
     +input-card('card__input-masked', placeholder)
 
-mixin subscription-text-field(title, placeholder)
-  .subscription-text-field
+mixin subscription-text-field(className, title, placeholder)
+  .subscription-text-field(class=className)
     .subscription-text-field__header
       h3.h3=title
     .subscription-text-field__input-wrapper 

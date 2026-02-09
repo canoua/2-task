@@ -17,5 +17,23 @@
         margin-bottom: 0;
       }
     }
+    &__input {
+      width: 260px;
+      & > .subscription-text-field__input-wrapper {
+        & > .subscription-text-field__input {
+          padding-top: 13px;
+          padding-bottom: 14px;
+          padding-left: 14px;
+          padding-right: 16px;
+          &::placeholder {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0%;
+          }
+        }
+      }
+    }
   }
 }
