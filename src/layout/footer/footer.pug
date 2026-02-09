@@ -46,11 +46,11 @@ mixin footer
 mixin footer-mobile
   footer.footer-mobile 
     .footer-mobile-inner
-      .footer__logo
+      .footer-mobile__logo
         +logo 
       .footer__copy__item.footer-mobile__copy__item 
         span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
-      .footer__copy__social 
+      .footer__copy__social.footer-mobile__copy__social  
         each link in links  
           a.footer__copy__link(href="#") 
             img(class=link.social src=link.src, alt=link.social)
