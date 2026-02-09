@@ -22,6 +22,16 @@
     &:nth-child(3) {
       margin-right: 20.5px;
     }
+    &:nth-child(4) {
+      margin-right: 19.3px;
+    }
+    &:nth-child(5) {
+      & > .list__link.list__link_drop {
+        & > .material-icons.material-icons-expand.material-icons-expand-menu {
+          right: -0.5px;
+        }
+      }
+    }
   }
   &__link {
     font-family: 'Montserrat';
@@ -48,6 +58,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      padding-right: 24px;
+      & > .material-icons.material-icons-expand.material-icons-expand-menu {
+        position: absolute;
+        right: 0;
+        top: -5px;
+      }
     }
   }
 }
