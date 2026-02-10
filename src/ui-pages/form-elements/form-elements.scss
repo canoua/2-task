@@ -1,9 +1,9 @@
 .fe{
   position: relative;
-  padding: 143px 0 131px 0;
+  padding: 145px 0 131px 0;
   &__logo{
     position: absolute;
-    top: -113px;
+    top: -115px;
     left: -110px;
   }
   &-inner{
@@ -141,6 +141,24 @@
         &-default{
           width: 276px;
         }
+      }
+    }
+  }
+}
+
+
+//для страницы form-elements
+.card__input.card{
+  &__input{
+    &-hover{
+      background: #FFFFFF;
+      border: 1px solid $darkshade50;
+      transition: all .3s;
+      &::placeholder{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $darkshade75;
       }
     }
   }
