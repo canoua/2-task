@@ -9,7 +9,7 @@
   &-inner{
     &-1{
       display: grid;
-      grid-template-columns: 320px 269px 320px;
+      grid-template-columns: 321px 269px 320px;
       grid-column-gap: 127px;
       margin-bottom: 100px;
       position: relative;
@@ -30,7 +30,26 @@
   &__text-field-default,
   &__text-field-hover,
   &__dropdown_unactive {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+    padding-left: 1px;
+  }
+  &__text-field-hover {
+    position: relative;
+    & > .text-field-default__header {
+      margin-bottom: 5px;
+      & > .text-field-default__state {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: right;
+        text-transform: uppercase;
+        right: 0px;
+        top: -1px;
+        letter-spacing: -0.28px;
+      }
+    }
   }
   &__text-field-masked {
     margin-bottom: 40px;
@@ -113,6 +132,8 @@
   border-bottom-right-radius: 0; 
 }
 
+
+
 .column{
   &-2{
     width: 711px;
@@ -155,12 +176,28 @@
       border: 1px solid $darkshade50;
       transition: all .3s;
       &::placeholder{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        color: $darkshade75;
+        // font-weight: 400;
+        // font-size: 14px;
+        // line-height: 24px;
       }
     }
+  }
+}
+
+.card__input-hover {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 14.5px;
+  padding-right: 15px;
+  &::placeholder {
+    color: $darkshade75;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    // letter-spacing: 0%;
   }
 }
 

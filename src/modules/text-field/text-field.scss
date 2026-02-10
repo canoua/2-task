@@ -6,7 +6,7 @@
     justify-content: space-between;
     margin-bottom: 6px;
     & > .h3 {
-      padding-left: 1px;
+      padding-left: 0.5px;
     }
   }
   &__state{
@@ -16,7 +16,7 @@
     text-transform: uppercase;
     color: $darkshade50;
     position: absolute;
-    right: -1px;
+    right: 0;
     top: -5px;
   }
 }
@@ -35,10 +35,10 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $darkshade50;
+    // position: absolute;
+ 
   }
 }
-
-
 
 .text-field-masked{
   &__header {
