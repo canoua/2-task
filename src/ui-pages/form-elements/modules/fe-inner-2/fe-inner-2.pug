@@ -18,7 +18,7 @@ mixin fe-inner-2
                   .dropdown-list__count_minus -
                   .dropdown-list__count_number #{dropdownListItem.number}
                   .dropdown-list__count_plus +
-    .colummn 
+    .colummn.column-2 
       .dropdown-expanded.fe__item 
         +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', 'Сколько гостей')
         .fe__dropdown__content
@@ -40,7 +40,7 @@ mixin fe-inner-2
                   .dropdown-list__count_plus +
           .dropdown-btns 
             button.dropdown__submit(type="submit") Применить 
-    .column
+    .column.column-3
       .dropdown-expanded-guests.fe__item.fe__dropdown.dropdown-expanded-active  
         +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', '3 гостя')
         .fe__dropdown__content

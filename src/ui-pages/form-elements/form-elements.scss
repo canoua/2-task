@@ -1,3 +1,5 @@
+@import 'modules/fe-inner-2/fe-inner-2.scss';
+
 .fe{
   position: relative;
   padding: 145px 0 131px 0;
@@ -133,14 +135,11 @@
 }
 
 .column{
-  &:nth-child(2) {
+  &-2 {
     margin-left: -0.5px;  
   }
-  &-2{
-    width: 711px;
-  }
-  &-3{
-    width: 100%;
+  &-3 {
+    margin-left: -5px;
   }
 }
 
@@ -176,11 +175,6 @@
       background: #FFFFFF;
       border: 1px solid $darkshade50;
       transition: all .3s;
-      &::placeholder{
-        // font-weight: 400;
-        // font-size: 14px;
-        // line-height: 24px;
-      }
     }
   }
 }
@@ -195,10 +189,8 @@
     font-family: Montserrat;
     font-weight: 400;
     font-size: 14px;
-    leading-trim: NONE;
     line-height: 24px;
     letter-spacing: -0.2px;
-    // letter-spacing: 0%;
   }
 }
 
