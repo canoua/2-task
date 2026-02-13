@@ -1,4 +1,5 @@
 @import 'modules/fe-inner-2/fe-inner-2.scss';
+@import 'modules/fe-inner-3/fe-inner-3.scss';
 
 .fe{
   position: relative;
@@ -54,11 +55,13 @@
     }
   }
   &__text-field-masked {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+    padding-left: 1px;
   }
   &__date-dropdown-wrapper {
     display: flex;
     justify-content: space-between;
+    padding-left: 1px;
   }
   &__date-dropdown-wrapper,
   &__filter-date-dropdown {
@@ -112,7 +115,11 @@
     width: 266px;
   }
   &__dropdown {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    padding-left: 1px;
+    // & > .h3 {
+
+    // }
     &__content {
       border: 1px solid rgba(31, 32, 65, .25);
       padding: 7px 7px 7px 15px;
@@ -181,7 +188,7 @@
 
 .card__input-hover {
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
   padding-left: 14.5px;
   padding-right: 15px;
   &::placeholder {
