@@ -1,3 +1,4 @@
+@import 'modules/fe-inner-1/fe-inner-1.scss';
 @import 'modules/fe-inner-2/fe-inner-2.scss';
 @import 'modules/fe-inner-3/fe-inner-3.scss';
 
@@ -65,6 +66,7 @@
   }
   &__filter-date-dropdown {
     margin-bottom: 44px;
+    padding-left: 1px;
   }
   &__date-dropdown-wrapper {
     margin-bottom: 38px;
@@ -119,6 +121,11 @@
   &__range-slider {
     margin-bottom: 40.56px;
     width: 266px;
+    & > .range-slider__header {
+      padding-left: 0.5px;
+      margin-top: -2px;
+      margin-bottom: 23px;
+    }
   }
   &__dropdown {
     margin-bottom: 25px;
@@ -133,6 +140,7 @@
       box-shadow: 0px 10px 20px rgba(31, 32, 65, .05);
     }
   }
+
 }
 
 .fe__dropdown.dropdown-expanded-active > .card__input-wrapper {
@@ -148,7 +156,6 @@
     margin-left: -5px;
   }
 }
-
 
 .dropdown-expanded-active > .card__input-wrapper {
   border-bottom-left-radius: 4px;
@@ -198,7 +205,6 @@
     letter-spacing: -0.2px;
   }
 }
-
 
 .radiobuttons{
   margin-bottom: 36px;

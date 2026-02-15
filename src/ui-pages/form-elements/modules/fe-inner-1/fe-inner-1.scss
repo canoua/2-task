@@ -1,0 +1,19 @@
+.fe {
+  &__subscription-text-field {
+    width: 267px;
+    & > .subscription-text-field__header {
+      padding-left: 1px;
+      margin-bottom: 6px;
+    }
+  }
+  &__filter-date-dropdown {
+    &__material-icons-expand {
+      position: absolute;
+      right: 8px;
+      top: 11px;
+    }
+    & > .card__input-wrapper {
+      position: relative;
+    }
+  }
+} 

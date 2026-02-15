@@ -52,13 +52,19 @@
   &__input {
     height: 100%;
     width: 100%;
-    padding: 14px 16px;
+    padding-top: 13px;
+    padding-right: 16px;
+    padding-bottom: 14px;
+    padding-left: 14px;
     box-sizing: border-box;
     border-radius: 4px;
     border: none;
     &::placeholder {
+      font-family: 'Montserrat';
+      font-weight: 400;
       font-size: 14px;
       line-height: 24px;
+      letter-spacing: 0%;
       color: $darkshade25;
     }   
     &-wrapper {
