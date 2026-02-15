@@ -15,16 +15,22 @@
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     color: #FFFFFF;
     border: transparent;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 21px;
+    font-size: 11.5px;
     &-hover{
       opacity: 0.5;
     }
     &-wrapper{
       display: flex;
       margin-bottom: 30px;
+      padding-left: 1px;
       width: 233px;
     }
     &-big{
-      padding: 15px 20px;
+      padding: 14.5px 20px;
       font-weight: 700;
       font-size: 12px;
       line-height: 15px;
@@ -34,9 +40,9 @@
       border-radius: 22px;
       border: none;
       cursor: pointer;
-      width: 100%;
+      width: 320px;
       position: relative;
-      margin-bottom: 40px;
+      margin-bottom: 42px;
     }
   }
   &-border{
@@ -47,7 +53,7 @@
     &-hover{
       border-color: rgba(188, 156, 255, .5);
       &-wrapper{
-        margin-bottom: 30px;
+        margin-bottom: 28px;
       }
     }
   }
@@ -86,7 +92,8 @@
       color: $darkshade50;
     }
     &-wrapper{
-      margin-bottom: 30px;
+      margin-bottom: 29px;
+      padding-left: 1.5px;
     }
   }
 }
