@@ -15,6 +15,7 @@ module.exports = {
       return `${filepath}/[name][ext]`;
     }
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
