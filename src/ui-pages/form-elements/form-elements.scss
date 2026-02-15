@@ -103,7 +103,18 @@
   &__button {
     &-gradient {
       height: 44px;
-      margin-right: 20px;
+      width: 101px;
+      margin-right: 18px;
+      padding-top: 16px;
+      padding-bottom: 15px;
+      padding-left: 19px;
+      padding-right: 21px;
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
     }
     &-white {
       height: 44px;
@@ -119,7 +130,7 @@
     }
   }
   &__range-slider {
-    margin-bottom: 40.56px;
+    margin-bottom: 45.56px;
     width: 266px;
     & > .range-slider__header {
       padding-left: 0.5px;
