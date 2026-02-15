@@ -7,7 +7,7 @@
 .input:checked + label,
 .input:not(:checked) + label{
     position: relative;
-    padding-left: 28px;
+    padding-left: 30px;
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
@@ -18,7 +18,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 1px;
     width: 18px;
     height: 18px;
     border-radius: 100%;
@@ -40,7 +40,7 @@
     height: 12px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 4px;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;

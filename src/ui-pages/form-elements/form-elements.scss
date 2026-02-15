@@ -63,28 +63,34 @@
     justify-content: space-between;
     padding-left: 1px;
   }
-  &__date-dropdown-wrapper,
   &__filter-date-dropdown {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
+  }
+  &__date-dropdown-wrapper {
+    margin-bottom: 38px;
   }
   &__checkbox {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     &-buttons {
       display: flex;
       flex-direction: column;
-      margin-bottom: 40.88px;
+      margin-bottom: 35.88px;
       &__header {
         margin-bottom: 16.56px;
       }
     }
   }
   &__toggle {
-    margin-bottom: 40.44px;
+    margin-bottom: 39.44px;
+    // margin-bottom: 40.44px;
+    &__header {
+      margin-bottom: 10px;
+    }
   }
   &__button-like {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     &__header {
-      margin-bottom: 16px;
+      margin-bottom: 17px;
     }
   }
   &__buttons {
@@ -117,9 +123,6 @@
   &__dropdown {
     margin-bottom: 25px;
     padding-left: 1px;
-    // & > .h3 {
-
-    // }
     &__content {
       border: 1px solid rgba(31, 32, 65, .25);
       padding: 7px 7px 7px 15px;
@@ -130,10 +133,6 @@
       box-shadow: 0px 10px 20px rgba(31, 32, 65, .05);
     }
   }
-}
-
-.fe__button-like__header {
-  margin-bottom: 16px;
 }
 
 .fe__dropdown.dropdown-expanded-active > .card__input-wrapper {
@@ -174,7 +173,6 @@
   }
 }
 
-
 //для страницы form-elements
 .card__input.card{
   &__input{
@@ -207,6 +205,10 @@
   &__header{
     margin-bottom: 16px;
   }
+}
+
+.radiobuttons.fe__item {
+  margin-bottom: 43px;
 }
 
 .rich-checkbox__list_item{

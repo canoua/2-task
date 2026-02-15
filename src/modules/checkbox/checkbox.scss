@@ -22,8 +22,8 @@
     }
     &__input+label::before{
       content: '';
-      min-width: 20px;
-      height: 20px;
+      min-width: 18px;
+      height: 18px;
       border: 1px solid $darkshade25;
       border-radius: 4px;
       margin-right: 10px;
@@ -46,7 +46,8 @@
       color: $darkshade50;
       cursor: pointer;
       &_2 {
-        padding-left: 31px;
+        padding-left: 30px;
+        margin-top: -1px;
       }
       &-rich{
         &-title{
