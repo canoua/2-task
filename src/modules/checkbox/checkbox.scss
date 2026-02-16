@@ -64,6 +64,7 @@
           color: $darkshade50;
           padding-left: 31px;
           margin-bottom: 10px;
+          width: 237px;
         }
       }
     }
@@ -73,5 +74,17 @@
     &__header{
       margin-bottom: 16.56px;
     }
+  }
+}
+
+
+.checkbox__list__label-rich-title {
+  & > .checkbox__list__input+label{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    margin-bottom: 5px;
   }
 }

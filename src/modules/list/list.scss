@@ -2,11 +2,14 @@
   &__list{
     &__item{
       position: relative;
-      padding-left: 20px;
+      padding-left: 21px;
+      // padding-left: 20px;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
       color: $darkshade75;
+      margin-bottom: 10px;
+      width: 253px;
       &::before{
         content:'';
         width: 10px;
@@ -17,6 +20,9 @@
         left: 0;
         border-radius: 100%;
         background: $darkshade25;
+      }
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

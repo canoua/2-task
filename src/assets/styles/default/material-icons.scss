@@ -69,7 +69,8 @@
   background-clip: text;
 }
 
-.material-icons.material-icons-reverse{
+.material-icons.material-icons-reverse,
+.material-icons.material-icons-expand.material-icons-expand-reverse{
   transform: rotate(180deg);
 }
 
