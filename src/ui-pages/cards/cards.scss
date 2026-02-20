@@ -17,6 +17,17 @@
   }
 }
 
+.ui-cards {
+  & > .container {
+    position: relative;
+    & > .ui-cards__logo{
+      top: -120px;
+      left: -110px;
+    }
+  }
+}
+      
+
 .col {
   margin-right: 40px;
   &_1, &_2 {
