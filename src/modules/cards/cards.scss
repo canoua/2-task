@@ -15,7 +15,7 @@
     font-size: 24px;
     line-height: 29px;
     color: #1F2041;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     &-2 {
       font-weight: 700;
       font-size: 12px;
@@ -111,12 +111,13 @@
 
 .card-landing {
   &__dropdown {
-    margin-bottom: 30.44px;
+    // margin-bottom: 30.44px;
   }
   &__date-dropdown-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20.56px;
+    // margin-bottom: 20.56px;
+    margin-bottom: 18px;
   } 
 }
 

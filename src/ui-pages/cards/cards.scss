@@ -26,8 +26,20 @@
     }
   }
 }
-      
 
+.ui-card {
+  & > form {
+    & > .card {
+      padding: 39px 29px;
+      & > .card-inner {
+        & > .card__title {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+} 
+      
 .col {
   margin-right: 40px;
   &_1, &_2 {
