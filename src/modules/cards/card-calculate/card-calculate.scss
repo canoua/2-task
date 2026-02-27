@@ -1,9 +1,11 @@
 .card-calculate {
+  padding: 40px 29px;
   &__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: baseline;
+    // margin-bottom: 20px;
+    margin-bottom: 22px;
   }
   &__room {
     &__icon {
@@ -98,6 +100,12 @@
     }
     &__info {
       position: relative;
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0%;
+
       &::after {
         content: '';
         position: absolute;
@@ -115,6 +123,15 @@
   &__date-dropdown-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20.56px;
+    margin-bottom: 17.56px;
+    // margin-bottom: 20.56px;
   }
 }
+
+.card-calculate {
+  & > .card-inner {
+    & > .dropdown-expanded-guests__form {
+      margin-bottom: 18px;
+    }
+  }
+}   

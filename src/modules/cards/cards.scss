@@ -108,6 +108,11 @@
       font-size: 14px;
       line-height: 18px;
       color: #000000;
+      margin-top: -1px;
+      padding-left: 1px;
+    }
+    & > .card-btn-white {
+      padding: 14px 24px;
     }
   }
 }
@@ -154,11 +159,19 @@
 .card-sign-up {
   padding-top: 39px;
   padding-left: 29px;
+  padding-right: 29px;
+  padding-bottom: 29px;
   &__date-birthday {
     margin-bottom: 21.5px;
   }
+  &__email {
+    margin-bottom: 4px;
+  }
+  &__password {
+    margin-bottom: 2px;
+  }
   &__toggle {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   & > .card-inner {
     & > .card__title {
@@ -166,6 +179,9 @@
     }
     & > .radiobutton-wrapper {
       margin-bottom: 27px;
+    }
+    & > .button-default-big {
+      margin-bottom: 30px;
     }
   } 
 }

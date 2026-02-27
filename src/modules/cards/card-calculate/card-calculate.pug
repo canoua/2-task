@@ -14,10 +14,10 @@ mixin card-calculate(dropdownClass)
             span.card-calculate__price__values 9 990₽
             span.card-calculate__price__duration в сутки
         .card-calculate__date-dropdown-wrapper
-          +date-dropdown('input1','прибытие', 'ДД.ММ.ГГГГ')
-          +date-dropdown('input2','выезд', 'ДД.ММ.ГГГГ')
+          +date-dropdown('input1','прибытие', '19.08.2019')
+          +date-dropdown('input2','выезд', '23.08.2019')
         .dropdown-page.dropdown-expanded-guests__form
-          +dropdown('dropdown-page card-landing__dropdown-js', 'гости', 'Сколько гостей')
+          +dropdown('card-landing__dropdown-js', 'гости', '3 гостя')
           .fe__dropdown__content
             - 
               const guests = [
