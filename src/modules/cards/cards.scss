@@ -113,13 +113,9 @@
 }
 
 .card-landing {
-  &__dropdown {
-    // margin-bottom: 30.44px;
-  }
   &__date-dropdown-wrapper {
     display: flex;
     justify-content: space-between;
-    // margin-bottom: 20.56px;
     margin-bottom: 18px;
   } 
 }
@@ -146,12 +142,20 @@
 }
 
 .inputs-wrapper.card-sign-up__inputs-wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  & > .text-field-default {
+    margin-bottom: 4px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .card-sign-up {
+  padding-top: 39px;
+  padding-left: 29px;
   &__date-birthday {
-    margin-bottom: 20px;
+    margin-bottom: 21.5px;
   }
   &__toggle {
     margin-bottom: 20px;
@@ -159,6 +163,9 @@
   & > .card-inner {
     & > .card__title {
       margin-bottom: 15px;
+    }
+    & > .radiobutton-wrapper {
+      margin-bottom: 27px;
     }
   } 
 }
