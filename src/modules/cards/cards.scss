@@ -5,7 +5,8 @@
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px 0px #00000033;
+  // box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px 30px;
   &-inner {
@@ -208,4 +209,34 @@
   top: 50%;
   transform: translate(0, -50%) rotate(90deg);
   cursor: pointer;
+}
+
+.card.card-sign-in {
+  padding-right: 29.5px;
+  padding-left: 29.5px;
+  padding-bottom: 31px;
+  padding-top: 39px;
+  & > .card-inner {
+    & > .card__title {
+      margin-bottom: 15px;
+    }
+    & > .card-sign-in__inputs-wrapper {
+      & > .text-field-default {
+        &:first-child {
+          margin-bottom: 4px;
+        }
+      }
+    }
+    & > .card__note {
+      margin-left: -1px;
+      margin-right: -1px;
+      & > .card-btn-white {
+        padding: 14px 16.5px;
+        margin-right: -2px;
+      }
+    }
+    & > .button-default-big {
+      margin-bottom: 30px;
+    }
+  }
 }

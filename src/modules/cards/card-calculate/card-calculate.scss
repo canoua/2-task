@@ -1,5 +1,8 @@
 .card-calculate {
-  padding: 40px 29px;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-left: 29px;
+  padding-right: 29px;
   &__header {
     display: flex;
     justify-content: space-between;
@@ -58,7 +61,8 @@
   &__result {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+    padding-left: 1px;
     &__item {
       font-family: 'Montserrat';
       font-style: normal;
@@ -85,6 +89,7 @@
   }
   &__count {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
     font-family: 'Montserrat';
@@ -93,9 +98,20 @@
     font-size: 14px;
     line-height: 24px;
     color: $darkshade75;
+    &:first-child {
+      margin-bottom: 10px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 13px;
+    }
+    &:last-child {
+      & > span:nth-child(2) {
+        margin-top: -17px;
+      }
+    }
     span {
       &:first-child {
-        width: 214px;
+        width: 214px;   
       }
     }
     &__info {
@@ -105,19 +121,22 @@
       font-size: 14px;
       line-height: 18px;
       letter-spacing: 0%;
-
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 20px;
         height: 20px;
         right: -25px;
-        top: 3px;
-        background-image: url('@images/cards/info.png');
+        top: -2px;
+        background-image: url(assets/images/cards/info.png);
         background-repeat: no-repeat;
         background-size: contain;
         cursor: pointer;
       }
+    }
+    &-wrapper {
+      padding-left: 1px;
+      margin-bottom: 20px;
     }
   }
   &__date-dropdown-wrapper {
