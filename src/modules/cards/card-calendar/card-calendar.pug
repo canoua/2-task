@@ -10,7 +10,7 @@ mixin card-calendar
         main.card-calendar__main 
           .card-calendar__main__days 
             - 
-              var days = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс']
+              var days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
             each day in days 
               div.calendar__item #{day}
           .card-calendar__main__numbers
@@ -49,6 +49,5 @@ mixin card-calendar
             div.calendar__item.card-calendar__main__number 30
             div.calendar__item.card-calendar__main__number 31
             div.calendar__item.card-calendar__main__number 1
-        .card-calendar__footer 
-          button.card-calendar__btn очистить
-          button.card-calendar__btn применить
+        button.card-calendar__btn.card-calendar__btn__reset очистить
+        button.card-calendar__btn.card-calendar__btn__confirm применить

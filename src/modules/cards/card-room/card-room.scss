@@ -96,13 +96,13 @@
 .card-room__slide {
   position: relative;
   &::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 42px;
-  height: 100%;
-  background-image: url('@images/cards/effect-slide.png');
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 100%;
+    background-image: url('@images/cards/effect-slide.png');
   }
   &::after {
     content: '';

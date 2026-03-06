@@ -1,8 +1,9 @@
 .card-calendar {
   width: 320px;
-  padding: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-shadow: 0 10px 20px 0 rgba(31, 32, 65, 0.05);
+  position: relative;
+  padding: 19px 20px 35px 23px;
+  border: 1px solid rgba(31, 32, 65, .25);
+  box-shadow: 0 10px 20px 0 rgba(31, 32, 65, .05);
   &__header {
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@
       font-size: 12px;
       text-align: center;
       color: $purple;
-      text-transform: uppercase;
+      // text-transform: uppercase;
     }
     &__numbers {
       display: grid;
@@ -74,10 +75,6 @@
       }
     }
   }
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-  }
   &__btn {
     font-family: 'Montserrat';
     font-size: 12px;
@@ -87,6 +84,16 @@
     color: $purple;
     background-color: #fff;
     border: none;
+    &__reset {
+      position: absolute;
+      bottom: 19px;
+      left: 19.5px;
+    }
+    &__confirm {
+      position: absolute;
+      bottom: 19px;
+      right: 18.5px;
+    }
   }
 }
 
