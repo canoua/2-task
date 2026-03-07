@@ -13,9 +13,9 @@ mixin card-calendar
             each day in days 
               div.calendar__item #{day}
           .card-calendar__main__numbers
-            div.calendar__item.card-calendar__main__number 29
-            div.calendar__item.card-calendar__main__number 30
-            div.calendar__item.card-calendar__main__number 31
+            div.calendar__item.card-calendar__main__number.card-calendar__main__number_unactual 29
+            div.calendar__item.card-calendar__main__number.card-calendar__main__number_unactual 30
+            div.calendar__item.card-calendar__main__number.card-calendar__main__number_unactual 31
             div.calendar__item.card-calendar__main__number 1
             div.calendar__item.card-calendar__main__number 2
             div.calendar__item.card-calendar__main__number 3
@@ -47,6 +47,6 @@ mixin card-calendar
             div.calendar__item.card-calendar__main__number 29
             div.calendar__item.card-calendar__main__number 30
             div.calendar__item.card-calendar__main__number 31
-            div.calendar__item.card-calendar__main__number 1
+            div.calendar__item.card-calendar__main__number.card-calendar__main__number_unactual 1
         button.card-calendar__btn.card-calendar__btn__reset очистить
         button.card-calendar__btn.card-calendar__btn__confirm применить
