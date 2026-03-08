@@ -9,6 +9,11 @@
     font-size: 19px;
     font-weight: 700;
     color: #1f2041;
+    &__icon {
+      margin-bottom: 1px;
+      font-size: 14px;
+      margin-right: 4px;
+    }
     &__number {
       margin-right: 2px;
     }
@@ -91,11 +96,11 @@
 }
 
 .dot {
-  width: 7.5px;
-  height: 7.5px;
+  width: 7.45px;
+  height: 7.45px;
   border: 1px solid #fff;
   border-radius: 100%;
-  margin-right: 3.75px;
+  margin-right: 3.7px;
   cursor: pointer;
   &:last-child {
     margin-right: 0;
@@ -105,7 +110,7 @@
   }
 }
 
-.card-room__slide {
+.card-room-arrow__slide  {
   position: relative;
   &::before {
     content: '';

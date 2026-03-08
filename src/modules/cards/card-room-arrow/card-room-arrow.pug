@@ -1,8 +1,8 @@
 mixin card-room-arrow 
-  .card.card-room
+  .card.card-room.card-room-arrow 
     .card-inner.card-room-inner
       .card-room__slider
-        .slide.card-room__slide 
+        .slide.card-room__slide.card-room-arrow__slide 
           img(src=require('@images/cards/slide-2.png'), alt="slide-1")
         .card-room__pagination
           .dot.dot_active 
@@ -14,8 +14,9 @@ mixin card-room-arrow
       .card-room__content
         .card-room__content__header 
           h3.card-room__title 
-            .card-room__title__number № 888
-            .card-room__title__text люкс
+            span.card-room__title__icon №
+            span.card-room__title__number 888
+            span.card-room__title__text люкс
           .card-room__price 
             .card-room__price__number 9 900₽ 
             .card-room__price__text в сутки
