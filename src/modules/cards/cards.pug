@@ -3,7 +3,7 @@ include ../text-field/text-field.pug
 include ../radiobuttons/radiobuttons.pug
 include ../toggle/toggle.pug
 
-mixin card-sign-up 
+mixin card-sign-up(page) 
   form(action="#") 
     .card.card-sign-up 
       .card-inner 
@@ -16,7 +16,10 @@ mixin card-sign-up
         +text-field-default('card-sign-up__email', 'данные для входа в сервис', '', 'Email')
         +text-field-default('card-sign-up__password', '', '', 'Пароль')
         +toggle('card-sign-up__toggle', 'Получать спецпредложения')
-        +btn-gradient-arrow('', 'перейти к оплате')
+        if (page=="sign-up")
+          +btn-gradient-arrow('', 'зарегистрироваться')
+        else 
+          +btn-gradient-arrow('', 'перейти к оплате')
         +card__note('sign-up')
 
 mixin card-sign-in
