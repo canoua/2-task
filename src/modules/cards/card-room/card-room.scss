@@ -66,14 +66,15 @@
   }
   &__price {
     color: rgba(31, 32, 65, 0.5);
-    margin-top: 4px;
+    padding-top: 6px;
     &__number {
       font-family: 'Montserrat';
       font-weight: 700;
       font-size: 14px;
       line-height: 18px;
       letter-spacing: 0%;
-      margin-right: 5px;
+      margin-right: 3px;
+      margin-top: -2px;
     }
     &__text {
       font-weight: 400;
@@ -84,6 +85,8 @@
     color: rgba(31, 32, 65, 0.5);
     font-size: 14px;
     line-height: 129%;
+    padding-top: 2px;
+    padding-right: 2px;
     &__number {
       font-weight: 700;
       margin-right: 5px;
