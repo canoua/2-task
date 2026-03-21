@@ -2,6 +2,7 @@
   display: block;
   padding: 70px 0;
   height: 830px;
+  background-image: url('./assets/images/landing-bg.png');
 }
 
 .card-landing {
@@ -25,4 +26,25 @@
   padding-bottom: 14.5px;
   padding-left: 17px;
   padding-right: 20px;
+}
+
+main.main.main-landing {
+  & > .container {
+    position: relative;
+    height: 100%;
+  }
+}
+
+.main-info {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+  width: 297px;
+  position: absolute;
+  right: -6px;
+  bottom: -49px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: right;
 }
