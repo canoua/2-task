@@ -4,6 +4,7 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    margin-right: 45px;
     z-index: -10;
     &::before {
       content: '';
@@ -47,8 +48,8 @@
     &__info {
       position: absolute;
       left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      top: 48%;
+      transform: translate(-50%, -52%);
       z-index: 1011;
       text-align: center;
     }
