@@ -17,40 +17,40 @@ mixin footer
   footer.footer
     .footer__box 
       .container 
-        .footer-inner
+        .footer__inner
           .footer__info
             .footer__logo 
               +logo
-            span.footer__info__block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
+            span.footer__info-block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
           each item, i in _items
-            .footer__box__item(class=`footer__box__item_${i+1}`) 
+            .footer__box-item(class=`footer__box-item-${i+1}`) 
               h3.footer__title #{item.title}
               nav.footer__navigation
                 each link in item.links
-                  li.footer__list__item
-                    a(href="#").footer__list__link #{link}
-          .footer__box__item.footer__box__item_4 
+                  li.footer__list-item
+                    a(href="#").footer__list-link #{link}
+          .footer__box-item.footer__box-item-4 
             h3.footer__title Подписка
-            .footer__box__item__info Получайте специальные предложения и новости сервиса
+            .footer__box-item-info Получайте специальные предложения и новости сервиса
             +subscription-text-field('headers-footers__input', '', 'Email')
-    .footer__copy
+    .footer-copy
       .container
-        .footer__copy-inner 
-          .footer__copy__item 
-            span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
-          .footer__copy__social 
+        .footer-copy__inner 
+          .footer-copy__item 
+            span.footer-copy__text Copyright © 2018 Toxin отель. Все права защищены.
+          .footer-copy__social 
             each link in links  
-              a.footer__copy__link(href="#") 
+              a.footer-copy__link(href="#") 
                 img(class=link.social src=link.src, alt=link.social)
 
 mixin footer-mobile
   footer.footer-mobile 
-    .footer-mobile-inner
+    .footer-mobile__inner
       .footer-mobile__logo
         +logo 
-      .footer__copy__item.footer-mobile__copy__item 
-        span.footer__copy__text Copyright © 2018 Toxin отель. Все права защищены.
-      .footer__copy__social.footer-mobile__copy__social  
+      .footer-copy__item.footer-mobile__copy-item 
+        span.footer-copy__text Copyright © 2018 Toxin отель. Все права защищены.
+      .footer-copy__social.footer-mobile__copy-social  
         each link in links  
-          a.footer__copy__link(href="#") 
+          a.footer-copy__link(href="#") 
             img(class=link.social src=link.src, alt=link.social)

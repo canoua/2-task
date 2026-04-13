@@ -5,7 +5,7 @@ include ../modules/logo/logo.pug
 mixin header(variable)  
   header(class=variable === 'header' ? 'header' : 'header header-2') 
     .container 
-      .header-inner 
+      .header__inner 
         .header__box
           +logo
         //- чтобы исключить дубль класса

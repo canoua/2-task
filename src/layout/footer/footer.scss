@@ -1,6 +1,6 @@
 .footer {
   background-color: #fff;
-  &-inner{
+  &__inner{
     display: flex;
   }
   &__logo{
@@ -16,10 +16,10 @@
     color: $darkshade100;
   }
   &__list{
-    &__item{
+    &-item{
       margin-bottom: 19px;
     }
-    &__link{
+    &-link{
       font-size: 14px;
       line-height: 17px;
       color: $darkshade50;
@@ -32,16 +32,16 @@
     border-bottom: 1px solid #e5e5e5;
     padding-top: 100px;
     padding-bottom: 81px;
-    &__item { 
+    &-item { 
       max-width: 316px;
       margin-top: 4px;
-      &_1 {
+      &-1 {
         margin-right: 58px;
       }
-      &_2 {
+      &-2 {
         margin-right: 93px;
       }
-      &_4 {
+      &-4 {
         margin-right: 0;
         margin-left: 52px;
         width: 259px;
@@ -49,7 +49,7 @@
           margin-bottom: 18px;
         }
       }
-      &__info {
+      &-info {
         font-size: 14px;
         line-height: 24px;
         color: $darkshade75;
@@ -60,17 +60,17 @@
   &__info{
     max-width: 260px;
     margin-right: 47px;
-    &__block{
+    &-block{
       font-size: 14px;
       line-height: 24px;
       color: $darkshade75;
     }
   }
-  &__copy {
+  &-copy {
     padding-top: 25px;
     padding-bottom: 20px;
     box-shadow: 0px 10px 20px 0px #1F20410D;
-    &-inner {
+    &__inner {
       display: flex;
       justify-content: space-between;
     }
@@ -105,21 +105,21 @@
     &__logo {
       margin-bottom: 15px;
     }
-    &-inner{
+    &__inner{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
     }
     &__copy{
-      &__item{
+      &-item{
         margin-bottom: 25px;
-        & > .footer__copy__text {
+        & > .footer__copy-text {
           padding-left: 1px;
         }
       }
-      &__social {
-        & > .footer__copy__link {
+      &-social {
+        & > .footer__copy-link {
           &:nth-child(2) {
             margin-top: 1px;
           }
