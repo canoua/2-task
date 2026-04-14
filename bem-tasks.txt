@@ -3,3 +3,6 @@ done
   footer.pug
   header.pug
   /layout
+  /modules/buttons.pug
+  /modules/checkbox
+checked
