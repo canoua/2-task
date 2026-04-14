@@ -19,7 +19,7 @@
     height: 40px;
     justify-content: center;
     align-items:center;
-    &-active{
+    &_active{
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       border-radius: 22px;
       color: #fff;
@@ -31,7 +31,7 @@
       padding-top: 1px; 
       padding-left: 2px;
     }
-    &-arrow{
+    &_arrow{
       background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
       border-radius: 22px;
     }

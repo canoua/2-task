@@ -5,4 +5,13 @@ done
   /layout
   /modules/buttons.pug
   /modules/checkbox
+  /modules/pagination
+  /modules/radiobuttons.pug
+  /modules/range-slider.pug
+  /modules/review.pug
+  /modules/toggle.pug
 checked
+  /modules/dropdown.pug
+  /modules/information.pug
+  /modules/input-card.pug
+  /modules/text-field.pug
