@@ -7,11 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    // margin-bottom: 20px;
     margin-bottom: 22px;
   }
   &__room {
-    &__icon {
+    &-icon {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
@@ -20,7 +19,7 @@
       color: $darkshade100;
       margin-right: 5px;
     }
-    &__number {
+    &-number {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
@@ -29,7 +28,7 @@
       color: $darkshade100;
       margin-right: 8px;
     }
-    &__class {
+    &-class {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
@@ -40,7 +39,7 @@
     }
   }
   &__price {
-    &__values {
+    &-values {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
@@ -49,7 +48,7 @@
       color: rgba(31, 32, 65, 0.5);
       margin-right: 5px;
     }
-    &__duration {
+    &-duration {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 400;
@@ -63,7 +62,7 @@
     justify-content: space-between;
     margin-bottom: 21px;
     padding-left: 1px;
-    &__item {
+    &-item {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
@@ -114,7 +113,7 @@
         width: 214px;   
       }
     }
-    &__info {
+    &-info {
       position: relative;
       font-family: 'Montserrat';
       font-weight: 400;

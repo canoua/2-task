@@ -7,18 +7,18 @@ mixin card-calculate(dropdownClass)
       .card-inner 
         .card-calculate__header 
           .card-calculate__room
-            span.card-calculate__room__icon №
-            span.card-calculate__room__number 888
-            span.card-calculate__room__class люкс
+            span.card-calculate__room-icon №
+            span.card-calculate__room-number 888
+            span.card-calculate__room-class люкс
           .card-calculate__price
-            span.card-calculate__price__values 9 990₽
-            span.card-calculate__price__duration в сутки
+            span.card-calculate__price-values 9 990₽
+            span.card-calculate__price-duration в сутки
         .card-calculate__date-dropdown-wrapper
           +date-dropdown('input1','прибытие', '19.08.2019')
           +date-dropdown('input2','выезд', '23.08.2019')
         .dropdown-page.dropdown-expanded-guests__form
           +dropdown('card-landing__dropdown-js', 'гости', '3 гостя')
-          .fe__dropdown__content
+          .fe__dropdown-content
             - 
               const guests = [
                 {name: 'взрослые', count: 2},
@@ -41,13 +41,13 @@ mixin card-calculate(dropdownClass)
             span 9 990₽ х 4 суток
             span 39 960₽
           .card-calculate__count 
-            span.card-calculate__count__info Сбор за услуги: скидка 2 179₽
+            span.card-calculate__count-info Сбор за услуги: скидка 2 179₽
             span 0₽
           .card-calculate__count 
-            span.card-calculate__count__info Сбор за дополнительные услуги
+            span.card-calculate__count-info Сбор за дополнительные услуги
             span 300₽
         .card-calculate__result 
-          span.card-calculate__result__item Итого
-          span.card-calculate__result__item 38 081₽
+          span.card-calculate__result-item Итого
+          span.card-calculate__result-item 38 081₽
         +btn-gradient-arrow('card-btn-landing', 'забронировать')
         

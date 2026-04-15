@@ -36,8 +36,8 @@ mixin card-sign-in
 mixin card__note(page)
   .card__note 
     if page == 'sign-up'
-      span.card__note_info Уже есть аккаунт на Toxin
+      span.card__note-info Уже есть аккаунт на Toxin
       +button-white('card-btn-white', 'войти')
     else if page == 'sign-in' 
-      span.card__note_info Нет аккаунта на Toxin?
+      span.card__note-info Нет аккаунта на Toxin?
       +button-white('card-btn-white', 'Создать')

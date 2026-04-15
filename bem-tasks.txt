@@ -10,6 +10,7 @@ done
   /modules/range-slider.pug
   /modules/review.pug
   /modules/toggle.pug
+  /modules/cards.pug
 checked
   /modules/dropdown.pug
   /modules/information.pug
