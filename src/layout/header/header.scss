@@ -13,6 +13,12 @@
       align-items: center;
       width: 772px;
       padding-left: 1px;
+      @media (max-width: 991px) {
+        width: auto;
+      }
+    }
+    @media (max-width: 991px) {
+      justify-content: space-between;
     }
   }
   &__btn{
