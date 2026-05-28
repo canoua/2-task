@@ -1,7 +1,14 @@
 .footer {
   background-color: #fff;
   &__inner{
+    // оставил флексы чтобы сохранить отступы, которые в макете
     display: flex;
+    @media(max-width: 1222px) {
+      display: grid;
+      justify-content: center;
+      grid-column-gap: 30px;
+      grid-row-gap: 70px;
+    }
   }
   &__logo{
     margin-bottom: 13px;
@@ -35,11 +42,31 @@
     &-item { 
       max-width: 316px;
       margin-top: 4px;
+      @media(max-width: 1222px) {
+        margin-top: 0;
+      }
       &-1 {
         margin-right: 58px;
+        @media(max-width: 1222px) {
+          max-width: 161px;
+          grid-column: 2/3;
+          grid-row: 1/2;
+          margin-right: 0;
+        }
       }
       &-2 {
         margin-right: 93px;
+        @media(max-width: 1222px) {
+          grid-column: 3/3;
+          grid-row: 1/2;
+          margin-right: 0;
+        }
+      }
+      &-3 {
+        @media(max-width: 1222px) {
+          grid-column: 1/2;
+          grid-row: 2/2;
+        }
       }
       &-4 {
         margin-right: 0;
@@ -47,6 +74,11 @@
         width: 259px;
         & > .footer__title {
           margin-bottom: 18px;
+        }
+        @media(max-width: 1222px) {
+          grid-column: 2/2;
+          grid-row: 2/2;
+          margin-left: 0;
         }
       }
       &-info {
@@ -57,13 +89,20 @@
       }
     } 
   }
-  &__info{
-    max-width: 260px;
+  &__info {
+    display: inline-block;
+    // width: 260px;
     margin-right: 47px;
-    &-block{
+    &-block {
       font-size: 14px;
       line-height: 24px;
       color: $darkshade75;
+    }
+    @media(max-width: 1222px) {
+      max-width: auto !important;
+      grid-column: 1/3;
+      grid-row: 1/2;
+      margin-right: 0;
     }
   }
   &-copy {
