@@ -5,9 +5,19 @@
     display: flex;
     @media(max-width: 1222px) {
       display: grid;
+      grid-template-columns: repeat(3, 260px); /* 3 колонки */
+      gap: 50px;
+      justify-content: space-between;
+    }
+    @media(max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr); /* 3 колонки */
+
+    }
+    @media(max-width: 575px) {
+      grid-template-columns: 260px;
+      text-align: center;
       justify-content: center;
-      grid-column-gap: 30px;
-      grid-row-gap: 70px;
+      gap: 20px; 
     }
   }
   &__logo{
@@ -48,24 +58,13 @@
       &-1 {
         margin-right: 58px;
         @media(max-width: 1222px) {
-          max-width: 161px;
-          grid-column: 2/3;
-          grid-row: 1/2;
           margin-right: 0;
         }
       }
       &-2 {
         margin-right: 93px;
         @media(max-width: 1222px) {
-          grid-column: 3/3;
-          grid-row: 1/2;
           margin-right: 0;
-        }
-      }
-      &-3 {
-        @media(max-width: 1222px) {
-          grid-column: 1/2;
-          grid-row: 2/2;
         }
       }
       &-4 {
@@ -76,8 +75,6 @@
           margin-bottom: 18px;
         }
         @media(max-width: 1222px) {
-          grid-column: 2/2;
-          grid-row: 2/2;
           margin-left: 0;
         }
       }
@@ -91,7 +88,7 @@
   }
   &__info {
     display: inline-block;
-    // width: 260px;
+    max-width: 260px;
     margin-right: 47px;
     &-block {
       font-size: 14px;
@@ -99,9 +96,6 @@
       color: $darkshade75;
     }
     @media(max-width: 1222px) {
-      max-width: auto !important;
-      grid-column: 1/3;
-      grid-row: 1/2;
       margin-right: 0;
     }
   }
@@ -112,6 +106,11 @@
     &__inner {
       display: flex;
       justify-content: space-between;
+      @media(max-width: 575px) {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
     }
     &__social {
       display: flex;
@@ -120,6 +119,12 @@
       font-size: 14px;
       line-height: 17px;
       color: $darkshade75;
+      @media(max-width: 575px) {
+        font-size: 11px;
+      }
+      @media(max-width: 375px) {
+        font-size: 9px;
+      }
     }
     &__link {
       display: block;
