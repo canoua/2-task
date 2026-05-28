@@ -15,6 +15,19 @@ mixin header(variable)
             span 
             span 
             span 
+          .mobile-menu 
+            .btn-close x
+            +menu
+            .header__buttons-wrapper 
+              if variable=='header'  
+                +button-white('form-element-btn','Войти')
+                +button-gradient('form-element-btn','Зарегистрироваться')
+              else if variable=='header-2'
+                a(href="#").user 
+                  span.user__name Юлий Цезарь
+              else 
+                p mixin failed
+           
           .header__buttons-wrapper 
             if variable=='header'  
               +button-white('form-element-btn','Войти')
