@@ -166,6 +166,11 @@
   padding-left: 29px;
   padding-right: 29px;
   padding-bottom: 29px;
+  @media(max-width: 450px) {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
   &__date-birthday {
     margin-bottom: 21.5px;
   }
@@ -187,6 +192,9 @@
     }
     & > .button-default-big {
       margin-bottom: 30px;
+      @media(max-width: 450px) {
+        width: 100%;
+      }
     }
   } 
 }
