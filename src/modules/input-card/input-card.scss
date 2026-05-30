@@ -10,6 +10,9 @@
     padding-left: 14.5px;
     padding-right: 15px;
     margin-bottom: 10px;
+    @media(max-width: 375px) {
+      padding: 10px;
+    }
     &::placeholder{
       font-family: 'Montserrat';
       font-weight: 400;

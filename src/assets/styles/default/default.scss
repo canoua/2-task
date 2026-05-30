@@ -54,6 +54,10 @@ body {
     width: 100%;
     padding: 0 30px;
   }
+  @media(max-width: 575px) {
+    padding: 0 20px;
+
+  }
 }
 
 .main {

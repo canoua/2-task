@@ -43,6 +43,9 @@
       width: 320px;
       position: relative;
       margin-bottom: 42px;
+      @media(max-width: 375px) {
+        padding: 10px 20px;
+      }
     }
   }
   &-border{

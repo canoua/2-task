@@ -11,7 +11,10 @@
       font-style: normal;
       font-size: 14px;
       line-height: 24px;
-      color:  $darkshade75
+      color:  $darkshade75;
+      @media(max-width: 375px) {
+        font-size: 12px;
+      }
     }
   }
 }
