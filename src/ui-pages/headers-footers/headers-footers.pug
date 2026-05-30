@@ -10,7 +10,6 @@ html(lang="en")
     title headers and footers
   body 
     .headers-footers
-      //- .headers-footers__logo 
       .container.headers-footers__container 
         img(src=require("@images/ui-logo.svg"), alt="ui-logo").headers-footers__logo 
       .headers-footers__box 
@@ -18,7 +17,5 @@ html(lang="en")
       .headers-footers__box 
         +header('header-2')
       .headers-footers__box
-        +footer
-      .headers-footers__box
-        +footer-mobile
+        +footer("headers-footers")
       
