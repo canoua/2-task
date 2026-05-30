@@ -19,9 +19,4 @@
     height: auto;
     padding: 50px 20px;
   }
-  &>.footer {
-    @media(max-width: 767px) {
-      display: none;
-    }
-  }
 }

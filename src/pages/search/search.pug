@@ -7,7 +7,7 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Search room
-  body 
+  body.page 
     +header('header') 
     main.search.app-js-dropdown
       .container 
@@ -31,3 +31,4 @@ html(lang="en")
             .search__content__pagination
               +pagination
     +footer
+    +footer-mobile

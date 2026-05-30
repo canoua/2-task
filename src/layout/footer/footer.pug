@@ -12,70 +12,38 @@ include ../../modules/text-field/text-field.pug
     {title: 'о нас', links: ['О сервисе', 'Наша команда', 'Вакансии','Инвесторы']},
     {title: 'Служба поддержки', links: ['Соглашения', 'Сообщества', 'Связь с нами']},
   ]
-  var pages = [
-    "sign-up", "sign-in", "landing", "room-details", "search"
-  ]
 
-//- условие отображения футера на страницах headers-footers и остальных
-mixin footer(page) 
-  if (item in pages)
-    footer.footer
-      .footer__box 
-        .container 
-          .footer__inner
-            .footer__info
-              .footer__logo 
-                +logo
-              span.footer__info-block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
-            each item, i in _items
-              .footer__box-item(class=`footer__box-item-${i+1}`) 
-                h3.footer__title #{item.title}
-                nav.footer__navigation
-                  each link in item.links
-                    li.footer__list-item
-                      a(href="#").footer__list-link #{link}
-            .footer__box-item.footer__box-item-4 
-              h3.footer__title Подписка
-              .footer__box-item-info Получайте специальные предложения и новости сервиса
-              +subscription-text-field('headers-footers__input', '', 'Email')
-      .footer-copy
-        .container
-          .footer-copy__inner 
-            .footer-copy__item 
-              span.footer-copy__text Copyright © 2018 Toxin отель. Все права защищены.
-            .footer-copy__social 
-              each link in links  
-                a.footer-copy__link(href="#") 
-                  img(class=link.social src=link.src, alt=link.social)
-  else 
-    footer.footer
-      .footer__box 
-        .container 
-          .footer__inner
-            .footer__info
-              .footer__logo 
-                +logo
-              span.footer__info-block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
-            each item, i in _items
-              .footer__box-item(class=`footer__box-item-${i+1}`) 
-                h3.footer__title #{item.title}
-                nav.footer__navigation
-                  each link in item.links
-                    li.footer__list-item
-                      a(href="#").footer__list-link #{link}
-            .footer__box-item.footer__box-item-4 
-              h3.footer__title Подписка
-              .footer__box-item-info Получайте специальные предложения и новости сервиса
-              +subscription-text-field('headers-footers__input', '', 'Email')
-      .footer-copy
-        .container
-          .footer-copy__inner 
-            .footer-copy__item 
-              span.footer-copy__text Copyright © 2018 Toxin отель. Все права защищены.
-            .footer-copy__social 
-              each link in links  
-                a.footer-copy__link(href="#") 
-                  img(class=link.social src=link.src, alt=link.social)
+mixin footer
+  footer.footer
+    .footer__box 
+      .container 
+        .footer__inner
+          .footer__info
+            .footer__logo 
+              +logo
+            span.footer__info-block Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»
+          each item, i in _items
+            .footer__box-item(class=`footer__box-item-${i+1}`) 
+              h3.footer__title #{item.title}
+              nav.footer__navigation
+                each link in item.links
+                  li.footer__list-item
+                    a(href="#").footer__list-link #{link}
+          .footer__box-item.footer__box-item-4 
+            h3.footer__title Подписка
+            .footer__box-item-info Получайте специальные предложения и новости сервиса
+            +subscription-text-field('headers-footers__input', '', 'Email')
+    .footer-copy
+      .container
+        .footer-copy__inner 
+          .footer-copy__item 
+            span.footer-copy__text Copyright © 2018 Toxin отель. Все права защищены.
+          .footer-copy__social 
+            each link in links  
+              a.footer-copy__link(href="#") 
+                img(class=link.social src=link.src, alt=link.social)
+ 
+  mixin footer-mobile  
     footer.footer-mobile 
       .footer-mobile__inner
         .footer-mobile__logo

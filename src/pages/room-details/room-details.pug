@@ -8,7 +8,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Room-details(rd)
-  body 
+  body.page 
     +header('header')
     header.rd 
       +__header
@@ -52,3 +52,4 @@ html(lang="en")
           .rd__col_2
             +card-calculate('rd__card')
     +footer
+    +footer-mobile

@@ -66,3 +66,17 @@ body {
   background-position: center center;
   background-size: cover;
 }
+
+.page {
+  .footer-mobile {
+    display: none;
+    @media(max-width: 767px) {
+      display: block;
+    }
+  }
+  .footer {
+    @media(max-width: 767px) {
+      display: none;
+    }
+  }
+}
