@@ -26,7 +26,7 @@
     margin-right: 0;
     margin-bottom: 15px;
     .list__link, .drop-link {
-      color: #fff;
+      color: $purple;
       font-size: 25px;
     }
     
@@ -50,7 +50,7 @@
 
    .material-icons.material-icons-expand.material-icons-expand-menu {
       background-clip: text;
-      background-color: #fff;
+      background-color: $purple;
     }
   }
 }
