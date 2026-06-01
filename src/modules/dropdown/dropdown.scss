@@ -135,11 +135,25 @@
   margin-bottom: 5px;
   &-item{
     &-box{
-      width: 150px;  
+      width: 150px; 
+      @media(max-width: 430px) {
+        width: 100%;
+      } 
+    }
+  }
+  @media(max-width: 430px) {
+    margin-bottom: 18px;
+  }
+  &:last-child {
+    @media(max-width: 430px) {
+      margin-bottom: 0;
     }
   }
   &__header {
     margin-bottom: 6px;
+    @media(max-width: 375px) {
+      margin-bottom: 13px;
+    }
   }
 }
 

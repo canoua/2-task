@@ -133,6 +133,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 18px;
+    @media(max-width: 430px) {
+      flex-direction: column;
+    }
+    // @media(max-width: 375px) {
+      // margin-bottom: 0;
+    // }
   } 
 }
 
