@@ -1,28 +1,28 @@
-import noUiSlider from 'nouislider';
+import noUiSlider from "nouislider";
 
 export default function rangeSlider() {
-  const rangeSlider = document.querySelector('#range-slider');
+  const rangeSlider = document.querySelector("#range-slider");
 
-  const outputValues1 = document.querySelector('.range-slider__state_1');
-  const outputValues2 = document.querySelector('.range-slider__state_2');
+  const outputValues1 = document.querySelector(".range-slider__state_1");
+  const outputValues2 = document.querySelector(".range-slider__state_2");
   const output = [outputValues1, outputValues2];
 
-  if(rangeSlider) {
+  if (rangeSlider) {
     noUiSlider.create(rangeSlider, {
       start: [5000, 10000],
       connect: true,
       step: 1,
       range: {
-        'min': [0],
-        'max': [15000]
+        min: [0],
+        max: [15000],
       },
     });
-    
-    rangeSlider.noUiSlider.on('update', function(values, handle) {
-     const formattedNumber = Number(values[handle]).toLocaleString('ru-RU', { minimumFractionDigits: '0' });
-      output[handle].textContent = formattedNumber + '₽';
-    })
+
+    rangeSlider.noUiSlider.on("update", function (values, handle) {
+      const formattedNumber = Number(values[handle]).toLocaleString("ru-RU", {
+        minimumFractionDigits: "0",
+      });
+      output[handle].textContent = formattedNumber + "₽";
+    });
   }
 }
-
-
