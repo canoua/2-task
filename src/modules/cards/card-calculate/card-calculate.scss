@@ -11,7 +11,7 @@
   }
   &__room {
     &-icon {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 14px;
@@ -20,7 +20,7 @@
       margin-right: 5px;
     }
     &-number {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -29,7 +29,7 @@
       margin-right: 8px;
     }
     &-class {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 12px;
@@ -40,7 +40,7 @@
   }
   &__price {
     &-values {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 14px;
@@ -49,7 +49,7 @@
       margin-right: 5px;
     }
     &-duration {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -63,7 +63,7 @@
     margin-bottom: 21px;
     padding-left: 1px;
     &-item {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 19px;
@@ -75,10 +75,10 @@
           position: absolute;
           left: calc(100% + 5px);
           bottom: 4px;
-          content: '';
+          content: "";
           width: 182px;
           height: 1px;
-          background-image: url('@images/cards/dots.png');
+          background-image: url("@images/cards/dots.png");
           background-repeat: no-repeat;
           background-size: cover;
           z-index: 0;
@@ -91,7 +91,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -110,12 +110,12 @@
     }
     span {
       &:first-child {
-        width: 214px;   
+        width: 214px;
       }
     }
     &-info {
       position: relative;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-weight: 400;
       font-size: 14px;
       line-height: 18px;
@@ -151,4 +151,4 @@
       margin-bottom: 18px;
     }
   }
-}   
+}

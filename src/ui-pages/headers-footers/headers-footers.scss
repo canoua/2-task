@@ -1,18 +1,18 @@
-.headers{
-  &-footers{
-    background: #F4F4F6;
+.headers {
+  &-footers {
+    background: #f4f4f6;
     padding: 140px 0;
     &__container {
-      position: relative; 
+      position: relative;
     }
-    &__logo{
+    &__logo {
       position: absolute;
       top: -110px;
       left: -110px;
     }
-    &__box{
+    &__box {
       margin-bottom: 40px;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
     }

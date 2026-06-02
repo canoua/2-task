@@ -1,10 +1,10 @@
-.pagination{
-  &__list{
+.pagination {
+  &__list {
     display: flex;
     margin-bottom: 6.56px;
   }
-  &__link{
-    font-family: 'Montserrat';
+  &__link {
+    font-family: "Montserrat";
     padding-left: 1px;
     padding-bottom: 2px;
     font-weight: 400;
@@ -18,25 +18,25 @@
     width: 40px;
     height: 40px;
     justify-content: center;
-    align-items:center;
-    &_active{
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    align-items: center;
+    &_active {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
       border-radius: 22px;
       color: #fff;
       line-height: 12px;
       padding-right: 2px;
       font-weight: 700;
-      padding-right: 2px; 
-      padding-bottom: 1px; 
-      padding-top: 1px; 
+      padding-right: 2px;
+      padding-bottom: 1px;
+      padding-top: 1px;
       padding-left: 2px;
     }
-    &_arrow{
-      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    &_arrow {
+      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
       border-radius: 22px;
     }
   }
-  &__info{
+  &__info {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

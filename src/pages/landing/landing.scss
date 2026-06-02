@@ -1,9 +1,9 @@
-.main.main-landing{
+.main.main-landing {
   display: block;
   padding: 70px 0;
   height: 830px;
-  background-image: url('./assets/images/landing-bg.png');
-  @media(max-width: 525px) {
+  background-image: url("./assets/images/landing-bg.png");
+  @media (max-width: 525px) {
     height: auto;
     padding: 150px 0;
   }
@@ -13,10 +13,10 @@
   & > .card-inner {
     & > .card__title {
       padding-left: 0.5px;
-      @media(max-width: 575px) {
+      @media (max-width: 575px) {
         font-size: 22px;
       }
-      @media(max-width: 430px) {
+      @media (max-width: 430px) {
         font-size: 20px;
         text-align: center;
       }
@@ -25,7 +25,7 @@
 }
 
 .card-btn-landing {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
@@ -37,7 +37,7 @@
   padding-bottom: 14.5px;
   padding-left: 17px;
   padding-right: 20px;
-  @media(max-width: 430px) {
+  @media (max-width: 430px) {
     width: 100%;
     padding: 10px;
     height: 35px;
@@ -48,20 +48,20 @@ main.main.main-landing {
   & > .container {
     position: relative;
     height: 100%;
-    @media(max-width: 991px) {
+    @media (max-width: 991px) {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    @media(max-width: 430px) {
+    @media (max-width: 430px) {
       width: 100%;
       padding: 0 30px;
     }
-    @media(max-width: 375px) {
+    @media (max-width: 375px) {
       padding: 0 15px;
     }
     & > form {
-      @media(max-width: 430px) {
+      @media (max-width: 430px) {
         width: 100%;
       }
     }
@@ -80,16 +80,16 @@ main.main.main-landing {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: right;
-  @media(max-width: 1230px) {
+  @media (max-width: 1230px) {
     right: 50px;
   }
-  @media(max-width: 991px) {
+  @media (max-width: 991px) {
     left: 50%;
     transform: translate(-50%, 0);
     bottom: -50px;
     text-align: center;
   }
-  @media(max-width: 525px) {
+  @media (max-width: 525px) {
     bottom: -115px;
   }
 }

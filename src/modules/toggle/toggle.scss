@@ -1,18 +1,18 @@
-.toggle{
-  &__item{
+.toggle {
+  &__item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
     &-text {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-size: 14px;
       line-height: 24px;
-      color:  $darkshade75;
-      @media(max-width: 375px) {
+      color: $darkshade75;
+      @media (max-width: 375px) {
         font-size: 12px;
       }
     }
@@ -38,8 +38,8 @@
   right: 0;
   bottom: 0;
   transform: translate(0, -50%);
-  transition: .4s;
-  background: #FFFFFF;
+  transition: 0.4s;
+  background: #ffffff;
   border: 1px solid $darkshade25;
   box-sizing: border-box;
   border-radius: 10px;
@@ -54,7 +54,7 @@
     bottom: 3px;
     background: $darkshade25;
     border-radius: 10px;
-    transition: .3s;
+    transition: 0.3s;
   }
   .round {
     border-radius: 34px;
@@ -65,11 +65,11 @@
 }
 
 input:checked + .slider {
-  border: 1px solid  $purple;
+  border: 1px solid $purple;
 }
 
 input:checked + .slider:before {
   transform: translateX(18px);
-  background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
   left: 5px;
 }

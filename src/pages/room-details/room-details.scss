@@ -1,5 +1,5 @@
-@import '__header/_header';
-@import '__pie/_pie';
+@import "__header/_header";
+@import "__pie/_pie";
 
 .rd {
   background-image: none;
@@ -17,7 +17,7 @@
       width: 100%;
     }
     &_2,
-    &_3{
+    &_3 {
       height: 100%;
       width: 100%;
     }
@@ -51,7 +51,7 @@
   &__impression {
     &-inner {
       display: flex;
-      align-items:flex-end;
+      align-items: flex-end;
     }
   }
   &__reviews {
@@ -108,17 +108,17 @@
   }
 }
 
-.impression{
-  &__list{
+.impression {
+  &__list {
     margin-bottom: -2px;
-    &_item{
+    &_item {
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
       color: $darkshade75;
       position: relative;
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         left: -15px;
         top: 50%;
@@ -128,35 +128,35 @@
         background-color: #000;
         border-radius: 100%;
       }
-      &-1{
-        &::after{
-          background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+      &-1 {
+        &::after {
+          background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
         }
       }
-      &-2{
-        &::after{
-          background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+      &-2 {
+        &::after {
+          background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         }
       }
-      &-3{
-        &::after{
-          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      &-3 {
+        &::after {
+          background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
         }
       }
-      &-4{
-        &::after{
-          background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+      &-4 {
+        &::after {
+          background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
         }
       }
     }
   }
 }
 
-.reviews{
-  &__title{
+.reviews {
+  &__title {
     display: flex;
     justify-content: space-between;
-    &-info{
+    &-info {
       font-weight: 400;
       font-size: 14px;
       line-height: 14px;
@@ -166,8 +166,8 @@
   }
 }
 
-.cancellation{
-  &__text{
+.cancellation {
+  &__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

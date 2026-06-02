@@ -5,7 +5,7 @@
 }
 
 .input:checked + label,
-.input:not(:checked) + label{
+.input:not(:checked) + label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
@@ -14,17 +14,16 @@
 }
 
 .input:checked + label {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0%;
   color: $darkshade75;
 }
 
-
 .input:checked + label:before,
 .input:not(:checked) + label:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 1px;
@@ -34,20 +33,20 @@
   background: #fff;
 }
 
-.input:not(:checked) + label:before{
+.input:not(:checked) + label:before {
   border: 1px solid $darkshade25;
 }
 
-.input:checked + label:before{
+.input:checked + label:before {
   border: 1px solid $purple;
 }
 
 .input:checked + label:after,
 .input:not(:checked) + label:after {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   position: absolute;
   top: 5px;
   left: 4px;
@@ -69,17 +68,17 @@
   position: absolute;
   z-index: -1;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.custom-radio+label {
+.custom-radio + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.custom-radio+label::before {
-  content: '';
+.custom-radio + label::before {
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -91,23 +90,23 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 70% 70%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
   border-color: $purple;
 }
 
-.custom-radio:not(:disabled):active+label::before {
+.custom-radio:not(:disabled):active + label::before {
   background-color: $purple;
   border-color: #b3d7ff;
 }
 
-.custom-radio:focus:not(:checked)+label::before {
+.custom-radio:focus:not(:checked) + label::before {
   border-color: #80bdff;
 }
 
-.custom-radio:checked+label::before {
+.custom-radio:checked + label::before {
   border-color: $purple;
   background-color: #fff;
   background-repeat: no-repeat;

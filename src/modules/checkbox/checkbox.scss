@@ -1,27 +1,27 @@
-.checkbox{
+.checkbox {
   width: 266px;
   cursor: pointer;
-  &__header{
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__list{
-    &-input{
+  &__list {
+    &-input {
       position: absolute;
       z-index: -1;
       opacity: 0;
     }
-    &-input+label {
+    &-input + label {
       display: inline-flex;
       align-items: center;
       flex-wrap: wrap;
       justify-content: left;
-      flex-direction: inherit;//для правильного расположения RICH CHECKBOX BUTTONS
+      flex-direction: inherit; //для правильного расположения RICH CHECKBOX BUTTONS
       user-select: none;
     }
-    &-input+label::before{
-      content: '';
+    &-input + label::before {
+      content: "";
       min-width: 18px;
       height: 18px;
       border: 1px solid $darkshade25;
@@ -31,15 +31,15 @@
       background-position: center center;
       background-size: 50% 50%;
     }
-    &-input:checked+label::before {
-      content: '';
-      border: 1px solid #BC9CFF;
+    &-input:checked + label::before {
+      content: "";
+      border: 1px solid #bc9cff;
       border-radius: 4px;
-      background-image: url('@images/check-mark.png');
+      background-image: url("@images/check-mark.png");
       background-repeat: no-repeat;
       background-size: 10px 8px;
     }
-    &-label{
+    &-label {
       font-weight: 400;
       font-size: 14px;
       line-height: 18px;
@@ -49,15 +49,15 @@
         padding-left: 30px;
         margin-top: -1px;
       }
-      &-rich{
-        &-title{
+      &-rich {
+        &-title {
           display: flex;
           font-weight: 700;
           font-size: 14px;
           line-height: 18px;
           color: $darkshade75;
         }
-        &-info{
+        &-info {
           font-weight: 400;
           font-size: 12px;
           line-height: 14px;
@@ -69,18 +69,17 @@
       }
     }
   }
-  &-buttons{
+  &-buttons {
     margin-bottom: 40.88px;
-    &__header{
+    &__header {
       margin-bottom: 16.56px;
     }
   }
 }
 
-
 .checkbox__list-label-rich-title {
-  & > .checkbox__list-input+label{
-    font-family: 'Montserrat';
+  & > .checkbox__list-input + label {
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;

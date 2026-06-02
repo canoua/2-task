@@ -1,6 +1,6 @@
-.bullet{
-  &__list{
-    &-item{
+.bullet {
+  &__list {
+    &-item {
       position: relative;
       padding-left: 21px;
       font-weight: 400;
@@ -9,8 +9,8 @@
       color: $darkshade75;
       margin-bottom: 10px;
       width: 253px;
-      &::before{
-        content:'';
+      &::before {
+        content: "";
         width: 10px;
         height: 10px;
         background-color: #000;

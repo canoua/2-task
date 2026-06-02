@@ -1,7 +1,7 @@
 .ui {
   &-cards {
     padding: 151px 140px 140px 140px;
-    background-color: #F4F4F6;
+    background-color: #f4f4f6;
     &__logo {
       position: absolute;
       top: 30px;
@@ -20,16 +20,17 @@
 .ui-cards {
   & > .container {
     position: relative;
-    & > .ui-cards__logo{
+    & > .ui-cards__logo {
       top: -120px;
       left: -110px;
     }
   }
 }
-      
+
 .col {
   margin-right: 40px;
-  &_1, &_2 {
+  &_1,
+  &_2 {
     width: 380px;
   }
   &_2 {

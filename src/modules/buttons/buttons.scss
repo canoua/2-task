@@ -1,9 +1,9 @@
-.elements__item_header.buttons__header{
+.elements__item_header.buttons__header {
   margin-bottom: 16px;
 }
 
-.button{
-  font-family: 'Montserrat';
+.button {
+  font-family: "Montserrat";
   padding: 10px 20px;
   border-radius: 22px;
   cursor: pointer;
@@ -11,51 +11,51 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14.63px;
-  &-default{
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    color: #FFFFFF;
+  &-default {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    color: #ffffff;
     border: transparent;
     padding-top: 11px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 21px;
     font-size: 11.5px;
-    &-hover{
+    &-hover {
       opacity: 0.5;
     }
-    &-wrapper{
+    &-wrapper {
       display: flex;
       margin-bottom: 30px;
       padding-left: 1px;
       width: 233px;
     }
-    &-big{
+    &-big {
       padding: 14.5px 20px;
       font-weight: 700;
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase;
-      color: #FFFFFF;
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      color: #ffffff;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
       border-radius: 22px;
       border: none;
       cursor: pointer;
       width: 320px;
       position: relative;
       margin-bottom: 42px;
-      @media(max-width: 375px) {
+      @media (max-width: 375px) {
         padding: 10px 20px;
       }
     }
   }
-  &-border{
-    color: #BC9CFF;
-    border: 2px solid #BC9CFF;
+  &-border {
+    color: #bc9cff;
+    border: 2px solid #bc9cff;
     background-color: #fff;
     padding: 9px 18.5px;
-    &-hover{
-      border-color: rgba(188, 156, 255, .5);
-      &-wrapper{
+    &-hover {
+      border-color: rgba(188, 156, 255, 0.5);
+      &-wrapper {
         margin-bottom: 28px;
       }
     }
@@ -63,9 +63,9 @@
 }
 
 //form-elements
-.form-element-btn{
+.form-element-btn {
   margin-right: 20px;
-  &:last-child{
+  &:last-child {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 12px;
@@ -82,19 +82,19 @@
   }
 }
 
-.icon{
-  &-link{
+.icon {
+  &-link {
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #BC9CFF;
+    color: #bc9cff;
     display: inline-block;
     margin-right: 20px;
-    &-hover{
+    &-hover {
       color: $darkshade50;
     }
-    &-wrapper{
+    &-wrapper {
       margin-bottom: 29px;
       padding-left: 1.5px;
     }
@@ -103,18 +103,18 @@
 
 .btn-white:hover,
 .btn-gradient:hover,
-.btn-gradient-arrow:hover{
+.btn-gradient-arrow:hover {
   opacity: 0.5;
 }
 
 .btn-white:active,
 .btn-gradient:active,
-.btn-gradient-arrow:active{
+.btn-gradient-arrow:active {
   color: $darkshade50;
 }
 
 //btn-white
-.btn{
+.btn {
   &-white {
     font-weight: 700;
     font-size: 12px;
@@ -127,29 +127,29 @@
     padding: 9px 20px;
     cursor: pointer;
     margin-right: 20px;
-    transition: .07s;
+    transition: 0.07s;
   }
 }
 
 //btn-rate
-.rate-button__header{
+.rate-button__header {
   margin-bottom: 19px;
 }
 
-.stars-ratings{
+.stars-ratings {
   display: flex;
   margin-right: 20px;
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
-  &-wrapper{
+  &-wrapper {
     display: flex;
   }
 }
 
 // btn-like
-.like{
-  background: #FFFFFF;
+.like {
+  background: #ffffff;
   border: 1px solid $darkshade25;
   box-sizing: border-box;
   border-radius: 10px;
@@ -159,24 +159,24 @@
   width: 40px;
   cursor: pointer;
   padding-left: 5px;
-  &__icon{
+  &__icon {
     margin-right: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  &__text{
+  &__text {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     text-align: center;
     color: $darkshade25;
   }
-  &-button{
-    &-inner{
+  &-button {
+    &-inner {
       display: flex;
     }
-    &__item{
+    &__item {
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -186,13 +186,13 @@
       height: 20px;
       padding-left: 4px;
       margin-right: 14px;
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
-      &-favorite{
+      &-favorite {
         border: 1px solid $purple;
       }
-      &-text{
+      &-text {
         font-weight: 400;
         font-size: 10px;
         line-height: 12px;
@@ -207,17 +207,17 @@
 .btn {
   &-gradient {
     &-arrow {
-      background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+      background: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
       border-radius: 22px;
       font-weight: 700;
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase;
-      color: #FFFFFF;
+      color: #ffffff;
       border: none;
       padding: 9px 20px;
       cursor: pointer;
-      transition: .3s;
+      transition: 0.3s;
       height: 44px;
     }
   }
@@ -226,17 +226,17 @@
 //btn-gradient
 .btn {
   &-gradient {
-    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
     border-radius: 22px;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     border: none;
     padding: 9px 20px;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     height: 44px;
   }
 }

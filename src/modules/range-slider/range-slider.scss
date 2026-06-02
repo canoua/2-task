@@ -1,4 +1,4 @@
-@import 'lib.scss';
+@import "lib.scss";
 
 .range-slider {
   &__header {
@@ -8,7 +8,7 @@
     align-items: center;
   }
   &__state {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -18,11 +18,10 @@
   }
 }
 
-#range-slider{
+#range-slider {
   height: 6px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid $darkshade25;
   border-radius: 3px;
   margin-bottom: 10.56px;
 }
-

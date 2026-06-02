@@ -2,10 +2,10 @@
   width: 320px;
   position: relative;
   padding: 19px 20px 35px 23px;
-  border: 1px solid rgba(31, 32, 65, .25);
-  box-shadow: 0 10px 20px 0 rgba(31, 32, 65, .05);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-shadow: 0 10px 20px 0 rgba(31, 32, 65, 0.05);
   &__title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 19px;
     text-align: center;
@@ -55,7 +55,7 @@
           position: relative;
           z-index: 10;
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             right: 15px;
@@ -78,7 +78,7 @@
     }
   }
   &__btn {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;

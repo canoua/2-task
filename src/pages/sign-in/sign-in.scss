@@ -1,24 +1,22 @@
-.button-default-big{
-   font-family: 'Montserrat';
+.button-default-big {
+  font-family: "Montserrat";
 }
 
 .main.sign-in {
-   height: 702px;
-   form {
-      @media(max-width: 464px) {
-         width: 100%;
-      }
-      
-   }
-   @media(max-width: 575px) {
-      height: auto;
-      padding: 50px 20px;
-   }
+  height: 702px;
+  form {
+    @media (max-width: 464px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 575px) {
+    height: auto;
+    padding: 50px 20px;
+  }
 
-   .button-default-big.button-default-big {
-      @media(max-width: 575px) {
-         width: auto;
-      }
-      
-   }
+  .button-default-big.button-default-big {
+    @media (max-width: 575px) {
+      width: auto;
+    }
+  }
 }

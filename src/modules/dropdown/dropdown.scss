@@ -1,29 +1,29 @@
-.dropdown{
+.dropdown {
   &-page {
     margin-bottom: 30.44px;
   }
   &__title {
     margin-bottom: 5px;
-    padding-left: .5px;
+    padding-left: 0.5px;
   }
-  &-expanded.elements__item ,
+  &-expanded.elements__item,
   &-default.elements__item {
     width: 266px;
   }
-  &-expanded{
-    &-guests{
-      &__list{
-      margin-bottom: 20px;
+  &-expanded {
+    &-guests {
+      &__list {
+        margin-bottom: 20px;
       }
     }
   }
-  &-list{
-    &__item{
+  &-list {
+    &__item {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 7px;
-      &_name{
+      &_name {
         font-weight: 700;
         font-size: 12px;
         line-height: 15px;
@@ -31,11 +31,11 @@
         color: $darkshade100;
       }
     }
-    &__count{
+    &__count {
       display: flex;
       align-items: center;
       &_minus,
-      &_plus{
+      &_plus {
         width: 30px;
         height: 30px;
         font-weight: 400;
@@ -50,7 +50,7 @@
         border-radius: 22px;
         user-select: none;
       }
-      &_number{
+      &_number {
         font-weight: 700;
         width: 8px;
         font-size: 12px;
@@ -63,16 +63,16 @@
       }
     }
   }
-  &-btns{
+  &-btns {
     display: flex;
     justify-content: flex-end;
-    &-2{
+    &-2 {
       justify-content: space-between;
     }
   }
   &__submit,
-  &__reset{
-    font-family: 'Montserrat';
+  &__reset {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -87,9 +87,9 @@
   }
 }
 
-.card{
-  &__input{
-    &-dropdown{
+.card {
+  &__input {
+    &-dropdown {
       border: none;
       width: 276px;
       height: 100%;
@@ -101,10 +101,10 @@
       display: flex;
       align-items: center;
     }
-    &-wrapper{
+    &-wrapper {
       display: flex;
       align-items: center;
-      background: #FFFFFF;
+      background: #ffffff;
       border: 1px solid $darkshade25;
       box-sizing: border-box;
       border-radius: 4px;
@@ -118,11 +118,10 @@
   }
 }
 
-.unactive-element{
+.unactive-element {
   cursor: auto;
   opacity: 0.38;
 }
-
 
 .filter-date-dropdown {
   width: 266px;
@@ -133,25 +132,25 @@
 
 .date-dropdown {
   margin-bottom: 5px;
-  &-item{
-    &-box{
-      width: 150px; 
-      @media(max-width: 430px) {
+  &-item {
+    &-box {
+      width: 150px;
+      @media (max-width: 430px) {
         width: 100%;
-      } 
+      }
     }
   }
-  @media(max-width: 430px) {
+  @media (max-width: 430px) {
     margin-bottom: 18px;
   }
   &:last-child {
-    @media(max-width: 430px) {
+    @media (max-width: 430px) {
       margin-bottom: 0;
     }
   }
   &__header {
     margin-bottom: 6px;
-    @media(max-width: 375px) {
+    @media (max-width: 375px) {
       margin-bottom: 13px;
     }
   }
@@ -167,11 +166,10 @@
   color: $darkshade75;
   cursor: pointer;
   &::placeholder {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-size: 14px;
     line-height: 18px;
     color: $darkshade75;
   }
 }
-

@@ -1,24 +1,24 @@
-@import 'assets/styles/default/variables.scss';
+@import "assets/styles/default/variables.scss";
 
 /* libs */
-@import 'assets/styles/libs/nouislider.min.css';
-@import 'assets/styles/libs/air-date-picker.scss';
-@import 'air-datepicker/air-datepicker.css';
+@import "assets/styles/libs/nouislider.min.css";
+@import "assets/styles/libs/air-date-picker.scss";
+@import "air-datepicker/air-datepicker.css";
 
 /* fonts */
-@import 'assets/fonts/Montserrat/stylesheet.css';
+@import "assets/fonts/Montserrat/stylesheet.css";
 
 /* defaults */
-@import 'assets/styles/default/material-icons.scss';
-@import 'assets/styles/default/default.scss';
+@import "assets/styles/default/material-icons.scss";
+@import "assets/styles/default/default.scss";
 
-@import 'modules/modules.scss';
+@import "modules/modules.scss";
 
-@import 'layout/layout.scss';
+@import "layout/layout.scss";
 
-@import 'ui-pages/ui.scss';
+@import "ui-pages/ui.scss";
 
-@import 'pages/pages.scss';
+@import "pages/pages.scss";
 
 /* entry page */
-@import 'index.scss';
+@import "index.scss";

@@ -1,8 +1,8 @@
-@import 'card-landing/card-landing.scss';
+@import "card-landing/card-landing.scss";
 
-.card{
+.card {
   width: 380px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px 0px #00000033;
@@ -16,7 +16,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: #1F2041;
+    color: #1f2041;
     margin-bottom: 24px;
     &-2 {
       font-weight: 700;
@@ -34,12 +34,12 @@
       line-height: 15px;
       text-transform: uppercase;
       background-color: #fff;
-      color: #BC9CFF;
+      color: #bc9cff;
       border: 2px solid $purple;
       border-radius: 22px;
       padding: 9px 20px;
       cursor: pointer;
-      transition: .07s;
+      transition: 0.07s;
     }
     &-landing {
       margin-bottom: 0;
@@ -47,19 +47,19 @@
   }
 }
 
-.date-of-birth{
+.date-of-birth {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.toggle__info{
+.toggle__info {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: $darkshade75;
 }
 
-.inputs-wrapper{
+.inputs-wrapper {
   margin-bottom: 10px;
 }
 
@@ -85,12 +85,12 @@
   cursor: pointer;
   position: absolute;
   left: 19px;
-  top: 21px;  
+  top: 21px;
   transform: rotate(-180deg);
   display: block;
 }
 
-.material-icons.card-calendar__arrow-next{
+.material-icons.card-calendar__arrow-next {
   color: #bc9cff;
   font-weight: 400;
   font-size: 24px;
@@ -115,13 +115,13 @@
       color: #000000;
       margin-top: -1px;
       padding-left: 1px;
-      @media(max-width: 375px) {
+      @media (max-width: 375px) {
         font-size: 10px;
       }
     }
     & > .card-btn-white {
       padding: 14px 24px;
-      @media(max-width: 375px) {
+      @media (max-width: 375px) {
         padding: 10px 24px;
       }
     }
@@ -133,18 +133,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 18px;
-    @media(max-width: 430px) {
+    @media (max-width: 430px) {
       flex-direction: column;
     }
-    // @media(max-width: 375px) {
-      // margin-bottom: 0;
-    // }
-  } 
+  }
 }
 
 .dropdown-page {
   position: relative;
-  & > .fe__dropdown__content{
+  & > .fe__dropdown__content {
     position: absolute;
     left: 0;
     top: -15px;
@@ -178,7 +175,7 @@
   padding-left: 29px;
   padding-right: 29px;
   padding-bottom: 29px;
-  @media(max-width: 450px) {
+  @media (max-width: 450px) {
     padding: 20px;
     width: 100%;
     height: auto;
@@ -198,7 +195,7 @@
   & > .card-inner {
     & > .card__title {
       margin-bottom: 15px;
-      @media(max-width: 376px) {
+      @media (max-width: 376px) {
         font-size: 19px;
         margin-bottom: 10px;
       }
@@ -208,12 +205,12 @@
     }
     & > .button-default-big {
       margin-bottom: 30px;
-      @media(max-width: 450px) {
+      @media (max-width: 450px) {
         width: 100%;
         margin-bottom: 15px;
       }
     }
-  } 
+  }
 }
 
 .arrow-next {
@@ -245,14 +242,14 @@
   padding-left: 29.5px;
   padding-bottom: 31px;
   padding-top: 39px;
-  @media(max-width: 464px) {
+  @media (max-width: 464px) {
     padding: 20px;
     width: 100%;
   }
   & > .card-inner {
     & > .card__title {
       margin-bottom: 15px;
-      @media(max-width: 575px) {
+      @media (max-width: 575px) {
         text-align: center;
       }
     }
@@ -269,9 +266,9 @@
       & > .card-btn-white {
         padding: 14px 16.5px;
         margin-right: -2px;
-        @media(max-width: 575px) {
+        @media (max-width: 575px) {
           padding: 10px 16.5px;
-          margin-right: 0; 
+          margin-right: 0;
         }
       }
     }

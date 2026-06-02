@@ -7,7 +7,7 @@
     margin-right: 45px;
     z-index: -10;
     &::before {
-      content: '';
+      content: "";
       background-color: #fff;
       z-index: 99;
       position: absolute;
@@ -31,13 +31,13 @@
       border-radius: 50%;
     }
     &__title {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       color: $purple;
       font-size: 24px;
       font-weight: 700;
     }
     &__subtitle {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 12px;

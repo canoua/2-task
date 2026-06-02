@@ -31,14 +31,14 @@
     & > .arrow-prev.material-icons {
       width: 44px;
       height: 44px;
-      line-height: 100%; 
+      line-height: 100%;
       left: -9px;
     }
     & > .arrow-next.material-icons {
       width: 44px;
       height: 44px;
       right: -9px;
-      line-height: 100%; 
+      line-height: 100%;
     }
   }
   &__content {
@@ -52,7 +52,7 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 10px;
-      border-bottom: 1px solid rgba(31, 32, 65, 0.1);;
+      border-bottom: 1px solid rgba(31, 32, 65, 0.1);
     }
     &__footer {
       padding-top: 11px;
@@ -68,7 +68,7 @@
     color: rgba(31, 32, 65, 0.5);
     padding-top: 6px;
     &__number {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-weight: 700;
       font-size: 14px;
       line-height: 18px;
@@ -118,25 +118,25 @@
   }
 }
 
-.card-room-arrow__slide  {
+.card-room-arrow__slide {
   position: relative;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 42px;
     height: 100%;
-    background-image: url('@images/cards/effect-slide.png');
+    background-image: url("@images/cards/effect-slide.png");
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     width: 42px;
     height: 100%;
-    background-image: url('@images/cards/effect-slide.png');
+    background-image: url("@images/cards/effect-slide.png");
     transform: rotate(-180deg);
   }
 }

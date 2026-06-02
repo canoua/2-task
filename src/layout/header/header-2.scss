@@ -1,5 +1,5 @@
 // header-2
-.user{
+.user {
   padding-left: 20px;
   position: relative;
   &::before {
@@ -9,9 +9,9 @@
     top: -5px;
     width: 1px;
     height: 30px;
-    background-color: rgba(31, 32, 65, .1);
+    background-color: rgba(31, 32, 65, 0.1);
   }
-  &__name{
+  &__name {
     font-size: 14px;
     line-height: 17px;
     color: $darkshade50;
@@ -19,7 +19,7 @@
 }
 
 .header__box_right {
-  &.header-2__box_right  {
+  &.header-2__box_right {
     justify-content: flex-end;
     width: auto;
     & > nav > ul > .list__item {
@@ -39,4 +39,3 @@
     }
   }
 }
-
