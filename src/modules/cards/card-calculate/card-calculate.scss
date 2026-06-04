@@ -152,3 +152,7 @@
     }
   }
 }
+
+.card-calculate__dropdown + .fe__dropdown-content {
+  display: none;
+}
