@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
   &__room {
     &-icon {
@@ -27,6 +27,8 @@
       line-height: 29px;
       color: $darkshade100;
       margin-right: 8px;
+      margin-top: -1px;
+      display: inline-block;
     }
     &-class {
       font-family: "Montserrat";
