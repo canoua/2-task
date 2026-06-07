@@ -18,6 +18,9 @@
       margin-bottom: 102px;
       position: relative;
     }
+    &-2 {
+      padding-top: 1px;
+    }
     &-2,
     &-3,
     &-4 {
@@ -81,9 +84,12 @@
   }
   &__toggle {
     margin-bottom: 39.44px;
-    // margin-bottom: 40.44px;
     &__header {
       margin-bottom: 10px;
+      h3 {
+        line-height: 11px;
+        letter-spacing: -0.5px;
+      }
     }
   }
   &__button-like {
