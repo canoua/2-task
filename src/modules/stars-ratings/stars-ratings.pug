@@ -1,0 +1,7 @@
+mixin stars-ratings(rating) 
+  .stars-ratings
+    - var max = 5
+    - for(var i=0; i<rating; i++)
+      span.material-icons.material-icons-star star
+    - for(var i=rating+1; i<=max; i++)
+      span.material-icons.material-icons-star star_border
