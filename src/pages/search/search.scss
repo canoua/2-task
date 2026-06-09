@@ -7,9 +7,18 @@
   &__sidebar {
     width: 266px;
     margin-right: 60px;
+    padding-top: 2px;
+    .dropdown-expanded-guests__form {
+      margin-bottom: 30px;
+    }
   }
   &__range {
     margin-bottom: 30px;
+    & > .range-slider__wrapper {
+      & > .range-slider__header {
+        margin-bottom: 23px;
+      }
+    }
     &__info {
       font-family: "Montserrat";
       font-style: normal;
@@ -46,16 +55,30 @@
     margin-bottom: 21px;
   }
   &__filter-date-dropdown {
-    margin-bottom: 20.44px;
+    margin-bottom: 23px;
+    .filter-date-dropdown__title {
+      margin-bottom: 6px;
+    }
   }
   &__dropdown {
     margin-bottom: 30px;
+    &-convenience {
+      &__content {
+        display: none;
+      }
+    }
   }
   &__checkbox {
-    margin-bottom: 30.88px;
-    &__list {
+    margin-bottom: 32.88px;
+    &-list {
       opacity: 0;
       height: 0;
+      &-item {
+        margin-bottom: 7px;
+        &:nth-child(2) {
+          margin-bottom: 6px;
+        }
+      }
       &_active {
         transition: all 0.3s;
         opacity: 1;
@@ -63,13 +86,27 @@
       }
     }
     &__title {
-      margin-bottom: 16.56px;
+      margin-bottom: 17.56px;
     }
   }
   &__rich-checkbox {
-    margin-bottom: 30.44px;
+    margin-bottom: 32.44px;
+
     &__title {
-      margin-bottom: 16px;
+      margin-bottom: 17px;
     }
   }
+}
+
+.search__rich-checkbox__list__item {
+  margin-bottom: 9px;
+  &:nth-child(2) {
+    & > .checkbox__list-label-rich-info {
+      width: 256px;
+    }
+  }
+}
+
+.search__dropdown-convenience {
+  margin-bottom: 25.44px;
 }
