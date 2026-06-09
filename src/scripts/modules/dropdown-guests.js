@@ -7,7 +7,7 @@ export default function dropdownGuests() {
   );
 
   // выпадающий блок
-  let dropdownContent = document.querySelector(".fe__dropdown__content");
+  let dropdownContent = document.querySelector(".fe__dropdown-content");
 
   // кнопки
   let reset = document.querySelector(".dropdown__reset");
@@ -63,7 +63,7 @@ export default function dropdownGuests() {
           }
         }
       }
-      dropdownContent.classList.remove("fe__dropdown__content_active");
+      dropdownContent.classList.remove("fe__dropdown-content_active");
     });
   }
 
@@ -76,19 +76,19 @@ export default function dropdownGuests() {
     dropdownOutput.textContent = "Сколько гостей";
   }
 
-  dropdown.addEventListener("click", function () {
-    dropdownContent.classList.toggle("fe__dropdown__content_active");
-  });
+  if (dropdown) {
+    dropdown.addEventListener("click", function () {
+      dropdownContent.classList.toggle("fe__dropdown-content_active");
+    });
+  }
 
   // кнопка подтвердить
-  submit.addEventListener("click", function (event) {
-    event.preventDefault();
+  submit.addEventListener("click", function () {
     submitFunc();
   });
 
   // кнопка reset
-  reset.addEventListener("click", function (event) {
-    event.preventDefault();
+  reset.addEventListener("click", function () {
     resetFunc();
   });
 }
