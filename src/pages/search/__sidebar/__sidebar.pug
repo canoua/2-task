@@ -23,32 +23,30 @@ mixin __sidebar
         .dropdown-btns.dropdown-btns-2  
           button.dropdown__reset(type="reset") Очистить 
           button.dropdown__submit(type="submit") Применить 
-    //- +dropdown('search__dropdown', 'гости', '3 гостя, 1 младенец')
     .search__range 
       +range-slider('', 'диапазон цены')
       span.search__range__info Стоимость за сутки пребывания в номере
     .search__checkbox 
       h3.h3.search__checkbox__title правила дома
       ul.checkbox__list 
-        li.checkbox__list_item 
+        li.checkbox__list_item.search__checkbox-list-item  
           +checkbox('', 'smoking', 'Можно курить')
-        li.checkbox__list_item  
+        li.checkbox__list_item.search__checkbox-list-item    
           +checkbox('', 'pets', 'Можно с питомцами')
-        li.checkbox__list_item 
-          +checkbox('search__checkbox', 'guests', 'Можно пригласить гостей ', '(до 10 человек)') 
+        li.checkbox__list_item.search__checkbox-list-item   
+          +checkbox('', 'guests', 'Можно пригласить гостей ', '(до 10 человек)') 
     .search__rich-checkbox 
       h3.h3.search__rich-checkbox__title доступность
       ul.checkbox__list 
-        li.checkbox__list__item.rich-checkbox__list__item 
-          +checkbox('checkbox__list__label-rich-title', 'corridor', 'Широкий коридор')
-        .checkbox__list__label-rich-info Ширина коридоров в номере не менее 91 см.
-        li.checkbox__list_item.rich-checkbox__list__item   
-          +checkbox('checkbox__list__label-rich-title', 'assistant', 'Помощник для инвалидов')
-        .checkbox__list__label-rich-info На 1 этаже вас встретит специалист и проводит до номера.
-      .dropdown-page.dropdown-expanded-guests__form
-        +dropdown('card-landing__dropdown dropdown-convenience dropdown', 'удобства номера', 'text')
-        .fe__dropdown__content.dropdown-convenience__content
-          +dropdown-convenience
+        li.checkbox__list__item.search__rich-checkbox__list__item 
+          +rich-checkbox('checkbox__list-label-rich-title', 'corridor', 'Широкий коридор', '', 'Ширина коридоров в номере не менее 91 см.')
+        li.checkbox__list_item.search__rich-checkbox__list__item   
+          +rich-checkbox('checkbox__list-label-rich-title', 'assistant', 'Помощник для инвалидов', '',  'На 1 этаже вас встретит специалист и проводит до номера.')
+    //- переделать, в миксин?
+    .dropdown-page.search__dropdown-convenience
+      +dropdown('card-landing__dropdown dropdown-convenience', 'удобства номера', 'text')
+      .fe__dropdown-content.dropdown-convenience__content.search__dropdown-convenience__content
+        +dropdown-convenience
     //- миксин
     .expandable-checkbox-list-default.elements__item
       .checkbox__header.elements__item_header
