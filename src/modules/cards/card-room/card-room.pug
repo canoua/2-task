@@ -1,9 +1,11 @@
-mixin card-room 
+include ../../stars-ratings/stars-ratings.pug
+
+mixin card-room(src, number, price, rating, reviewsNumber) 
   .card.card-room
     .card-inner.card-room-inner
       .card-room__slider
         .slide.card-room__slide  
-          img(src=require('@images/cards/slide-1.png'), alt="slide-1").slide-1__img
+          img(src=src, alt="slide-1").slide-1__img
         .pagination.card-room__pagination
           .dot.dot_active 
           .dot 
@@ -13,17 +15,12 @@ mixin card-room
         .card-room__content__header 
           h3.card-room__title 
             span.card-room__title__icon №
-            span.card-room__title__number 840
+            span.card-room__title__number=number
           .card-room__price 
-            .card-room__price__number 9 900₽ 
+            .card-room__price__number=price 
             .card-room__price__text в сутки
         .card-room__content__footer 
-          .stars-ratings 
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star_border
+          +stars-ratings(rating)
           .card-room__reviews 
-            .card-room__reviews__number 65
+            .card-room__reviews__number=reviewsNumber
             .card-room__reviews__text Отзывов
