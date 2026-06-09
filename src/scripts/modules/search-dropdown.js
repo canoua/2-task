@@ -158,6 +158,23 @@ export default function searchDropdown() {
   // загружаем данные из объекта при загрузке страницы
   window.addEventListener("load", convenience.view());
 
+  const indexUnactive = Object.keys(convenience.count).findIndex(
+    (key) => convenience.count[key] === 0,
+  );
+
+  // console.log(indexUnactive);
+
+  let li = document.querySelectorAll(".dropdown-list__item");
+  let currentUnactive = li[indexUnactive].querySelector(
+    ".dropdown-list__count > .dropdown-list__count_number",
+  );
+
+  // if (currentUnactive.textContent == 0) {
+  //   currentUnactive.classList.add("unactive-element");
+  // }
+
+  console.log(currentUnactive);
+
   btnPlus.forEach(function (item) {
     item.addEventListener("click", function () {
       item.parentElement.firstElementChild.classList.remove("unactive-element");
@@ -183,6 +200,6 @@ export default function searchDropdown() {
   });
 
   dropdownConvenience.addEventListener("click", function () {
-    dropdownContent.classList.toggle("fe__dropdown__content_active");
+    dropdownContent.classList.toggle("fe__dropdown-content_active");
   });
 }
