@@ -67,13 +67,12 @@
   width: 100%;
   height: 151px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .slide-1__img {
-  margin-left: -31px;
-  margin-top: -13.5px;
-  width: 332px;
-  height: 189px;
+  height: 100%;
+  width: 100%;
 }
 
 .material-icons.card-calendar__arrow-prev {

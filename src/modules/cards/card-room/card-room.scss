@@ -33,12 +33,14 @@
       height: 44px;
       line-height: 100%;
       left: -9px;
+      display: none;
     }
     & > .arrow-next.material-icons {
       width: 44px;
       height: 44px;
       right: -9px;
       line-height: 100%;
+      display: none;
     }
   }
   &__content {
@@ -118,7 +120,7 @@
   }
 }
 
-.card-room-arrow__slide {
+.card-room__slide {
   position: relative;
   &::before {
     content: "";
@@ -128,6 +130,7 @@
     width: 42px;
     height: 100%;
     background-image: url("@images/cards/effect-slide.png");
+    display: none;
   }
   &::after {
     content: "";
@@ -136,7 +139,15 @@
     right: 0;
     width: 42px;
     height: 100%;
+    display: none;
     background-image: url("@images/cards/effect-slide.png");
     transform: rotate(-180deg);
   }
+}
+
+.card-room__slider:hover > .arrow-prev.material-icons,
+.card-room__slider:hover > .arrow-next.material-icons,
+.card-room__slider:hover > .card-room__slide::before,
+.card-room__slider:hover > .card-room__slide::after {
+  display: block;
 }
