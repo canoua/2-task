@@ -9,8 +9,8 @@ mixin btn-gradient-arrow(classes, textGradBtn)
     span=textGradBtn
     .material-icons.material-icons-arrow_forward arrow_forward 
 
-mixin like-button(classIcon, icon, text)   
-  .like-button__item 
+mixin like-button(classIcon, nameBtn, icon, text)   
+  .like-button__item(class=nameBtn) 
     span(class=classIcon).material-icons.like-icon=icon
     span.like-button__item-text=text
 
