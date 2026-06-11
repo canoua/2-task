@@ -68,6 +68,9 @@
       justify-content: space-between;
       align-items: center;
     }
+    .rd__title {
+      padding-left: 0.5px;
+    }
   }
   &__information {
     margin-right: 106px;
@@ -193,6 +196,7 @@
 .rd__information {
   .rd__title {
     margin-bottom: 23px;
+    padding-left: 0.5px;
   }
 }
 
@@ -215,4 +219,8 @@
   .bullet__list {
     margin-left: -1px;
   }
+}
+
+#avatar-2 {
+  transform: scale(1);
 }
