@@ -39,19 +39,9 @@ mixin fe-inner-1
       .rate-button.fe__item 
         .fe__item_header.rate-button__header
           h3.h3 rate button
-        .stars-ratings-wrapper 
-          .stars-ratings 
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star_border
-          .stars-ratings 
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
+        .stars-ratings-wrapper
+          +stars-ratings(4) 
+          +stars-ratings(5) 
     .column.column-3
       +range-slider('fe__range-slider', 'range slider')
       .fe__buttons 
