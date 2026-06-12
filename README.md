@@ -1,5 +1,9 @@
 # Структура проекта
 
+<details>
+  <summary>развернуть</summary>
+  скрытый контент
+</details>
 src
 
 - assets/
