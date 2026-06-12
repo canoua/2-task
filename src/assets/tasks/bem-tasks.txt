@@ -1,0 +1,18 @@
+done
+  list.pug
+  footer.pug
+  header.pug
+  /layout
+  /modules/buttons.pug
+  /modules/checkbox
+  /modules/pagination
+  /modules/radiobuttons.pug
+  /modules/range-slider.pug
+  /modules/review.pug
+  /modules/toggle.pug
+  /modules/cards.pug
+checked
+  /modules/dropdown.pug
+  /modules/information.pug
+  /modules/input-card.pug
+  /modules/text-field.pug
