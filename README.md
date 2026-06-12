@@ -1,10 +1,8 @@
-# Структура проекта
-
 <details>
-  <summary>развернуть</summary>
-  скрытый контент
-</details>
-src
+  <summary> 
+    <h1>Структура проекта</h1> 
+  </summary>
+  src
 
 - assets/
 - - fonts/
@@ -52,6 +50,7 @@ src
 - index.js
 - index.pug
 - index.scss
+</details>
 
 ## Информация о проекте:
 
