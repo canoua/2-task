@@ -110,3 +110,12 @@
 .search__dropdown-convenience {
   margin-bottom: 25.44px;
 }
+
+.search__dropdown-convenience__content.fe__dropdown-content_active {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 61px;
+  z-index: 11;
+  background: #fff;
+}

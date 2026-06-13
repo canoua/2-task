@@ -2,19 +2,22 @@ export default function searchDropdown() {
   let input = document.querySelector(
     ".expandable-checkbox-list-default > .checkbox__header ",
   );
+  console.log(input);
+
   let dropdown = document.querySelector(".search__checkbox__list");
 
+  // верхний дропдаун
   let dropdownConvenience = document.querySelector(
-    ".dropdown-expanded-guests__form > .dropdown-convenience",
+    ".dropdown-expanded-guests__form > .dropdown-convenience > .card__input-wrapper-js",
   );
   let dropdownConvenienceOutput = document.querySelector(
     ".dropdown-expanded-guests__form > .dropdown-convenience > .card__input-wrapper > .card__input-dropdown",
   );
 
+  console.log(dropdownConvenienceOutput);
+
   // выпадающий блок
-  let dropdownContent = document.querySelector(
-    ".dropdown-convenience__content",
-  );
+  let dropdownContent = document.querySelector(".fe__dropdown-content");
   // кнопки в dropdown удобства
   let btnPlus = document.querySelectorAll(
     ".dropdown__convenience-list__count_plus",
@@ -173,7 +176,7 @@ export default function searchDropdown() {
   //   currentUnactive.classList.add("unactive-element");
   // }
 
-  console.log(currentUnactive);
+  // console.log(currentUnactive);
 
   btnPlus.forEach(function (item) {
     item.addEventListener("click", function () {

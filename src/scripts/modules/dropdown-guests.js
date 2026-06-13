@@ -1,13 +1,14 @@
 export default function dropdownGuests() {
-  let dropdown = document.querySelector(
-    ".card-landing__dropdown-js > .card__input-wrapper-js",
-  );
+  let dropdown = document.querySelector("#dropdown-convenience");
+
   let dropdownOutput = document.querySelector(
-    ".card-landing__dropdown-js > .card__input-wrapper-js > .card__input-dropdown",
+    ".card-landing__dropdown > .card__input-wrapper-js > .card__input-dropdown",
   );
 
   // выпадающий блок
-  let dropdownContent = document.querySelector(".fe__dropdown-content");
+  let dropdownContent = document.querySelector(
+    ".search__dropdown-convenience__content",
+  );
 
   // кнопки
   let reset = document.querySelector(".dropdown__reset");
@@ -83,12 +84,8 @@ export default function dropdownGuests() {
   }
 
   // кнопка подтвердить
-  submit.addEventListener("click", function () {
-    submitFunc();
-  });
+  submit.addEventListener("click", submitFunc);
 
   // кнопка reset
-  reset.addEventListener("click", function () {
-    resetFunc();
-  });
+  reset.addEventListener("click", resetFunc);
 }
