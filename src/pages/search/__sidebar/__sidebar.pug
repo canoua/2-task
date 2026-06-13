@@ -2,8 +2,8 @@ mixin __sidebar
   .search__sidebar 
     +filter-date-dropdown('search__filter-date-dropdown', 'даты пребывания в отеле', '19 авг - 23 авг')
     .dropdown-page.dropdown-expanded-guests__form
-      +dropdown('card-landing__dropdown dropdown card-landing__dropdown-js', 'гости', 'Сколько гостей')
-      .fe__dropdown__content
+      +dropdown('card-landing__dropdown dropdown-convenience dropdown card-landing__dropdown-js', 'гости', 'Сколько гостей')
+      .fe__dropdown-content
         ul.dropdown-list.dropdown-expanded-guests__list  
           - 
             const dropdownExpandedGuestsList = [
