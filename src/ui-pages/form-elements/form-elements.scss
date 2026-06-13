@@ -253,6 +253,9 @@
       background: #ffffff;
       border: 1px solid $darkshade50;
       transition: all 0.3s;
+      &::placeholder {
+        letter-spacing: -0.2px;
+      }
     }
   }
 }
