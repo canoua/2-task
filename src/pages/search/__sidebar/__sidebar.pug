@@ -2,7 +2,7 @@ mixin __sidebar
   .search__sidebar 
     +filter-date-dropdown('search__filter-date-dropdown', 'даты пребывания в отеле', '19 авг - 23 авг')
     .dropdown-page.dropdown-expanded-guests__form
-      +dropdown('card-landing__dropdown dropdown-convenience dropdown card-landing__dropdown-js', 'гости', 'Сколько гостей')
+      +dropdown('card-landing__dropdown dropdown-convenience dropdown card-landing__dropdown-js', 'dropdown-guests', 'гости', 'Сколько гостей')
       .fe__dropdown-content
         ul.dropdown-list.dropdown-expanded-guests__list  
           - 
@@ -44,7 +44,7 @@ mixin __sidebar
           +rich-checkbox('checkbox__list-label-rich-title', 'assistant', 'Помощник для инвалидов', '',  'На 1 этаже вас встретит специалист и проводит до номера.')
     //- переделать, в миксин?
     .dropdown-page.search__dropdown-convenience
-      +dropdown('card-landing__dropdown dropdown-convenience', 'удобства номера', 'text')
+      +dropdown('dropdown-convenience', 'dropdown-convenience', 'удобства номера', 'text')
       .fe__dropdown-content.dropdown-convenience__content.search__dropdown-convenience__content
         +dropdown-convenience
     //- миксин
