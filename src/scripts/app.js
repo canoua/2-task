@@ -5,6 +5,7 @@ import dropdownCounter from "./modules/dropdown-counter";
 import dropdownGuests from "./modules/dropdown-guests";
 import airDatePicker from "./modules/air-datepicker";
 import burger from "./modules/burger";
+import roomDetails from "./modules/room-details";
 
 ("use strict");
 
@@ -18,4 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector(".app-js-dropdown")) dropdownGuests();
   if (document.querySelector(".calendar")) airDatePicker();
   if (document.querySelector(".burger")) burger();
+  if (document.querySelector("#rd-dropdown")) roomDetails();
 });
