@@ -224,3 +224,11 @@
 #avatar-2 {
   transform: scale(1);
 }
+
+.rd-dropdown + .fe__dropdown-content {
+  display: none;
+}
+
+.rd-dropdown + .fe__dropdown-content_active {
+  display: block;
+}
