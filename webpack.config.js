@@ -1,19 +1,19 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const FileManagerPlugin = require("filemanager-webpack-plugin");
 const path = require("path");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin"); // <-- НОВЫЙ ПЛАГИН
 
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
   output: {
     path: path.join(__dirname, "dist"),
     filename: "main.[contenthash].js",
-    // сделано, для того, чтобы структура папок из src повторилась в dist
+    clean: true, // автоматически чистит dist
     assetModuleFilename: (pathData) => {
       const filepath = path
         .dirname(pathData.filename)
-        .split("/")
+        .split(/[\\/]/)
         .slice(1)
         .join("/");
       return `${filepath}/[name][ext]`;
@@ -33,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        loader: "pug-loader",
+        loader: "@webdiscus/pug-loader",
       },
       {
         test: /\.(scss|css)$/,
@@ -41,18 +41,14 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
-            options: {
-              sourceMap: true,
-            },
+            options: { sourceMap: true },
           },
           "postcss-loader",
           {
             loader: "sass-loader",
             options: {
+              api: "modern",
               sourceMap: true,
-              sassOptions: {
-                outputStyle: "compressed",
-              },
             },
           },
         ],
@@ -69,27 +65,15 @@ module.exports = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(
-        __dirname,
-        "src/ui-pages/headers-footers",
-        "headers-footers.pug",
-      ),
+      template: path.join(__dirname, "src/ui-pages/headers-footers", "headers-footers.pug"),
       filename: "ui-pages/headers-footers.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(
-        __dirname,
-        "src/ui-pages/form-elements",
-        "form-elements(fe).pug",
-      ),
+      template: path.join(__dirname, "src/ui-pages/form-elements", "form-elements(fe).pug"),
       filename: "ui-pages/form-elements(fe).html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(
-        __dirname,
-        "src/ui-pages/colors-types",
-        "colors-types.pug",
-      ),
+      template: path.join(__dirname, "src/ui-pages/colors-types", "colors-types.pug"),
       filename: "ui-pages/colors-types.html",
     }),
     new HtmlWebpackPlugin({
@@ -113,27 +97,18 @@ module.exports = {
       filename: "pages/sign-up.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(
-        __dirname,
-        "src/pages/room-details",
-        "room-details.pug",
-      ),
+      template: path.join(__dirname, "src/pages/room-details", "room-details.pug"),
       filename: "pages/room-details.html",
     }),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
     }),
-    new FileManagerPlugin({
-      events: {
-        onStart: {
-          delete: ["dist"],
-        },
-      },
-    }),
   ],
   devServer: {
+    static: path.join(__dirname, "dist"),
     watchFiles: path.join(__dirname, "src"),
     port: 9000,
+    hot: true,
   },
   resolve: {
     alias: {
@@ -142,16 +117,18 @@ module.exports = {
   },
   optimization: {
     minimizer: [
+      new CssMinimizerPlugin(),
       new ImageMinimizerPlugin({
         minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
+          // ИСПОЛЬЗУЕМ sharp ВМЕСТО imagemin
+          implementation: ImageMinimizerPlugin.sharpMinify, 
           options: {
-            plugins: [
-              ["gifsicle", { interlaced: true }],
-              ["jpegtran", { progressive: true }],
-              ["optipng", { optimizationLevel: 5 }],
-              ["svgo", { name: "preset-default" }],
-            ],
+            encodeOptions: {
+              jpeg: { quality: 80, progressive: true },
+              png: { quality: 80 },
+              webp: { quality: 80 },
+              gif: {},
+            },
           },
         },
       }),

@@ -1,3 +1,5 @@
+@use './../default/variables.scss' as *;
+
 .air-datepicker {
   &-global-container {
     left: 0 !important;

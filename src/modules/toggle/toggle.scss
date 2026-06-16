@@ -11,7 +11,7 @@
       font-style: normal;
       font-size: 14px;
       line-height: 24px;
-      color: $darkshade75;
+      // color: $darkshade75;
       @media (max-width: 375px) {
         font-size: 12px;
       }
@@ -40,7 +40,7 @@
   transform: translate(0, -50%);
   transition: 0.4s;
   background: #ffffff;
-  border: 1px solid $darkshade25;
+  // border: 1px solid $darkshade25;
   box-sizing: border-box;
   border-radius: 10px;
   width: 40px;
@@ -52,7 +52,7 @@
     width: 12px;
     left: 3px;
     bottom: 3px;
-    background: $darkshade25;
+    // background: $darkshade25;
     border-radius: 10px;
     transition: 0.3s;
   }
@@ -65,11 +65,11 @@
 }
 
 input:checked + .slider {
-  border: 1px solid $purple;
+  // border: 1px solid $purple;
 }
 
 input:checked + .slider:before {
   transform: translateX(18px);
-  background: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
+  // background: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
   left: 5px;
 }

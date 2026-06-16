@@ -1,6 +1,6 @@
-@import "modules/fe-inner-1/fe-inner-1.scss";
-@import "modules/fe-inner-2/fe-inner-2.scss";
-@import "modules/fe-inner-3/fe-inner-3.scss";
+@use "modules/fe-inner-1/fe-inner-1.scss";
+@use "modules/fe-inner-2/fe-inner-2.scss";
+@use "modules/fe-inner-3/fe-inner-3.scss";
 
 .fe {
   position: relative;

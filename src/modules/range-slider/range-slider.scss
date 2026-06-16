@@ -1,4 +1,4 @@
-@import "lib.scss";
+@use "lib.scss";
 
 .range-slider {
   &__header {
@@ -22,7 +22,7 @@
 #range-slider {
   height: 6px;
   background: #ffffff;
-  border: 1px solid $darkshade25;
+  // border: 1px solid $darkshade25;
   border-radius: 3px;
   margin-bottom: 10.56px;
 }
