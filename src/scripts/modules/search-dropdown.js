@@ -2,9 +2,9 @@ export default function searchDropdown() {
   let input = document.querySelector(
     ".expandable-checkbox-list-default > .checkbox__header ",
   );
-  console.log(input);
+  // console.log(input);
 
-  let dropdown = document.querySelector(".search__checkbox__list");
+  let dropdown = document.querySelector(".search__checkbox-list");
 
   // верхний дропдаун
   let dropdownConvenience = document.querySelector(
@@ -199,7 +199,7 @@ export default function searchDropdown() {
   });
 
   input.addEventListener("click", function () {
-    dropdown.classList.toggle("search__checkbox__list_active");
+    dropdown.classList.toggle("search__checkbox-list_active");
   });
 
   dropdownConvenience.addEventListener("click", function () {
