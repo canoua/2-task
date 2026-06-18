@@ -1,3 +1,5 @@
+@use "@vars/variables.scss" as *;
+
 .reviews {
   width: 711px;
   margin-top: 10px;
@@ -13,7 +15,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    // color: $darkshade75;
+    color: $darkshade75;
     &-wrapper {
       display: flex;
       flex-direction: column;
@@ -23,7 +25,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    // color: $darkshade75;
+    color: $darkshade75;
   }
   &__avatar {
     overflow: hidden;
@@ -51,7 +53,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    // color: $darkshade75;
+    color: $darkshade75;
     width: 653px;
     margin-top: -2px;
   }

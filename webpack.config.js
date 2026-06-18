@@ -65,15 +65,27 @@ module.exports = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/ui-pages/headers-footers", "headers-footers.pug"),
+      template: path.join(
+        __dirname,
+        "src/ui-pages/headers-footers",
+        "headers-footers.pug",
+      ),
       filename: "ui-pages/headers-footers.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/ui-pages/form-elements", "form-elements(fe).pug"),
+      template: path.join(
+        __dirname,
+        "src/ui-pages/form-elements",
+        "form-elements(fe).pug",
+      ),
       filename: "ui-pages/form-elements(fe).html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/ui-pages/colors-types", "colors-types.pug"),
+      template: path.join(
+        __dirname,
+        "src/ui-pages/colors-types",
+        "colors-types.pug",
+      ),
       filename: "ui-pages/colors-types.html",
     }),
     new HtmlWebpackPlugin({
@@ -97,7 +109,11 @@ module.exports = {
       filename: "pages/sign-up.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/pages/room-details", "room-details.pug"),
+      template: path.join(
+        __dirname,
+        "src/pages/room-details",
+        "room-details.pug",
+      ),
       filename: "pages/room-details.html",
     }),
     new MiniCssExtractPlugin({
@@ -113,6 +129,7 @@ module.exports = {
   resolve: {
     alias: {
       "@images": path.resolve(__dirname, "src/assets/images/"),
+      "@vars": path.resolve(__dirname, "src/assets/styles/default/"),
     },
   },
   optimization: {
@@ -121,7 +138,7 @@ module.exports = {
       new ImageMinimizerPlugin({
         minimizer: {
           // ИСПОЛЬЗУЕМ sharp ВМЕСТО imagemin
-          implementation: ImageMinimizerPlugin.sharpMinify, 
+          implementation: ImageMinimizerPlugin.sharpMinify,
           options: {
             encodeOptions: {
               jpeg: { quality: 80, progressive: true },

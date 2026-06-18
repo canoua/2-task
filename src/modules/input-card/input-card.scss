@@ -1,8 +1,10 @@
+@use "@vars/variables.scss" as *;
+
 .card {
   &__input {
     width: 100%;
     background: #ffffff;
-    // border: 1px solid $darkshade25;
+    border: 1px solid $darkshade25;
     box-sizing: border-box;
     border-radius: 4px;
     padding-top: 14px;
@@ -18,20 +20,20 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
-      // color: $darkshade25;
+      color: $darkshade25;
     }
     &:last-child {
       margin-bottom: 0;
     }
     &:focus {
       background: #ffffff;
-      // border: 1px solid $darkshade50;
+      border: 1px solid $darkshade50;
       transition: all 0.3s;
       &::placeholder {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        // color: $darkshade75;
+        color: $darkshade75;
       }
     }
   }

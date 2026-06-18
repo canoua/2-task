@@ -1,3 +1,4 @@
+@use "@vars/variables.scss" as *;
 @use "__header/_header";
 @use "__pie/_pie";
 
@@ -24,7 +25,7 @@
   }
   &__main {
     padding: 72px 0;
-    // border-bottom: 1px solid $darkshade25;
+    border-bottom: 1px solid $darkshade25;
   }
   &__col {
     &_1 {
@@ -125,7 +126,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
-      // color: $darkshade75;
+      color: $darkshade75;
       position: relative;
       &::after {
         content: "";
@@ -171,7 +172,7 @@
       font-size: 14px;
       line-height: 14px;
       text-align: right;
-      // color: $darkshade50;
+      color: $darkshade50;
       margin-top: 4px;
       margin-right: -1px;
     }
@@ -183,7 +184,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    // color: $darkshade75;
+    color: $darkshade75;
   }
 }
 

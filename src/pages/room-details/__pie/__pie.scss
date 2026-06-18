@@ -1,3 +1,5 @@
+@use "@vars/variables.scss" as *;
+
 .rd {
   &__pie {
     position: relative;
@@ -67,13 +69,13 @@
 
 #good {
   z-index: 30;
-  // background: $green;
+  background: $green;
   transform: rotate(-89deg);
 }
 
 #satisfactory {
   z-index: 10;
-  // background: $purple;
+  background: $purple;
   transform: rotate(89deg);
 }
 

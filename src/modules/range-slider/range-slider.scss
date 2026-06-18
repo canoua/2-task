@@ -1,3 +1,4 @@
+@use "@vars/variables.scss" as *;
 @use "lib.scss";
 
 .range-slider {
@@ -15,14 +16,14 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #1f204180;
-    // color: $darkshade25;
+    color: $darkshade25;
   }
 }
 
 #range-slider {
   height: 6px;
   background: #ffffff;
-  // border: 1px solid $darkshade25;
+  border: 1px solid $darkshade25;
   border-radius: 3px;
   margin-bottom: 10.56px;
 }

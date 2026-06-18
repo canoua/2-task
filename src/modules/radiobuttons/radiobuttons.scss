@@ -1,3 +1,5 @@
+@use "@vars/variables.scss" as *;
+
 .input:checked,
 .input:not(:checked) {
   position: absolute;
@@ -18,7 +20,7 @@
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0%;
-  // color: $darkshade75;
+  color: $darkshade75;
 }
 
 .input:checked + label:before,
@@ -34,11 +36,11 @@
 }
 
 .input:not(:checked) + label:before {
-  // border: 1px solid $darkshade25;
+  border: 1px solid $darkshade25;
 }
 
 .input:checked + label:before {
-  // border: 1px solid $purple;
+  border: 1px solid $purple;
 }
 
 .input:checked + label:after,
@@ -94,11 +96,11 @@
 }
 
 .custom-radio:not(:disabled):not(:checked) + label:hover::before {
-  // border-color: $purple;
+  border-color: $purple;
 }
 
 .custom-radio:not(:disabled):active + label::before {
-  // background-color: $purple;
+  background-color: $purple;
   border-color: #b3d7ff;
 }
 
@@ -107,7 +109,7 @@
 }
 
 .custom-radio:checked + label::before {
-  // border-color: $purple;
+  border-color: $purple;
   background-color: #fff;
   background-repeat: no-repeat;
 }
@@ -129,7 +131,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
-      // color: $darkshade50;
+      color: $darkshade50;
       cursor: pointer;
     }
   }
