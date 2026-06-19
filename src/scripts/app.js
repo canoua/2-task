@@ -1,25 +1,27 @@
 import rangeSlider from "./modules/range-slider";
 import mask from "./modules/mask";
-import searchDropdown from "./modules/search-dropdown";
-import dropdownCounter from "./modules/dropdown-counter";
+import searchDropdown from "./pages/searchDropdown";
+import dropdownCounter from "./modules/dropdown/dropdownCounter";
 import dropdownGuests from "./modules/dropdown-guests";
-import airDatePicker from "./modules/air-datepicker";
+import airDatePicker from "./libs/air-datepicker";
 import burger from "./modules/burger";
-import roomDetails from "./modules/room-details";
-import landing from "./modules/landing";
+import roomDetails from "./pages/roomDetails";
+import landing from "./pages/landing";
+import signUp from "./pages/signUp";
 
 ("use strict");
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelector("#range-slider")) rangeSlider();
-  if (document.querySelector(".card__input-masked")) mask();
-  if (document.querySelector(".expandable-checkbox-list-default"))
-    searchDropdown();
-  if (document.querySelector(".dropdown-expanded-guests__form"))
-    dropdownCounter();
-  if (document.querySelector(".app-js-dropdown")) dropdownGuests();
-  if (document.querySelector(".calendar")) airDatePicker();
-  if (document.querySelector(".burger")) burger();
-  if (document.querySelector("#rd-dropdown")) roomDetails();
-  if (document.querySelector("#card-landing__dropdown")) landing();
+  // if (document.querySelector("#range-slider")) rangeSlider();
+  // if (document.querySelector(".card__input-masked")) mask();
+  // if (document.querySelector(".expandable-checkbox-list-default"))
+  //   searchDropdown();
+  // if (document.querySelector(".dropdown-expanded-guests__form"))
+  //   dropdownCounter();
+  // if (document.querySelector(".app-js-dropdown")) dropdownGuests();
+  // if (document.querySelector(".calendar")) airDatePicker();
+  // if (document.querySelector(".burger")) burger();
+  // if (document.querySelector("#rd-dropdown")) roomDetails();
+  if (document.querySelector("#sign-up-js")) signUp();
+  if (document.querySelector("#landing-js")) landing();
 });
