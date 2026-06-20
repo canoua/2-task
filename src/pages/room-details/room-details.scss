@@ -232,4 +232,9 @@
 
 .rd-dropdown + .fe__dropdown-content_active {
   display: block;
+  position: absolute;
+  top: 61px;
+  left: 0;
+  z-index: 100;
+  background: #fff;
 }

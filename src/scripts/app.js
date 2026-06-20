@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // if (document.querySelector(".app-js-dropdown")) dropdownGuests();
   // if (document.querySelector(".calendar")) airDatePicker();
   // if (document.querySelector(".burger")) burger();
-  // if (document.querySelector("#rd-dropdown")) roomDetails();
+  if (document.querySelector("#rd-dropdown")) roomDetails();
   if (document.querySelector("#sign-up-js")) signUp();
   if (document.querySelector("#landing-js")) landing();
 });
