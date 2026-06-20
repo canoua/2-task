@@ -1,6 +1,6 @@
 import dropdownCounter from "../modules/dropdown/dropdownCounter";
 import { dropdownOutput, content } from "../modules/constants";
-import { dropdownReset } from "../modules/dropdown/dropdownReset";
+import dropdownReset from "../modules/dropdown/dropdownReset";
 import dropdownSubmit from "../modules/dropdown/dropdownSubmit";
 import airDatePicker from "../libs/air-datepicker";
 
