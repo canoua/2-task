@@ -1,4 +1,7 @@
-export default function searchDropdown() {
+import airDatePicker from "../libs/air-datepicker";
+import rangeSlider from "../modules/range-slider";
+
+export default function search() {
   let input = document.querySelector(
     ".expandable-checkbox-list-default > .checkbox__header ",
   );
@@ -205,4 +208,7 @@ export default function searchDropdown() {
   dropdownConvenience.addEventListener("click", function () {
     dropdownContent.classList.toggle("fe__dropdown-content_active");
   });
+
+  rangeSlider();
+  // airDatePicker();
 }

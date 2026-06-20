@@ -1,6 +1,6 @@
 import rangeSlider from "./modules/range-slider";
 import mask from "./modules/mask";
-import searchDropdown from "./pages/searchDropdown";
+import search from "./pages/search";
 import dropdownCounter from "./modules/dropdown/dropdownCounter";
 import dropdownGuests from "./modules/dropdown-guests";
 import airDatePicker from "./libs/air-datepicker";
@@ -14,8 +14,7 @@ import signUp from "./pages/signUp";
 document.addEventListener("DOMContentLoaded", () => {
   // if (document.querySelector("#range-slider")) rangeSlider();
   // if (document.querySelector(".card__input-masked")) mask();
-  // if (document.querySelector(".expandable-checkbox-list-default"))
-  //   searchDropdown();
+  if (document.querySelector(".expandable-checkbox-list-default")) search();
   // if (document.querySelector(".dropdown-expanded-guests__form"))
   //   dropdownCounter();
   // if (document.querySelector(".app-js-dropdown")) dropdownGuests();
