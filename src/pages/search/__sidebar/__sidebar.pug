@@ -2,14 +2,22 @@ mixin __sidebar
   .search__sidebar 
     +filter-date-dropdown('search__filter-date-dropdown', 'даты пребывания в отеле', '19 авг - 23 авг')
     .dropdown-page.dropdown-expanded-guests__form
-      +dropdown('card-landing__dropdown dropdown-convenience dropdown card-landing__dropdown-js', 'dropdown-guests', 'гости', 'Сколько гостей')
+      - 
+        const dropdownExpandedGuestsList = [
+          {name:'взрослые', number: 2}, 
+          {name:'дети', number: 0},
+          {name:'младенцы', number: 1}];
+        //- перенести в js 
+        let sumCount = function() {
+          let sum = 0;
+          for(let i=0; i<dropdownExpandedGuestsList.length; i++) {
+            sum += dropdownExpandedGuestsList[i].number;
+          }
+          return sum
+        }
+      +dropdown('card-landing__dropdown dropdown-convenience dropdown card-landing__dropdown-js', 'dropdown-guests', 'гости', `${sumCount()} гостя, ${dropdownExpandedGuestsList[2].number} младенец`)
       .fe__dropdown-content
         ul.dropdown-list.dropdown-expanded-guests__list  
-          - 
-            const dropdownExpandedGuestsList = [
-              {name:'взрослые', number: 2}, 
-              {name:'дети', number: 0},
-              {name:'младенцы', number: 1}];
           each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList
             li.dropdown-list__item 
               .dropdown-list__item_name #{dropdownExpandedGuestsListItem.name}
