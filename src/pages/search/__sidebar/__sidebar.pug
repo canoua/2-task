@@ -8,16 +8,13 @@ mixin __sidebar
           - 
             const dropdownExpandedGuestsList = [
               {name:'взрослые', number: 2}, 
-              {name:'дети', number: 2},
-              {name:'младенцы', number: 0}];
+              {name:'дети', number: 0},
+              {name:'младенцы', number: 1}];
           each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList
             li.dropdown-list__item 
               .dropdown-list__item_name #{dropdownExpandedGuestsListItem.name}
               .dropdown-list__count 
-                if dropdownExpandedGuestsListItem.number > 1
-                  .dropdown-list__count_minus.dropdown-list__count_minus-js -
-                else 
-                  .dropdown-list__count_minus.unactive-element -
+                .dropdown-list__count_minus.dropdown-list__count_minus-js -
                 .dropdown-list__count_number.dropdown__guests-list__count_number #{dropdownExpandedGuestsListItem.number}
                 .dropdown-list__count_plus.dropdown-list__count_plus-js +
         .dropdown-btns.dropdown-btns-2  

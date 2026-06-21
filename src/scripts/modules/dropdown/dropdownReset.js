@@ -7,7 +7,6 @@ export default function dropdownReset() {
     item.textContent = "0";
     item.previousElementSibling.classList.add("unactive-element");
   });
-  console.log(countNumber);
 
   dropdownOutput.textContent = "Сколько гостей";
 }
