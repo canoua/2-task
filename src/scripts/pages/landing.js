@@ -19,8 +19,8 @@ export default function landing() {
   }
 
   if (submit) {
-    submit.addEventListener("click", function () {
-      dropdownSubmit();
+    submit.addEventListener("click", function (event) {
+      dropdownSubmit(event);
     });
   }
 
