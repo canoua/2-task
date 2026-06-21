@@ -1,6 +1,7 @@
 import { dropdownOutput, content } from "../constants";
 
-export default function dropdownSubmit() {
+export default function dropdownSubmit(event) {
+  event.preventDefault();
   const input = document.querySelectorAll(
     ".dropdown__guests-list__count_number",
   );
