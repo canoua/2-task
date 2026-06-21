@@ -10,15 +10,22 @@ mixin card-landing
           +date-dropdown('input1','прибытие', 'ДД.ММ.ГГГГ')
           +date-dropdown('input2','выезд', 'ДД.ММ.ГГГГ')
         .dropdown-page.dropdown-expanded-guests__form
-          +dropdown('card-landing__dropdown card-landing__dropdown-js', 'card-landing__dropdown',  'гости', 'Сколько гостей')
+          - 
+            const guests = [
+              {name: 'взрослые', count: 2},
+              {name: 'дети', count: 1},
+              {name: 'младенцы', count: 0},
+            ]
+            let sumCount = function() {
+              let sum = 0;
+              for(let i=0; i<guests.length; i++) {
+                sum += guests[i].count;
+              }
+              return sum
+            }
+          +dropdown('card-landing__dropdown card-landing__dropdown-js', 'card-landing__dropdown',  'гости', `${sumCount()} гостя`)
           .fe__dropdown-content
             ul.dropdown-list.dropdown-expanded-guests__list  
-              - 
-                const guests = [
-                  {name: 'взрослые', count: 2},
-                  {name: 'дети', count: 2},
-                  {name: 'младенцы', count: 2},
-                ]
               each guest in guests 
                 li.dropdown-list__item 
                   .dropdown-list__item_name #{guest.name}
