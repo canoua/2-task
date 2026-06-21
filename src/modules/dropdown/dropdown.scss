@@ -50,7 +50,6 @@
         cursor: pointer;
         border: 1px solid $darkshade25;
         border-radius: 22px;
-        user-select: none;
       }
       &_number {
         font-weight: 700;
@@ -123,6 +122,7 @@
 .unactive-element {
   cursor: auto;
   opacity: 0.38;
+  user-select: none;
 }
 
 .filter-date-dropdown {
