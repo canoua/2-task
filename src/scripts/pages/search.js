@@ -16,6 +16,30 @@ export default function search() {
   const numberList = document.querySelectorAll(
     ".dropdown__convenience-list__count_number",
   );
+  const expandableList = document.querySelector(
+    ".search__expandable-checkbox-list",
+  );
+  const expandableListContent = document.querySelector(
+    ".search__checkbox-list",
+  );
+  const dropdownConvenienceOutput = dropdownConvenience.querySelector(
+    ".card__input-dropdown",
+  );
+  const btnPlus = document.querySelectorAll(
+    ".dropdown__convenience-list__count_plus",
+  );
+  const btnMinus = document.querySelectorAll(
+    ".dropdown__convenience-list__count_minus",
+  );
+  const bedroomsCount = document.querySelector(
+    ".dropdown__convenience-list__count_bedrooms",
+  );
+  const bedsCount = document.querySelector(
+    ".dropdown__convenience-list__count_beds",
+  );
+  const bathroomsCount = document.querySelector(
+    ".dropdown__convenience-list__count_bathrooms",
+  );
 
   dropdownCounter();
 
@@ -49,42 +73,6 @@ export default function search() {
   dropdownConvenience.addEventListener("click", function () {
     convenienceContent.classList.toggle("fe__dropdown-content_active");
   });
-
-  // let input = document.querySelector(
-  //   ".expandable-checkbox-list-default > .checkbox__header ",
-  // );
-  // // console.log(input);
-
-  // let dropdown = document.querySelector(".search__checkbox-list");
-
-  // // верхний дропдаун
-  // let dropdownConvenience = document.querySelector(
-  //   ".dropdown-expanded-guests__form > .dropdown-convenience > .card__input-wrapper-js",
-  // );
-  let dropdownConvenienceOutput = dropdownConvenience.querySelector(
-    ".card__input-dropdown",
-  );
-
-  // // кнопки в dropdown удобства
-  let btnPlus = document.querySelectorAll(
-    ".dropdown__convenience-list__count_plus",
-  );
-  let btnMinus = document.querySelectorAll(
-    ".dropdown__convenience-list__count_minus",
-  );
-
-  // // bedrooms-спальни
-  let bedroomsCount = document.querySelector(
-    ".dropdown__convenience-list__count_bedrooms",
-  );
-  // // beds - кровати
-  let bedsCount = document.querySelector(
-    ".dropdown__convenience-list__count_beds",
-  );
-  // // ванные комнаты
-  let bathroomsCount = document.querySelector(
-    ".dropdown__convenience-list__count_bathrooms",
-  );
 
   let convenience = {
     count: {
@@ -235,5 +223,10 @@ export default function search() {
   });
 
   rangeSlider();
-  // airDatePicker();
+
+  if (expandableList) {
+    expandableList.addEventListener("click", function () {
+      expandableListContent.classList.toggle("search__checkbox-list_active");
+    });
+  }
 }
