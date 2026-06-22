@@ -29,5 +29,15 @@ export default function roomDetails() {
     });
   }
 
+  document.addEventListener("click", (event) => {
+    const clickDocument = input.contains(event.target);
+
+    const clickContent = content.contains(event.target);
+
+    if (!clickDocument && !clickContent) {
+      content.classList.remove("fe__dropdown-content_active");
+    }
+  });
+
   airDatePicker();
 }

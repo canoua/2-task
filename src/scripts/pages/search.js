@@ -61,15 +61,6 @@ export default function search() {
     });
   }
 
-  document.addEventListener("click", (event) => {
-    const clickDocument = dropdown.contains(event.target);
-    const clickContent = content.contains(event.target);
-
-    if (!clickDocument && !clickContent) {
-      content.classList.remove("fe__dropdown-content_active");
-    }
-  });
-
   dropdownConvenience.addEventListener("click", function () {
     convenienceContent.classList.toggle("fe__dropdown-content_active");
   });
@@ -229,4 +220,32 @@ export default function search() {
       expandableListContent.classList.toggle("search__checkbox-list_active");
     });
   }
+
+  // сделать через делегирование
+  document.addEventListener("click", (event) => {
+    const clickDocument = dropdown.contains(event.target);
+    const clickDocumentOutsideConvenience = dropdownConvenience.contains(
+      event.target,
+    );
+    const clickDocumentOutsideExpandable = expandableList.contains(
+      event.target,
+    );
+    const clickContent = content.contains(event.target);
+    const clickConvenienceContent = convenienceContent.contains(event.target);
+    const clickExpandableListContent = expandableListContent.contains(
+      event.target,
+    );
+
+    if (!clickDocument && !clickContent) {
+      content.classList.remove("fe__dropdown-content_active");
+    }
+
+    if (!clickDocumentOutsideConvenience && !clickConvenienceContent) {
+      convenienceContent.classList.remove("fe__dropdown-content_active");
+    }
+
+    if (!clickDocumentOutsideExpandable && !clickExpandableListContent) {
+      expandableListContent.classList.remove("search__checkbox-list_active");
+    }
+  });
 }
