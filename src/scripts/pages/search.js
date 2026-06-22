@@ -1,3 +1,4 @@
+import AirDatepicker from "air-datepicker";
 import airDatePicker from "../libs/air-datepicker";
 import { content } from "../modules/constants";
 import dropdownCounter from "../modules/dropdown/dropdownCounter";
@@ -247,5 +248,11 @@ export default function search() {
     if (!clickDocumentOutsideExpandable && !clickExpandableListContent) {
       expandableListContent.classList.remove("search__checkbox-list_active");
     }
+  });
+
+  let input1 = document.querySelector(".card__input-wrapper");
+
+  let calendar = new AirDatepicker(".calendar", {
+    visible: false,
   });
 }
