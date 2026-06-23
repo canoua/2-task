@@ -2,24 +2,29 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin"); // <-- НОВЫЙ ПЛАГИН
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
+const isDev =
+  Boolean(process.env.WEBPACK_SERVE) || process.env.NODE_ENV === "development";
+const isProd = !isDev;
 
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
   output: {
     path: path.join(__dirname, "dist"),
     filename: "main.[contenthash].js",
-    clean: true, // автоматически чистит dist
+    clean: isProd, // Не чистим диск в режиме разработки!
+    publicPath: "/", // КРИТИЧНО для многостраничника, чтобы пути не ломались
     assetModuleFilename: (pathData) => {
       const filepath = path
         .dirname(pathData.filename)
         .split(/[\\/]/)
         .slice(1)
         .join("/");
-      return `${filepath}/[name][ext]`;
+      return `${filepath}/[name].[contenthash][ext]`;
     },
   },
-  devtool: "source-map",
+  devtool: isDev ? "source-map" : false, // В продакше source-map лучше отключить для скорости
   module: {
     rules: [
       {
@@ -36,21 +41,23 @@ module.exports = {
         loader: "@webdiscus/pug-loader",
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: "css-loader",
-            options: { sourceMap: true },
-          },
+          isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          { loader: "css-loader", options: { sourceMap: Boolean(isDev) } },
           "postcss-loader",
           {
             loader: "sass-loader",
-            options: {
-              api: "modern",
-              sourceMap: true,
-            },
+            options: { api: "modern", sourceMap: Boolean(isDev) },
           },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          { loader: "css-loader", options: { sourceMap: Boolean(isDev) } },
+          "postcss-loader",
         ],
       },
       {
@@ -116,12 +123,14 @@ module.exports = {
       ),
       filename: "pages/room-details.html",
     }),
-    new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
-    }),
-  ],
+
+    //Подключаем MiniCssExtractPlugin только в продакшене
+    !isDev &&
+      new MiniCssExtractPlugin({
+        filename: "[name].[contenthash].css",
+      }),
+  ].filter(Boolean), // .filter(Boolean) удалит false из массива, когда isDev === true
   devServer: {
-    static: path.join(__dirname, "dist"),
     watchFiles: path.join(__dirname, "src"),
     port: 9000,
     hot: true,
@@ -133,11 +142,11 @@ module.exports = {
     },
   },
   optimization: {
+    minimize: isProd, // <-- ИЗМЕНЕНО: Минимизируем (в т.ч. sharp) только в продакшене
     minimizer: [
       new CssMinimizerPlugin(),
       new ImageMinimizerPlugin({
         minimizer: {
-          // ИСПОЛЬЗУЕМ sharp ВМЕСТО imagemin
           implementation: ImageMinimizerPlugin.sharpMinify,
           options: {
             encodeOptions: {
