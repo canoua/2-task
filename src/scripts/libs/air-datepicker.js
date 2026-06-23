@@ -46,7 +46,6 @@ export default function airDatePicker() {
     secondDate: new Date(),
     endDate,
     dateFormat: "dd.MM.yyyy",
-    // для постоянного отображения после инициализации
     navTitles: {
       days: '<div class = "air-datepicker-navTitle-custom">MMMM yyyy</div>',
     },
