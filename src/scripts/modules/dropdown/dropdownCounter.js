@@ -1,14 +1,31 @@
+import dropdownSubmit from "./dropdownSubmit";
+import { counter } from "../constants";
+
 export default function dropdownCounter() {
-  let minus = document.querySelectorAll(".dropdown-list__count_minus-js");
-  let plus = document.querySelectorAll(".dropdown-list__count_plus-js");
+  const minus = document.querySelectorAll(".dropdown-list__count_minus-js");
+  const plus = document.querySelectorAll(".dropdown-list__count_plus-js");
+  const submit = document.querySelector(".dropdown__submit");
 
   window.addEventListener("load", function () {
     minus.forEach(function (item) {
       if (item.nextElementSibling.textContent === "0") {
         item.classList.add("unactive-element");
+        item.style.pointerEvents = "none";
+        counter.count++;
       }
     });
+    checkNullCount();
   });
+
+  function checkNullCount() {
+    console.log(counter.count);
+
+    if (counter.count == 3) {
+      submit.style.display = "none";
+    } else {
+      submit.style.display = "block";
+    }
+  }
 
   minus.forEach(function (item) {
     item.addEventListener("click", function (event) {
@@ -23,6 +40,9 @@ export default function dropdownCounter() {
 
       if (item.nextElementSibling.textContent == 0) {
         item.classList.add("unactive-element");
+        item.style.pointerEvents = "none";
+        counter.count++;
+        checkNullCount();
       }
     });
   });
@@ -35,6 +55,13 @@ export default function dropdownCounter() {
 
       output.textContent = Number(output.textContent) + 1;
       parent.firstElementChild.classList.remove("unactive-element");
+      parent.firstElementChild.style.pointerEvents = "auto";
+
+      if (counter.count != 0) {
+        counter.count--;
+      }
+
+      checkNullCount();
     });
   });
 }
