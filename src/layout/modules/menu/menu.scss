@@ -1,4 +1,4 @@
-@use './../../../assets/styles/default/variables.scss' as *;
+@use "./../../../assets/styles/default/variables.scss" as *;
 
 .menu__navigation {
   margin-bottom: 5px;
@@ -96,7 +96,7 @@
     letter-spacing: 0%;
     color: $darkshade50;
     display: inline-block;
-    transition: 0.2s linear;
+    transition: text-shadow 0.2s;
     &:hover {
       text-shadow:
         1.2px 0 0 rgba(0, 0, 0, 0.4),
