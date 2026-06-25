@@ -17,7 +17,7 @@ mixin card-sign-up(page)
         +text-field-default('card-sign-up__password', '', '', 'Пароль')
         +toggle('card-sign-up__toggle', 'Получать спецпредложения')
         if (page=="sign-up")
-          +btn-gradient-arrow('', 'зарегистрироваться')
+          +btn-gradient-arrow('sign-up__submit', 'зарегистрироваться')
         else 
           +btn-gradient-arrow('', 'перейти к оплате')
         +card__note('sign-up')
@@ -30,7 +30,7 @@ mixin card-sign-in
         .inputs-wrapper.card-sign-in__inputs-wrapper 
           +text-field-default('', '', '', 'Email')
           +text-field-default('', '', '', 'Пароль')
-        +btn-gradient-arrow('button-default-big', 'Войти')
+        +btn-gradient-arrow('button-default-big sign-in__submit', 'Войти')
         +card__note('sign-in')
 
 mixin card__note(page)

@@ -8,6 +8,7 @@ export default function roomDetails() {
   const content = document.querySelector(".fe__dropdown-content");
   const reset = document.querySelector(".dropdown__reset");
   const submit = document.querySelector(".dropdown__submit");
+  const submitForm = document.querySelector(".card-btn-landing");
 
   if (input) {
     input.addEventListener("click", function () {
@@ -37,6 +38,10 @@ export default function roomDetails() {
     if (!clickDocument && !clickContent) {
       content.classList.remove("fe__dropdown-content_active");
     }
+  });
+
+  submitForm.addEventListener("click", function (event) {
+    event.preventDefault();
   });
 
   airDatePicker();

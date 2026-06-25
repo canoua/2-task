@@ -8,6 +8,7 @@ export default function landing() {
   const input = document.getElementById("card-landing__dropdown");
   const reset = document.querySelector(".dropdown__reset");
   const submit = document.querySelector(".dropdown__submit");
+  const submitForm = document.querySelector(".card-btn-landing");
 
   // +, -, unactive -
   dropdownCounter();
@@ -37,6 +38,10 @@ export default function landing() {
     if (!clickDocument && !clickContent) {
       content.classList.remove("fe__dropdown-content_active");
     }
+  });
+
+  submitForm.addEventListener("click", function (event) {
+    event.preventDefault();
   });
 
   if (document.querySelector(".calendar")) {
