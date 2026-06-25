@@ -1,9 +1,9 @@
 mixin fe-inner-2   
   .container.fe-inner-2
     .column 
-      +dropdown('fe__dropdown_unactive', 'dropdown', '2 спальни, 2 кровати...')
+      +dropdown('fe__dropdown_unactive', 'fe__dropdown_unactive', 'dropdown', '2 спальни, 2 кровати...')
       .dropdown-expanded.fe__item 
-        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', '2 спальни, 2 кровати...')
+        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown-expanded-active', 'dropdown', '2 спальни, 2 кровати...')
         .fe__dropdown-content.dropdown-expanded-guests__form
           ul.dropdown-list 
             - 
@@ -23,7 +23,7 @@ mixin fe-inner-2
                   .dropdown-list__count_plus +
     .colummn.column-2 
       .dropdown-expanded.fe__item 
-        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', 'Сколько гостей')
+        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown-expanded-active-2', 'dropdown', 'Сколько гостей')
         .fe__dropdown-content
           ul.dropdown-list.dropdown-expanded-guests__list  
             - 
@@ -45,7 +45,7 @@ mixin fe-inner-2
             button.dropdown__submit(type="submit") Применить 
     .column.column-3
       .dropdown-expanded-guests.fe__item.fe__dropdown.dropdown-expanded-active  
-        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown', '3 гостя')
+        +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown-expanded-active-3', 'dropdown', '3 гостя')
         .fe__dropdown-content
           - 
             const dropdownExpandedGuestsList2 = [
