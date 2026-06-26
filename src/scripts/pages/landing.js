@@ -26,7 +26,8 @@ export default function landing() {
   }
 
   if (reset) {
-    reset.addEventListener("click", function () {
+    reset.addEventListener("click", function (event) {
+      event.preventDefault();
       dropdownReset();
     });
   }
