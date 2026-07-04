@@ -219,6 +219,9 @@ export default function search() {
   if (expandableList) {
     expandableList.addEventListener("click", function () {
       expandableListContent.classList.toggle("search__checkbox-list_active");
+      expandableList
+        .querySelector(".material-icons.material-icons-expand")
+        .classList.toggle("upside");
     });
   }
 

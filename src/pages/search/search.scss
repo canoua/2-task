@@ -131,3 +131,8 @@
   letter-spacing: 0%;
   border: none;
 }
+
+.material-icons.material-icons-expand.upside {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
