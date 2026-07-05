@@ -1,7 +1,7 @@
-import { content } from "../../modules/constants";
 import dropdownCounter from "../../modules/dropdown/dropdownCounter";
-import dropdownReset from "../../modules/dropdown/dropdownReset";
 import dropdownSubmit from "../../modules/dropdown/dropdownSubmit";
+import { content } from "../../modules/constants";
+import { counter } from "../../modules/constants";
 import { dropdownOutput } from "../../modules/constants";
 
 export default function searchGuests() {
@@ -25,7 +25,19 @@ export default function searchGuests() {
 
   if (reset) {
     reset.addEventListener("click", function (event) {
-      dropdownReset(event);
+      const countNumber = document.querySelectorAll(
+        ".dropdown__guests-list__count_number",
+      );
+
+      countNumber.forEach(function (item) {
+        const submit = document.querySelector(".dropdown__submit");
+        item.textContent = "0";
+        item.previousElementSibling.classList.add("unactive-element");
+        counter.count = 0;
+        submit.style.display = "none";
+      });
+
+      dropdownOutput.textContent = "Сколько гостей";
     });
   }
 
