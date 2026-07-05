@@ -15,7 +15,7 @@ mixin __sidebar
           }
           return sum
         }
-      +dropdown('card-landing__dropdown dropdown-convenience dropdown card-landing__dropdown-js', 'dropdown-guests', 'гости', `${sumCount()} гостя, ${dropdownExpandedGuestsList[2].number} младенец`)
+      +dropdown('card-landing__dropdown dropdown card-landing__dropdown-js', 'dropdown-guests', 'гости', `${sumCount()} гостя, ${dropdownExpandedGuestsList[2].number} младенец`)
       .fe__dropdown-content
         ul.dropdown-list.dropdown-expanded-guests__list  
           each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList
