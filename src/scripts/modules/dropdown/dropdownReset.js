@@ -3,9 +3,9 @@ import { counter } from "../constants";
 
 export default function dropdownReset() {
   const countNumber = document.querySelectorAll(".dropdown-list__count_number");
-  const submit = document.querySelector(".dropdown__submit");
 
   countNumber.forEach(function (item) {
+    const submit = document.querySelector(".dropdown__submit");
     item.textContent = "0";
     item.previousElementSibling.classList.add("unactive-element");
     counter.count = 0;
