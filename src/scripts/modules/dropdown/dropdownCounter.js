@@ -18,8 +18,6 @@ export default function dropdownCounter() {
   });
 
   function checkNullCount() {
-    console.log(counter.count);
-
     if (counter.count == 3) {
       submit.style.display = "none";
     } else {
