@@ -1,10 +1,10 @@
 import AirDatepicker from "air-datepicker";
-import airDatePicker from "../libs/air-datepicker";
-import { content } from "../modules/constants";
-import dropdownCounter from "../modules/dropdown/dropdownCounter";
-import dropdownReset from "../modules/dropdown/dropdownReset";
-import dropdownSubmit from "../modules/dropdown/dropdownSubmit";
-import rangeSlider from "../modules/range-slider";
+import airDatePicker from "../../libs/air-datepicker";
+import { content } from "../../modules/constants";
+import dropdownCounter from "../../modules/dropdown/dropdownCounter";
+import dropdownReset from "../../modules/dropdown/dropdownReset";
+import dropdownSubmit from "../../modules/dropdown/dropdownSubmit";
+import rangeSlider from "../../modules/range-slider";
 
 export default function search() {
   const dropdown = document.querySelector("#dropdown-guests");
