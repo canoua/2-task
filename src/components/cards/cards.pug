@@ -2,6 +2,213 @@ include @components/buttons/buttons.pug
 include @components/text-field/text-field.pug
 include @components/radiobuttons/radiobuttons.pug
 include @components/toggle/toggle.pug
+include @components/buttons/buttons.pug
+include @components/dropdown/dropdown.pug
+include @components/stars-ratings/stars-ratings.pug
+
+mixin card-room-arrow 
+  .card.card-room.card-room-arrow 
+    .card-inner.card-room-inner
+      .card-room__slider
+        .slide.card-room__slide
+          img(src=require('@images/cards/slide-2.png'), alt="slide-1")
+        .card-room__pagination
+          .dot.dot_active 
+          .dot 
+          .dot 
+          .dot 
+        .arrow-prev.material-icons expand_more
+        .arrow-next.material-icons expand_more
+      .card-room__content
+        .card-room__content__header 
+          h3.card-room__title 
+            span.card-room__title__icon №
+            span.card-room__title__number 888
+            span.card-room__title__text люкс
+          .card-room__price 
+            .card-room__price__number 9 990₽ 
+            .card-room__price__text в сутки
+        .card-room__content__footer 
+          .stars-ratings 
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+            span.material-icons.material-icons-star star
+          .card-room__reviews 
+            .card-room__reviews__number 145
+            .card-room__reviews__text Отзывов
+
+mixin card-room(src, number, price, rating, reviewsNumber) 
+  .card.card-room
+    .card-inner.card-room-inner
+      .card-room__slider
+        .slide.card-room__slide.card-room-arrow__slide   
+          img(src=src, alt="slide-1").slide-1__img
+        .pagination.card-room__pagination
+          .dot.dot_active 
+          .dot 
+          .dot 
+          .dot 
+        .arrow-prev.material-icons expand_more
+        .arrow-next.material-icons expand_more
+      .card-room__content
+        .card-room__content__header 
+          h3.card-room__title 
+            span.card-room__title__icon №
+            span.card-room__title__number=number
+          .card-room__price 
+            .card-room__price__number=price 
+            .card-room__price__text в сутки
+        .card-room__content__footer 
+          +stars-ratings(rating)
+          .card-room__reviews 
+            .card-room__reviews__number=reviewsNumber
+            .card-room__reviews__text Отзывов
+
+mixin card-landing 
+  form(action="#")
+    .card.app-js-dropdown.card-landing 
+      .card-inner  
+        h1.card__title Найдём номера под ваши пожелания
+        .card-landing__date-dropdown-wrapper
+          +date-dropdown('input1','прибытие', 'ДД.ММ.ГГГГ')
+          +date-dropdown('input2','выезд', 'ДД.ММ.ГГГГ')
+        .dropdown-page.dropdown-expanded-guests__form
+          - 
+            const guests = [
+              {name: 'взрослые', count: 2},
+              {name: 'дети', count: 1},
+              {name: 'младенцы', count: 0},
+            ]
+            let sumCount = function() {
+              let sum = 0;
+              for(let i=0; i<guests.length; i++) {
+                sum += guests[i].count;
+              }
+              return sum
+            }
+          +dropdown('card-landing__dropdown card-landing__dropdown-js', 'card-landing__dropdown',  'гости', `${sumCount()} гостя`)
+          .fe__dropdown-content
+            ul.dropdown-list.dropdown-expanded-guests__list  
+              each guest in guests 
+                li.dropdown-list__item 
+                  .dropdown-list__item_name #{guest.name}
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus.dropdown-list__count_minus-js -
+                    .dropdown-list__count_number.dropdown__guests-list__count_number #{guest.count}
+                    .dropdown-list__count_plus.dropdown-list__count_plus-js +
+            .dropdown-btns.dropdown-btns-2  
+              button.dropdown__reset(type="reset") Очистить 
+              button.dropdown__submit(type="submit") Применить  
+        +btn-gradient-arrow('card-btn-landing', 'подобрать номер')
+  
+
+mixin card-calendar
+  .card.card-calendar
+    .card-inner.card-calendar-inner
+      button.card-calendar__btn
+        span.material-icons.card-calendar__arrow-prev arrow_forward 
+      h3.card-calendar__title Август 2019
+      button.card-calendar__btn
+        span.material-icons.card-calendar__arrow-next arrow_forward 
+      main.card-calendar__main 
+        .card-calendar__main-days 
+          - 
+            var days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
+          each day in days 
+            div.calendar__item #{day}
+        .card-calendar__main__numbers
+          div.calendar__item.card-calendar__main-number.card-calendar__main-number_unactual 29
+          div.calendar__item.card-calendar__main-number.card-calendar__main-number_unactual 30
+          div.calendar__item.card-calendar__main-number.card-calendar__main-number_unactual 31
+          div.calendar__item.card-calendar__main-number 1
+          div.calendar__item.card-calendar__main-number 2
+          div.calendar__item.card-calendar__main-number 3
+          div.calendar__item.card-calendar__main-number 4
+          div.calendar__item.card-calendar__main-number 5
+          div.calendar__item.card-calendar__main-number 6
+          div.calendar__item.card-calendar__main-number 7
+          div.calendar__item.card-calendar__main-number.card-calendar__main-number_current 8
+          div.calendar__item.card-calendar__main-number 9
+          div.calendar__item.card-calendar__main-number 10
+          div.calendar__item.card-calendar__main-number 11
+          div.calendar__item.card-calendar__main-number 12
+          div.calendar__item.card-calendar__main-number 13
+          div.calendar__item.card-calendar__main-number 14
+          div.calendar__item.card-calendar__main-number 15
+          div.calendar__item.card-calendar__main-number 16
+          div.calendar__item.card-calendar__main-number 17
+          div.calendar__item.card-calendar__main-number 18
+          div.calendar__item.card-calendar__main-number.card-calendar__main-number_range 19
+          div.calendar__item.card-calendar__main-number 20
+          div.calendar__item.card-calendar__main-number 21
+          div.calendar__item.card-calendar__main-number 22
+          div.calendar__item.card-calendar__main-number.card-calendar__main-number_range.card-calendar__main-number_range-last 23
+          div.calendar__item.card-calendar__main-number 24
+          div.calendar__item.card-calendar__main-number 25
+          div.calendar__item.card-calendar__main-number 26
+          div.calendar__item.card-calendar__main-number 27
+          div.calendar__item.card-calendar__main-number 28
+          div.calendar__item.card-calendar__main-number 29
+          div.calendar__item.card-calendar__main-number 30
+          div.calendar__item.card-calendar__main-number 31
+          div.calendar__item.card-calendar__main-number.card-calendar__main-number_unactual 1
+      button.card-calendar__btn.card-calendar__btn__reset очистить
+      button.card-calendar__btn.card-calendar__btn__confirm применить
+
+mixin card-calculate(dropdownClass)
+  form(action="#")
+    .app-js-dropdown.card.card-calculate 
+      .card-inner 
+        .card-calculate__header 
+          .card-calculate__room
+            span.card-calculate__room-icon №
+            span.card-calculate__room-number 888
+            span.card-calculate__room-class люкс
+          .card-calculate__price
+            span.card-calculate__price-values 9 990₽
+            span.card-calculate__price-duration в сутки
+        .card-calculate__date-dropdown-wrapper
+          +date-dropdown('input1','прибытие', '19.08.2019')
+          +date-dropdown('input2','выезд', '23.08.2019')
+        .dropdown-page.dropdown-expanded-guests__form
+          - 
+            const guests = [
+              {name: 'взрослые', count: 2},
+              {name: 'дети', count: 1},
+              {name: 'младенцы', count: 0}
+            ]
+            const sumCounts = guests[0].count + guests[1].count + guests[2].count 
+          +dropdown('rd-dropdown', 'rd-dropdown', 'гости', `${sumCounts} гостя`)
+          .fe__dropdown-content
+            
+            ul.dropdown-list.dropdown-expanded-guests__list  
+              each guest in guests 
+                li.dropdown-list__item 
+                  .dropdown-list__item_name #{guest.name}
+                  .dropdown-list__count 
+                    .dropdown-list__count_minus.dropdown-list__count_minus-js -
+                    .dropdown-list__count_number.dropdown__guests-list__count_number #{guest.count}
+                    .dropdown-list__count_plus.dropdown-list__count_plus-js +
+            .dropdown-btns.dropdown-btns-2  
+              button.dropdown__reset(type="reset") Очистить 
+              button.dropdown__submit(type="submit") Применить  
+        .card-calculate__count-wrapper
+          .card-calculate__count 
+            span 9 990₽ х 4 суток
+            span 39 960₽
+          .card-calculate__count 
+            span.card-calculate__count-info Сбор за услуги: скидка 2 179₽
+            span 0₽
+          .card-calculate__count 
+            span.card-calculate__count-info Сбор за дополнительные услуги
+            span 300₽
+        .card-calculate__result 
+          span.card-calculate__result-item Итого
+          span.card-calculate__result-item 38 081₽
+        +btn-gradient-arrow('card-btn-landing', 'забронировать')
+        
 
 mixin card-sign-up(page) 
   form(action="#") 

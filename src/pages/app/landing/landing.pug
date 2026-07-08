@@ -1,18 +1,17 @@
-include includes.pug 
-+includes
+extends @layouts/layout-app.pug
 
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Landing Page
-  body.page#landing-js
-    +header('header') 
-    main.main.main-landing
-      .container
-        +card-landing
-        span.main-info  Лучшие номера для вашей работы, отдыха и просто вдохновения
-    +footer  
-    +footer-mobile  
+include @components/cards/cards.pug
+
+
+block title 
+  title Cards
+
+block content
+
+  - bodyClass = 'page'
+  - bodyId = 'landing-js'
+  main.main.main-landing
+    .container
+      +card-landing
+      span.main-info  Лучшие номера для вашей работы, отдыха и просто вдохновения
+ 

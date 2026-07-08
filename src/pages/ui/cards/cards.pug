@@ -1,14 +1,12 @@
-include includes.pug 
-+includes
+extends @layouts/layout-page.pug
 
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title cards
-  body 
+include @components/cards/cards.pug
+
+block title 
+  title Cards
+
+block content
+  body
     .ui-cards 
       .container 
         .ui-cards__logo
