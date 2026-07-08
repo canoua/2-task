@@ -74,54 +74,54 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(
         __dirname,
-        "src/ui-pages/headers-footers",
+        "src/pages/ui/headers-footers",
         "headers-footers.pug",
       ),
-      filename: "ui-pages/headers-footers.html",
+      filename: "pages/ui/headers-footers.html",
     }),
     new HtmlWebpackPlugin({
       template: path.join(
         __dirname,
-        "src/ui-pages/form-elements",
+        "src/pages/ui/form-elements",
         "form-elements(fe).pug",
       ),
-      filename: "ui-pages/form-elements(fe).html",
+      filename: "pages/ui/form-elements(fe).html",
     }),
     new HtmlWebpackPlugin({
       template: path.join(
         __dirname,
-        "src/ui-pages/colors-types",
+        "src/pages/ui/colors-types",
         "colors-types.pug",
       ),
-      filename: "ui-pages/colors-types.html",
+      filename: "pages/ui/colors-types.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/ui-pages/cards", "cards.pug"),
-      filename: "ui-pages/cards.html",
+      template: path.join(__dirname, "src/pages/ui/cards", "cards.pug"),
+      filename: "pages/ui/cards.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/pages/sign-in", "sign-in.pug"),
-      filename: "pages/sign-in.html",
+      template: path.join(__dirname, "src/pages/app/sign-in", "sign-in.pug"),
+      filename: "pages/app/sign-in.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/pages/landing", "landing.pug"),
-      filename: "pages/landing.html",
+      template: path.join(__dirname, "src/pages/app/landing", "landing.pug"),
+      filename: "pages/app/landing.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/pages/search", "search.pug"),
-      filename: "pages/search.html",
+      template: path.join(__dirname, "src/pages/app/search", "search.pug"),
+      filename: "pages/app/search.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src/pages/sign-up", "sign-up.pug"),
-      filename: "pages/sign-up.html",
+      template: path.join(__dirname, "src/pages/app/sign-up", "sign-up.pug"),
+      filename: "pages/app/sign-up.html",
     }),
     new HtmlWebpackPlugin({
       template: path.join(
         __dirname,
-        "src/pages/room-details",
+        "src/pages/app/room-details",
         "room-details.pug",
       ),
-      filename: "pages/room-details.html",
+      filename: "pages/app/room-details.html",
     }),
 
     //Подключаем MiniCssExtractPlugin только в продакшене
@@ -138,7 +138,9 @@ module.exports = {
   resolve: {
     alias: {
       "@images": path.resolve(__dirname, "src/assets/images/"),
-      "@vars": path.resolve(__dirname, "src/assets/styles/default/"),
+      "@vars": path.resolve(__dirname, "src/styles/default/"),
+      "components": path.resolve(__dirname, "src/components/"),
+      "@layouts": path.resolve(__dirname, "src/layouts/")
     },
   },
   optimization: {
