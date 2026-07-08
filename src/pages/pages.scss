@@ -1,5 +1,6 @@
-@use "sign-in/sign-in.scss";
-@use "sign-up/sign-up.scss";
-@use "landing/landing.scss";
-@use "room-details/room-details.scss";
-@use "search/search.scss";
+@use "app/sign-in/sign-in.scss";
+@use "app/sign-up/sign-up.scss";
+@use "app/landing/landing.scss";
+@use "app/room-details/room-details.scss";
+@use "app/search/search.scss";
+@use "ui/ui.scss"

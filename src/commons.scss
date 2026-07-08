@@ -1,15 +1,15 @@
 @use "@vars/variables.scss" as *;
-@use "assets/styles/default/default.scss";
-@use "assets/styles/default/material-icons.scss";
-@use "assets/styles/libs/air-date-picker.scss";
+@use "styles/default/default.scss";
+@use "styles/default/material-icons.scss";
+@use "styles/libs/air-date-picker.scss";
 @use "index.scss";
-@use "layout/layout.scss";
-@use "modules/modules.scss";
+@use "components/layout.scss";
+@use "components/modules/modules.scss";
 @use "pages/pages.scss";
-@use "ui-pages/ui.scss";
+@use "pages/ui/ui.scss";
 
 // /* libs */
-@import "assets/styles/libs/nouislider.min.css";
+@import "styles/libs/nouislider.min.css";
 
 @import "air-datepicker/air-datepicker.css";
 

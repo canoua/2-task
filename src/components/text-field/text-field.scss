@@ -1,0 +1,104 @@
+// @use "./../../assets/styles/default/variables.scss" as *;
+@use "@vars/variables.scss" as *;
+
+
+.text-field-default {
+  position: relative;
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    & > .h3 {
+      padding-left: 0.5px;
+    }
+  }
+  &__state {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $darkshade50;
+    position: absolute;
+    right: 0;
+    top: -5px;
+  }
+}
+
+// для демонстрации на странице form-elements
+.text-field-hover {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  &__state {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $darkshade50;
+  }
+}
+
+.text-field-masked {
+  &__header {
+    margin-bottom: 5px;
+  }
+}
+
+.subscription-text-field {
+  width: 261px;
+  &__header {
+    margin-bottom: 5px;
+  }
+  &__input {
+    height: 100%;
+    width: 100%;
+    padding-top: 13px;
+    padding-right: 16px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    &::placeholder {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      color: $darkshade25;
+    }
+    &-wrapper {
+      background: #ffffff;
+      border: 1px solid $darkshade25;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 100%;
+      display: flex;
+      &:focus-within {
+        background: #ffffff;
+        border: 1px solid $darkshade75 !important;
+        transition: all 0.3s;
+      }
+    }
+    &:focus {
+      &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $darkshade75;
+      }
+    }
+
+    &__button {
+      padding-right: 9px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

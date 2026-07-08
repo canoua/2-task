@@ -1,0 +1,16 @@
+include @components/buttons/buttons.pug
+
+mixin review(source, id, name, date, icon, icontext, text)
+  .review
+    .review__header  
+      .review__avatar 
+        img.review__avatar-image(src=source alt="avatar" id=id)
+      .review__name-wrapper
+        .review__name=name 
+        .review__date=date 
+    .review__content 
+      if (icon == 'favorite')
+        +like-button('material-icons-favorite', 'like_active', 'favorite', icontext, '#bc9cff')
+      else 
+        +like-button('material-icons-favorite-border', '', 'favorite_border', icontext , '')
+      .review__text=text 

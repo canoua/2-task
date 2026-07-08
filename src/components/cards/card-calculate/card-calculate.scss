@@ -1,0 +1,162 @@
+@use "@vars/variables.scss" as *;
+
+.card-calculate {
+  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-left: 29px;
+  padding-right: 29px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 23px;
+  }
+  &__room {
+    &-icon {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: $darkshade100;
+      margin-right: 5px;
+    }
+    &-number {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: $darkshade100;
+      margin-right: 8px;
+      margin-top: -1px;
+      display: inline-block;
+    }
+    &-class {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: $purple;
+    }
+  }
+  &__price {
+    &-values {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.5);
+      margin-right: 5px;
+    }
+    &-duration {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.5);
+    }
+  }
+  &__result {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+    padding-left: 1px;
+    &-item {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 23px;
+      color: $darkshade100;
+      &:first-child {
+        position: relative;
+        &::after {
+          position: absolute;
+          left: calc(100% + 5px);
+          bottom: 4px;
+          content: "";
+          width: 182px;
+          height: 1px;
+          background-image: url("@images/cards/dots.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 0;
+        }
+      }
+    }
+  }
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkshade75;
+    &:first-child {
+      margin-bottom: 10px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 13px;
+    }
+    &:last-child {
+      & > span:nth-child(2) {
+        margin-top: -17px;
+      }
+    }
+    span {
+      &:first-child {
+        width: 214px;
+      }
+    }
+    &-info {
+      position: relative;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0%;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -25px;
+        top: -2px;
+        background-image: url("@images/cards/info.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+      }
+    }
+    &-wrapper {
+      padding-left: 1px;
+      margin-bottom: 20px;
+    }
+  }
+  &__date-dropdown-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17.56px;
+  }
+}
+
+.card-calculate {
+  & > .card-inner {
+    & > .dropdown-expanded-guests__form {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.card-calculate__dropdown + .fe__dropdown-content {
+  display: none;
+}
