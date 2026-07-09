@@ -1,23 +1,21 @@
-include includes.pug 
-+includes
+extends @layouts/layout-ui.pug
 
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title headers and footers
-  body 
-    .headers-footers
-      .container.headers-footers__container 
-        img(src=require("@images/ui-logo.svg"), alt="ui-logo").headers-footers__logo 
-      .headers-footers__box 
-        +header('header') 
-      .headers-footers__box 
-        +header('header-2')
-      .headers-footers__box
-        +footer
-      .headers-footers__box
-        +footer-mobile
+include @components/header/header.pug
+include @components/footer/footer.pug
+
+block title
+  title headers and footers
+
+block content  
+  .headers-footers
+    .container.headers-footers__container 
+      img(src=require("@images/ui-logo.svg"), alt="ui-logo").headers-footers__logo 
+    .headers-footers__box 
+      +header('header') 
+    .headers-footers__box 
+      +header('header-2')
+    .headers-footers__box
+      +footer()
+    .headers-footers__box
+      +footer-mobile()
       

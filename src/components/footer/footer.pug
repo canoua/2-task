@@ -1,19 +1,18 @@
 include @components/logo/logo.pug
 include @components/text-field/text-field.pug
 
--  
-  var links = [
-    {src: require("@images/icons/twitter.svg"), social: 'twitter'},
-    {src: require("@images/icons/fb.svg"), social: 'facebook'},
-    {src: require("@images/icons/inst.svg"), social: 'insta'},
-  ] 
-  var _items = [
-    {title: 'навигация', links: ['О нас', 'Новости', 'Служба поддержки','Услуги']},
-    {title: 'о нас', links: ['О сервисе', 'Наша команда', 'Вакансии','Инвесторы']},
-    {title: 'Служба поддержки', links: ['Соглашения', 'Сообщества', 'Связь с нами']},
-  ]
-
 mixin footer
+  -  
+    var links = [
+      {src: require("@images/icons/twitter.svg"), social: 'twitter'},
+      {src: require("@images/icons/fb.svg"), social: 'facebook'},
+      {src: require("@images/icons/inst.svg"), social: 'insta'},
+    ] 
+    var _items = [
+      {title: 'навигация', links: ['О нас', 'Новости', 'Служба поддержки','Услуги']},
+      {title: 'о нас', links: ['О сервисе', 'Наша команда', 'Вакансии','Инвесторы']},
+      {title: 'Служба поддержки', links: ['Соглашения', 'Сообщества', 'Связь с нами']},
+    ]
   footer.footer
     .footer__box 
       .container 
