@@ -2,16 +2,13 @@ extends @layouts/layout-app.pug
 
 include @components/cards/cards.pug
 
-
 block title 
-  title Cards
-
-block content
+  title Landing
 
   - bodyClass = 'page'
   - bodyId = 'landing-js'
-  main.main.main-landing
+
+block content
+  main.main.main-landing 
     .container
-      +card-landing
-      span.main-info  Лучшие номера для вашей работы, отдыха и просто вдохновения
- 
+      +card-landing()
