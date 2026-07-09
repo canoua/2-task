@@ -1,16 +1,13 @@
-include includes.pug 
-+includes
+extends @layouts/layout-app.pug
 
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Регистрация аккаунта
-  body.page#sign-up-js
-    +header('header')
-    main.main.sign-up 
-      +card-sign-up("sign-up")
-    +footer
-    +footer-mobile
+include @components/cards/cards.pug
+
+block title 
+  title Регистрация аккаунта
+  
+  - bodyClass = 'page'
+  - bodyId = 'sign-up-js'
+
+block content
+  main.main.sign-up 
+    +card-sign-up("sign-up")

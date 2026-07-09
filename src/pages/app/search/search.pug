@@ -1,35 +1,39 @@
-include includes.pug 
-+includes
+extends @layouts/layout-app.pug
 
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Search room
-  body.page 
-    +header('header') 
-    main.search.app-js-dropdown#search-js
-      .container 
-        .search-inner 
-          +__sidebar
-          .search__content
-            .search__title Номера, которые мы для вас подобрали
-            .search__content__rooms
-              //-вынести в массив 
-              +card-room(require('@images/cards/slide-2.png'), 888, '9 990Р', 5, 145)
-              +card-room(require('@images/cards/slide-1.png'), 840, '9 900Р', 4, 65)
-              +card-room(require('@images/search-page/3.jpg'), 980, '8 500Р', 3, 35)
-              +card-room(require('@images/search-page/4.png'), 856, '7 300Р', 5, 19)
-              +card-room(require('@images/search-page/5.png'), 740, '6 000Р', 4, 44)
-              +card-room(require('@images/search-page/6.png'), 982, '5 800Р', 3, 56)
-              +card-room(require('@images/search-page/7.png'), 678, '5 500Р', 5, 45)
-              +card-room(require('@images/search-page/8.png'), 450, '5 300Р', 4, 39)
-              +card-room(require('@images/search-page/9.png'), 350, '5 000Р', 3, 77)
-              +card-room(require('@images/search-page/10.png'), 666, '5 000Р', 5, 25)
-              +card-room(require('@images/search-page/11.png'), 444, '5 000Р', 3, 15)
-              +card-room(require('@images/search-page/12.png'), 352, '5 000Р', 3, 55)
-            .search__content__pagination
-              +pagination
-    +footer
-    +footer-mobile
+include @components/dropdown/dropdown.pug
+include @components/range-slider/range-slider.pug
+include @components/checkbox/checkbox.pug
+include @components/pagination/pagination.pug
+include @components/cards/cards.pug
+include __dropdown-convenience.pug
+include __sidebar.pug
+
+block title
+  title Search room
+
+  - bodyClass = 'page'
+  - bodyId = ''
+
+block content
+  main.search.app-js-dropdown#search-js
+    .container 
+      .search-inner 
+        +__sidebar()
+        .search__content
+          .search__title Номера, которые мы для вас подобрали
+          .search__content__rooms
+            //-вынести в массив 
+            +card-room(require('@images/cards/slide-2.png'), 888, '9 990Р', 5, 145)
+            +card-room(require('@images/cards/slide-1.png'), 840, '9 900Р', 4, 65)
+            +card-room(require('@images/search-page/3.jpg'), 980, '8 500Р', 3, 35)
+            +card-room(require('@images/search-page/4.png'), 856, '7 300Р', 5, 19)
+            +card-room(require('@images/search-page/5.png'), 740, '6 000Р', 4, 44)
+            +card-room(require('@images/search-page/6.png'), 982, '5 800Р', 3, 56)
+            +card-room(require('@images/search-page/7.png'), 678, '5 500Р', 5, 45)
+            +card-room(require('@images/search-page/8.png'), 450, '5 300Р', 4, 39)
+            +card-room(require('@images/search-page/9.png'), 350, '5 000Р', 3, 77)
+            +card-room(require('@images/search-page/10.png'), 666, '5 000Р', 5, 25)
+            +card-room(require('@images/search-page/11.png'), 444, '5 000Р', 3, 15)
+            +card-room(require('@images/search-page/12.png'), 352, '5 000Р', 3, 55)
+          .search__content__pagination
+            +pagination()
