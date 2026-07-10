@@ -4,35 +4,39 @@ block title
   title Главная страница
   
 block content 
+  - 
+    const sections = [
+      {
+        title: 'UI',
+        path: 'ui',
+        items: [
+          { href: 'headers-footers.html', title: 'Шапки и подвалы (header-footers)', imgSrc: 'headers.jpg'},
+          { href: 'form-elements(fe).html', title: 'Элементы форм (form-elements)', imgSrc: 'form-elements.jpg'},
+          { href: 'colors-types.html', title: 'Цвета (colors-types)', imgSrc: 'colors.jpg'},
+          { href: 'cards.html', title: 'Карточки (cards)', imgSrc: 'cards.jpg'}
+        ]
+      },
+      {
+        title: 'Страницы',
+        path: 'app',
+        items: [
+          { href: 'sign-up.html', title: 'Регистрация (sign-up)', imgSrc: 'sign-up.jpg'},
+          { href: 'sign-in.html', title: 'Вход (sign-in)', imgSrc: 'sign-in.jpg'},
+          { href: 'landing.html', title: 'Landing', imgSrc: 'landing.jpg'},
+          { href: 'search.html', title: 'Search', imgSrc: 'search.jpg'},
+          { href: 'room-details.html', title: 'Room-details', imgSrc: 'room-details.jpg'}
+        ]
+      }
+    ];
+
+  mixin pageCard(item, path)
+    a.index__link(href=`/pages/${path}/${item.href}` target="_blank")
+      span.index__link-text=item.title
+      img.index__img(src=require(`@images/index/${item.imgSrc}`), alt=item.title)
+
   main.index
-    article.index__block
-      h2.index__title UI
-      a.index__link(href="/pages/ui/headers-footers.html" target = "_blank") 
-        span.index__link__text Шапки и подвалы (header-footers)
-        img.index__img(src=require("@images/index/headers.jpg"), alt="headers")
-      a.index__link(href="/pages/ui/form-elements(fe).html" target = "_blank") 
-        span.index__link__text Элементы форм (form-elements)
-        img.index__img(src=require("@images/index/form-elements.jpg"), alt="form-elements")
-      a.index__link(href="/pages/ui/colors-types.html" target = "_blank")   
-        span.index__link__text Цвета (colors-types) 
-        img.index__img(src=require("@images/index/colors.jpg"), alt="colors")
-      a.index__link(href="/pages/ui/cards.html" target = "_blank") 
-        span.index__link__text Карточки (cards) 
-        img.index__img(src=require("@images/index/cards.jpg"), alt="cards")
-    article.index__block
-      h2.index__title Страницы 
-      a.index__link(href="/pages/app/sign-up.html" target = "_blank") 
-        span.index__link__text Регистрация (sign-up)
-        img.index__img(src=require("@images/index/sign-up.jpg"), alt="sign-up")
-      a.index__link(href="/pages/app/sign-in.html" target = "_blank") 
-        span.index__link__text Вход (sign-in)
-        img.index__img(src=require("@images/index/sign-in.jpg"), alt="sign-in")
-      a.index__link(href="/pages/app/landing.html" target = "_blank")  
-        span.index__link__text Landing
-        img.index__img(src=require("@images/index/landing.jpg"), alt="landing")
-      a.index__link(href="/pages/app/search.html" target = "_blank")  
-        span.index__link__text Search
-        img.index__img(src=require("@images/index/search.jpg"), alt="search")
-      a.index__link(href="/pages/app/room-details.html" target = "_blank") 
-        span.index__link__text Room-details 
-        img.index__img(src=require("@images/index/room-details.jpg"), alt="room-details")
+    each section in sections
+      article.index__block
+        h2.index__title=section.title
+        each item in section.items
+          +pageCard(item, section.path)
