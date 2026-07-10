@@ -1,9 +1,16 @@
 @use "@vars/variables.scss" as *;
 
 .pagination {
+  &__inner {
+    display: flex;
+  }
   &__list {
     display: flex;
     margin-bottom: 6.56px;
+  }
+  &__arrow {
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+    border-radius: 22px;
   }
   &__link {
     font-family: "Montserrat";
@@ -32,10 +39,6 @@
       padding-bottom: 1px;
       padding-top: 1px;
       padding-left: 2px;
-    }
-    &_arrow {
-      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-      border-radius: 22px;
     }
   }
   &__info {
