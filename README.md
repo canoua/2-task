@@ -7,45 +7,53 @@
 - assets/
 - - fonts/
 - - images/
-- - styles/
-- - - default/
-- - - libs/
-- layout/
-- - footer/
-- - header/
-- - modules/
-- - layout.scss
-- modules/
+- - tasks/
+- components/
 - - buttons/
 - - cards/
 - - checkbox/
 - - dropdown/
+- - footer/
+- - header/
 - - information/
 - - input-card/
 - - list/
+- - logo/
+- - menu/
 - - pagination/
 - - radiobuttons/
 - - range-slider/
 - - review/
+- - stars-rating/
 - - text-field/
 - - toggle/
-- - modules.scss
+- - components.scss
+- layouts/
+- - layot-app.pug
+- - layot-index.pug
+- - layot-ui.pug
 - pages/
-- - landing/
-- - room-details/
-- - search/
-- - sign-in/
-- - sign-up/
-- - pages.scss
+- - app/
+- - - landing/
+- - - room-details/
+- - - search/
+- - - sign-in/
+- - - sign-up/
+- - - pages.scss
+- - ui /
+- - - cards/
+- - - colors-types/
+- - - form-elements/
+- - - headers-footers/
+- - - ui.scss
 - script/
+- - libs/
 - - modules/
+- - pages/
 - - ap.js
-- ui-pages/
-- - cards/
-- - colors-types/
-- - form-elements/
-- - headers-footers/
-- - ui.scss
+- styles/
+- - default/
+- - libs/
 - commons.scss
 - index.js
 - index.pug
@@ -56,7 +64,7 @@
 
 1. Главная страница - index.pug в корне папки src
 2. Стили импортируются в index.js для того, чтобы webpack сбилдил все. В webpack.config.js указываю index.js как входной
-3. assets - ВСЕ изображения, шрифты, дефолтные стили, либы
+3. assets - ВСЕ изображения, шрифты
 4. картинки в svg формате старался не использовать, т.к. не разобрался как разделять изображения и стили(svg)
 5. nouislider(библиотека для ползунка) - стили удалось подгрузить только локально
 6. commons.scss - собирает стили всего проекта
