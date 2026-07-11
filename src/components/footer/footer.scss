@@ -1,7 +1,5 @@
 @use "@vars/variables.scss" as *;
 
-
-
 .footer {
   background-color: #fff;
   &__inner {
@@ -34,19 +32,6 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $darkshade100;
-  }
-  &__list {
-    &-item {
-      margin-bottom: 19px;
-    }
-    &-link {
-      font-size: 14px;
-      line-height: 17px;
-      color: $darkshade50;
-      &:hover {
-        color: $darkshade75;
-      }
-    }
   }
   &__box {
     border-bottom: 1px solid #e5e5e5;
