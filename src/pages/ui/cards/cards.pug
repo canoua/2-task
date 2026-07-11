@@ -10,7 +10,7 @@ block content
     .ui-cards 
       .container 
         .ui-cards__logo
-          img(src=require("@images/ui-logo.svg"), alt="ui-logo")
+          img(src=require("@images/components/ui-logo.svg"), alt="ui-logo")
         .ui-cards-inner 
           .col.col_1
             .ui-card
@@ -26,6 +26,6 @@ block content
             .ui-card 
               +card-calendar
             .ui-card 
-              +card-room(require('@images/cards/slide-2.png'), 888, '9 990Р', 5, 145)
+              +card-room(require('@images/pages/cards/slide-1.png'), 888, '9 990Р', 5, 145)
             .ui-card  
-              +card-room(require('@images/cards/slide-1.png'), 840, '9 900Р', 4, 65)
+              +card-room(require('@images/pages/cards/slide-2.png'), 840, '9 900Р', 4, 65)

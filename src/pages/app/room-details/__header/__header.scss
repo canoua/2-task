@@ -14,7 +14,7 @@
       }
       &_1 {
         width: 63.7%;
-        background-image: url(@images/bg-1.jpg);
+        background-image: url(@images/pages/room-details/bg-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -26,14 +26,14 @@
 
   &__img {
     &_2 {
-      background-image: url(@images/bg-2.png);
+      background-image: url(@images/pages/room-details/bg-2.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
     &_3 {
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url(@images/bg-3.png);
+      background-image: url(@images/pages/room-details/bg-3.png);
     }
   }
 }

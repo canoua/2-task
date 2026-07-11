@@ -359,7 +359,7 @@
           content: "";
           width: 182px;
           height: 1px;
-          background-image: url("@images/cards/dots.png");
+          background-image: url("@images/pages/cards/dots.png");
           background-repeat: no-repeat;
           background-size: cover;
           z-index: 0;
@@ -408,7 +408,7 @@
         height: 20px;
         right: -25px;
         top: -2px;
-        background-image: url("@images/cards/info.png");
+        background-image: url("@images/pages/cards/info.png");
         background-repeat: no-repeat;
         background-size: contain;
         cursor: pointer;
@@ -713,7 +713,7 @@
     left: 0;
     width: 42px;
     height: 100%;
-    background-image: url("@images/cards/effect-slide.png");
+    background-image: url("@images/pages/cards/effect-slide.png");
     display: none;
   }
   &::after {
@@ -724,7 +724,7 @@
     width: 42px;
     height: 100%;
     display: none;
-    background-image: url("@images/cards/effect-slide.png");
+    background-image: url("@images/pages/cards/effect-slide.png");
     transform: rotate(-180deg);
   }
 }
