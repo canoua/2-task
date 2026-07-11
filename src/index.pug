@@ -32,7 +32,7 @@ block content
   mixin pageCard(item, path)
     a.index__link(href=`/pages/${path}/${item.href}` target="_blank")
       span.index__link-text=item.title
-      img.index__img(src=require(`@images/index/${item.imgSrc}`), alt=item.title)
+      img.index__img(src=require(`@images/pages/index/${item.imgSrc}`), alt=item.title)
 
   main.index
     each section in sections
