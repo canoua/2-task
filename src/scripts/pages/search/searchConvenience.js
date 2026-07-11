@@ -27,8 +27,6 @@ export default function searchConvenience() {
   );
 
   dropdownConvenience.addEventListener("click", function () {
-    console.log(1);
-
     convenienceContent.classList.toggle("fe__dropdown-content_active");
   });
 
