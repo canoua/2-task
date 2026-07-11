@@ -1,6 +1,6 @@
 include @components/buttons/buttons.pug
-include @components/menu/menu.pug
 include @components/logo/logo.pug
+include __menu/__menu.pug
 
 mixin header(variable)  
   header(class=variable === 'header' ? 'header' : 'header header-2') 
@@ -10,14 +10,14 @@ mixin header(variable)
           +logo
         //- чтобы исключить дубль класса
         .header__box(class=variable === 'header' ? 'header__box_right' : 'header__box_right header-2__box_right')
-          +menu
+          +__menu
           .burger 
             span 
             span 
             span 
           .mobile-menu 
             .btn-close x
-            +menu
+            +__menu
             .header__buttons-wrapper 
               if variable=='header'  
                 +button-white('form-element-btn','Войти')
