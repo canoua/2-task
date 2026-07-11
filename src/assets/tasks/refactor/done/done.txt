@@ -1,6 +1,0 @@
-Готово:
-
-- page: sign-in, sign-up
-- ui-pages: headers-footers, colors-type
-- menu-list
-- expandable
