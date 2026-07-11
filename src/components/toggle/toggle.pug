@@ -2,6 +2,6 @@ mixin toggle(className, text)
   .toggle(class=className)
     .toggle__item 
       label.switch   
-        input(type="checkbox")
+        input(type="checkbox").toggle__input
         span.slider.round
       span.toggle__item-text=text
