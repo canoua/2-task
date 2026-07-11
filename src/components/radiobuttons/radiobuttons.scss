@@ -1,13 +1,13 @@
 @use "@vars/variables.scss" as *;
 
-.input:checked,
-.input:not(:checked) {
+.radiobutton__input:checked,
+.radiobutton__input:not(:checked) {
   position: absolute;
   left: -9999px;
 }
 
-.input:checked + label,
-.input:not(:checked) + label {
+.radiobutton__input:checked + label,
+.radiobutton__input:not(:checked) + label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
@@ -15,7 +15,7 @@
   display: inline-block;
 }
 
-.input:checked + label {
+.radiobutton__input:checked + label {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
@@ -23,8 +23,8 @@
   color: $darkshade75;
 }
 
-.input:checked + label:before,
-.input:not(:checked) + label:before {
+.radiobutton__input:checked + label:before,
+.radiobutton__input:not(:checked) + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -35,16 +35,16 @@
   background: #fff;
 }
 
-.input:not(:checked) + label:before {
+.radiobutton__input:not(:checked) + label:before {
   border: 1px solid $darkshade25;
 }
 
-.input:checked + label:before {
+.radiobutton__input:checked + label:before {
   border: 1px solid $purple;
 }
 
-.input:checked + label:after,
-.input:not(:checked) + label:after {
+.radiobutton__input:checked + label:after,
+.radiobutton__input:not(:checked) + label:after {
   content: "";
   width: 12px;
   height: 12px;
@@ -56,12 +56,12 @@
   transition: all 0.2s ease;
 }
 
-.input:not(:checked) + label:after {
+.radiobutton__input:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0);
 }
 
-.input:checked + label:after {
+.radiobutton__input:checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
