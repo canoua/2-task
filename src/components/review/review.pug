@@ -1,6 +1,6 @@
 include @components/buttons/buttons.pug
 
-mixin review(source, id, name, date, icon, icontext, text)
+mixin review(source, id, name, date, icon, iconText, comment)
   .review
     .review__header  
       .review__avatar 
@@ -10,7 +10,7 @@ mixin review(source, id, name, date, icon, icontext, text)
         .review__date=date 
     .review__content 
       if (icon == 'favorite')
-        +like-button('material-icons-favorite', 'like_active', 'favorite', icontext, '#bc9cff')
+        +like-button('material-icons-favorite', 'like_active', 'favorite', iconText, '#bc9cff')
       else 
-        +like-button('material-icons-favorite-border', '', 'favorite_border', icontext , '')
-      .review__text=text 
+        +like-button('material-icons-favorite-border', '', 'favorite_border', iconText , '')
+      .review__text=comment 
