@@ -12,28 +12,32 @@ block title
   title Search room
 
   - bodyClass = 'page'
-  - bodyId = ''
+  - bodyId = 'search-js'
 
 block content
-  main.search.app-js-dropdown#search-js
+  main.search.app-js-dropdown
     .container 
       .search-inner 
         +__sidebar()
         .search__content
           .search__title Номера, которые мы для вас подобрали
           .search__content__rooms
-            //-вынести в массив 
-            +card-room(require('@images/cards/slide-2.png'), 888, '9 990Р', 5, 145)
-            +card-room(require('@images/cards/slide-1.png'), 840, '9 900Р', 4, 65)
-            +card-room(require('@images/search-page/3.jpg'), 980, '8 500Р', 3, 35)
-            +card-room(require('@images/search-page/4.png'), 856, '7 300Р', 5, 19)
-            +card-room(require('@images/search-page/5.png'), 740, '6 000Р', 4, 44)
-            +card-room(require('@images/search-page/6.png'), 982, '5 800Р', 3, 56)
-            +card-room(require('@images/search-page/7.png'), 678, '5 500Р', 5, 45)
-            +card-room(require('@images/search-page/8.png'), 450, '5 300Р', 4, 39)
-            +card-room(require('@images/search-page/9.png'), 350, '5 000Р', 3, 77)
-            +card-room(require('@images/search-page/10.png'), 666, '5 000Р', 5, 25)
-            +card-room(require('@images/search-page/11.png'), 444, '5 000Р', 3, 15)
-            +card-room(require('@images/search-page/12.png'), 352, '5 000Р', 3, 55)
+            - 
+              const cards = [
+                { src: '1.png', number: 888, price: '9 990Р', countRating: 5, review: 145 },
+                { src: '2.png', number: 840, price: '9 900Р', countRating: 4, review: 65 },
+                { src: '3.jpg', number: 980, price: '8 500Р', countRating: 3, review: 35 },
+                { src: '4.jpg', number: 856, price: '7 300Р', countRating: 5, review: 19 },
+                { src: '5.png', number: 740, price: '6 000Р', countRating: 4, review: 44 },
+                { src: '6.png', number: 982, price: '5 800Р', countRating: 3, review: 56 },
+                { src: '7.png', number: 678, price: '5 500Р', countRating: 5, review: 45 },
+                { src: '8.png', number: 450, price: '5 300Р', countRating: 4, review: 39 },
+                { src: '9.png', number: 350, price: '5 000Р', countRating: 3, review: 77 },
+                { src: '10.png', number: 666, price: '5 000Р', countRating: 5, review: 25 },
+                { src: '11.png', number: 444, price: '5 000Р', countRating: 3, review: 15 },
+                { src: '12.png', number: 352, price: '5 000Р', countRating: 3, review: 55 }
+              ]
+            each card in cards
+              +card-room(require(`@images/pages/search/${card.src}`), card.number, card.price, card.countRating, card.review)
           .search__content__pagination
             +pagination()
