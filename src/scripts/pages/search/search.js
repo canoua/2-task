@@ -3,6 +3,7 @@ import searchExpandable from "./searchExpandable";
 import searchCalendar from "./searchCalendar";
 import searchConvenience from "./searchConvenience";
 import searchGuests from "./searchGuests";
+import searchPagination from "./searchPagination";
 
 export default function search() {
   searchCalendar();
@@ -10,4 +11,5 @@ export default function search() {
   rangeSlider();
   searchConvenience();
   searchExpandable();
+  searchPagination();
 }
