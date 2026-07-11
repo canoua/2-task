@@ -27,7 +27,7 @@ block content
             article.rd__impression
               h2.title.rd__title Впечатления от номера
               .rd__impression-inner 
-                +pie()
+                +__pie()
                 ul.impression__list
                   - 
                     var impressionList = [
@@ -39,11 +39,16 @@ block content
                     li.impression__list_item(class=impressionListItem.class) #{impressionListItem.name}
           
           .rd__block.rd__reviews
+            - 
+              const reviewList = [
+                { src: 'avatar-1.png', id: '', name: 'Мурад Сарафанов', date: '5 дней назад', icon: 'favorite', iconText: '12', comment: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'},
+                { src: 'avatar-2.png', id: 'avatar-2', name: 'Патрисия Стёклышкова', date: 'Неделю назад', icon: 'favorite_border', iconText: '2', comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'}
+              ]
             h2.title.rd__title.rd__reviews__title
               span Отзывы посетителей номера
-              span.reviews__title-info 2 отзыва
-            +review(require('@images/pages/room-details/avatar-1.png'), '', 'Мурад Сарафанов', '5 дней назад', 'favorite', '12', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
-            +review(require('@images/pages/room-details/avatar-2.png'), 'avatar-2', 'Патрисия Стёклышкова', 'Неделю назад', 'favorite_border', '2', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
+              span.reviews__title-info #{reviewList.length} отзыва
+            each item in reviewList
+              +review(require(`@images/pages/room-details/${item.src}`), item.id, item.name, item.date, item.icon, item.iconText, item.comment)
           .rd__block.rd__regulations 
             article.rd__regulations__item
               h2.title.rd__title Правила
