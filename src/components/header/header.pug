@@ -20,8 +20,8 @@ mixin header(variable)
             +__menu
             .header__buttons-wrapper 
               if variable=='header'  
-                +button-white('form-element-btn','Войти')
-                +button-gradient('form-element-btn','Зарегистрироваться')
+                +button-white('header__btn-white','Войти')
+                +button-gradient('header__btn-border','Зарегистрироваться')
               else if variable=='header-2'
                 a(href="#").user 
                   span.user__name Юлий Цезарь
@@ -30,8 +30,8 @@ mixin header(variable)
            
           .header__buttons-wrapper 
             if variable=='header'  
-              +button-white('form-element-btn','Войти')
-              +button-gradient('form-element-btn','Зарегистрироваться')
+              +button-white('header__btn-white','Войти')
+              +button-gradient('header__btn-border','Зарегистрироваться')
             else if variable=='header-2'
               a(href="#").user 
                 span.user__name Юлий Цезарь
