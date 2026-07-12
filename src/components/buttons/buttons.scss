@@ -1,9 +1,5 @@
 @use "@vars/variables.scss" as *;
 
-.elements__item_header.buttons__header {
-  margin-bottom: 16px;
-}
-
 .button {
   font-family: "Montserrat";
   padding: 10px 20px;
@@ -113,23 +109,6 @@
   }
 }
 
-//btn-rate
-.rate-button__header {
-  margin-bottom: 19px;
-}
-
-.stars-ratings {
-  display: flex;
-  margin-right: 20px;
-  &:last-child {
-    margin-right: 0;
-  }
-  &-wrapper {
-    display: flex;
-  }
-}
-
-// btn-like
 .like {
   background: #ffffff;
   border: 1px solid $darkshade25;
@@ -188,7 +167,6 @@
   }
 }
 
-//btn-gradient-arrow
 .btn {
   &-gradient {
     &-arrow {
@@ -208,7 +186,6 @@
   }
 }
 
-//btn-gradient
 .btn {
   &-gradient {
     background: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
