@@ -24,6 +24,19 @@
   &__logo {
     margin-bottom: 13px;
   }
+  &__list {
+    &-item {
+      margin-bottom: 19px;
+    }
+    &-link {
+      font-size: 14px;
+      line-height: 17px;
+      color: $darkshade50;
+      &:hover {
+        color: $darkshade75;
+      }
+    }
+  }
   &__title {
     margin-bottom: 20px;
     font-style: normal;
