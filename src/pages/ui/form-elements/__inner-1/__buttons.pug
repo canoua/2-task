@@ -1,0 +1,17 @@
+include @components/buttons/buttons.pug
+
+mixin __buttons
+  .fe__buttons 
+    .fe__buttons__header
+      h3.h3 buttons
+    .buttons-content 
+      .button-default-wrapper 
+        +button-gradient('fe__button-gradient', 'CLICK ME')
+        button.button.button-default.button-default-hover CLICK ME
+      .button-border-hover-wrapper 
+        +button-white('fe__button-white', 'CLICK ME')
+        button.button.button-border.button-border-hover.fe__button-white_hover CLICK ME
+      .icon-link-wrapper 
+        a(href="#").icon-link CLICK ME
+        a(href="#").icon-link.icon-link-hover CLICK ME
+      +btn-gradient-arrow('', 'перейти к оплате')
