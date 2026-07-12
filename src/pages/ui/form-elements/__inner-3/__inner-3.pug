@@ -1,0 +1,45 @@
+include @components/checkbox/checkbox.pug
+include @components/bullet-list/bullet-list.pug
+
+mixin __inner-3   
+  .container.fe-inner-3
+    .column
+      //- вынести в миксин
+      .expandable-checkbox-list-default.fe__item
+        .checkbox__header.fe__item_header
+          h3.h3 expandable checkbox list
+          span.material-icons.material-icons-expand expand_more
+      .expandable-checkbox-list-expanded.fe__item
+        .checkbox__header.fe__item_header
+          h3.h3 expandable checkbox list
+          span.material-icons.material-icons-expand.material-icons-expand-reverse expand_more
+        
+        ul.checkbox__list
+          -
+            const expandableCheckboxList = [
+              { class: '', id: 'breakfast', text1: 'Завтрак', text2: '' },
+              { class: '', id: 'desk', text1: 'Письменный стол', text2: '' },
+              { class: '', id: 'chair-for-feeding', text1: 'Стул для кормления', text2: '' },
+              { class: '', id: 'crib', text1: 'Кроватка', text2: '' },
+              { class: '', id: 'television', text1: 'Телевизор', text2: '' },
+              { class: '', id: 'shampoo', text1: 'Шампунь', text2: '' }
+            ]
+          each item in expandableCheckboxList
+            li.checkbox__list_item 
+              +checkbox(item.class, item.id, item.text1) 
+    .column.column-2  
+      .rich-checkbox-buttons.fe__item 
+        .checkbox-buttons__header.fe__item_header
+          h3.h3 Rich Checkbox Buttons
+        ul.checkbox__list
+          - 
+            const richCheckboxList = [
+              { class: 'checkbox__list-label-rich-title', id: 'corridor', text1: 'Широкий коридор', text2: '', info: 'Ширина коридоров в номере не менее 91 см.' },
+              { class: 'checkbox__list-label-rich-title', id: 'assistant', text1: 'Помощник для инвалидов', text2: '', info: 'На 1 этаже вас встретит специалист и проводит до номера.' },
+            ]
+          each item in richCheckboxList
+            li.checkbox__list__item.search__rich-checkbox__list__item 
+              +rich-checkbox(item.class, item.id, item.text1, item.text2, item.info) 
+      .bullet.fe__item 
+        h3.h3 bullet list
+        +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
