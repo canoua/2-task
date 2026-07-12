@@ -1,0 +1,10 @@
+include @components/bullet-list/bullet-list.pug
+
+mixin __regulations
+  .rd__block.rd__regulations 
+    article.rd__regulations__item
+      h2.title.rd__title Правила
+      +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')
+    article.rd__regulations__item.rd__regulations__item_cancellation 
+      h2.title.rd__title.rd__title_cancel Отмена
+      .cancellation__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги. 
