@@ -1,16 +1,16 @@
 extends @layouts/layout-ui.pug
 
-include modules/fe-inner-1/fe-inner-1.pug
-include modules/fe-inner-2/fe-inner-2.pug
-include modules/fe-inner-3/fe-inner-3.pug
-include modules/fe-inner-4/fe-inner-4.pug
+include __inner-1/__inner-1.pug
+include __inner-2/__inner-2.pug
+include __inner-3/__inner-3.pug
+include __inner-4/__inner-4.pug
 
 block title 
   title Form-elements
 
 block content
   .fe#fe-js 
-    +fe-inner-1()
-    +fe-inner-2()
-    +fe-inner-3()
-    +fe-inner-4()
+    +__inner-1()
+    +__inner-2()
+    +__inner-3()
+    +__inner-4()
