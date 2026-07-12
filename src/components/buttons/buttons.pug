@@ -1,9 +1,9 @@
 mixin button-gradient(btnGradientClass,textGradient)
   if textGradient=='Зарегистрироваться'
-    a(href="/pages/sign-up.html" class=btnGradientClass target='_about').button.button-default.header__btn-border=textGradient
+    a(href="/pages/sign-up.html" class=btnGradientClass target='_about').button.button-default=textGradient
   else 
     //-для страницы form-elements
-    button(class=btnGradientClass).button.button-default.header__btn-border=textGradient
+    button(class=btnGradientClass).button.button-default=textGradient
 mixin btn-gradient-arrow(classes, textGradBtn)
   button.button-default-big(class=classes)
     span=textGradBtn
@@ -17,7 +17,7 @@ mixin like-button(classIcon, nameBtn, icon, text, textColor)
 
 mixin button-white(btnClass,text)
   if text=='Войти'
-    a(href='/pages/sign-in.html' class=btnClass target='_about').button.button-border.header__btn-white=text
+    a(href='/pages/sign-in.html' class=btnClass target='_about').button.button-border=text
   else 
     //-для страницы form-elements
-    button(class=btnClass).button.button-border.header__btn-white=text
+    button(class=btnClass).button.button-border=text 
