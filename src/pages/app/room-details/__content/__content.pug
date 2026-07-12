@@ -1,21 +1,9 @@
-include ../__information/__information.pug
-include ../__pie/__pie.pug
+include __information/__information.pug
+include __impression/__impression.pug
+
 
 mixin __content
   .rd__block.rd__content 
-    article.rd__information
-      h2.title.rd__title Сведения о номере
-      +__information()
-    article.rd__impression
-      h2.title.rd__title Впечатления от номера
-      .rd__impression-inner 
-        +__pie()
-        ul.impression__list
-          - 
-            var impressionList = [
-              {name: 'Великолепно', class: 'impression__list_item-1'},
-              {name: 'Хорошо', class: 'impression__list_item-2'},
-              {name: 'Удовлетворительно', class: 'impression__list_item-3'},
-              {name: 'Разочарован', class: 'impression__list_item-4'}];
-          each impressionListItem in impressionList
-            li.impression__list_item(class=impressionListItem.class) #{impressionListItem.name} 
+    +__information()
+    +__impression()
+    
