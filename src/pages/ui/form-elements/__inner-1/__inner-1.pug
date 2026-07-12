@@ -3,12 +3,13 @@ include @components/dropdown/dropdown.pug
 include @components/toggle/toggle.pug
 include @components/checkbox/checkbox.pug
 include @components/range-slider/range-slider.pug
-include @components/pagination/pagination.pug
 include @components/buttons/buttons.pug
 include @components/radiobuttons/radiobuttons.pug
 include @components/stars-ratings/stars-ratings.pug
+include __buttons.pug
+include __pagination.pug
 
-mixin fe-inner-1
+mixin __inner-1
   .container.fe-inner-1
     .fe__logo
       include @images/components/ui-logo.svg
@@ -51,21 +52,5 @@ mixin fe-inner-1
           +stars-ratings(5) 
     .column.column-3
       +range-slider('fe__range-slider', 'range slider')
-      .fe__buttons 
-        .fe__buttons__header
-          h3.h3 buttons
-        .buttons-content 
-          .button-default-wrapper 
-            +button-gradient('fe__button-gradient', 'CLICK ME')
-            button.button.button-default.button-default-hover CLICK ME
-          .button-border-hover-wrapper 
-            +button-white('fe__button-white', 'CLICK ME')
-            button.button.button-border.button-border-hover.fe__button-white_hover CLICK ME
-          .icon-link-wrapper 
-            a(href="#").icon-link CLICK ME
-            a(href="#").icon-link.icon-link-hover CLICK ME
-          +btn-gradient-arrow('', 'перейти к оплате')
-      .fe__pagination 
-        .fe__pagination__header
-          h3.h3 pagination
-        +pagination
+      +__buttons()
+      +__pagination()
