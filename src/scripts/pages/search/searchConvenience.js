@@ -27,7 +27,7 @@ export default function searchConvenience() {
   );
 
   dropdownConvenience.addEventListener("click", function () {
-    convenienceContent.classList.toggle("fe__dropdown-content_active");
+    convenienceContent.classList.toggle("dropdown-content_active");
   });
 
   let convenience = {
@@ -185,7 +185,7 @@ export default function searchConvenience() {
     const clickConvenienceContent = convenienceContent.contains(event.target);
 
     if (!clickDocumentOutsideConvenience && !clickConvenienceContent) {
-      convenienceContent.classList.remove("fe__dropdown-content_active");
+      convenienceContent.classList.remove("dropdown-content_active");
     }
   });
 }

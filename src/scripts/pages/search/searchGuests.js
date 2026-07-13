@@ -13,7 +13,7 @@ export default function searchGuests() {
 
   if (dropdown) {
     dropdown.addEventListener("click", function () {
-      content.classList.toggle("fe__dropdown-content_active");
+      content.classList.toggle("dropdown-content_active");
     });
   }
 
@@ -47,7 +47,7 @@ export default function searchGuests() {
     const clickContent = content.contains(event.target);
 
     if (!clickDocument && !clickContent) {
-      content.classList.remove("fe__dropdown-content_active");
+      content.classList.remove("dropdown-content_active");
     }
   });
 }

@@ -52,6 +52,6 @@ export default function dropdownSubmit(event) {
         }
       }
     }
-    content.classList.remove("fe__dropdown-content_active");
+    content.classList.remove("dropdown-content_active");
   });
 }

@@ -16,7 +16,7 @@ mixin __sidebar
           return sum
         }
       +dropdown('card-landing__dropdown dropdown card-landing__dropdown-js', 'dropdown-guests', 'гости', `${sumCount()} гостя, ${dropdownExpandedGuestsList[2].number} младенец`)
-      .fe__dropdown-content
+      .dropdown-content
         ul.dropdown-list.dropdown-expanded-guests__list  
           each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList
             li.dropdown-list__item 
@@ -56,7 +56,7 @@ mixin __sidebar
             +rich-checkbox(item.class, item.id, item.text1, item.text2, item.info)
     .dropdown-page.search__dropdown-convenience
       +dropdown('dropdown-convenience', 'dropdown-convenience', 'удобства номера', 'text')
-      .fe__dropdown-content.dropdown-convenience__content.search__dropdown-convenience__content
+      .dropdown-content.dropdown-convenience__content.search__dropdown-convenience__content
         +__dropdown-convenience()
     .expandable-checkbox-list-default.elements__item
       .search__expandable-checkbox-list.checkbox__header.elements__item_header

@@ -15,7 +15,7 @@ export default function landing() {
 
   if (input) {
     input.addEventListener("click", function () {
-      content.classList.toggle("fe__dropdown-content_active");
+      content.classList.toggle("dropdown-content_active");
     });
   }
 
@@ -37,7 +37,7 @@ export default function landing() {
     const clickContent = content.contains(event.target);
 
     if (!clickDocument && !clickContent) {
-      content.classList.remove("fe__dropdown-content_active");
+      content.classList.remove("dropdown-content_active");
     }
   });
 

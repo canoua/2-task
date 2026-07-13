@@ -226,11 +226,11 @@
   transform: scale(1);
 }
 
-.rd-dropdown + .fe__dropdown-content {
+.rd-dropdown + .dropdown-content {
   display: none;
 }
 
-.rd-dropdown + .fe__dropdown-content_active {
+.rd-dropdown + .dropdown-content_active {
   display: block;
   position: absolute;
   top: 61px;

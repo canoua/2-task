@@ -5,14 +5,14 @@ import dropdownSubmit from "../modules/dropdown/dropdownSubmit";
 
 export default function roomDetails() {
   const input = document.getElementById("rd-dropdown");
-  const content = document.querySelector(".fe__dropdown-content");
+  const content = document.querySelector(".dropdown-content");
   const reset = document.querySelector(".dropdown__reset");
   const submit = document.querySelector(".dropdown__submit");
   const submitForm = document.querySelector(".card-btn-landing");
 
   if (input) {
     input.addEventListener("click", function () {
-      content.classList.toggle("fe__dropdown-content_active");
+      content.classList.toggle("dropdown-content_active");
     });
   }
 
@@ -36,7 +36,7 @@ export default function roomDetails() {
     const clickContent = content.contains(event.target);
 
     if (!clickDocument && !clickContent) {
-      content.classList.remove("fe__dropdown-content_active");
+      content.classList.remove("dropdown-content_active");
     }
   });
 
