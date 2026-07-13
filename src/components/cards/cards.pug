@@ -6,39 +6,6 @@ include @components/buttons/buttons.pug
 include @components/dropdown/dropdown.pug
 include @components/stars-ratings/stars-ratings.pug
 
-mixin card-room-arrow 
-  .card.card-room.card-room-arrow 
-    .card-inner.card-room-inner
-      .card-room__slider
-        .slide.card-room__slide
-          img(src=require('@images/pages/cards/slide-2.png'), alt="slide-1")
-        .card-room__pagination
-          .dot.dot_active 
-          .dot 
-          .dot 
-          .dot 
-        .arrow-prev.material-icons expand_more
-        .arrow-next.material-icons expand_more
-      .card-room__content
-        .card-room__content__header 
-          h3.card-room__title 
-            span.card-room__title__icon №
-            span.card-room__title__number 888
-            span.card-room__title__text люкс
-          .card-room__price 
-            .card-room__price__number 9 990₽ 
-            .card-room__price__text в сутки
-        .card-room__content__footer 
-          .stars-ratings 
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-            span.material-icons.material-icons-star star
-          .card-room__reviews 
-            .card-room__reviews__number 145
-            .card-room__reviews__text Отзывов
-
 mixin card-room(src, number, price, rating, reviewsNumber) 
   .card.card-room
     .card-inner.card-room-inner
@@ -89,7 +56,7 @@ mixin card-landing
               return sum
             }
           +dropdown('card-landing__dropdown card-landing__dropdown-js', 'card-landing__dropdown',  'гости', `${sumCount()} гостя`)
-          .fe__dropdown-content
+          .dropdown-content
             ul.dropdown-list.dropdown-expanded-guests__list  
               each guest in guests 
                 li.dropdown-list__item 
@@ -181,8 +148,7 @@ mixin card-calculate(dropdownClass)
             ]
             const sumCounts = guests[0].count + guests[1].count + guests[2].count 
           +dropdown('rd-dropdown', 'rd-dropdown', 'гости', `${sumCounts} гостя`)
-          .fe__dropdown-content
-            
+          .dropdown-content
             ul.dropdown-list.dropdown-expanded-guests__list  
               each guest in guests 
                 li.dropdown-list__item 
