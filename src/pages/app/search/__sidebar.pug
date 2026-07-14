@@ -1,6 +1,7 @@
 mixin __sidebar
   .search__sidebar 
     +filter-date-dropdown('search__filter-date-dropdown', 'даты пребывания в отеле', '')
+    +input('search-input-calendar', '', '', '')
     .dropdown-page.dropdown-expanded-guests__form
       - 
         const dropdownExpandedGuestsList = [
