@@ -5,7 +5,7 @@ mixin text-field-default(className, title, status, placeholder, name)
     .text-field-default__header
       h3.h3=title 
       span.text-field-default__state=status
-    +input('', placeholder, name)
+    +input('input-default', placeholder, name)
 
 mixin text-field-hover(className, title, status, placeholder, name)
   .text-field-hover(class=className)
@@ -25,6 +25,6 @@ mixin subscription-text-field(className, title, placeholder, name)
     .subscription-text-field__header
       h3.h3=title
     .subscription-text-field__input-wrapper 
-      input.subscription-text-field__input(type="text" name=name placeholder=placeholder, autocomplete="off")
+      +input('subscription-text-field__input', placeholder, name)
       button.subscription-text-field__input__button 
         span.material-icons.material-icons-arrow-blue arrow_forward
