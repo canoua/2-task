@@ -46,6 +46,8 @@ export default function landing() {
   });
 
   if (document.querySelector(".calendar")) {
+    // console.log(1);
+    
     airDatePicker();
   }
 }

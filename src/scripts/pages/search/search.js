@@ -6,10 +6,11 @@ import searchGuests from "./searchGuests";
 import searchPagination from "./searchPagination";
 
 export default function search() {
-  searchCalendar();
-  searchGuests();
-  rangeSlider();
-  searchConvenience();
-  searchExpandable();
-  searchPagination();
+  if(document.querySelector('.calendar')) searchCalendar();
+  // searchCalendar();
+  // searchGuests();
+  // rangeSlider();
+  // searchConvenience();
+  // searchExpandable();
+  // searchPagination();
 }

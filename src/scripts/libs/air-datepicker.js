@@ -8,7 +8,7 @@ export default function airDatePicker() {
   let buttonApply = {
     className: "buttonAirData",
     content: "Применить",
-    onClick: function () {
+    onClick: function (dp) {
       let day1 = calendar.selectedDates[0].toLocaleString("default", {
         day: "2-digit",
       });
@@ -42,7 +42,7 @@ export default function airDatePicker() {
     dynamicRange: false,
     multipleDates: true,
     multipleDatesSeparator: "-",
-    startDate,
+    startDate: new Date(),
     secondDate: new Date(),
     endDate,
     dateFormat: "dd.MM.yyyy",
@@ -78,5 +78,7 @@ export default function airDatePicker() {
 
   input2.addEventListener("click", function () {
     calendar.show();
+    // console.log(1);
+    
   });
 }

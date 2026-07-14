@@ -8,7 +8,7 @@ export default function searchConvenience() {
   );
 
   const dropdownConvenienceOutput = dropdownConvenience.querySelector(
-    ".card__input-dropdown",
+    ".input-dropdown",
   );
   const btnPlus = document.querySelectorAll(
     ".dropdown__convenience-list__count_plus",
