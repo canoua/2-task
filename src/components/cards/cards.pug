@@ -2,6 +2,7 @@ include @components/buttons/buttons.pug
 include @components/text-field/text-field.pug
 include @components/radiobuttons/radiobuttons.pug
 include @components/toggle/toggle.pug
+include @components/input/input.pug
 include @components/buttons/buttons.pug
 include @components/dropdown/dropdown.pug
 include @components/stars-ratings/stars-ratings.pug
@@ -35,7 +36,7 @@ mixin card-room(src, number, price, rating, reviewsNumber)
 
 mixin card-landing 
   form(action="#")
-    .card.app-js-dropdown.card-landing 
+    .card.card-landing 
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
         .card-landing__date-dropdown-wrapper
@@ -126,7 +127,7 @@ mixin card-calendar
 
 mixin card-calculate(dropdownClass)
   form(action="#")
-    .app-js-dropdown.card.card-calculate 
+    .card.card-calculate 
       .card-inner 
         .card-calculate__header 
           .card-calculate__room
@@ -182,12 +183,13 @@ mixin card-sign-up(page)
       .card-inner 
         h1.card__title Регистрация аккаунта
         .inputs-wrapper.card-sign-up__inputs-wrapper 
-          +text-field-default('', '', '', 'Имя')
-          +text-field-default('', '', '', 'Фамилия')
+          +input('', 'Имя', 'firstname')
+          +input('', 'Фамилия', 'lastname')
         +radiobuttons('')
-        +text-field-masked('card-sign-up__date-birthday', 'дата рождения', 'ДД.ММ.ГГГГ')
-        +text-field-default('card-sign-up__email', 'данные для входа в сервис', '', 'Email')
-        +text-field-default('card-sign-up__password', '', '', 'Пароль')
+        +text-field-masked('card-sign-up__date-birthday', 'дата рождения', 'ДД.ММ.ГГГГ', 'birthday-input')
+        h3.h3.card__second-title данные для входа в сервис
+        +input('card-sign-up__email', 'Email', 'lastname')
+        +input('card-sign-up__password', 'Пароль', 'lastname')
         +toggle('card-sign-up__toggle', 'Получать спецпредложения')
         if (page=="sign-up")
           +btn-gradient-arrow('sign-up__submit', 'зарегистрироваться')
@@ -201,8 +203,8 @@ mixin card-sign-in
       .card-inner
         h1.card__title Войти
         .inputs-wrapper.card-sign-in__inputs-wrapper 
-          +text-field-default('', '', '', 'Email')
-          +text-field-default('', '', '', 'Пароль')
+          +input('', 'Имя', 'firstname')
+          +input('', 'Фамилия', 'lastname')
         +btn-gradient-arrow('button-default-big sign-in__submit', 'Войти')
         +card__note('sign-in')
 
