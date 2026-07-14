@@ -140,7 +140,8 @@ module.exports = {
       "@images": path.resolve(__dirname, "src/assets/images/"),
       "@vars": path.resolve(__dirname, "src/styles/default/"),
       "@components": path.resolve(__dirname, "src/components/"),
-      "@layouts": path.resolve(__dirname, "src/layouts/")
+      "@layouts": path.resolve(__dirname, "src/layouts/"),
+      "@styles": path.resolve(__dirname, "src/styles")
     },
   },
   optimization: {
