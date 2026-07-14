@@ -7,10 +7,9 @@ import searchPagination from "./searchPagination";
 
 export default function search() {
   if(document.querySelector('.calendar')) searchCalendar();
-  // searchCalendar();
-  // searchGuests();
-  // rangeSlider();
-  // searchConvenience();
-  // searchExpandable();
-  // searchPagination();
+  searchGuests();
+  rangeSlider();
+  searchConvenience();
+  searchExpandable();
+  searchPagination();
 }

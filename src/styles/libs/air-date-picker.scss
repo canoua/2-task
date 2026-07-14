@@ -1,168 +1,166 @@
-// @use "@vars/variables.scss" as *;
-// .input-wrapper {
-//   position: relative;
-// }
+@use "@vars/variables.scss" as *;
+
 .air-datepicker {
   &-global-container {
     position: absolute;
-  }}
-//   &-nav {
-//     border: none;
-//     font-family: "Montserrat";
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 19px;
-//     line-height: 23px;
-//     text-align: center;
-//     color: $darkshade100;
-//     padding: 20px;
-//     padding-bottom: 0;
-//   }
-//   &-button {
-//     font-family: "Montserrat";
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 12px;
-//     line-height: 15px;
-//     text-transform: uppercase;
-//     color: $purple;
-//   }
-//   &-custom {
-//     width: 320px;
-//     & > .air-datepicker--pointer {
-//       &::after {
-//         display: none;
-//       }
-//     }
-//   }
-// }
+  }
+  &-nav {
+    border: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: $darkshade100;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  &-button {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+  }
+  &-custom {
+    width: 320px;
+    & > .air-datepicker--pointer {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
 
-// .air-datepicker-body--cells.-days- {
-//   grid-template-columns: repeat(7, var(--adp-day-cell-width));
-//   grid-auto-rows: 40px;
-// }
+.air-datepicker-body--cells.-days- {
+  grid-template-columns: repeat(7, var(--adp-day-cell-width));
+  grid-auto-rows: 40px;
+}
 
-// .air-datepicker-cell.-day-.-selected-.-range-to- {
-//   position: relative;
-// }
+.air-datepicker-cell.-day-.-selected-.-range-to- {
+  position: relative;
+}
 
-// .air-datepicker-body--day-name {
-//   width: 40px;
-//   height: 40px;
-//   font-family: "Montserrat";
-//   font-style: normal;
-//   font-size: 12px;
-//   line-height: 15px;
-//   text-transform: initial;
-//   color: $purple;
-// }
+.air-datepicker-body--day-name {
+  width: 40px;
+  height: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: initial;
+  color: $purple;
+}
 
-// .air-datepicker-cell.-day- {
-//   width: 40.14px;
-//   height: 40.44px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-family: "Montserrat";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 15px;
-//   color: $darkshade50;
-//   &:hover {
-//     background-color: #fff;
-//     border-radius: 22px;
-//     z-index: 10;
-//   }
-// }
+.air-datepicker-cell.-day- {
+  width: 40.14px;
+  height: 40.44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: $darkshade50;
+  &:hover {
+    background-color: #fff;
+    border-radius: 22px;
+    z-index: 10;
+  }
+}
 
-// .air-datepicker-cell.-day-.-current- {
-//   font-family: "Montserrat";
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 12px;
-//   line-height: 15px;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-//   color: #ffffff;
-//   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-//   border-radius: 22px;
-//   &.-in-range- {
-//     border-radius: 0;
-//   }
-// }
+.air-datepicker-cell.-day-.-current- {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 22px;
+  &.-in-range- {
+    border-radius: 0;
+  }
+}
 
-// .air-datepicker--buttons {
-//   border-top: none;
-// }
+.air-datepicker--buttons {
+  border-top: none;
+}
 
-// .air-datepicker-cell.-day-.-selected- {
-//   &.-range-from- {
-//     position: relative;
-//     z-index: 100 !important;
-//   }
-//   &.-range-from-,
-//   &.-range-to- {
-//     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-//     border-radius: 22px;
-//     font-family: "Montserrat";
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 12px;
-//     line-height: 15px;
-//     color: #ffffff;
-//   }
-// }
+.air-datepicker-cell.-day-.-selected- {
+  &.-range-from- {
+    position: relative;
+    z-index: 100 !important;
+  }
+  &.-range-from-,
+  &.-range-to- {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-radius: 22px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+}
 
-// .air-datepicker-cell.-day-.-in-range-,
-// .air-datepicker-cell.-day-.-other-month-.-in-range- {
-//   font-family: "Montserrat";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 15px;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-//   position: relative;
-//   color: $darkshade50;
-//   &::after {
-//     content: "";
-//     background-color: #e5e8fe;
-//     position: absolute;
-//     left: -14px;
-//     right: -14px;
-//     height: 100%;
-//     display: block;
-//     z-index: -1;
-//     top: 0;
-//     width: 175%;
-//   }
-//   &:hover {
-//     border-radius: 0;
-//   }
-// }
+.air-datepicker-cell.-day-.-in-range-,
+.air-datepicker-cell.-day-.-other-month-.-in-range- {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: $darkshade50;
+  &::after {
+    content: "";
+    background-color: #e5e8fe;
+    position: absolute;
+    left: -14px;
+    right: -14px;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    top: 0;
+    width: 175%;
+  }
+  &:hover {
+    border-radius: 0;
+  }
+}
 
-// .air-datepicker--content {
-//   margin-bottom: 20px;
-//   padding-left: 20px;
-//   padding-right: 20px;
-// }
+.air-datepicker--content {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-// .air-datepicker-nav--action > .custom-prev {
-//   width: 24px;
-//   height: 24px;
-//   background-image: url("@images/arrow_back.svg");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-// }
+.air-datepicker-nav--action > .custom-prev {
+  width: 24px;
+  height: 24px;
+  background-image: url("@images/arrow_back.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
-// .air-datepicker-nav--action > .custom-next {
-//   width: 24px;
-//   height: 24px;
-//   background-image: url("@images/arrow_back.svg");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   transform: rotate(180deg);
-// }
+.air-datepicker-nav--action > .custom-next {
+  width: 24px;
+  height: 24px;
+  background-image: url("@images/arrow_back.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
