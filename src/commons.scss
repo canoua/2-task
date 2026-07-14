@@ -1,19 +1,14 @@
 @use "@vars/variables.scss" as *;
 @use "styles/default/default.scss";
 @use "styles/default/material-icons.scss";
-@use "styles/libs/air-date-picker.scss";
-
 @use "index.scss";
 @use "components/components.scss";
 @use "pages/ui/ui.scss";
 @use "pages/pages.scss";
 
-
-
 // /* libs */
-
-
-// @import "air-datepicker/air-datepicker.css";
+@import "air-datepicker/air-datepicker.css";
 @import "styles/libs/nouislider.min.css";
+
 // /* fonts */
 @import "assets/fonts/Montserrat/stylesheet.css";
