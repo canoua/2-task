@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/canoua/webpack-starter#readme",
   "dependencies": {
-    "air-datepicker": "^3.3.5",
+    "air-datepicker": "^3.6.0",
     "imask": "^6.6.1",
     "material-icons": "^1.13.12",
     "nouislider": "^15.7.1"
