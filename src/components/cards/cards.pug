@@ -148,7 +148,7 @@ mixin card-calculate(dropdownClass)
               {name: 'младенцы', count: 0}
             ]
             const sumCounts = guests[0].count + guests[1].count + guests[2].count 
-          +dropdown('cards-dropdown', 'cards-dropdown', 'гости', `${sumCounts} гостя`)
+          +dropdown('rd-dropdown cards-dropdown', 'rd-dropdown', 'гости', `${sumCounts} гостя`)
           .dropdown-content
             ul.dropdown-list.dropdown-expanded-guests__list  
               each guest in guests 
