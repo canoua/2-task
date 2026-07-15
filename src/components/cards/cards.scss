@@ -157,6 +157,10 @@
   }
 }
 
+.card-sign-in-form {
+  height: 358px;
+}
+
 .inputs-wrapper.card-sign-in__inputs-wrapper {
   margin-bottom: 20px;
 }
@@ -171,11 +175,29 @@
   }
 }
 
+.cards-dropdown + .dropdown-content {
+  display: none;
+}
+
+.dropdown.card-landing__dropdown {
+  margin-bottom: 0;
+}
+
+.cards-dropdown.dropdown {
+  margin-bottom: 0;
+} 
+
 .card-sign-up {
   padding-top: 39px;
   padding-left: 29px;
   padding-right: 29px;
   padding-bottom: 29px;
+  height: 100%;
+  width: 100%;
+  &-form {
+    height: 646px;
+    width: 380px;
+  }
   @media (max-width: 450px) {
     padding: 20px;
     width: 100%;
@@ -240,11 +262,14 @@
 }
 
 .card.card-sign-in {
-  height: 358px;
+  height: 100%;
   padding-right: 29.5px;
   padding-left: 29.5px;
   padding-bottom: 28px;
   padding-top: 39px;
+  &-form {
+    height: 358px;
+  }
   @media (max-width: 464px) {
     padding: 20px;
     width: 100%;
@@ -284,6 +309,8 @@
   padding-top: 40px;
   padding-left: 29px;
   padding-right: 29px;
+  height: 512px;
+  width: 380px;
   &__header {
     display: flex;
     justify-content: space-between;
