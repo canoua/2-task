@@ -178,12 +178,12 @@ mixin card-calculate(dropdownClass)
         
 
 mixin card-sign-up(page) 
-  form(action="#") 
+  form(action="#" class=`card-form__${page}`) 
     .card.card-sign-up 
       .card-inner 
-        h1.card__title Регистрация аккаунта
+        h1(class = `card__title-${page}`).card__title Регистрация аккаунта
         .inputs-wrapper.card-sign-up__inputs-wrapper 
-          +input('', 'Имя', 'firstname')
+          +input('card-sign-up__name', 'Имя', 'firstname')
           +input('', 'Фамилия', 'lastname')
         +radiobuttons('')
         +text-field-masked('card-sign-up__date-birthday', 'дата рождения', 'ДД.ММ.ГГГГ', 'birthday-input')
@@ -197,14 +197,14 @@ mixin card-sign-up(page)
           +btn-gradient-arrow('', 'перейти к оплате')
         +card__note('sign-up')
 
-mixin card-sign-in
-  form(action="#") 
+mixin card-sign-in(page)
+  form(action="#" class=`card-form__${page}`) 
     .card.card-sign-in
       .card-inner
         h1.card__title Войти
         .inputs-wrapper.card-sign-in__inputs-wrapper 
-          +input('', 'Имя', 'firstname')
-          +input('', 'Фамилия', 'lastname')
+          +input(`${page}__input`, 'Email', 'firstname')
+          +input(`${page}__input`, 'Пароль', 'lastname')
         +btn-gradient-arrow('button-default-big sign-in__submit', 'Войти')
         +card__note('sign-in')
 
@@ -212,7 +212,7 @@ mixin card__note(page)
   .card__note 
     if page == 'sign-up'
       span.card__note-info Уже есть аккаунт на Toxin
-      +button-white('card-btn-white', 'войти')
+      +button-white(`card-btn-white ${page}__card-btn`, 'войти')
     else if page == 'sign-in' 
       span.card__note-info Нет аккаунта на Toxin?
-      +button-white('card-btn-white', 'Создать')
+      +button-white(`card-btn-white ${page}__card-btn`, 'Создать')
