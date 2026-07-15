@@ -4,7 +4,7 @@ include @components/header/header.pug
 include @components/footer/footer.pug
 
 block title
-  title headers and footers
+  title Headers and Footers
 
 block content  
   .headers-footers
@@ -15,7 +15,7 @@ block content
     .headers-footers__box 
       +header('header-2')
     .headers-footers__box
-      +footer()
+      +footer('headers-footers')
     .headers-footers__box
       +footer-mobile()
       
