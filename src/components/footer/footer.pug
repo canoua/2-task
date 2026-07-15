@@ -1,7 +1,7 @@
 include @components/logo/logo.pug
 include @components/text-field/text-field.pug
 
-mixin footer
+mixin footer(page)
   -  
     var links = [
       {src: require("@images/icons/twitter.svg"), social: 'twitter'},
@@ -14,7 +14,7 @@ mixin footer
       {title: 'Служба поддержки', links: ['Соглашения', 'Сообщества', 'Связь с нами']},
     ]
   footer.footer
-    .footer__box 
+    .footer__box(class=`footer__box-${page}`) 
       .container 
         .footer__inner
           .footer__info
