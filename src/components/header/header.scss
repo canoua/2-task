@@ -25,33 +25,54 @@
       justify-content: space-between;
     }
   }
+
   &__btn {
     &-white {
-      transition: border-color 0.3s ease;
+      width: 87px;
+      height: 34px;
+      display: flex;
+      transition: opacity .3s;
+      justify-content: center;
+      align-items: center;
+      background-image: url('@images/components/btn-border.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 16px; 
+      & > span {
       font-family: Montserrat;
       font-weight: 700;
       font-size: 12px;
       line-height: 100%;
       letter-spacing: 0%;
       text-transform: uppercase;
-      &:hover {
-        border-color: rgba(188, 156, 255, 0.5);
+      display: block;
+      line-height: 15px;
+      color: #bc9cff;
+      background: #fff;
+      padding: 7px 18px;
+      border-radius: 16px;
       }
-    }
+      &:hover {
+        opacity: 0.7;
+      }
+      }
     &-border {
       transition: opacity 0.3s;
+      width: 196px;
+      height: 34px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      & > span {
+        display: block;
+        letter-spacing: 0.4px;
+        line-height: 36px;
+      }
       &:hover {
         opacity: 0.5;
-      }
-    }
-  }
-  &__buttons {
-    &-wrapper {
-      display: flex;
-      align-items: center;
-      padding-bottom: 5px;
-      @media (max-width: 991px) {
-        display: none;
       }
     }
   }

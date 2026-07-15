@@ -15,6 +15,9 @@
       &:last-child {
         margin-bottom: 0;
       }
+      & > .footer {
+      border-top: none;
+    }
     }
     &__input {
       width: 260px;
@@ -33,6 +36,18 @@
           }
         }
       }
+    }
+  }
+}
+
+.header__buttons {
+  &-wrapper {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    @media (max-width: 991px) {
+      display: none;
     }
   }
 }

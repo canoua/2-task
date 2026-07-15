@@ -4,19 +4,44 @@
 
 .main.sign-up {
   height: 683px;
-  & > form {
-    @media (max-width: 450px) {
-      width: 100%;
-    }
-    .card-sign-up {
-      margin-left: 5px;
-      @media (max-width: 450px) {
-        margin-left: 0;
-      }
-    }
-  }
   @media (max-width: 450px) {
     height: auto;
     padding: 50px 20px;
   }
+}
+
+.card-form__sign-up {
+  width: 380px;
+  height: 646px;
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+  & > .card-sign-up {
+    height: 100%;
+    margin-left: 3px;
+    @media (max-width: 450px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.card__title-sign-up {
+  margin-bottom: 21px;
+}
+
+.card-sign-up__name {
+  margin-bottom: 10px;
+}
+
+.card__second-title {
+  margin-bottom: 6px;
+}
+
+.card-sign-up__email {
+  margin-bottom: 10px;
+}
+
+.sign-up__card-btn {
+  width: 99px;
+  height: 44px;
 }
