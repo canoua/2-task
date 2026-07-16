@@ -12,7 +12,7 @@ mixin card-room(src, luxe, number, price, rating, reviewsNumber)
     .card-inner.card-room-inner
       .card-room__slider
         .slide.card-room__slide.card-room-arrow__slide   
-          img(src=src, alt="slide").slide-1__img
+          img(src=src, alt="slide").slide__img
         .pagination.card-room__pagination
           .dot.dot_active 
           .dot 
@@ -42,8 +42,8 @@ mixin card-landing
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
         .card-landing__date-dropdown-wrapper
-          +date-dropdown('input1','прибытие', 'ДД.ММ.ГГГГ', 'input1')
-          +date-dropdown('input2','выезд', 'ДД.ММ.ГГГГ', 'input2')
+          +date-dropdown('input1 card-landing__dropdown','прибытие', 'ДД.ММ.ГГГГ', 'input1')
+          +date-dropdown('input2 card-landing__dropdown','выезд', 'ДД.ММ.ГГГГ', 'input2')
         .dropdown-page.dropdown-expanded-guests__form
           - 
             const guests = [
@@ -51,14 +51,7 @@ mixin card-landing
               {name: 'дети', count: 1},
               {name: 'младенцы', count: 0},
             ]
-            let sumCount = function() {
-              let sum = 0;
-              for(let i=0; i<guests.length; i++) {
-                sum += guests[i].count;
-              }
-              return sum
-            }
-          +dropdown('card-landing__dropdown card-landing__dropdown-js', 'card-landing__dropdown',  'гости', `${sumCount()} гостя`)
+          +dropdown('card-landing__dropdown card-landing__dropdown-js', 'card-landing__dropdown',  'гости', `Сколько гостей`)
           .dropdown-content
             ul.dropdown-list.dropdown-expanded-guests__list  
               each guest in guests 
@@ -183,7 +176,7 @@ mixin card-sign-up(page)
   form(action="#" class=`card-form__${page} card-sign-up-form`) 
     .card.card-sign-up 
       .card-inner 
-        h1(class = `card__title-${page}`).card__title Регистрация аккаунта
+        h1.card__title.card-sign-up__title Регистрация аккаунта
         .inputs-wrapper.card-sign-up__inputs-wrapper 
           +input('card-sign-up__name', 'Имя', 'firstname')
           +input('', 'Фамилия', 'lastname')
@@ -205,8 +198,8 @@ mixin card-sign-in(page)
       .card-inner
         h1.card__title Войти
         .inputs-wrapper.card-sign-in__inputs-wrapper 
-          +input(`${page}__input`, 'Email', 'firstname')
-          +input(`${page}__input`, 'Пароль', 'lastname')
+          +input('sign-in__input', 'Email', 'firstname')
+          +input('sign-in__input', 'Пароль', 'lastname')
         +btn-gradient-arrow('button-default-big sign-in__submit', 'Войти')
         +card__note('sign-in')
 
