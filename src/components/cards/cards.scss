@@ -47,6 +47,10 @@
   }
 }
 
+.card-sign-up__title {
+  margin-bottom: 21px;
+}
+
 .date-of-birth {
   width: 100%;
   margin-bottom: 20px;
@@ -70,8 +74,9 @@
   cursor: pointer;
 }
 
-.slide-1__img {
-  height: 100%;
+.slide__img {
+  transform: scale(1.23);
+  margin-top: 4.4px;
   width: 100%;
 }
 
@@ -205,7 +210,6 @@
   }
   &__date-birthday {
     margin-bottom: 22.5px;
-    // margin-bottom: 21.5px;
   }
   &__email {
     margin-bottom: 4px;
@@ -218,7 +222,6 @@
   }
   & > .card-inner {
     & > .card__title {
-      // margin-bottom: 15px;
       @media (max-width: 376px) {
         font-size: 19px;
         margin-bottom: 10px;
