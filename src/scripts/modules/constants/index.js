@@ -1,5 +1,5 @@
 export const dropdownOutput = document.querySelector(
-  ".card__input-dropdown-pre-default",
+  ".input-dropdown-pre-default",
 );
 
 export const content = document.querySelector(".dropdown-content");
