@@ -22,6 +22,18 @@
       }
     }
   }
+  &__dropdown {
+    letter-spacing: -1%;
+    &-material-icons-expand {
+      position: absolute;
+      top: 10px;
+      right: 8px;
+    }
+    &::placeholder {
+      font-size: 17px;
+      letter-spacing: -1%;
+    }
+  }
 }
 
 .card-btn-landing {
@@ -92,4 +104,22 @@ main.main.main-landing {
   @media (max-width: 525px) {
     bottom: -115px;
   }
+}
+
+
+#card-landing__dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-right: 9px;
+  padding-bottom: 13px;
+  padding-left: 14.5px;
+  height: 44px;
+  cursor: pointer;
+  letter-spacing: -0.05px;
 }
