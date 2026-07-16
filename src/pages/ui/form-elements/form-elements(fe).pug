@@ -7,9 +7,11 @@ include __inner-4/__inner-4.pug
 
 block title 
   title Form-elements
-
+  
+  - bodyId = 'fe-js'
+  
 block content
-  .fe#fe-js 
+  .fe
     +__inner-1()
     +__inner-2()
     +__inner-3()
