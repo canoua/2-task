@@ -17,6 +17,6 @@ mixin date-dropdown(className, title, placeholder, name)
   .date-dropdown.date-dropdown-item.date-dropdown-item-box
     .date-dropdown__header
       h3.h3=title 
-    .input-wrapper
+    .input-wrapper.calendar-input-wrapper
       input.calendar.input-date-dropdown(placeholder=placeholder class=className, name=name)
-      span.material-icons.material-icons-expand expand_more
+      span.material-icons.material-icons-expand(class=`${className}-material-icons-expand`) expand_more
