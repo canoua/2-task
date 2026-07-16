@@ -127,9 +127,12 @@
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0%;
   border: none;
+  &::placeholder {
+    font-family: "Montserrat";
+    line-height: 18px;
+  }
 }
 
 .material-icons.material-icons-expand.upside {
