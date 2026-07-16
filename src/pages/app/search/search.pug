@@ -24,20 +24,20 @@ block content
           .search__content__rooms
             - 
               const cards = [
-                { src: '1.png', number: 888, price: '9 990Р', countRating: 5, review: 145 },
-                { src: '2.png', number: 840, price: '9 900Р', countRating: 4, review: 65 },
-                { src: '3.jpg', number: 980, price: '8 500Р', countRating: 3, review: 35 },
-                { src: '4.jpg', number: 856, price: '7 300Р', countRating: 5, review: 19 },
-                { src: '5.png', number: 740, price: '6 000Р', countRating: 4, review: 44 },
-                { src: '6.png', number: 982, price: '5 800Р', countRating: 3, review: 56 },
-                { src: '7.png', number: 678, price: '5 500Р', countRating: 5, review: 45 },
-                { src: '8.png', number: 450, price: '5 300Р', countRating: 4, review: 39 },
-                { src: '9.png', number: 350, price: '5 000Р', countRating: 3, review: 77 },
-                { src: '10.png', number: 666, price: '5 000Р', countRating: 5, review: 25 },
-                { src: '11.png', number: 444, price: '5 000Р', countRating: 3, review: 15 },
-                { src: '12.png', number: 352, price: '5 000Р', countRating: 3, review: 55 }
+                { src: '1.png', luxe: true, number: 888, price: '9 990Р', countRating: 5, review: 145 },
+                { src: '2.png', luxe: false, number: 840, price: '9 900Р', countRating: 4, review: 65 },
+                { src: '3.jpg', luxe: true, number: 980, price: '8 500Р', countRating: 3, review: 35 },
+                { src: '4.jpg', luxe: false, number: 856, price: '7 300Р', countRating: 5, review: 19 },
+                { src: '5.png', luxe: false, number: 740, price: '6 000Р', countRating: 4, review: 44 },
+                { src: '6.png', luxe: false, number: 982, price: '5 800Р', countRating: 3, review: 56 },
+                { src: '7.png', luxe: false, number: 678, price: '5 500Р', countRating: 5, review: 45 },
+                { src: '8.png', luxe: false, number: 450, price: '5 300Р', countRating: 4, review: 39 },
+                { src: '9.png', luxe: false, number: 350, price: '5 000Р', countRating: 3, review: 77 },
+                { src: '10.png', luxe: false, number: 666, price: '5 000Р', countRating: 5, review: 25 },
+                { src: '11.png', luxe: false, number: 444, price: '5 000Р', countRating: 3, review: 15 },
+                { src: '12.png', luxe: false, number: 352, price: '5 000Р', countRating: 3, review: 55 }
               ]
             each card in cards
-              +card-room(require(`@images/pages/search/${card.src}`), card.number, card.price, card.countRating, card.review)
+              +card-room(require(`@images/pages/search/${card.src}`), card.luxe, card.number, card.price, card.countRating, card.review)
           .search__content-pagination
             +pagination()
