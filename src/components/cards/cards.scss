@@ -622,6 +622,7 @@
     font-size: 19px;
     font-weight: 700;
     color: #1f2041;
+    position: relative;
     &__icon {
       margin-bottom: 1px;
       font-size: 14px;
@@ -635,6 +636,18 @@
       font-size: 12px;
       text-transform: uppercase;
       color: #bc9cff;
+    }
+    &-status {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #bc9cff;
+      position: absolute;
+      top: 8px;
+      right: -47px;
     }
   }
   &__slider {
