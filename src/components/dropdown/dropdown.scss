@@ -15,7 +15,7 @@
     margin-bottom: 30.44px;
   }
   &__title {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     padding-left: 0.5px;
   }
   &-expanded.elements__item,
@@ -163,6 +163,7 @@
   }
   &__header {
     margin-bottom: 6px;
+    padding-left: 0.5px;
     @media (max-width: 375px) {
       margin-bottom: 13px;
     }
@@ -181,8 +182,10 @@
   &::placeholder {
     font-family: "Montserrat";
     font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
     color: $darkshade75;
   }
+}
+
+.calendar-input-wrapper {
+  position: relative;
 }
