@@ -7,7 +7,7 @@ include @components/buttons/buttons.pug
 include @components/dropdown/dropdown.pug
 include @components/stars-ratings/stars-ratings.pug
 
-mixin card-room(src, number, price, rating, reviewsNumber) 
+mixin card-room(src, luxe, number, price, rating, reviewsNumber) 
   .card.card-room
     .card-inner.card-room-inner
       .card-room__slider
@@ -25,6 +25,8 @@ mixin card-room(src, number, price, rating, reviewsNumber)
           h3.card-room__title 
             span.card-room__title__icon №
             span.card-room__title__number=number
+            if (luxe)
+              span.card-room__title-status люкс
           .card-room__price 
             .card-room__price__number=price 
             .card-room__price__text в сутки
@@ -40,8 +42,8 @@ mixin card-landing
       .card-inner  
         h1.card__title Найдём номера под ваши пожелания
         .card-landing__date-dropdown-wrapper
-          +date-dropdown('input1','прибытие', 'ДД.ММ.ГГГГ')
-          +date-dropdown('input2','выезд', 'ДД.ММ.ГГГГ')
+          +date-dropdown('input1','прибытие', 'ДД.ММ.ГГГГ', 'input1')
+          +date-dropdown('input2','выезд', 'ДД.ММ.ГГГГ', 'input2')
         .dropdown-page.dropdown-expanded-guests__form
           - 
             const guests = [
@@ -138,8 +140,8 @@ mixin card-calculate(dropdownClass)
             span.card-calculate__price-values 9 990₽
             span.card-calculate__price-duration в сутки
         .card-calculate__date-dropdown-wrapper
-          +date-dropdown('input1','прибытие', '19.08.2019')
-          +date-dropdown('input2','выезд', '23.08.2019')
+          +date-dropdown('input1','прибытие', '19.08.2019', 'input1')
+          +date-dropdown('input2','выезд', '23.08.2019', 'input2')
         .dropdown-page.dropdown-expanded-guests__form
           - 
             const guests = [
