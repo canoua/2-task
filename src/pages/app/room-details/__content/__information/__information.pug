@@ -7,9 +7,10 @@ mixin __information
         {img:'location_city.png', title: 'Удобство', text: 'Окно в каждой из спален'},
         {img:'whatshot.png', title: 'Уют', text: 'Номер оснащён камином'}
       ];
-    each rdInformationItem in rdInformationItems
-      .rd__information__item.information__item 
-        img.information__icon(src=require(`@images/pages/room-details/information/${rdInformationItem.img}`), alt="icon")
-        .information__item-inner 
-          .information__title #{rdInformationItem.title}
-          .information__text #{rdInformationItem.text}
+    div.rd__information-inner 
+      each rdInformationItem in rdInformationItems
+        .rd__information__item.information__item 
+          img.information__icon(src=require(`@images/pages/room-details/information/${rdInformationItem.img}`), alt="icon")
+          .information__item-inner 
+            .information__title #{rdInformationItem.title}
+            .information__text #{rdInformationItem.text}
