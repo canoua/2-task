@@ -49,6 +49,7 @@
 
 .card-sign-up__title {
   margin-bottom: 21px;
+  padding-left: 0.5px;
 }
 
 .date-of-birth {
@@ -209,7 +210,7 @@
     height: auto;
   }
   &__date-birthday {
-    margin-bottom: 22.5px;
+    margin-bottom: 21.5px;
   }
   &__email {
     margin-bottom: 4px;
@@ -309,7 +310,7 @@
 
 .card-calculate {
   padding-bottom: 30px;
-  padding-top: 40px;
+  padding-top: 41px;
   padding-left: 29px;
   padding-right: 29px;
   height: 512px;
@@ -318,7 +319,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
   &__room {
     &-icon {
@@ -359,7 +360,7 @@
       font-size: 14px;
       line-height: 18px;
       color: rgba(31, 32, 65, 0.5);
-      margin-right: 5px;
+      margin-right: 4px;
     }
     &-duration {
       font-family: "Montserrat";
@@ -415,13 +416,25 @@
     }
     &:nth-child(2) {
       margin-bottom: 13px;
+      & > span:first-child {
+        &::after {
+          height: 21px;
+          top: -3px;
+        }
+      }
     }
     &:last-child {
+      & > span:first-child {
+        &::after {
+          height: 21px;
+          top: -1px;
+        }
+      }
       & > span:nth-child(2) {
         margin-top: -17px;
       }
     }
-    span {
+    & > span {
       &:first-child {
         width: 214px;
       }
@@ -473,6 +486,7 @@
 
 .card-calendar {
   width: 320px;
+  height: 369px;
   position: relative;
   padding: 19px 20px 35px 23px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -510,7 +524,7 @@
       font-size: 12px;
       text-align: center;
       color: rgba(31, 32, 65, 0.5);
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
     }
     &-number {
       cursor: pointer;
@@ -779,4 +793,14 @@
 .card-room__slider:hover > .card-room__slide::before,
 .card-room__slider:hover > .card-room__slide::after {
   display: block;
+}
+
+.calendar-input-wrapper {
+  position: relative;
+}
+
+.card-calculate__dropdown-material-icons-expand {
+  position: absolute;
+  top: 10px;
+  right: 8px;
 }
