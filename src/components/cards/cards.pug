@@ -7,10 +7,10 @@ include @components/buttons/buttons.pug
 include @components/dropdown/dropdown.pug
 include @components/stars-ratings/stars-ratings.pug
 
-mixin card-room(src, luxe, number, price, rating, reviewsNumber) 
+mixin card-room(src, luxe, number, price, rating, reviewsNumber, cardClass) 
   .card.card-room
     .card-inner.card-room-inner
-      .card-room__slider
+      .card-room__slider(class=`card-room__slider-${cardClass}`)
         .slide.card-room__slide.card-room-arrow__slide   
           img(src=src, alt="slide").slide__img
         .pagination.card-room__pagination
@@ -26,7 +26,7 @@ mixin card-room(src, luxe, number, price, rating, reviewsNumber)
             span.card-room__title__icon №
             span.card-room__title__number=number
             if (luxe)
-              span.card-room__title-status люкс
+              span.card-room__title-status(class=`card-room__title-status-${cardClass}`) люкс
           .card-room__price 
             .card-room__price__number=price 
             .card-room__price__text в сутки
