@@ -1,3 +1,6 @@
+@use "@vars/variables.scss" as *;
+
+
 .fe {
   &__subscription-text-field {
     width: 267px;
@@ -14,6 +17,16 @@
     }
     & > .input-wrapper {
       position: relative;
+    }
+  }
+}
+
+.fe__text-field-hover {
+  & > .input-hover {
+    border: 1px solid $darkshade50;
+    &::placeholder {
+      color:  $darkshade75;
+      letter-spacing: -0.2px;
     }
   }
 }
