@@ -96,8 +96,8 @@
     }
   }
   &__rich-checkbox {
-    margin-bottom: 32.44px;
-
+    margin-bottom: 31.44px;
+    // margin-bottom: 32.44px;
     &__title {
       margin-bottom: 17px;
     }
@@ -148,4 +148,12 @@
   & > .input-dropdown {
     letter-spacing: 0;
   }
+}
+
+.search__expandable-checkbox-list.checkbox__header {
+  margin-bottom: 12px;
+}
+
+.checkbox__list_item {
+  margin-bottom: 6.3px;
 }
