@@ -1,6 +1,8 @@
-mixin dropdown(className, id, title, inputText)
+mixin dropdown(className, id, title, inputText, status)
   .dropdown(class=className)
-    h3.h3.dropdown__title=title
+    .date-dropdown__header
+      h3.h3.dropdown__title=title
+      span.text-field-default__state.dropdown__status=status
     .input-wrapper.input-wrapper-js(id=id) 
       .input-dropdown.input-dropdown-pre-default=inputText
       span.material-icons.material-icons-expand expand_more
