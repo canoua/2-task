@@ -15,7 +15,7 @@
     margin-bottom: 30.44px;
   }
   &__title {
-    margin-bottom: 6px;
+    // margin-bottom: 6px;
     padding-left: 0.5px;
   }
   &-expanded.elements__item,
@@ -128,7 +128,6 @@
       cursor: pointer;
     }
   }
-// }
 
 .unactive-element {
   cursor: auto;
@@ -162,12 +161,21 @@
     }
   }
   &__header {
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
     margin-bottom: 6px;
     padding-left: 0.5px;
     @media (max-width: 375px) {
       margin-bottom: 13px;
     }
   }
+}
+
+.text-field-default__state.dropdown__status {
+  top: -2px;
+  right: -1px;
+  // position: static;
 }
 
 .input-date-dropdown {
