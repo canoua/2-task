@@ -3,10 +3,10 @@
 .pagination {
   &__inner {
     display: flex;
+    margin-bottom: 7px;
   }
   &__list {
     display: flex;
-    margin-bottom: 6.56px;
   }
   &__arrow {
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
