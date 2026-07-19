@@ -3,8 +3,8 @@
 .dropdown {
   margin-bottom: 25px;
    &-content {
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    padding: 5px 5px 0px 15px;
+    border: 1px solid $darkshade50;
+    padding: 10px 5px 0px 15px;
     width: 100%;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -24,7 +24,7 @@
   &-expanded {
     &-guests {
       &__list {
-        margin-bottom: 20px;
+        margin-bottom: 28px;
       }
     }
   }
@@ -33,7 +33,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 7px;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 14px;
+      }
       &_name {
         font-weight: 700;
         font-size: 12px;
@@ -43,8 +46,7 @@
       }
     }
     &__count {
-      display: flex;
-      align-items: center;
+      position: relative;
       &_minus,
       &_plus {
         width: 30px;
@@ -117,7 +119,7 @@
       border: 1px solid $darkshade25;
       box-sizing: border-box;
       border-radius: 4px;
-      padding-top: 11px;
+      padding-top: 12px;
       padding-right: 9px;
       padding-bottom: 13px;
       padding-left: 14.5px;
@@ -125,6 +127,10 @@
       cursor: pointer;
     }
   }
+
+// .input-wrapper.calendar {
+ 
+// }
 
 .unactive-element {
   cursor: auto;
@@ -137,6 +143,14 @@
   &__title {
     margin-bottom: 5px;
   }
+}
+
+.dropdown__reset {
+  margin-left: -1px;
+}
+
+.dropdown__submit {
+  margin-right: 2px;
 }
 
 .date-dropdown {
@@ -159,11 +173,21 @@
   }
   &__header {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     padding-left: 0.5px;
     @media (max-width: 375px) {
       margin-bottom: 13px;
     }
+  }
+}
+#dropdown-expanded-active,
+#dropdown-expanded-active-2,
+#dropdown-expanded-active-3 {
+  border: 1px solid $darkshade50;
+  & > span {
+    margin-top: 1px;
+    margin-right: -1px;
+    color: $darkshade75;
   }
 }
 
@@ -190,4 +214,31 @@
 
 .calendar-input-wrapper {
   position: relative;
+   padding-top: 11px;
+}
+
+.dropdown-list__count_number {
+    font-weight: 700;
+    width: 8px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-left: 12px;
+    // margin-top: 8px;
+        margin-top: 2px;
+    margin-right: 41px;
+}
+
+.dropdown-list__count_minus {
+    position: absolute;
+    left: -31px;
+    top: -4px;
+    // top: 2px;
+}
+.dropdown-list__count_plus {
+    position: absolute;
+    right: 0px;
+    top: -4px;
 }

@@ -119,7 +119,7 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 61px;
+  top: 62px;
   z-index: 11;
   background: #fff;
 }
@@ -160,4 +160,11 @@
 
 .checkbox__list_item {
   margin-bottom: 6.3px;
+}
+
+#dropdown-guests.input-click-active,
+#dropdown-convenience.input-click-active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: $darkshade75;
 }

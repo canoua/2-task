@@ -26,3 +26,28 @@
     margin-bottom: 0;
   }
 }
+
+.fe__dropdown.dropdown-expanded-active {
+  & > .date-dropdown__header {
+	  // margin-bottom: 5px;
+    margin-bottom: 6px;
+  }
+}
+
+.fe-dropdown-list__count {
+  margin-right: 2px;
+}
+
+.fe__dropdown_unactive.dropdown {
+  margin-bottom: 22px;
+}
+
+#fe__dropdown_unactive {
+  position: relative;
+  & > span {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+  }
+}
+
