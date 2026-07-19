@@ -23,6 +23,7 @@ export default function landing() {
   if (submit) {
     submit.addEventListener("click", function (event) {
       dropdownSubmit(event);
+      input.classList.remove("input-click-active")
     });
   }
 
@@ -39,12 +40,10 @@ export default function landing() {
 
     if (!clickDocument && !clickContent) {
       content.classList.remove("dropdown-content_active");
+      input.classList.remove("input-click-active")
     }
   });
 
-  submitForm.addEventListener("click", function (event) {
-    event.preventDefault();
-  });
 
   if (document.querySelector(".calendar")) {
     airDatePicker();
