@@ -78,7 +78,5 @@ export default function airDatePicker() {
 
   input2.addEventListener("click", function () {
     calendar.show();
-    // console.log(1);
-    
   });
 }

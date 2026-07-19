@@ -11,13 +11,10 @@
 }
 
 .card-form__sign-up {
-  // width: 380px;
-  // height: 646px;
   @media (max-width: 450px) {
     width: 100%;
   }
   & > .card-sign-up {
-    // height: 100%;
     margin-left: 3px;
     @media (max-width: 450px) {
       margin-left: 0;
