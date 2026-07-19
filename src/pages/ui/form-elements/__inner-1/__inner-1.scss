@@ -30,3 +30,16 @@
     }
   }
 }
+
+.fe__text-field-masked {
+&>.input-masked {
+    padding-top: 12px;
+}
+}
+
+#fe__date-dropdown_unactive {
+  &::placeholder {
+    font-size: 18px;
+    letter-spacing: -0.6px;
+  }
+}
