@@ -116,6 +116,7 @@
     }
     &__social {
       display: flex;
+      gap: 21px;
     }
     &__text {
       font-size: 14px;
@@ -132,11 +133,9 @@
       display: block;
       &:last-child {
         margin-right: 1px;
-        margin-left: 22px;
         margin-top: -1px;
       }
       &:nth-child(2) {
-        margin-left: 21px;
         margin-top: -1px;
       }
     }
@@ -177,6 +176,14 @@
           &:nth-child(3) {
             margin-top: 1px;
           }
+        }
+      }
+    }
+    &-copy {
+      &__link {
+        &:nth-child(2),
+        &:last-child {
+          margin-top: 0;
         }
       }
     }
