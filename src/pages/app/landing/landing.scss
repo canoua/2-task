@@ -122,4 +122,8 @@ main.main.main-landing {
   height: 44px;
   cursor: pointer;
   letter-spacing: -0.05px;
+  &.input-click-active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }

@@ -16,6 +16,7 @@ export default function landing() {
   if (input) {
     input.addEventListener("click", function () {
       content.classList.toggle("dropdown-content_active");
+      input.classList.toggle("input-click-active")
     });
   }
 
