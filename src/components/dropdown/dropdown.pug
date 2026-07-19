@@ -15,10 +15,10 @@ mixin filter-date-dropdown(classes, title, date)
       input(type="text" name=classes placeholder=date).calendar
       span.material-icons.material-icons-expand(class=`${classes}__material-icons-expand`) expand_more
 
-mixin date-dropdown(className, title, placeholder, name)
+mixin date-dropdown(className, title, placeholder, name, id)
   .date-dropdown.date-dropdown-item.date-dropdown-item-box
     .date-dropdown__header
       h3.h3=title 
     .input-wrapper.calendar-input-wrapper
-      input.calendar.input-date-dropdown(placeholder=placeholder class=className, name=name)
+      input.calendar.input-date-dropdown(placeholder=placeholder class=className, name=name id=id)
       span.material-icons.material-icons-expand(class=`${className}-material-icons-expand`) expand_more
