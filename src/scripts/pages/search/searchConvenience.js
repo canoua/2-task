@@ -28,6 +28,8 @@ export default function searchConvenience() {
 
   dropdownConvenience.addEventListener("click", function () {
     convenienceContent.classList.toggle("dropdown-content_active");
+    dropdownConvenience.classList.toggle("input-click-active")
+
   });
 
   let convenience = {
@@ -186,6 +188,7 @@ export default function searchConvenience() {
 
     if (!clickDocumentOutsideConvenience && !clickConvenienceContent) {
       convenienceContent.classList.remove("dropdown-content_active");
+      dropdownConvenience.classList.remove("input-click-active")
     }
   });
 }

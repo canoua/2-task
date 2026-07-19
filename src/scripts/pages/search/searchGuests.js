@@ -14,12 +14,14 @@ export default function searchGuests() {
   if (dropdown) {
     dropdown.addEventListener("click", function () {
       content.classList.toggle("dropdown-content_active");
+      dropdown.classList.toggle("input-click-active")
     });
   }
 
   if (submit) {
     submit.addEventListener("click", function (event) {
       dropdownSubmit(event);
+      dropdown.classList.remove("input-click-active")
     });
   }
 
@@ -48,6 +50,7 @@ export default function searchGuests() {
 
     if (!clickDocument && !clickContent) {
       content.classList.remove("dropdown-content_active");
+      dropdown.classList.remove("input-click-active")
     }
   });
 }
