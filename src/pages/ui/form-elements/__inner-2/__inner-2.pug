@@ -24,7 +24,7 @@ mixin __inner-2
     .colummn.column-2 
       .dropdown-expanded.fe__item 
         +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown-expanded-active-2', 'dropdown', 'Сколько гостей')
-        .dropdown-content
+        .dropdown-content#dropdown-content-expanded-active-2
           ul.dropdown-list.dropdown-expanded-guests__list  
             - 
               const dropdownExpandedGuestsList = [
@@ -34,7 +34,7 @@ mixin __inner-2
             each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList
               li.dropdown-list__item 
                 .dropdown-list__item_name #{dropdownExpandedGuestsListItem.name}
-                .dropdown-list__count 
+                .dropdown-list__count.fe-dropdown-list__count 
                   if dropdownExpandedGuestsListItem.number > 0
                     .dropdown-list__count_minus -
                   else 
@@ -46,7 +46,7 @@ mixin __inner-2
     .column.column-3
       .dropdown-expanded-guests.fe__item.fe__dropdown.dropdown-expanded-active  
         +dropdown('fe__dropdown dropdown-expanded-active', 'dropdown-expanded-active-3', 'dropdown', '3 гостя')
-        .dropdown-content
+        .dropdown-content#dropdown-content-expanded-active-3
           - 
             const dropdownExpandedGuestsList2 = [
               {name:'взрослые', number: 2}, 
@@ -56,7 +56,7 @@ mixin __inner-2
             each dropdownExpandedGuestsListItem in dropdownExpandedGuestsList2
               li.dropdown-list__item 
                 .dropdown-list__item_name #{dropdownExpandedGuestsListItem.name}
-                .dropdown-list__count 
+                .dropdown-list__count.fe-dropdown-list__count 
                   if dropdownExpandedGuestsListItem.number > 0
                     .dropdown-list__count_minus -
                   else 
