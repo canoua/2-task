@@ -38,7 +38,6 @@
       grid-template-rows: repeat(4, 1fr);
       grid-column-gap: 12px;
       grid-row-gap: 20.5px;
-      // margin-bottom: 40.5px;
       margin-bottom: 42.5px;
     }
     &-pagination {
@@ -97,7 +96,6 @@
   }
   &__rich-checkbox {
     margin-bottom: 31.44px;
-    // margin-bottom: 32.44px;
     &__title {
       margin-bottom: 17px;
     }
@@ -152,6 +150,12 @@
 
 .search__expandable-checkbox-list.checkbox__header {
   margin-bottom: 12px;
+}
+
+.search__expandable-checkbox-list {
+  & > span {
+    margin-right: 10px;
+  }
 }
 
 .checkbox__list_item {
