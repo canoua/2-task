@@ -55,21 +55,22 @@ export default function searchCalendar() {
       }
     },
     position({ $datepicker, $target, $pointer }) {
-      // координаты инпута
-      let coords = $target.getBoundingClientRect();
-      let top = coords.y + 2 * coords.height + window.scrollY;
-      let left = coords.x - 17;
-
+      let coords = $target.parentElement.getBoundingClientRect();
+      let top = coords.y +  coords.height + window.scrollY + 5;
+      let left = coords.x - 30;
+      
       $datepicker.style.left = `${left}px`;
       $datepicker.style.top = `${top}px`;
       $pointer.style.display = "none";
     },
-    onShow: (isFinished) => {
-      const calendarContent = document.querySelector(".air-datepicker");
+    prevHtml: '<div class="custom-prev"></div>',
+    nextHtml: '<div class="custom-next"></div>',
+    // onShow: (isFinished) => {
+    //   const calendarContent = document.querySelector(".air-datepicker");
 
-      if (calendarContent) {
-        calendarContent.style.width = "320px";
-      }
-    },
+    //   if (calendarContent) {
+    //     calendarContent.style.width = "320px";
+    //   }
+    // },
   });
 }
